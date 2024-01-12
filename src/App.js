@@ -1,5 +1,6 @@
 import {ThemeProvider} from "styled-components";
 import { GlobalStyles } from "./components/styles/Globals.styled";
+import { NavBar } from "./components/layout/NavBar";
 const  App = () =>{
   const theme = {
     colors: {
@@ -18,8 +19,7 @@ const  App = () =>{
     <>
     <ThemeProvider theme={theme}>
     <GlobalStyles />
-      App
-      <hr/>
+    <NavBar />
     </ThemeProvider>
     </>
   );
