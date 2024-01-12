@@ -25,7 +25,8 @@ border-radius: 50%;
 
 export const MenuIcon = styled.div`
 cursor: pointer;
-background: ${({ theme })=> theme.colors.lightNavyBlue};
+background: ${({ theme,menuopen})=> menuopen ? "none":theme.colors.lightNavyBlue};
+transition:${({theme})=> theme.transition};
 padding: 0.7rem;
 border-radius: 5px;
 display: none;
@@ -45,8 +46,10 @@ margin: 5px 0;
 background: linear-gradient(
     135deg,
     rgba(249,105,14,1) 0%,
-    rgba(255,255,255,1) 100%
+    #80e109 100%
 );
+transition: ${({theme})=>theme.transition};
+transform: ${({menuopen})=>menuopen ? "rotate(-45deg) translate(-5px,6px) scaleX(2)":"none"};
 `;
 
 export const LineTwo = styled.div`
@@ -56,20 +59,24 @@ margin: 5px 0;
 background: linear-gradient(
     135deg,
     rgba(249,105,14,1) 0%,
-    rgba(255,255,255,1) 100%
+    #80e109 100%
 );
+opacity: ${({menuopen}) => menuopen ? 0 :1};
+transition: ${({theme})=>theme.transition};
 `;
 
 export const LineThree = styled.div`
 width: 15px;
 height: 3px;
 margin: 5px 0;
-margin-left: 15px;
+margin-left: ${({menuopen})=> menuopen?0:"15px"};
 background: linear-gradient(
     135deg,
     rgba(249,105,14,1) 0%,
-    rgba(255,255,255,1) 100%
+    #80e109 100%
 );
+transition: ${({theme})=>theme.transition};
+transform: ${({menuopen})=>menuopen ? "rotate(45deg) translate(-5px,-6px) scaleX(2)":"none"};
 `;
 
 export const NavList = styled.ul`
@@ -85,10 +92,11 @@ flex-wrap: wrap;
     background: ${({ theme })=> theme.colors.lightNavyBlue};
     position: fixed;
     top: 0;
-    right:0;
+    right: ${({menuopen}) => menuopen ? "0": "-24rem"};
     padding-top:3rem;
     justify-content: flex-start;
     flex-direction: column;
     z-index: 998;
+    transition: ${({theme})=> theme.transition};
 }
 `;
