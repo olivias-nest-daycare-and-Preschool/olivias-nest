@@ -20,8 +20,12 @@ export const NavBar = () =>{
             </MenuIcon>
             <NavList menuopen={menuopen}>
                 {NavItems && NavItems.map((navItem,index)=>(
-                    <NavItem key={index}>
-                        <NavLink>Home</NavLink>
+                    <NavItem 
+                    key={index} 
+                    index={index} 
+                    menuopen={menuopen} 
+                    onClick={() => setMenuopen(false)}>
+                        <NavLink href="#">Home</NavLink>
                     </NavItem>
                 ))} 
                 

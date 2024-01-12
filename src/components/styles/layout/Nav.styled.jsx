@@ -1,5 +1,20 @@
+import {styled,keyframes,css}from "styled-components";
 
-import styled from "styled-components";
+
+const NavItemFade = keyframes`
+from{
+    opacity: 0;
+    transform: translate(50px);
+}
+to{
+    opacity:1;
+    transform: translate(0px);
+}
+`;
+
+const navItemAnimation = ({index}) => css`
+animation: ${NavItemFade} 0.5s ease forwards ${index /7 + 0.5}s;
+`;
 
 
 export const Nav = styled.nav`
@@ -108,6 +123,12 @@ margin: 0.2rem 0.7rem;
 &:last-child {
     margin-right: 0;
 }
+
+@media(max-width: ${({ theme })=> theme.mobile}){
+    opacity: 0;
+    margin: 1.2rem 0;
+    ${({menuopen})=> menuopen ? navItemAnimation:null};
+} 
 `;
 
 export const NavLink = styled.a`
@@ -119,8 +140,14 @@ letter-spacing: 1.5px;
     content:"";
     display: block;
     height: 3px;
-    width: 100%;
+    width: 0%;
     background: ${({theme})=> theme.colors.orange};
     transition: all ease-in-out 300ms;
+}
+
+&:hover{
+    &::after{
+        width: 100%;
+    }
 }
 `;
