@@ -1,11 +1,12 @@
-import { LineOne, LineThree, LineTwo, Logo, MenuIcon, Nav, NavList } from "../styles/layout/Nav.styled"
+import { NavItems } from "../../data/NavItems";
+import { LineOne, LineThree, LineTwo, Logo, MenuIcon, Nav, NavItem, NavLink, NavList } from "../styles/layout/Nav.styled"
 import { useState } from "react";
 
 export const NavBar = () =>{
  const [menuopen,setMenuopen] = useState(false);
 
     return(
-        <>
+        <div>
         <Nav>
             <div>
                 <a href="#hero-section">
@@ -18,12 +19,14 @@ export const NavBar = () =>{
                 <LineThree menuopen={menuopen}/>
             </MenuIcon>
             <NavList menuopen={menuopen}>
-                <li>Home</li>
-                <li>About us</li>
-                <li>contact us</li>
-                <li>Gallery</li>
+                {NavItems && NavItems.map((navItem,index)=>(
+                    <NavItem key={index}>
+                        <NavLink>Home</NavLink>
+                    </NavItem>
+                ))} 
+                
             </NavList>
         </Nav>
-        </>
+        </div>
     );
 };
