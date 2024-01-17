@@ -10,13 +10,11 @@ export const NavBar = () =>{
  const [menuopen,setMenuopen] = useState(false);
 const scrollDirection = useScrollDirection("down");
 
-
-
     return(
         <div>
         <Nav scrollDirection={scrollDirection}>
             <div>
-                <a href="#hero-section">
+                <a href="#Home">
                     <Logo src="./images/logo.png" />
                 </a>
             </div> 

@@ -13,14 +13,14 @@ export const GlobalStyles = createGlobalStyle`
 html{
     font-family: "Share Tech Mono", monospace;
     scroll-behavior: smooth;
-    color: ${({ theme })=> theme.colors.black};
+    color: ${({ theme })=> theme.colors.white};
     background: ${({ theme })=> theme.colors.lightNavyBlue};
     font-size: 12px;
 }
 
-body{
+/* body{
     height: 200vh;
-}
+} */
 
 a{
     text-decoration: none;

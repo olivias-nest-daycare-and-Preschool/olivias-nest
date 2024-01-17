@@ -2,6 +2,9 @@ import {ThemeProvider} from "styled-components";
 import { GlobalStyles } from "./components/styles/Globals.styled";
 import { NavBar } from "./components/layout/NavBar";
 import { TopBanner } from "./components/layout/TopBanner";
+import { HomeSection } from "./components/sections/HomeSection";
+import { Container } from "./components/styles/common/Container.styled";
+import { AboutSection } from "./components/sections/AboutSection";
 const  App = () =>{
   const theme = {
     colors: {
@@ -22,6 +25,10 @@ const  App = () =>{
     <GlobalStyles />
     <TopBanner />
     <NavBar />
+    <HomeSection />
+    <Container>
+      <AboutSection />
+    </Container>
     </ThemeProvider>
     </>
   );
