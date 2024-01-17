@@ -1,6 +1,7 @@
 import {ThemeProvider} from "styled-components";
 import { GlobalStyles } from "./components/styles/Globals.styled";
 import { NavBar } from "./components/layout/NavBar";
+import { TopBanner } from "./components/layout/TopBanner";
 const  App = () =>{
   const theme = {
     colors: {
@@ -19,6 +20,7 @@ const  App = () =>{
     <>
     <ThemeProvider theme={theme}>
     <GlobalStyles />
+    <TopBanner />
     <NavBar />
     </ThemeProvider>
     </>

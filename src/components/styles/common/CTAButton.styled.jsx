@@ -11,7 +11,7 @@ border: 2px solid ${({ theme })=> theme.colors.green};
 border-radius: 5px;
 font-size: 22px;
 font-family: "Poppins",sans-serif;
-font-weight: 500;
+font-weight: 700;
 cursor: pointer;
 display: inline-block;
 

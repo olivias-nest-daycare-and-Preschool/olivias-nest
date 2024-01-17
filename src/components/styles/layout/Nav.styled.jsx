@@ -100,7 +100,8 @@ export const NavList = styled.ul`
 display: flex;
 align-items: center;
 justify-content:flex-end;
-font-size: 22px;
+font-size: 23px;
+font-weight: 700;
 flex-wrap: wrap;
 
 @media(max-width: ${({ theme })=> theme.mobile}){
