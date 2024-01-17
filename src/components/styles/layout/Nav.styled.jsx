@@ -29,6 +29,7 @@ export const Nav = styled.nav`
     transition: all 1s ease-in-out;
     background: rgba(2,12,27,0.8);
     color: ${({theme})=>theme.colors.white};
+    top: ${({scrollDirection})=> scrollDirection === "down" ? "-80px":"40px"};
 `;
 
 
@@ -40,7 +41,8 @@ border-radius: 50%;
 
 export const MenuIcon = styled.div`
 cursor: pointer;
-background: ${({ theme,menuopen})=> menuopen ? "none":theme.colors.lightNavyBlue};
+background: ${({ theme,menuopen}) => 
+ menuopen ? "none":theme.colors.lightNavyBlue};
 transition:${({theme})=> theme.transition};
 padding: 0.7rem;
 border-radius: 5px;
@@ -98,7 +100,7 @@ export const NavList = styled.ul`
 display: flex;
 align-items: center;
 justify-content:flex-end;
-font-size: 14px;
+font-size: 22px;
 flex-wrap: wrap;
 
 @media(max-width: ${({ theme })=> theme.mobile}){
@@ -150,4 +152,42 @@ letter-spacing: 1.5px;
         width: 100%;
     }
 }
+`;
+
+
+export const Profile = styled.div`
+display: none; 
+
+@media(max-width: ${({theme})=> theme.mobile}){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        height: 9rem;
+        width: auto;
+        border-radius: 50%;
+        display: block;
+        margin: 1.5rem 0;
+    }
+}
+`;
+
+export const SocialIcons = styled.div`
+display: none;
+
+
+@media(max-width: ${({ theme })=>theme.mobile}){
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a{
+        margin: 0 0.5rem;
+        font-size: 2rem;
+        
+    }
+}
+
 `;
