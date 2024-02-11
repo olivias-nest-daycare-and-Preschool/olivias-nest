@@ -13,6 +13,6 @@ export const  HomeSection = () =>{
                 >Admissions</CTAButton>
             </div>
         </StyledHomeContent>
-    </StyledHomeSection>
+    </StyledHomeSection> 
      </>
 };

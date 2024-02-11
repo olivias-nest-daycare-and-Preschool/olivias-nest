@@ -121,7 +121,7 @@ flex-wrap: wrap;
 
 
 export const NavItem = styled.li`
-margin: 0.2rem 0.7rem;
+margin: 1rem 5rem;
 
 &:last-child {
     margin-right: 0;

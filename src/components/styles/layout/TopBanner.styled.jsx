@@ -32,4 +32,6 @@ font-weight: 400;
         a{
             color: ${({ theme })=> theme.colors.black};
         }
+        position: 80px;
+        width: 100%;
 `;
