@@ -43,7 +43,7 @@ hr{
         ${({ theme })=> theme.colors.purple} 100%
     );
     border: 0;
-    height: 1px;
+    height: 2px;
 }
 
 ::-webkit-scrollbar{

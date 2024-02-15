@@ -23,9 +23,8 @@ const blink = keyframes`
 export const StyledHomeSection = styled.section`
 width: 100%;
 height: 90vh;
-background:
-url("./images/landing.jpg") center no-repeat;
-background-size: contain;
+/* background:url("./images/landing.jpg") center no-repeat; */
+background-size: auto;
 position: relative;
 display: flex;
 align-items: center;
@@ -33,8 +32,6 @@ justify-content: center;
 text-align: center;
 margin-top: 40px;
 `;
-
-
 export const StyledHomeContent = styled.div`
 width: 100%;
 max-width: 58rem;
@@ -87,5 +84,9 @@ font-weight: 700; */
             font-size: 1.3rem;
         }
     }
+
+`;
+ 
+export const WordingsHomeContent = styled.div`
 
 `;

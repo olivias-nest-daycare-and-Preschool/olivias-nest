@@ -1,0 +1,37 @@
+import { SectionHeading } from "../styles/common/SectionHeading.styled";
+import { FacilityDescription, FacilityImageContainer, SingleFacility, SlantCard, StyledFacilitiesSection, Tags } from "../styles/sections/FacilitiesSection.styled";
+import {IndoorFacilities} from "../../data/IndoorFacilities";
+export const FacilitiesSection = () =>{
+    return (
+        <> 
+        <StyledFacilitiesSection id="Facilities">
+            <SectionHeading>
+                <h1>Facilities</h1>
+                <h3>Indoor facilities</h3>
+            </SectionHeading>
+            <div>
+                {IndoorFacilities && IndoorFacilities.map((indoor, index)=>(
+                    <SingleFacility key="index">
+                        <FacilityImageContainer>
+                            <img src={indoor.thumbnail} alt={indoor.title} />
+                            <SlantCard />
+                        </FacilityImageContainer>
+                        <FacilityDescription>
+                            <h1>
+                                {indoor.title}
+                            </h1>
+                            <Tags>
+                                {indoor.tags && indoor.tags.map((tag,tagIndex)=>(
+                                    <span key={tagIndex}>{tag}</span>
+                                ))}
+                            </Tags>
+                            <p>{indoor.paragraph}</p>
+                        </FacilityDescription>
+                    </SingleFacility>
+                ))} 
+            </div>
+        </StyledFacilitiesSection>
+        <hr />
+        </>
+    );
+};

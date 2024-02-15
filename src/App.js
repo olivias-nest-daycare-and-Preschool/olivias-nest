@@ -5,6 +5,10 @@ import { TopBanner } from "./components/layout/TopBanner";
 import { HomeSection } from "./components/sections/HomeSection";
 import { Container } from "./components/styles/common/Container.styled";
 import { AboutSection } from "./components/sections/AboutSection";
+import { FacilitiesSection } from "./components/sections/FacilitiesSection";
+import { GallerySection } from "./components/sections/GallerySection";
+import { ContactSection } from "./components/sections/ContactSection";
+import { Footer } from "./components/layout/Footer";
 const  App = () =>{
   const theme = {
     colors: {
@@ -28,7 +32,11 @@ const  App = () =>{
     <HomeSection />
     <Container>
       <AboutSection />
+      <FacilitiesSection />
+      <GallerySection />
+      <ContactSection />
     </Container>
+    <Footer />
     </ThemeProvider>
     </>
   );

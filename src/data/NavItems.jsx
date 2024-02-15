@@ -9,23 +9,23 @@ export const NavItems = [
     },
     {
         href: "#AboutUs",
-        text: "About-Us",
-    },
-    {
-        href: "#Gallery",
-        text: "Gallery",
+        text: "About Us",
     },
     {
         href: "#Facilities",
         text: "Facilities",
     },
     {
-        href: "#ContactUs",
-        text: "Contact-Us",
-    },
-    {
         href: "#Co-curricular",
         text: "Co-curricular",
+    },
+    {
+        href: "#Transport",
+        text: "Transport",
+    },
+    {
+        href: "#Gallery",
+        text: "Gallery",
     },
     {
         hasSocialIcons: true,

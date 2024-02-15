@@ -1,8 +1,8 @@
-import { StyledHomeContent, StyledHomeSection } from "../styles/sections/HomeSection.styled";
+import { StyledHomeContent, StyledHomeSection} from "../styles/sections/HomeSection.styled";
 import { CTAButton } from "../styles/common/CTAButton.styled";
 export const  HomeSection = () =>{
     return <> 
-    <StyledHomeSection>
+    <StyledHomeSection id="Home">
         <StyledHomeContent>
             <h1>Olivia's Nest International.</h1>
             <h3>Daycare & Pre-School</h3>
