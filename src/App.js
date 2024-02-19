@@ -1,3 +1,4 @@
+import React from "react";
 import {ThemeProvider} from "styled-components";
 import { GlobalStyles } from "./components/styles/Globals.styled";
 import { NavBar } from "./components/layout/NavBar";
@@ -29,8 +30,8 @@ const  App = () =>{
     <GlobalStyles />
     <TopBanner />
     <NavBar />
-    <HomeSection />
     <Container>
+    <HomeSection />
       <AboutSection />
       <FacilitiesSection />
       <GallerySection />

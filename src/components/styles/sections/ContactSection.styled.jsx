@@ -31,6 +31,7 @@ div{
         display: flex;
         align-items: center;
         margin: 0 2rem 2rem 0;
+        font-size: 1.9rem;
         span, a{
             margin-right:0.5rem;
         }
@@ -40,7 +41,7 @@ div{
     flex-direction: column;
     p{
         margin: 0 0 2rem 0;
-        font-size: 16px;
+        font-size: 1.9rem;
     }
 }
 }

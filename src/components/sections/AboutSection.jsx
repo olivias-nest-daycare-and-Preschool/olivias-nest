@@ -44,6 +44,6 @@ export const AboutSection = () =>{
             <CTAButton href="#ContactUs">Admissions</CTAButton>
         </AboutContent>
     </StyledAboutSection>
-    {/* <hr/> */}
+    <hr/>
     </>
 };

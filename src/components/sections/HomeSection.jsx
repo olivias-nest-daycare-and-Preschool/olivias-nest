@@ -1,8 +1,11 @@
-import { StyledHomeContent, StyledHomeSection} from "../styles/sections/HomeSection.styled";
+import { StyledHomeContent, StyledHomeSection,HomeImageStyled} from "../styles/sections/HomeSection.styled";
 import { CTAButton } from "../styles/common/CTAButton.styled";
 export const  HomeSection = () =>{
     return <> 
     <StyledHomeSection id="Home">
+    <HomeImageStyled>
+        <img src="./images/landing.jpg" alt="landing page" />
+    </HomeImageStyled>
         <StyledHomeContent>
             <h1>Olivia's Nest International.</h1>
             <h3>Daycare & Pre-School</h3>
@@ -14,5 +17,6 @@ export const  HomeSection = () =>{
             </div>
         </StyledHomeContent>
     </StyledHomeSection> 
+    <hr />
      </>
 };

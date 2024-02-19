@@ -23,19 +23,33 @@ const blink = keyframes`
 export const StyledHomeSection = styled.section`
 width: 100%;
 height: 90vh;
-/* background:url("./images/landing.jpg") center no-repeat; */
-background-size: auto;
-position: relative;
+/* background:url("./images/landing.jpg") center no-repeat;
+background-size: auto; */
+/* position: relative; */
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: flex-end;
 text-align: center;
 margin-top: 40px;
+min-height: 90vh;
+padding: 10rem 0 5rem 0;
+width: 100%;
+/* min-height: 90vh;
+padding: 10rem 0 5rem 0;
+width: 100%; */
 `;
 export const StyledHomeContent = styled.div`
-width: 100%;
+//start 
+/* display: flex;
+align-items: center;
+justify-content: flex-end;
+@media(max-width: ${({theme})=> theme.mobile}){
+    flex-direction: column-reverse;
+} */
+//end
+width: 90%;
 max-width: 58rem;
-color: ${({ theme })=> theme.colors.green};
+color: ${({ theme })=> theme.colors.white};
 text-transform: uppercase;
 /* font-size: 22px;
 font-weight: 700; */
@@ -55,8 +69,8 @@ font-weight: 700; */
     margin: 1.5rem 0;
     background: linear-gradient(
         to right,
-        ${({theme})=> theme.colors.green} 0%,
-        ${({theme})=> theme.colors.purple} 100%
+        ${({theme})=> theme.colors.white} 0%,
+        ${({theme})=> theme.colors.green} 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -86,7 +100,26 @@ font-weight: 700; */
     }
 
 `;
- 
-export const WordingsHomeContent = styled.div`
 
+export const HomeImageStyled = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+flex: 1;
+position: relative;
+perspective: 1000px;
+img{
+    width: 100%;
+    border-radius: 20px;
+    z-index: 1;
+ }
+ @media(max-width: ${({theme})=> theme.mobile}){
+    margin-top: 3rem;
+    justify-content: flex-start;
+    img{
+        width: 80%;
+        border-radius: 9px;
+        margin-bottom: 2rem;
+    }
+ }
 `;

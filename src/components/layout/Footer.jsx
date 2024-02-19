@@ -10,6 +10,7 @@ export const Footer = () =>{
             <a href="#Facilities">Facilities</a>
             <a href="#Co-curricular">Co-curricular</a>
             </FooterNav>
+            Olivias' Nest 👶
             <DeveloperInfo>
                 All rights reserved
             </DeveloperInfo>
