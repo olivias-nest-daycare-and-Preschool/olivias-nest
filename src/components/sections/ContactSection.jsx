@@ -5,7 +5,7 @@ import { ContactInfo, DetailsWrapper, FormWrapper, StyledContactSection } from "
 export const ContactSection = () =>{
     return (
         <>
-        <StyledContactSection id="ContactUs">
+        <StyledContactSection id="/contact-us">
             <SectionHeading>
                 <h1>Contact Us!</h1>
                 <p>contact us</p>

@@ -4,27 +4,27 @@ export const NavItems = [
         isProfile: true,
     },
     {
-        href: "#Home",
+        href: "/",
         text: "Home",
     },
     {
-        href: "#AboutUs",
+        href: "/AboutUs",
         text: "About Us",
     },
     {
-        href: "#Facilities",
+        href: "/Facilities",
         text: "Facilities",
     },
     {
-        href: "#Co-curricular",
+        href: "/Co-curricular",
         text: "Co-curricular",
     },
     {
-        href: "#Transport",
+        href: "/Transport",
         text: "Transport",
     },
     {
-        href: "#Gallery",
+        href: "/Gallery",
         text: "Gallery",
     },
     {

@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {ThemeProvider} from "styled-components";
 import { GlobalStyles } from "./components/styles/Globals.styled";
 import { NavBar } from "./components/layout/NavBar";
@@ -10,6 +11,9 @@ import { FacilitiesSection } from "./components/sections/FacilitiesSection";
 import { GallerySection } from "./components/sections/GallerySection";
 import { ContactSection } from "./components/sections/ContactSection";
 import { Footer } from "./components/layout/Footer";
+import { TransportSection } from "./components/sections/TransportSection";
+import { HomeContainer } from "./components/styles/common/HomeConatiner";
+import { Cocurricular } from "./components/sections/Co-curricular";
 const  App = () =>{
   const theme = {
     colors: {
@@ -28,16 +32,26 @@ const  App = () =>{
     <>
     <ThemeProvider theme={theme}>
     <GlobalStyles />
+    <Router>
     <TopBanner />
     <NavBar />
+    <HomeContainer>
+      <Routes>
+        <Route path="/" element={<HomeSection />} />
+      </Routes>
+    </HomeContainer>
     <Container>
-    <HomeSection />
-      <AboutSection />
-      <FacilitiesSection />
-      <GallerySection />
-      <ContactSection />
+      <Routes>
+      <Route path="/AboutUs" element={<AboutSection />} />
+      <Route path="/Facilities" element={<FacilitiesSection />} />
+      <Route path="/Gallery" element={<GallerySection />} />
+      <Route path="/Contact" element={<ContactSection />} />
+      <Route path="/Transport" element ={<TransportSection /> } />
+      <Route path="/Co-curricular" element ={<Cocurricular />} />
+      </Routes>
     </Container>
     <Footer />
+    </Router>
     </ThemeProvider>
     </>
   );

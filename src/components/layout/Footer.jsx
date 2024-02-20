@@ -1,24 +1,28 @@
-import { DeveloperInfo, FooterNav, StyledFooter} from "../styles/layout/Footer.styled";
-
+import { CopyRightInfo, DeveloperInfo, FooterContent, FooterLogo, FooterNav, StyledFooter} from "../styles/layout/Footer.styled";
+import { Link } from "react-router-dom";
 export const Footer = () =>{
     return (
         <>
         <StyledFooter>
-            <FooterNav>
-            <a href="#AboutUs">About Us</a>
-            <a href="#Gallery">Gallery</a>
-            <a href="#Facilities">Facilities</a>
-            <a href="#Co-curricular">Co-curricular</a>
-            </FooterNav>
-            Olivias' Nest 👶
-            <DeveloperInfo>
-                All rights reserved
-            </DeveloperInfo>
-            <div>
-                &copy;
-                {new Date().getFullYear()}
-            </div>
-        </StyledFooter>
+      <FooterContent>
+        <FooterLogo>
+            <img src="./images/nest.jpg" alt="olivia's nest logo" />
+        </FooterLogo>
+        <FooterNav>
+          <Link to="/">Home</Link>
+          <Link to="/AboutUs">About Us</Link>
+          <Link to="/Gallery">Gallery</Link>
+          <Link to="/Facilities">Facilities</Link>
+          <Link to="/Co-curricular">Co-curricular</Link>
+          <Link to="/contact-us">Contact Us</Link>
+        </FooterNav>
+        <FooterLogo>
+            <img src="./images/nest.jpg" alt="olivia's nest logo" />
+        </FooterLogo>
+      </FooterContent>
+      <DeveloperInfo>All rights reserved</DeveloperInfo>
+      <CopyRightInfo>&copy;{new Date().getFullYear()}</CopyRightInfo>
+    </StyledFooter>
         </>
     );
 };

@@ -10,7 +10,7 @@ export const StyledGallerySection = styled.section`
 
 export const GalleryItems = styled.div`
 display: flex;
-/* flex-wrap: wrap; */
+flex-wrap: wrap;
 
 @media(max-width: ${({theme})=>theme.mobile}){
     flex-direction: column;
@@ -26,7 +26,7 @@ export const SingleGallery  = styled.div`
     justify-content: start;
     flex: 1;
     padding: 1.2rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
     transition: all 300ms ease-in-out;
 
     &:hover{
@@ -68,4 +68,27 @@ width: 4.5rem;
 color: ${({theme})=>theme.colors.navyBlue};
 background: ${({theme})=>theme.colors.white};
 border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+`;
+
+export const GalleryImage = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+flex: 1;
+position: relative;
+perspective: 1000px;
+img{
+    width: 100%;
+    border-radius: 20px;
+    z-index: 3;
+ }
+ @media(max-width: ${({theme})=> theme.mobile}){
+    margin-top: 3rem;
+    justify-content: flex-start;
+
+    img{
+        width: 80%;
+        border-radius: 9px;
+    }
+ }
 `;

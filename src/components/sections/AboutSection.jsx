@@ -3,7 +3,7 @@ import { CTAButton } from "../styles/common/CTAButton.styled";
 
 export const AboutSection = () =>{
     return <> 
-    <StyledAboutSection id="AboutUs">
+    <StyledAboutSection id="/AboutUs">
         <ImageContainer>
             <StyledImage src="./images/nest.jpg" alt="olivia's nest jpg file"/>
             <DullCircle/>
