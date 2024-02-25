@@ -1,5 +1,13 @@
-import styled from "styled-components"
+import {styled,keyframes} from "styled-components"
 
+const rotate = keyframes `
+from{
+    transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+}
+`;
 
 export const StyledAboutSection = styled.section`
 min-height: 90vh;
@@ -84,4 +92,41 @@ export const StyledHeading = styled.div`
 font-size: 3rem;
 margin-bottom: 20px;
 color: ${({theme})=> theme.colors.orange};
+`;
+
+export const HeroSocialIcons = styled.div `
+position:fixed;
+right: 20px;
+
+@media (max-width: ${({ theme })=> theme.mobile}){
+    bottom: 50px;
+}
+`;
+
+export const SocialIcon =styled.a `
+height: 3rem;
+width: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+background-color: rgba(249,105,14,0.1);
+cursor: pointer;
+font-size: 14px;
+margin-bottom: 10px;
+
+svg{ 
+    color: rgba(249,105,14);
+    transition: ${({ theme }) => theme.transition};
+}
+&:hover{
+    svg{
+    animation: ${rotate} 1.5s linear infinite;
+    ${({ theme }) => theme.colors.white};
+    }
+}
+@media(max-width: ${({ theme })=>theme.mobile}){
+    height: 2.2rem;
+    width: 2.2rem;
+}
 `;

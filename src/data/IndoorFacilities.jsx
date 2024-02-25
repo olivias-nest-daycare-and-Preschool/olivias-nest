@@ -1,10 +1,12 @@
 export const IndoorFacilities = [
     {
-        thumbnail: "./images/stretching.jpg",
-        title: "Barlet",
-        tags: ["fitness", "outdoor","classrooms"],
-        paragraph: "Fitness is part of our culture, we indulge our kids into sports and fitness."+
-        "We offer various sports and games."
+        thumbnail: "./images/beddings.jpg",
+        title: "Sleeping area",
+        tags: ["sleeping area", "facilities","olivia's nest"],
+        paragraph: "We have one of the world-class sleeping areas which is comfy and very well suited for "+
+        "kids to sleep on. The designs of the beds are custom-made and made of the best making sleeping hour more"+
+        "rewarding to a child's overall performance and relaxation. A quality nap time reduces fatigue and so we chose"+
+        "to make it one of a kind and enjoyable to our kids." 
     },
     {
         thumbnail: "./images/lockers.jpg",

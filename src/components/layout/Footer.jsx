@@ -1,4 +1,4 @@
-import { CopyRightInfo, DeveloperInfo, FooterContent, FooterLogo, FooterNav, StyledFooter} from "../styles/layout/Footer.styled";
+import {CopyRightInfo, DeveloperInfo, FooterContent,FooterLogo,FooterNav, StyledFooter} from "../styles/layout/Footer.styled";
 import { Link } from "react-router-dom";
 export const Footer = () =>{
     return (
@@ -20,6 +20,7 @@ export const Footer = () =>{
             <img src="./images/nest.jpg" alt="olivia's nest logo" />
         </FooterLogo>
       </FooterContent>
+      <DeveloperInfo>Olivia's Nest International.</DeveloperInfo>
       <DeveloperInfo>All rights reserved</DeveloperInfo>
       <CopyRightInfo>&copy;{new Date().getFullYear()}</CopyRightInfo>
     </StyledFooter>

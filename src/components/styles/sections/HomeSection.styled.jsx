@@ -21,14 +21,14 @@ const blink = keyframes`
 
 export const StyledHomeSection = styled.section`
  width: 100%;
-  height: 90vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  margin-top: 40px;
-  margin-right: 10rem;
+ height: 90vh;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ text-align: center;
+ margin-top: 40px;
+ margin-right: 10rem;
   
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-top: 3rem;
@@ -94,14 +94,15 @@ div{
 `;
 
 export const HomeImageStyled = styled.div`
-  display: flex;
-  align-items: center;
+  display:flex;
+  align-items: flex-start;
   justify-content: center;
   flex: 1;
   position: relative;
   perspective: 1000px;
   margin-right: 0; /* Changed from 4rem to 0 */
   margin-left: auto; /* Added to push to the right edge */
+  z-index: 4;
 `;
 export const HomeSectionImageStyled = styled.div`
 img {
@@ -125,10 +126,22 @@ export const BaitSection = styled.section`
   padding: 10rem 0 5rem 0;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: left;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+export const Bait2Section = styled.div`
+min-height: 40vh;
+padding: 10rem 0 5rem 0;
+width: 100%;
+display: flex;
+align-items: start;
+justify-content: left;
+@media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -234,3 +247,24 @@ export const CardButton = styled.a`
   cursor: pointer;
 `;
 
+
+
+
+export const Header = styled.header`
+background-color: #333;
+color: white;
+padding: 20px 0; 
+text-align: center;
+`;
+
+export const Main = styled.main`
+padding: 20px 0;
+text-align: center;
+`;
+
+export const Footer = styled.footer`
+background-color: #333;
+color: white;
+padding: 20px 0;
+text-align: center;
+`;

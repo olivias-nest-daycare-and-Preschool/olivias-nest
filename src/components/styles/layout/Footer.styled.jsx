@@ -2,15 +2,16 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   width: 100%;
+  height: 25vh;
   padding: 2.5rem;
   color: #7e91ae;
   text-align: center;
-  font-size: 16px;
-  display: flex;
+  font-size: 20px;
+  display: block;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: grey;
+  background-color: #2b2e52;
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
@@ -21,23 +22,36 @@ export const FooterLogo = styled.div`
   margin-right: 0rem;
   font-weight: bold;
   img {
-    height: 9rem;
+    height: 4.5rem;
     width: auto;
     border-radius: 50%;
     display: block;
     margin: 1.5rem 0;
+  }
+   @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    img{
+      height: 4.5rem;
+      width: auto;
+      border-radius: 50%;
+      display: block;
+      margin: 1.5rem 0;
+    }
   }
 `;
 
 export const FooterNav = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center; 
   a {
     margin-right: 1.5rem;
     margin-bottom: 0.5rem;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
   }
 
@@ -58,8 +72,8 @@ export const FooterNav = styled.div`
 
 export const DeveloperInfo = styled.div`
   margin-top: 0.7rem;
-  font-size: 0.8rem;
-  color: black;
+  font-size: 1.9rem;
+  color: white;
 `;
 
 export const FooterContent = styled.div`
@@ -77,6 +91,6 @@ export const FooterContent = styled.div`
 
 export const CopyRightInfo = styled.div`
   margin-top: 0.7rem;
-  font-size: 0.8rem;
-  color: black;
+  font-size: 1.9rem;
+  color: white;
 `;

@@ -36,7 +36,7 @@ flex: 1;
 position: relative;
 perspective: 1000px;
 img{
-    width: 90%;
+    width: 80%;
     border-radius: 20px;
     transform: rotateY(30deg);
     transition: ${({theme})=>theme.transition};
@@ -64,7 +64,7 @@ img{
 
 export const SlantCard = styled.div`
 position: absolute;
-width: 90%;
+width: 80%;
 height: 100%;
 background: linear-gradient(
     to right,

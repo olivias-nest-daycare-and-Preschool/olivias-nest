@@ -1,4 +1,4 @@
-import { StyledHomeContent, StyledHomeSection,HomeImageStyled, BaitSection, FeatureItem,
+import {BaitSection, FeatureItem,
 FeatureImage,FeatureContent,FeatureTitle,
 FeatureDescription,
 SomeDataSection,
@@ -9,47 +9,25 @@ CardContent,
 CardTitle,
 CardText,
 CardButton,
-HomeSectionImageStyled,
-WordingsStyled,} from "../styles/sections/HomeSection.styled";
-import { CTAButton } from "../styles/common/CTAButton.styled";
-import { Link } from "react-router-dom";
+Bait2Section,} from "../styles/sections/HomeSection.styled";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
-import { ContactForm, ContactFormContainer, EmailUsButton, FormCheckbox, FormInput, FormLabel, ImageCardContainer, ImageCardImage } from "../styles/sections/ContactForm.styled";
+import { ContactForm, ContactFormContainer, 
+  EmailUsButton, FormCheckbox, FormInput, FormLabel, 
+  ImageCardContainer, ImageCardImage } from "../styles/sections/ContactForm.styled";
+import { HeroSocialIcons, SocialIcon } from "../styles/sections/AboutSection.styled";
+import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { FacilityImageContainer, SingleFacility } from "../styles/sections/FacilitiesSection.styled";
 export const  HomeSection = () =>{
     return <> 
-{/* 
-    <StyledHomeSection id="/">
-    <HomeImageStyled>
-        <img src="./images/about_us.jpg" alt="landing page" />
-    </HomeImageStyled>
-        <StyledHomeContent>
-        <h1>Olivia's Nest International.</h1>
-        <h3>Daycare & Pre-School</h3>
-        <p>A happy place to be, where love is shown daily.</p>
-            <div>
-                <Link to="/contact-us">
-                    <CTAButton>Contact Us</CTAButton>
-                </Link>
-                <Link to="/admissions">
-                    <CTAButton primary margin="0 0 0 20px">Admissions</CTAButton>
-                </Link>
-            </div>
-        </StyledHomeContent>
-    </StyledHomeSection>  */}
-<BaitSection>
-  <HomeSectionImageStyled>
-    <img src="./images/about_us.jpg" alt="landing page" />
-  </HomeSectionImageStyled>
-  <WordingsStyled>
-    <StyledHomeContent>
-    <h1>Olivia's Nest International.</h1>
-    <h3>Daycare & Pre-School</h3>
-    <p>A happy place to be, where love is shown daily.</p>
-    </StyledHomeContent>
-  </WordingsStyled>
-</BaitSection>  
-
     <BaitSection>
+      <SingleFacility>
+        <FacilityImageContainer>
+        <img src="./images/about_us.jpg" alt="landing page" />
+        </FacilityImageContainer>
+      </SingleFacility>
+    </BaitSection>
+<hr />
+    <Bait2Section>
   <FeatureItem>
     <FeatureImage src="./images/paperplane.png" alt="learning is fun" />
     <FeatureContent>
@@ -71,8 +49,16 @@ export const  HomeSection = () =>{
       <FeatureDescription>We believe that learning should be interactive and fun.</FeatureDescription>
     </FeatureContent>
   </FeatureItem>
-</BaitSection>
-
+</Bait2Section>
+<CardContainer>
+  <Card>
+    <CardImage src="./images/P.E.jpg" alt="" />
+  </Card>
+  <Card>
+    <CardImage src="./images/P.E.jpg" alt="" />
+  </Card>
+</CardContainer>
+<hr />
 <SomeDataSection>
       <CardContainer>
         <Card>
@@ -152,6 +138,16 @@ export const  HomeSection = () =>{
         <ImageCardImage src="./images/pexels-lukas-296301.jpg" alt="Image" />
       </ImageCardContainer>
     </BaitSection>
-<hr />
+    <HeroSocialIcons>
+      <SocialIcon href="https://www.facebook.com/oliviasnest" target="_blank">
+        <FaFacebook />
+      </SocialIcon>
+      <SocialIcon href="https://api.whatsapp.com/send?phone=%2B254114592463&data=ARBW7i2sNRnh_SYg--pLwrcblva2Sv2XMulYjeVNdJPkAAwwQhvptz5QKOPIj7sX9zoF9WtypFACzr9TJrgt0IECJmJUGeP47zqbWdsrwyhiJmlgxumOZzuLcAa2F-cgiI2UB-ZDwc9GY64pJbAE6VPP2Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR3yzQow8PHmNvcndOF-JWg2OZboLEZ9g5syQ6AjO5eokZ5pL1TctkPbAUM" target="_blank">
+        <FaWhatsapp/>
+      </SocialIcon>
+      <SocialIcon href="mailto:oliviasnest1@gmail.com" target="_blank">
+        <FaEnvelope/>
+      </SocialIcon>
+    </HeroSocialIcons>
      </>
 };
