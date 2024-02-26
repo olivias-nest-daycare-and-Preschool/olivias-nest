@@ -9,23 +9,36 @@ CardContent,
 CardTitle,
 CardText,
 CardButton,
-Bait2Section,} from "../styles/sections/HomeSection.styled";
+Bait2Section,
+HeroContent,} from "../styles/sections/HomeSection.styled";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
+import { CTAButton } from "../styles/common/CTAButton.styled";
 import { ContactForm, ContactFormContainer, 
   EmailUsButton, FormCheckbox, FormInput, FormLabel, 
   ImageCardContainer, ImageCardImage } from "../styles/sections/ContactForm.styled";
 import { HeroSocialIcons, SocialIcon } from "../styles/sections/AboutSection.styled";
 import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
-import { FacilityImageContainer, SingleFacility } from "../styles/sections/FacilitiesSection.styled";
 export const  HomeSection = () =>{
     return <> 
-    <BaitSection>
-      <SingleFacility>
-        <FacilityImageContainer>
-        <img src="./images/about_us.jpg" alt="landing page" />
-        </FacilityImageContainer>
-      </SingleFacility>
-    </BaitSection>
+
+    <SomeDataSection>
+      <CardContainer>
+      <Card>
+          <CardImage src="./images/about_us.jpg" alt="landing page" />
+        </Card>
+        <Card>
+          <CardContent>
+            <HeroContent>
+            <h1>Olivia's Nest International</h1>
+            </HeroContent>
+            <div>
+                <CTAButton href="/AboutUs">About Us</CTAButton>
+                <CTAButton href="/Facilities" primary margin="0 0 0 20px">Facilities</CTAButton>
+            </div>
+          </CardContent>
+        </Card>
+      </CardContainer>
+    </SomeDataSection>
 <hr />
     <Bait2Section>
   <FeatureItem>

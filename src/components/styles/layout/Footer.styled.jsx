@@ -22,7 +22,7 @@ export const FooterLogo = styled.div`
   margin-right: 0rem;
   font-weight: bold;
   img {
-    height: 4.5rem;
+    height: 9rem;
     width: auto;
     border-radius: 50%;
     display: block;
@@ -33,13 +33,38 @@ export const FooterLogo = styled.div`
     align-items: center;
     justify-content: center;
     img{
-      height: 4.5rem;
+      height: 9rem;
       width: auto;
       border-radius: 50%;
       display: block;
       margin: 1.5rem 0;
     }
   }
+`;
+
+export const ContactInfo = styled.div`
+margin-right: 0rem;
+font-weight: bold;
+a{
+  height: 9rem;
+  width: auto;
+  display: block;
+  margin: 1.5rem 0;
+}
+@media (min-width: 768px) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  a{
+    height: 9rem;
+  width: auto;
+  display: block;
+  margin: 1.5rem 0; 
+  }
+  div{
+
+  }
+}
 `;
 
 export const FooterNav = styled.div`
@@ -93,4 +118,45 @@ export const CopyRightInfo = styled.div`
   margin-top: 0.7rem;
   font-size: 1.9rem;
   color: white;
+`;
+
+//Footer social icons
+
+export const FooterSocialIcons = styled.div`
+display: flex;
+
+@media(max-width: ${({ theme })=>theme.mobile}){
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a{
+        margin: 0 0.5rem;
+        font-size: 2rem;
+        
+    }
+}
+
+`;
+
+export const FooterNavLink = styled.a`
+text-transform: uppercase;
+color: ${({theme})=> theme.colors.white};
+letter-spacing: 1.5px;
+
+&::after{
+    content:"";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background: ${({theme})=> theme.colors.orange};
+    transition: all ease-in-out 300ms;
+}
+
+&:hover{
+    &::after{
+        width: 100%;
+    }
+}
 `;

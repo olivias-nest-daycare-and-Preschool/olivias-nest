@@ -12,6 +12,7 @@ border-radius: 5px;
 font-size: 22px;
 font-family: "Poppins",sans-serif;
 font-weight: 700;
+border-radius: 20px;
 cursor: pointer;
 display: inline-block;
 
