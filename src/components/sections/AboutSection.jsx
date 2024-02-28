@@ -17,7 +17,7 @@ export const AboutSection = () =>{
         </ImageContainer> */}
         <AboutContent>
             <StyledHeading>
-              About Olivia's Nest - <span>👶.</span> 
+              A word from our Director Dr. Sally,  at Olivia's Nest - <span>👶.</span> 
             </StyledHeading>
             <p>
             Olivia's Nest is an Edu-care center for kids all over Nairobi. We cater for kids starting with kids in

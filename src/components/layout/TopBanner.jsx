@@ -8,10 +8,10 @@ export const TopBanner = () =>{
             <a href="mailto:oliviasnest1@gmail.com">🙋‍♀️ oliviasnest1@gmail.com 🙋‍♀️</a>
         </StyledBannerSection>
         <StyledBannerSection showOnMobile>
-            <a href="#ContactUs">👶 ongoing-admissions👶 </a>
+            <a href="/ContactUs">👶 Welcome to our school👶 </a>
         </StyledBannerSection>
         <StyledBannerSection>
-            <a href="#Facilities"> 🏫what we offer🏫 </a>
+            <a href="/Facilities"> 🏫what we offer🏫 </a>
         </StyledBannerSection>
     </StyledTopBanner>
     </>

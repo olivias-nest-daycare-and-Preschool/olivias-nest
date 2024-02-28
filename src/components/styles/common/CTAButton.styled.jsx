@@ -15,6 +15,7 @@ font-weight: 700;
 border-radius: 20px;
 cursor: pointer;
 display: inline-block;
+margin-right: 40px;
 
 &:hover{
     background: ${({primary,theme})=> 

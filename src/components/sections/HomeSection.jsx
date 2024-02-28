@@ -10,7 +10,10 @@ CardTitle,
 CardText,
 CardButton,
 Bait2Section,
-HeroContent,} from "../styles/sections/HomeSection.styled";
+HeroContent,
+ShortSomeDataSection,
+CustomImageCard,
+CustomWordingCard} from "../styles/sections/HomeSection.styled";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import { CTAButton } from "../styles/common/CTAButton.styled";
 import { ContactForm, ContactFormContainer, 
@@ -20,120 +23,150 @@ import { HeroSocialIcons, SocialIcon } from "../styles/sections/AboutSection.sty
 import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
 export const  HomeSection = () =>{
     return <> 
-
-    <SomeDataSection>
+    <ShortSomeDataSection>
+      
       <CardContainer>
-      <Card>
-          <CardImage src="./images/about_us.jpg" alt="landing page" />
-        </Card>
-        <Card>
-          <CardContent>
-            <HeroContent>
-            <h1>Olivia's Nest International</h1>
-            </HeroContent>
-            <div>
-                <CTAButton href="/AboutUs">About Us</CTAButton>
-                <CTAButton href="/Facilities" primary margin="0 0 0 20px">Facilities</CTAButton>
-            </div>
-          </CardContent>
-        </Card>
+        <CustomImageCard>
+          <CardImage src="./images/landing2.jpg" alt="landing page" />
+        </CustomImageCard>
+        <CustomWordingCard>
+        <HeroContent>
+        <h1>Olivia's Nest International.</h1>
+        <h3>Daycare and PreSchool</h3>
+        <p>A happy place to be, where love is shown daily.</p>
+        <div>
+          <CTAButton href="/AboutUs">About Us</CTAButton>
+          <CTAButton href="/Facilities" primary margin="0 0 0 20px">Facilities</CTAButton>
+        </div>
+      </HeroContent>
+        </CustomWordingCard>
       </CardContainer>
-    </SomeDataSection>
+    </ShortSomeDataSection>
 <hr />
     <Bait2Section>
   <FeatureItem>
     <FeatureImage src="./images/paperplane.png" alt="learning is fun" />
     <FeatureContent>
       <FeatureTitle>Fun & Learning</FeatureTitle>
-      <FeatureDescription>We believe that learning should be interactive and fun.</FeatureDescription>
+      <FeatureDescription>At Olivia's Nest, we believe that learning should be interactive and fun.
+        We have taken our time to ensure we integrate learning with co-curricular activities.
+      </FeatureDescription>
     </FeatureContent>
   </FeatureItem>
   <FeatureItem>
     <FeatureImage src="./images/babyfood.png" alt="learning is fun" />
     <FeatureContent>
-      <FeatureTitle>Fun & Learning</FeatureTitle>
-      <FeatureDescription>We believe that learning should be interactive and fun.</FeatureDescription>
+      <FeatureTitle>Healthy meals</FeatureTitle>
+      <FeatureDescription>A healthy meal powers our children and sustains them throughout the day.
+        <br />
+        <br />
+        <blockquote>
+        "Health is a relationship between you and your body." 
+        - Terri Guillemets
+        </blockquote>
+        </FeatureDescription>
     </FeatureContent>
   </FeatureItem>
   <FeatureItem>
     <FeatureImage src="./images/mortarboards.png" alt="learning is fun" />
     <FeatureContent>
-      <FeatureTitle>Fun & Learning</FeatureTitle>
-      <FeatureDescription>We believe that learning should be interactive and fun.</FeatureDescription>
+      <FeatureTitle>Expert Teachers</FeatureTitle>
+      <FeatureDescription>
+        We have qualified and certified teachers to ensure that our children at Olivia's Nest 
+        get access to first-class knowledge. The teachers are friendly and fun. The teachers are equipped 
+        as per the newer curriculum.
+      </FeatureDescription>
     </FeatureContent>
   </FeatureItem>
 </Bait2Section>
-<CardContainer>
-  <Card>
-    <CardImage src="./images/P.E.jpg" alt="" />
-  </Card>
-  <Card>
-    <CardImage src="./images/P.E.jpg" alt="" />
-  </Card>
-</CardContainer>
-<hr />
-<SomeDataSection>
-      <CardContainer>
-        <Card>
-          <CardImage src="./images/P.E.jpg" alt="physical education" />
-          <CardContent>
-            <CardTitle>About us</CardTitle>
-            <CardText>Some text about Card 1.</CardText>
-            <CardButton href="/AboutUs">About us</CardButton>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardImage src="./images/basket_ball.JPG" alt="basket ball" />
-          <CardContent>
-            <CardTitle>Our Benefits</CardTitle>
-            <CardText>Some text about Card 2.</CardText>
-            <CardButton href="/Gallery">sports</CardButton>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardImage src="./images/tennis.jpg" alt="lawn tennis" />
-          <CardContent>
-            <CardTitle>Card 3</CardTitle>
-            <CardText>Some text about Card 3.</CardText>
-            <CardButton href="#">Learn More</CardButton>
-          </CardContent>
-        </Card>
-      </CardContainer>
-    </SomeDataSection>
 
-    <SomeDataSection>
+<SomeDataSection>
   <SectionHeading>
     <h1>Facilities & What we offer</h1>
     <h3>Our classes & more</h3>
   </SectionHeading>
   <CardContainer>
         <Card>
-          <CardImage src="./images/P.E.jpg" alt="physical education" />
+          <CardImage src="./images/beds.jpg" alt="king size beds" />
           <CardContent>
-            <CardTitle>About us</CardTitle>
-            <CardText>Some text about Card 1.</CardText>
-            <CardButton href="/AboutUs">About us</CardButton>
+            <CardTitle>Sleeping Area</CardTitle>
+            <CardText>
+              We took part in curating the sleeping area and making it an awesome experience.
+              The experience is just sensational!
+            </CardText>
+            <CardButton href="/Facilities">Facilities</CardButton>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardImage src="./images/study_rooms.JPG" alt="basket ball" />
+          <CardContent>
+            <CardTitle>Classrooms & Lockers</CardTitle>
+            <CardText>
+              We have perfect fitting lockers for our classrooms.
+              The lockers can conjoin during discussions and made separate for 
+              individual assessment.
+            </CardText>
+            <CardButton href="/Gallery">sports</CardButton>
+          </CardContent>
+        </Card>
+      </CardContainer>
+</SomeDataSection>
+<SomeDataSection>
+  <CardContainer>
+  <CardContainer>
+  <Card>
+    <CardImage src="./images/study_2.jpg" alt="" />
+    <CardContent>
+      <CardText>Learning session in progress</CardText>
+      <CardButton href="/Gallery">E-learning</CardButton>
+  </CardContent>
+  </Card>
+  <Card>
+    <CardImage src="./images/toy_room.jpg" alt="" />
+    <CardContent>
+      <CardText>We have toys and toy room where kids full utilize them in the break time.</CardText>
+      <CardButton href="/Gallery">Toy area</CardButton>
+    </CardContent>
+  </Card>
+</CardContainer>
+<hr />
+  </CardContainer>
+</SomeDataSection>
+
+<SomeDataSection>
+<SectionHeading>
+    <h1>Break Session & Kids playing</h1>
+    <h3>Happy hour</h3>
+  </SectionHeading>
+      <CardContainer>
+        <Card>
+          <CardImage src="./images/competition.jpg" alt="physical education" />
+          <CardContent>
+            <CardTitle>Sack racing</CardTitle>
+            <CardText>Kids sack racing during an sport event at the school</CardText>
+            <CardButton href="/Gallery">sack racing</CardButton>
           </CardContent>
         </Card>
         <Card>
           <CardImage src="./images/basket_ball.JPG" alt="basket ball" />
           <CardContent>
-            <CardTitle>Our Benefits</CardTitle>
-            <CardText>Some text about Card 2.</CardText>
-            <CardButton href="/Gallery">sports</CardButton>
+            <CardTitle>Play time</CardTitle>
+            <CardText>basket ball, soccer & bicycle riding at break session</CardText>
+            <CardButton href="/Gallery">Basket ball</CardButton>
+            <CardButton href="/Gallery">riding</CardButton>
+            <CardButton href="/Gallery">soccer</CardButton>
           </CardContent>
         </Card>
         <Card>
           <CardImage src="./images/tennis.jpg" alt="lawn tennis" />
           <CardContent>
-            <CardTitle>Card 3</CardTitle>
-            <CardText>Some text about Card 3.</CardText>
-            <CardButton href="#">Learn More</CardButton>
+            <CardTitle>Tennis</CardTitle>
+            <CardText>Lawn tennis training session in progress.</CardText>
+            <CardButton href="/Gallery">Lawn Tennis</CardButton>
           </CardContent>
         </Card>
       </CardContainer>
-</SomeDataSection>
-
+    </SomeDataSection>
 <BaitSection>
       <ContactFormContainer>
         <h2>Contact Us</h2>
@@ -148,7 +181,7 @@ export const  HomeSection = () =>{
         </ContactForm>
       </ContactFormContainer>
       <ImageCardContainer>
-        <ImageCardImage src="./images/pexels-lukas-296301.jpg" alt="Image" />
+        <ImageCardImage src="./images/wall2.jpg" alt="from outside" />
       </ImageCardContainer>
     </BaitSection>
     <HeroSocialIcons>

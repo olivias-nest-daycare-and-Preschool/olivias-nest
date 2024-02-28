@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   width: 100%;
-  height: 25vh;
+  height: 40vh;
   padding: 2.5rem;
-  color: #7e91ae;
+  color: #20252b;
   text-align: center;
   font-size: 20px;
   display: block;
@@ -22,7 +22,7 @@ export const FooterLogo = styled.div`
   margin-right: 0rem;
   font-weight: bold;
   img {
-    height: 9rem;
+    height: 10rem;
     width: auto;
     border-radius: 50%;
     display: block;
@@ -33,7 +33,7 @@ export const FooterLogo = styled.div`
     align-items: center;
     justify-content: center;
     img{
-      height: 9rem;
+      height: 10rem;
       width: auto;
       border-radius: 50%;
       display: block;

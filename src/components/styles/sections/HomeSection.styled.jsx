@@ -1,24 +1,4 @@
-import styled,{keyframes} from "styled-components";
-
-const typing  = keyframes`
-75%{
-    width: 0ch;
-};
-100%{
-    width: 56ch;
-}
-`;
-
-
-const blink = keyframes`
-0%{
-    border-right: 4px solid rgba(255,255,255,0);
-};
-100%{
-    border-right: 4px solid rgba(255,255,255,1);
-}
-`;
-
+import styled from "styled-components";
 
 export const StyledHomeSection = styled.section`
  width: 100%;
@@ -55,7 +35,6 @@ h1{
     white-space: nowrap;
     width: 39ch;
     margin: auto;
-    animation: ${typing} 5s steps(39), ${blink} 1s ease-in-out 8s infinite;
     border-right: 4px solid rgba(255,255,255,1);
 }
 h3{
@@ -217,11 +196,16 @@ export const Card = styled.div`
   background-color: rgba(0, 0, 0, 0.0);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+
+&:hover{
+    transform: translateY(-1rem);
+}
 `;
 
 export const CardImage = styled.img`
   width: 100%;
-  height: 90%;
+  height: 80%;
   border-radius: 10px;
 `;
 
@@ -230,16 +214,21 @@ export const CardContent = styled.div`
 `;
 
 export const CardTitle = styled.h1`
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  font-weight:200;
   margin-bottom: 0.5rem;
+  font-family: "Poppins",sans-serif;
 `;
 
 export const CardText = styled.p`
   margin-bottom: 1rem;
+  font-size: 2rem;
+  font-family: "Poppins",sans-serif;
 `;
 
 export const CardButton = styled.a`
   display: inline-block;
+  margin-right: 18px;
   padding: 0.5rem 1rem;
   background-color: ${({theme})=> theme.colors.orange};
   color: black;
@@ -247,6 +236,9 @@ export const CardButton = styled.a`
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 20px;
+  font-size: 2rem;
+  font-family: "Poppins",sans-serif;
 `;
 
 
@@ -277,15 +269,14 @@ max-width:58rem;
 color: ${({theme})=>theme.colors.white};
 text-transform: uppercase;
 h1{
-    letter-spacing: 1.2rem;
-    font-size: 2rem;
-    font-weight: 400;
+    letter-spacing: 1.5rem;
+    font-size: 3rem;
+    font-weight: 900;
     overflow: hidden;
     white-space: nowrap;
-    width: 39ch;
+    width: 54ch;
     margin: auto;
-    animation: ${typing} 5s steps(39), ${blink} 1s ease-in-out 8s infinite;
-    border-right: 4px solid rgba(255,255,255,1);
+    /* border-right: 4px solid rgba(255,255,255,1); */
 }
 h3{
     font-size: 4rem;
@@ -298,14 +289,19 @@ h3{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 3rem 0;
 }
 p{
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 400;
     text-transform: none;
+    margin: 3rem 0;
 }
 div{
-    margin: 2.5rem 0;
+    margin: 3rem 0;
+    p{
+      font-style: italic;
+    }
 }
 @media (max-width: ${({theme})=>theme.mobile}){
     h1{
@@ -320,4 +316,55 @@ div{
         font-size: 1.3rem;
     }
 }
+`;
+
+
+export const ShortSomeDataSection = styled.section`
+margin-top: 10rem;
+min-height: 20vh;
+padding: 10rem 0 5rem 0;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+
+export const CTButtonSection = styled.section`
+min-height: 30vh;
+padding: 10rem 0 5rem 0;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+export const  ShortCenter = styled.section`
+min-height: 10vh;
+padding: 10rem 0 5rem 0;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+
+export const CustomImageCard = styled.div`
+  width: 40%;
+  padding: 1rem;
+  margin-right: 1rem;
+  background-color: rgba(0, 0, 0, 0.0);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+
+&:hover{
+    transform: translateY(-1rem);
+}
+`;
+
+export const CustomWordingCard =styled.div`
+width: 50%;
+padding: 1rem;
+background-color: rgba(0, 0, 0, 0.0);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
 `;
