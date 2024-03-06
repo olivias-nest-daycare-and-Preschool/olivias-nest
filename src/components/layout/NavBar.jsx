@@ -18,7 +18,7 @@ const scrollDirection = useScrollDirection("down");
         <div>
         <Nav scrollDirection={scrollDirection}>
             <div>
-                <a href="#Home">
+                <a href="/">
                     <Logo src="./images/logo.png" />
                 </a>
             </div> 
@@ -36,7 +36,7 @@ const scrollDirection = useScrollDirection("down");
                     onClick={() => setMenuopen(false)}
                     >
                          {navItem.isProfile ? (
-                            <NavLink href="#home">
+                            <NavLink href="/">
                                 <Profile>
                                     <img src="./images/nest.jpg" alt="Olivias Nest "/>
                                     <span>Olivia's Nest</span>
@@ -58,7 +58,7 @@ const scrollDirection = useScrollDirection("down");
                                     target="_blank">
                                         <FaWhatsapp/>
                                     </NavLink>
-                                    <NavLink href="#" target="_blank">
+                                    <NavLink href="/" target="_blank">
                                         <FaTiktok/>
                                     </NavLink>
                                 </SocialIcons>
@@ -66,7 +66,7 @@ const scrollDirection = useScrollDirection("down");
                          }
                          {
                             navItem.hasCTA ? (
-                                <CTAButton href="#admissions">
+                                <CTAButton href="/ContactUs">
                                     Admissions
                                 </CTAButton>
                             ):null

@@ -25,8 +25,8 @@ padding: 10rem 0 5rem 0;
 
 
 export const ImageContainer = styled.div`
-height: 13rem;
-width: 13rem;
+height: 20rem;
+width: 20rem;
 border-radius: 50%;
 display: flex;
 align-items: center;
@@ -129,4 +129,11 @@ svg{
     height: 2.2rem;
     width: 2.2rem;
 }
+`;
+
+
+export const AboutUsSection = styled.section`
+min-height: 60vh;
+padding: 10rem 0 5rem 0;
+width: 100%;
 `;

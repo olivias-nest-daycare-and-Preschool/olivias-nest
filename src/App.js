@@ -40,16 +40,34 @@ const  App = () =>{
         <Route path="/" element={<HomeSection />} />
       </Routes>
     </HomeContainer>
-    <Container>
+
       <Routes>
       <Route path="/AboutUs" element={<AboutSection />} />
-      <Route path="/Facilities" element={<FacilitiesSection />} />
-      <Route path="/Gallery" element={<GallerySection />} />
-      <Route path="/Contact" element={<ContactSection />} />
-      <Route path="/Transport" element ={<TransportSection /> } />
-      <Route path="/Co-curricular" element ={<Cocurricular />} />
       </Routes>
-    </Container>
+      
+      <Container>
+        <Routes>
+        <Route path="/Facilities" element={<FacilitiesSection />} />
+        </Routes>
+      </Container>
+      <Container>
+        <Routes>
+        <Route path="/Gallery" element={<GallerySection />} />
+        </Routes>
+      </Container>
+        <Routes>
+        <Route path="/ContactUs" element={<ContactSection />} />
+        </Routes>
+      <Container>
+        <Routes>
+        <Route path="/Transport" element ={<TransportSection /> } />
+        </Routes>
+      </Container>
+      <Container>
+        <Routes>
+        <Route path="/Co-curricular" element ={<Cocurricular />} />
+        </Routes>
+      </Container>
     <Footer />
     </Router>
     </ThemeProvider>

@@ -18,9 +18,9 @@ animation: ${NavItemFade} 0.5s ease forwards ${index /7 + 0.5}s;
 
 
 export const Nav = styled.nav`
-    height: 80px;
+    height: 100px;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;

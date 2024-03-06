@@ -23,6 +23,7 @@ export const Footer = () =>{
           <Link to="/Co-curricular">Co-curricular</Link>
           <Link to="/Transport">Transport</Link>
           <Link to="/Gallery">Gallery</Link>
+          <Link to="/ContactUs">Contact Us</Link>
         </FooterNav>
         <FooterLogo>
         <ContactInfo>

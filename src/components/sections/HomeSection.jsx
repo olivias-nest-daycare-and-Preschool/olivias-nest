@@ -16,15 +16,14 @@ CustomImageCard,
 CustomWordingCard} from "../styles/sections/HomeSection.styled";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import { CTAButton } from "../styles/common/CTAButton.styled";
-import { ContactForm, ContactFormContainer, 
-  EmailUsButton, FormCheckbox, FormInput, FormLabel, 
-  ImageCardContainer, ImageCardImage } from "../styles/sections/ContactForm.styled";
+import { ContactFormContainer,ImageCardImage } from "../styles/sections/ContactForm.styled";
 import { HeroSocialIcons, SocialIcon } from "../styles/sections/AboutSection.styled";
 import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { Button, Form, Input, Label, Textarea } from "../styles/sections/ContactSection.styled";
+import { Container } from "../styles/common/Container.styled";
 export const  HomeSection = () =>{
     return <> 
     <ShortSomeDataSection>
-      
       <CardContainer>
         <CustomImageCard>
           <CardImage src="./images/landing2.jpg" alt="landing page" />
@@ -47,7 +46,7 @@ export const  HomeSection = () =>{
   <FeatureItem>
     <FeatureImage src="./images/paperplane.png" alt="learning is fun" />
     <FeatureContent>
-      <FeatureTitle>Fun & Learning</FeatureTitle>
+      <FeatureTitle>Learning is Fun</FeatureTitle>
       <FeatureDescription>At Olivia's Nest, we believe that learning should be interactive and fun.
         We have taken our time to ensure we integrate learning with co-curricular activities.
       </FeatureDescription>
@@ -152,9 +151,7 @@ export const  HomeSection = () =>{
           <CardContent>
             <CardTitle>Play time</CardTitle>
             <CardText>basket ball, soccer & bicycle riding at break session</CardText>
-            <CardButton href="/Gallery">Basket ball</CardButton>
-            <CardButton href="/Gallery">riding</CardButton>
-            <CardButton href="/Gallery">soccer</CardButton>
+            <CardButton href="/Gallery">Bicycle riding</CardButton>
           </CardContent>
         </Card>
         <Card>
@@ -169,22 +166,35 @@ export const  HomeSection = () =>{
     </SomeDataSection>
 <BaitSection>
       <ContactFormContainer>
-        <h2>Contact Us</h2>
-        <ContactForm>
-          <FormLabel>Email:</FormLabel>
-          <FormInput type="email" placeholder="Enter your email" />
-          <FormLabel>
-            <FormCheckbox type="checkbox" />
-            Subscribe to newsletter
-          </FormLabel>
-          <EmailUsButton>Email Us</EmailUsButton>
-        </ContactForm>
+      <SectionHeading>
+        <h3>Contact Us</h3>
+        </SectionHeading>
+        <Form>
+                        <Label htmlFor="name">Name:</Label>
+                        <Input type="text" id="name" name="name" />
+
+                        <Label htmlFor="email">Email:</Label>
+                        <Input type="email" id="email" name="email" />
+
+                        <Label htmlFor="subject">Subject:</Label>
+                        <Input type="text" id="subject" name="subject" />
+
+                        <Label htmlFor="message">Your Message:</Label>
+                        <Textarea id="message" name="message"  rows="4" placeholder="Write to Olivia's Nest..."/>
+
+                        <Button type="submit">Send Message</Button>
+                    </Form>
       </ContactFormContainer>
-      <ImageCardContainer>
-        <ImageCardImage src="./images/wall2.jpg" alt="from outside" />
-      </ImageCardContainer>
+      <ContactFormContainer>
+      <SectionHeading>
+          <h3>Our School</h3>
+        </SectionHeading>
+        <ImageCardImage src="./images/teachers.jpg" alt="from outside" />
+        <CardText>arts, modelling and painting with an instructor</CardText>
+      </ContactFormContainer>
     </BaitSection>
-    <HeroSocialIcons>
+   <Container>
+   <HeroSocialIcons>
       <SocialIcon href="https://www.facebook.com/oliviasnest" target="_blank">
         <FaFacebook />
       </SocialIcon>
@@ -195,5 +205,6 @@ export const  HomeSection = () =>{
         <FaEnvelope/>
       </SocialIcon>
     </HeroSocialIcons>
+   </Container>
      </>
 };

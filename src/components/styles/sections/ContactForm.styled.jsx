@@ -4,9 +4,12 @@ export const ContactFormContainer = styled.div`
   width: 50%;
   padding: 7rem;
   height: 80%;
-  background-color: #f8f9fa;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  transition: all 300ms ease-in-out;
+&:hover{
+    transform: translateY(-1rem);
+}
 `;
 
 export const ContactForm = styled.form`
@@ -41,6 +44,11 @@ export const ImageCardContainer = styled.div`
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+   transition: all 300ms ease-in-out;
+
+&:hover{
+    transform: translateY(-1rem);
+}
 `;
 
 export const ImageCardImage = styled.img`

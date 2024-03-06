@@ -1,20 +1,20 @@
-import { AboutContent, DullCircle, GradCircle, HeroSocialIcons, ImageContainer, SocialIcon, StyledAboutSection, StyledHeading, StyledImage } from "../styles/sections/AboutSection.styled";
+import { AboutContent, AboutUsSection, DullCircle, GradCircle, HeroSocialIcons, ImageContainer, SocialIcon, StyledHeading, StyledImage } from "../styles/sections/AboutSection.styled";
 import { CTAButton } from "../styles/common/CTAButton.styled";
 import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { Container } from "../styles/common/Container.styled";
+import { SectionHeading } from "../styles/common/SectionHeading.styled";
+import { Card,CardContainer,CardImage, CardText} from "../styles/sections/HomeSection.styled";
+import { HomeContainer } from "../styles/common/HomeConatiner";
 
 export const AboutSection = () =>{
     return <> 
-    <StyledAboutSection id="/AboutUs">
+    <Container>
+    <AboutUsSection id="/AboutUs">
         <ImageContainer>
-            <StyledImage src="./images/nest.jpg" alt="olivia's nest jpg file"/>
+            <StyledImage src="./images/logo.png" alt="olivia's nest jpg file"/>
             <DullCircle/>
             <GradCircle/>
         </ImageContainer>
-        {/* <ImageContainer>
-            <StyledImage src="./images/about_us.jpg" alt="olivia's nest jpg file"/>
-            <DullCircle/>
-            <GradCircle/>
-        </ImageContainer> */}
         <AboutContent>
             <StyledHeading>
               A word from our Director Dr. Sally,  at Olivia's Nest - <span>👶.</span> 
@@ -41,7 +41,7 @@ export const AboutSection = () =>{
             All are welcome at Olivia's Nest.👶
 
             </p>
-            <CTAButton href="#ContactUs">Admissions</CTAButton>
+            <CTAButton href="/ContactUs">Admissions</CTAButton>
         </AboutContent>
                  <HeroSocialIcons>
                     <SocialIcon href="https://www.facebook.com/oliviasnest" target="_blank">
@@ -54,7 +54,65 @@ export const AboutSection = () =>{
                         <FaEnvelope/>
                     </SocialIcon>
                 </HeroSocialIcons>
-    </StyledAboutSection>
+    </AboutUsSection>
+    </Container>
+    <HomeContainer>
+    <AboutUsSection>
+        <SectionHeading>
+            <h1>About Olivia's Nest</h1>
+            <h3>Our Faculty  & School Premises</h3>
+        </SectionHeading>
+        <CardContainer>
+        <Card>
+          <CardImage src="./images/wall2.jpg" alt="paintings on the road" />
+          <CardText>
+            premise of the school & perimeter wall
+          </CardText>
+        </Card>
+        <Card>
+          <CardImage src="./images/gate2.jpg" alt="picture for the new gate" />
+          <CardText>
+            School gate ushering you to the school premise
+          </CardText>
+        </Card>
+        <Card>
+          <CardImage src="./images/meetings.jpg" alt="parent meetings" />
+          <CardText>
+            preparation for annual parent's meeting
+          </CardText>
+        </Card>
+      </CardContainer>
+    </AboutUsSection>
+
+    {/* Second row */}
+
+    <AboutUsSection>
+        {/* <SectionHeading>
+            <h1>About Olivia's Nest</h1>
+            <h3>Our Faculty  & School Premises</h3>
+        </SectionHeading> */}
+        <CardContainer>
+        <Card>
+          <CardImage src="./images/wall2.jpg" alt="paintings on the road" />
+          <CardText>
+            premise of the school & perimeter wall
+          </CardText>
+        </Card>
+        <Card>
+          <CardImage src="./images/gate2.jpg" alt="picture for the new gate" />
+          <CardText>
+            School gate ushering you to the school premise
+          </CardText>
+        </Card>
+        <Card>
+          <CardImage src="./images/meetings.jpg" alt="parent meetings" />
+          <CardText>
+            preparation for annual parent's meeting
+          </CardText>
+        </Card>
+      </CardContainer>
+    </AboutUsSection>
+    </HomeContainer>
     <hr/>
     </>
 };

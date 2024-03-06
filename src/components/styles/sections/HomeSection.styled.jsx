@@ -218,9 +218,11 @@ export const CardTitle = styled.h1`
   font-weight:200;
   margin-bottom: 0.5rem;
   font-family: "Poppins",sans-serif;
+  font-weight: bold;
 `;
 
 export const CardText = styled.p`
+  margin-top: 2rem;
   margin-bottom: 1rem;
   font-size: 2rem;
   font-family: "Poppins",sans-serif;
@@ -228,6 +230,7 @@ export const CardText = styled.p`
 
 export const CardButton = styled.a`
   display: inline-block;
+  
   margin-right: 18px;
   padding: 0.5rem 1rem;
   background-color: ${({theme})=> theme.colors.orange};
@@ -366,5 +369,9 @@ padding: 1rem;
 background-color: rgba(0, 0, 0, 0.0);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
+&:hover{
+    transform: translateY(-1rem);
+}
 `;

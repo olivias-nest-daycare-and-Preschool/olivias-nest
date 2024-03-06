@@ -4,14 +4,14 @@ export const StyledFooter = styled.footer`
   width: 100%;
   height: 40vh;
   padding: 2.5rem;
-  color: #20252b;
+  color: #1d2022;
   text-align: center;
   font-size: 20px;
   display: block;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #2b2e52;
+  background-color: #1d2022;
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
