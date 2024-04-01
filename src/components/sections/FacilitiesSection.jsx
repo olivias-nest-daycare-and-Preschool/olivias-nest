@@ -3,10 +3,14 @@ import { FacilityDescription, FacilityImageContainer, SingleFacility, SlantCard,
 import {IndoorFacilities} from "../../data/IndoorFacilities";
 import { HeroSocialIcons, SocialIcon } from "../styles/sections/AboutSection.styled";
 import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { Container } from "../styles/common/Container.styled";
+import { Card, CardButton, CardContainer, CardContent, CardImage, CardText, CardTitle, SomeDataSection } from "../styles/sections/HomeSection.styled";
+import { HomeContainer } from "../styles/sections/ContactForm.styled";
 export const FacilitiesSection = () =>{
     return (
         <> 
-        <StyledFacilitiesSection id="Facilities">
+        <Container>
+        <StyledFacilitiesSection id="Facilities" style={{marginTop:'20rem'}}>
             <SectionHeading>
                 <h1>Facilities</h1>
                 <h3>Indoor facilities</h3>
@@ -45,6 +49,99 @@ export const FacilitiesSection = () =>{
                     </SocialIcon>
                 </HeroSocialIcons>
         <hr />
+        </Container>
+
+         {/* used a different container wrapping */}
+
+        <HomeContainer>
+        <SomeDataSection>
+        <SectionHeading>
+                <h3>Outdoor facilities</h3>
+            </SectionHeading>
+            <CardContainer>
+        <Card>
+          <CardImage style={{borderRadius:'20%'}} src="./images/beds.jpg" alt="king size beds" />
+          <CardContent>
+            <CardTitle>Sleeping Area</CardTitle>
+            <CardText>
+              We took part in curating the sleeping area and making it an awesome experience.
+              The experience is just sensational!
+            </CardText>
+            <CardButton href="/Facilities">Facilities</CardButton>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardImage style={{borderRadius:'50%'}} src="./images/beds.jpg" alt="king size beds" />
+          <CardContent>
+            <CardTitle>Sleeping Area</CardTitle>
+            <CardText>
+              We took part in curating the sleeping area and making it an awesome experience.
+              The experience is just sensational!
+            </CardText>
+            <CardButton href="/Facilities">Facilities</CardButton>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardImage style={{borderRadius:'20%'}} src="./images/beds.jpg" alt="king size beds" />
+          <CardContent>
+            <CardTitle>Sleeping Area</CardTitle>
+            <CardText>
+              We took part in curating the sleeping area and making it an awesome experience.
+              The experience is just sensational!
+            </CardText>
+            <CardButton href="/Facilities">Facilities</CardButton>
+          </CardContent>
+        </Card>
+      </CardContainer>
+        </SomeDataSection>
+        </HomeContainer>
+
+        <HomeContainer>
+        <SomeDataSection>
+        <SectionHeading>
+                <h3>Outdoor facilities</h3>
+            </SectionHeading>
+            <CardContainer>
+        <Card>
+          <CardImage style={{borderRadius:'50%'}} src="./images/beds.jpg" alt="king size beds" />
+          <CardContent>
+            <CardTitle>Sleeping Area</CardTitle>
+            <CardText>
+              We took part in curating the sleeping area and making it an awesome experience.
+              The experience is just sensational!
+            </CardText>
+            <CardButton href="/Facilities">Facilities</CardButton>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardImage style={{borderRadius:'20%'}} src="./images/beds.jpg" alt="king size beds" />
+          <CardContent>
+            <CardTitle>Sleeping Area</CardTitle>
+            <CardText>
+              We took part in curating the sleeping area and making it an awesome experience.
+              The experience is just sensational!
+            </CardText>
+            <CardButton href="/Facilities">Facilities</CardButton>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardImage style={{borderRadius:'50%'}} src="./images/beds.jpg" alt="king size beds" />
+          <CardContent>
+            <CardTitle>Sleeping Area</CardTitle>
+            <CardText>
+              We took part in curating the sleeping area and making it an awesome experience.
+              The experience is just sensational!
+            </CardText>
+            <CardButton href="/Facilities">Facilities</CardButton>
+          </CardContent>
+        </Card>
+      </CardContainer>
+        </SomeDataSection>
+        </HomeContainer>
         </>
     );
 };

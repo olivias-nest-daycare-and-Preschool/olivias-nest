@@ -70,3 +70,86 @@ export const EmailUsButton = styled.button`
     background-color: #0056b3;
   }
 `;
+
+/* card form*/
+export const HomeContainer = styled.div`
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+
+export const CardForm = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 120px;
+  width: 90%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.0);
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+  font-family: "Poppins", sans-serif;
+`;
+
+export const Title = styled.h2`
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+`;
+
+export const Paragraph = styled.p`
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: white;
+`;
+
+export const CheckBoxWrapper = styled.div`
+  margin-bottom: 20px;
+`;
+
+export const CheckBoxLabel = styled.label`
+  display: block;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 25px;
+`;
+
+export const CheckBox = styled.input.attrs({type: 'radio'})`
+  margin-right: 12px;
+`;
+
+export const Select = styled.select`
+  width: 30%;
+  padding: 10px;
+  border-radius: 45px;
+  margin-bottom: 20px;
+  font-weight: bold;
+`;
+
+export const TextArea = styled.textarea`
+  width: 45%;
+  height: 120px;
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+`;
+
+export const Button = styled.button`
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+`;
+
+/* end of card form */
+
+
+

@@ -132,6 +132,10 @@ export const FeatureItem = styled.div`
   align-items: center;
   width: 100%;
   margin-bottom: 2rem; /* Reduce vertical space between items */
+  transition: all 300ms ease-in-out;
+  &:hover{
+    transform: translateY(-1rem);
+}
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
@@ -323,7 +327,7 @@ div{
 
 
 export const ShortSomeDataSection = styled.section`
-margin-top: 10rem;
+margin-top: 20rem;
 min-height: 20vh;
 padding: 10rem 0 5rem 0;
 width: 100%;

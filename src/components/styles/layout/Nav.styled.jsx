@@ -18,7 +18,7 @@ animation: ${NavItemFade} 0.5s ease forwards ${index /7 + 0.5}s;
 
 
 export const Nav = styled.nav`
-    height: 100px;
+    height: 300px;
     width: 100%;
     padding: 0 25px;
     display: flex;
@@ -27,14 +27,14 @@ export const Nav = styled.nav`
     position: fixed;
     z-index: 98;
     transition: all 1s ease-in-out;
-    background: rgba(2,12,27,0.8);
+    background: rgba(11, 11, 11, 0.6);
     color: ${({theme})=>theme.colors.white};
     top: ${({scrollDirection})=> scrollDirection === "down" ? "-80px":"40px"};
 `;
 
 
 export const Logo = styled.img`
-width: 100px;
+width: 350px;
 border-radius: 50%;
 `;
 
@@ -102,7 +102,7 @@ align-items: center;
 justify-content:flex-end;
 font-size: 23px;
 font-weight: 700;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 
 @media(max-width: ${({ theme })=> theme.mobile}){
     width:24rem;
@@ -121,7 +121,7 @@ flex-wrap: wrap;
 
 
 export const NavItem = styled.li`
-margin: 1rem 5rem;
+margin: 1rem 3rem;
 
 &:last-child {
     margin-right: 0;

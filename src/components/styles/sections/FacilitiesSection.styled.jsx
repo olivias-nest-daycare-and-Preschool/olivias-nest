@@ -35,6 +35,7 @@ justify-content: center;
 flex: 1;
 position: relative;
 perspective: 1000px;
+margin-right: 10rem;
 img{
     width: 80%;
     border-radius: 20px;

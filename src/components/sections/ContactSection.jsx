@@ -1,21 +1,77 @@
+import React, { useState } from 'react';
 import { FaPhone} from "react-icons/fa";
 import {FaAddressBook, FaLocationCrosshairs} from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
-import { HomeContainer } from "../styles/common/HomeConatiner";
+import { HomeContainer} from "../styles/common/HomeConatiner";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import {Button, Form, Input, Label, StyledContactSectionMain,StyledSemiContactSectionMain, Textarea } from "../styles/sections/ContactSection.styled";
 import { Card, CardContainer,SomeDataSection } from "../styles/sections/HomeSection.styled";
+import {CardForm,Title,Paragraph,CheckBoxWrapper,CheckBoxLabel,CheckBox,Select,
+TextArea} from "../styles/sections/ContactForm.styled"
 import { Link } from "react-router-dom";
 export const ContactSection = () =>{
+    const [selectedService, setSelectedService] = useState('');
+
+    const handleServiceSelection = (service) => {
+      setSelectedService(service);
+    };
     return (
         <>
         <StyledContactSectionMain>
             <StyledSemiContactSectionMain>
             <SectionHeading>
-                <h1>Contact Section</h1>
-                <h3>Feel Free to reach to us here</h3>
+                <h1>Reach out please</h1>
                 <p><Link to="/ContactUs"><Link to="/">Home</Link> / Contact Us</Link></p>
+                {/* <h3>What would you like to hear more about?</h3> */}
             </SectionHeading>
+       <CardForm>
+                <Title>What would you like to hear more about?</Title>
+                <Paragraph>What services are interested in?</Paragraph>
+                <CheckBoxWrapper>
+                <CheckBoxLabel>
+          <CheckBox
+            type="radio"
+            name="service"
+            value="DayCare"
+            checked={selectedService === 'DayCare'}
+            onChange={() => handleServiceSelection('DayCare')}
+          />
+          DayCare
+        </CheckBoxLabel>
+        <CheckBoxLabel>
+          <CheckBox
+            type="radio"
+            name="service"
+            value="Playgroup"
+            checked={selectedService === 'Playgroup'}
+            onChange={() => handleServiceSelection('Playgroup')}
+          />
+          Playgroup
+        </CheckBoxLabel>
+        <CheckBoxLabel>
+          <CheckBox
+            type="radio"
+            name="service"
+            value="Preschool / Kindergarten"
+            checked={selectedService === 'Preschool / Kindergarten'}
+            onChange={() => handleServiceSelection('Preschool / Kindergarten')}
+          />
+          Preschool / Kindergarten
+        </CheckBoxLabel>
+                </CheckBoxWrapper>
+                <Paragraph>How old is your child?*</Paragraph>
+                <Select>
+                    <option>Under 1yr</option>
+                    <option>1-2yrs</option>
+                    <option>2-3yrs</option>
+                    <option>3-4yrs</option>
+                    <option>4-5yrs</option>
+                    <option>5-6yrs</option>
+                </Select>
+                <Paragraph>Anything in particular you'd like to hear about?</Paragraph>
+                <TextArea placeholder='anything? the response is on the way...'/>
+                <Button>Send</Button>
+    </CardForm>
             </StyledSemiContactSectionMain>
         </StyledContactSectionMain>
         <HomeContainer>
@@ -24,7 +80,6 @@ export const ContactSection = () =>{
                     <Card>
                         <SectionHeading>
                             <h1>Contact Info</h1>
-                            
                             <p>Go ahead and contact us or write a message to us and we'll get back to you</p>
                         </SectionHeading>
                         <div style={{display: 'flex', alignItems:'center',fontFamily:'Poppins'}}>

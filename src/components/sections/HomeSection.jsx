@@ -18,15 +18,17 @@ import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import { CTAButton } from "../styles/common/CTAButton.styled";
 import { ContactFormContainer,ImageCardImage } from "../styles/sections/ContactForm.styled";
 import { HeroSocialIcons, SocialIcon } from "../styles/sections/AboutSection.styled";
-import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { FaAddressBook, FaEnvelope, FaFacebook, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { Button, Form, Input, Label, Textarea } from "../styles/sections/ContactSection.styled";
 import { Container } from "../styles/common/Container.styled";
+import { FaLocationCrosshairs } from "react-icons/fa6";
 export const  HomeSection = () =>{
+
     return <> 
     <ShortSomeDataSection>
       <CardContainer>
         <CustomImageCard>
-          <CardImage src="./images/landing2.jpg" alt="landing page" />
+          <CardImage style={{borderRadius:'15%'}} src="./images/landing2.jpg" alt="landing page" />
         </CustomImageCard>
         <CustomWordingCard>
         <HeroContent>
@@ -37,7 +39,25 @@ export const  HomeSection = () =>{
           <CTAButton href="/AboutUs">About Us</CTAButton>
           <CTAButton href="/Facilities" primary margin="0 0 0 20px">Facilities</CTAButton>
         </div>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '40px'}}>
+          <a href="/ContactUs" style={{ display: 'flex', alignItems: 'center', marginRight: '20px', padding: '10px', border: '1px solid transparent', borderRadius: '5px', textDecoration: 'none' }}>
+            <FaLocationCrosshairs style={{ color: 'orange', transform: 'scaleX(-1)', fontSize: '32px', marginRight: '15px', fontFamily:'monospace' }} />
+            <span style={{ fontSize: '2rem', marginBottom: '0', fontStyle:'normal', color: 'white', textTransform: 'none' }}>Located at 25 Othaya road in Kileleshwa, Lavington, Nairobi</span>
+          </a>
+          <a href="/ContactUs" style={{ display: 'flex', alignItems: 'center', padding: '10px', border: '1px solid transparent', borderRadius: '5px', textDecoration: 'none' }}>
+            <FaAddressBook style={{ color: 'orange', transform: 'scaleX(-1)', fontSize: '32px', marginRight: '15px'}} />
+            <span style={{ fontSize: '2rem', marginBottom: '0', whiteSpace:'nowrap', fontStyle:'normal', color: 'white', textTransform: 'none' }}>00603 – Lavington</span>
+          </a>
+        </div>
+
+
+
       </HeroContent>
+
+      {/* <Card>
+
+      </Card>  */}
+
         </CustomWordingCard>
       </CardContainer>
     </ShortSomeDataSection>
@@ -86,7 +106,7 @@ export const  HomeSection = () =>{
   </SectionHeading>
   <CardContainer>
         <Card>
-          <CardImage src="./images/beds.jpg" alt="king size beds" />
+          <CardImage style={{borderRadius:'20%'}} src="./images/beds.jpg" alt="king size beds" />
           <CardContent>
             <CardTitle>Sleeping Area</CardTitle>
             <CardText>
@@ -97,7 +117,7 @@ export const  HomeSection = () =>{
           </CardContent>
         </Card>
         <Card>
-          <CardImage src="./images/study_rooms.JPG" alt="basket ball" />
+          <CardImage style={{borderRadius:'20%'}} src="./images/study_rooms.JPG" alt="basket ball" />
           <CardContent>
             <CardTitle>Classrooms & Lockers</CardTitle>
             <CardText>
@@ -114,14 +134,14 @@ export const  HomeSection = () =>{
   <CardContainer>
   <CardContainer>
   <Card>
-    <CardImage src="./images/study_2.jpg" alt="" />
+    <CardImage style={{borderRadius:'5%'}} src="./images/study_2.jpg" alt="" />
     <CardContent>
       <CardText>Learning session in progress</CardText>
       <CardButton href="/Gallery">E-learning</CardButton>
   </CardContent>
   </Card>
   <Card>
-    <CardImage src="./images/toy_room.jpg" alt="" />
+    <CardImage style={{borderRadius:'5%'}} src="./images/toy_room.jpg" alt="" />
     <CardContent>
       <CardText>We have toys and toy room where kids full utilize them in the break time.</CardText>
       <CardButton href="/Gallery">Toy area</CardButton>
@@ -139,7 +159,7 @@ export const  HomeSection = () =>{
   </SectionHeading>
       <CardContainer>
         <Card>
-          <CardImage src="./images/competition.jpg" alt="physical education" />
+          <CardImage style={{borderRadius:'10%'}} src="./images/competition.jpg" alt="physical education" />
           <CardContent>
             <CardTitle>Sack racing</CardTitle>
             <CardText>Kids sack racing during an sport event at the school</CardText>
@@ -147,7 +167,7 @@ export const  HomeSection = () =>{
           </CardContent>
         </Card>
         <Card>
-          <CardImage src="./images/basket_ball.JPG" alt="basket ball" />
+          <CardImage style={{borderRadius:'50%'}} src="./images/basket_ball.JPG" alt="basket ball" />
           <CardContent>
             <CardTitle>Play time</CardTitle>
             <CardText>basket ball, soccer & bicycle riding at break session</CardText>
@@ -155,7 +175,7 @@ export const  HomeSection = () =>{
           </CardContent>
         </Card>
         <Card>
-          <CardImage src="./images/tennis.jpg" alt="lawn tennis" />
+          <CardImage style={{borderRadius:'10%'}} src="./images/tennis.jpg" alt="lawn tennis" />
           <CardContent>
             <CardTitle>Tennis</CardTitle>
             <CardText>Lawn tennis training session in progress.</CardText>
@@ -182,7 +202,7 @@ export const  HomeSection = () =>{
                         <Label htmlFor="message">Your Message:</Label>
                         <Textarea id="message" name="message"  rows="4" placeholder="Write to Olivia's Nest..."/>
 
-                        <Button type="submit">Send Message</Button>
+                        <Button type="submit">write to us</Button>
                     </Form>
       </ContactFormContainer>
       <ContactFormContainer>

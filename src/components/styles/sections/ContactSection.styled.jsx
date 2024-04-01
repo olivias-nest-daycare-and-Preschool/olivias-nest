@@ -13,7 +13,7 @@ min-height: 20vh;
 padding: 10rem 0 5rem 0;
 width: 100%;
 margin-bottom:20px;
-background-color: #1d2022;
+/* background-color: #1d2022; */
 `;
 
 export const StyledContactSubSection = styled.div`
@@ -61,7 +61,7 @@ color: white;
 cursor: pointer;
 justify-content: center;
 transition: background-color 0.3s;
-font-size: 2rem;
+font-size: 3rem;
 font-weight: bold;
 width: fit-content;
 margin-top: 20px;

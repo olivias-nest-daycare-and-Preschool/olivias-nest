@@ -45,11 +45,11 @@ const  App = () =>{
       <Route path="/AboutUs" element={<AboutSection />} />
       </Routes>
       
-      <Container>
+      {/* <Container> */}
         <Routes>
         <Route path="/Facilities" element={<FacilitiesSection />} />
         </Routes>
-      </Container>
+      {/* </Container> */}
       <Container>
         <Routes>
         <Route path="/Gallery" element={<GallerySection />} />

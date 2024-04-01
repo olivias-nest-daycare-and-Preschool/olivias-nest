@@ -9,9 +9,9 @@ import { HomeContainer } from "../styles/common/HomeConatiner";
 export const AboutSection = () =>{
     return <> 
     <Container>
-    <AboutUsSection id="/AboutUs">
+    <AboutUsSection id="/AboutUs" style={{marginTop:'15rem'}}>
         <ImageContainer>
-            <StyledImage src="./images/logo.png" alt="olivia's nest jpg file"/>
+            <StyledImage src="./images/wall2.jpg" alt="olivia's nest jpg file"/>
             <DullCircle/>
             <GradCircle/>
         </ImageContainer>
@@ -21,7 +21,7 @@ export const AboutSection = () =>{
             </StyledHeading>
             <p>
             Olivia's Nest is an Edu-care center for kids all over Nairobi. We cater for kids starting with kids in
-            day-care to kindergarten to pre-school. We are located located in Kileleshwa, Lavington area. 
+            day-care to kindergarten to pre-school. We are located in Kileleshwa, Lavington area. 
             In Olivia's Nest, your child will be in a safe setting, in a continuously learning environment to make them 
             the best they can ever be.
             We have a team of caring and competent, and qualified teachers to make your dream of seeing your child 
@@ -32,18 +32,18 @@ export const AboutSection = () =>{
             </p>
             <p>
             Olivia's Nest is an Edu-care center for kids all over Nairobi. We cater for kids starting with kids in
-            day-care to kindergaten to pre-school. We are located located in Kileleshwa, Lavington area. 
-            In Olivia's Nest, your child will be in a safe setting, in a continously learning environment to make them 
+            day-care to kindergarten to pre-school. We are located located in Kileleshwa, Lavington area. 
+            In Olivia's Nest, your child will be in a safe setting, in a continuously learning environment to make them 
             the best they can ever be.
             We have a team of caring and competent, and qualified teachers to make your dream of seeing your child 
             excel come true. Teachers, embody skills, knowledge with a little bit of enthusiasm to spark a good impression
-            on yound developing minds. 
+            on Young developing minds. 
             All are welcome at Olivia's Nest.👶
 
             </p>
-            <CTAButton href="/ContactUs">Admissions</CTAButton>
+            <CTAButton href="/ContactUs">Inquiries ? reach out...</CTAButton>
         </AboutContent>
-                 <HeroSocialIcons>
+        <HeroSocialIcons>
                     <SocialIcon href="https://www.facebook.com/oliviasnest" target="_blank">
                         <FaFacebook />
                     </SocialIcon>
@@ -64,19 +64,19 @@ export const AboutSection = () =>{
         </SectionHeading>
         <CardContainer>
         <Card>
-          <CardImage src="./images/wall2.jpg" alt="paintings on the road" />
+          <CardImage style={{borderRadius:'50%'}} src="./images/wall2.jpg" alt="paintings on the road" />
           <CardText>
             premise of the school & perimeter wall
           </CardText>
         </Card>
         <Card>
-          <CardImage src="./images/gate2.jpg" alt="picture for the new gate" />
+          <CardImage style={{borderRadius:'50%'}} src="./images/gate2.jpg" alt="picture for the new gate" />
           <CardText>
             School gate ushering you to the school premise
           </CardText>
         </Card>
         <Card>
-          <CardImage src="./images/meetings.jpg" alt="parent meetings" />
+          <CardImage style={{borderRadius:'50%'}} src="./images/meetings.jpg" alt="parent meetings" />
           <CardText>
             preparation for annual parent's meeting
           </CardText>
@@ -93,19 +93,19 @@ export const AboutSection = () =>{
         </SectionHeading> */}
         <CardContainer>
         <Card>
-          <CardImage src="./images/wall2.jpg" alt="paintings on the road" />
+          <CardImage style={{borderRadius:'50%'}} src="./images/wall2.jpg" alt="paintings on the road" />
           <CardText>
             premise of the school & perimeter wall
           </CardText>
         </Card>
         <Card>
-          <CardImage src="./images/gate2.jpg" alt="picture for the new gate" />
+          <CardImage style={{borderRadius:'50%'}} src="./images/gate2.jpg" alt="picture for the new gate" />
           <CardText>
             School gate ushering you to the school premise
           </CardText>
         </Card>
         <Card>
-          <CardImage src="./images/meetings.jpg" alt="parent meetings" />
+          <CardImage style={{borderRadius:'50%'}} src="./images/meetings.jpg" alt="parent meetings" />
           <CardText>
             preparation for annual parent's meeting
           </CardText>

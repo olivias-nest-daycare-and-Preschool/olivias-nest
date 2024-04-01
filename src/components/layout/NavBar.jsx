@@ -67,7 +67,7 @@ const scrollDirection = useScrollDirection("down");
                          {
                             navItem.hasCTA ? (
                                 <CTAButton href="/ContactUs">
-                                    Admissions
+                                    Contact Us
                                 </CTAButton>
                             ):null
                          }
