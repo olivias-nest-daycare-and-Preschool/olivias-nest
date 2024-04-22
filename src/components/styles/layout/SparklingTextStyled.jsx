@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+// import React , {useState} from 'react'
 import styled ,{keyframes} from 'styled-components'
 
 // keyframes for sparkling
@@ -28,7 +28,25 @@ export const sparklingAnimation = keyframes`
     letter-spacing: 6px
 }
 `;
+
+export const movingAnimation = keyframes`
+0%{
+    transform: translateX(0);
+}
+50%{
+    transform: translateX(20px);
+}
+100%{
+    transform: translateX(0);
+}
+`;
+
+
 export const AnimatedText = styled.span`
 display: inline-block;
 animation: ${sparklingAnimation} 1s ease-in-out infinite;
+`;
+
+export const AnimatedImage = styled.img`
+animation: ${movingAnimation} 1s ease-in-out infinite;
 `;

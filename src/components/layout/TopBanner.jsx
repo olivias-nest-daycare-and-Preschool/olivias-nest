@@ -6,7 +6,9 @@ export const TopBanner = () =>{
     return <>
     <StyledTopBanner>
         <StyledBannerSection>
-            <a href="mailto:oliviasnest1@gmail.com">🙋‍♀️ oliviasnest1@gmail.com 🙋‍♀️</a>
+            <a href="mailto:oliviasnest1@gmail.com">
+                <SparklingText text="🙋‍♀️ oliviasnest1@gmail.com 🙋‍♀️"/>
+            </a>
         </StyledBannerSection>
         <StyledBannerSection showOnMobile>
            <a href="/ContactUs">
@@ -14,7 +16,8 @@ export const TopBanner = () =>{
            </a>
         </StyledBannerSection>
         <StyledBannerSection>
-            <a href="/Facilities"> 🏫what we offer🏫 </a>
+            <a href="/Facilities"> 
+            <SparklingText text="🏫what we offer🏫" /> </a>
         </StyledBannerSection>
     </StyledTopBanner>
     </>
