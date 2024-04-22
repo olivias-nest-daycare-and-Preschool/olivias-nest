@@ -16,11 +16,16 @@ flex-wrap: wrap;
     flex-direction: column;
 }
 `;
+export const ClipHexagon = styled.div`
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+`;
 
 export const SingleGallery  = styled.div`
     min-height: 20rem;
     border-radius: 7px;
-    background:rgba(4,20,44,1);
+    /* background:rgba(4,20,44,1); */
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -91,4 +96,42 @@ img{
         border-radius: 9px;
     }
  }
+`;
+
+export const LayeredCard = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  padding: 1.2rem;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    transform: translateY(-1rem);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    background: linear-gradient(
+      to right,
+      ${({ theme }) => theme.colors.orange} 0%,
+      ${({ theme }) => theme.colors.purple} 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.9rem;
+  }
 `;

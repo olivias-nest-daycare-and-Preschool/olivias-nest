@@ -276,7 +276,7 @@ max-width:58rem;
 color: ${({theme})=>theme.colors.white};
 text-transform: uppercase;
 h1{
-    letter-spacing: 1.5rem;
+    letter-spacing: 0.5rem;
     font-size: 3rem;
     font-weight: 900;
     overflow: hidden;

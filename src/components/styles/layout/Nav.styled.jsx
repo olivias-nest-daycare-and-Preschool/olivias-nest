@@ -30,6 +30,7 @@ export const Nav = styled.nav`
     background: rgba(11, 11, 11, 0.6);
     color: ${({theme})=>theme.colors.white};
     top: ${({scrollDirection})=> scrollDirection === "down" ? "-80px":"40px"};
+    /* margin-top: 5%; */
 `;
 
 

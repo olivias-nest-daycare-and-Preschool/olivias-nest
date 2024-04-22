@@ -1,3 +1,4 @@
+import SparklingText from "../styles/common/SparklingText";
 import { StyledBannerSection, StyledTopBanner } from "../styles/layout/TopBanner.styled";
 
 
@@ -8,7 +9,9 @@ export const TopBanner = () =>{
             <a href="mailto:oliviasnest1@gmail.com">🙋‍♀️ oliviasnest1@gmail.com 🙋‍♀️</a>
         </StyledBannerSection>
         <StyledBannerSection showOnMobile>
-            <a href="/ContactUs">👶 Welcome to our school👶 </a>
+           <a href="/ContactUs">
+           <SparklingText text="intake ongoing" />
+           </a>
         </StyledBannerSection>
         <StyledBannerSection>
             <a href="/Facilities"> 🏫what we offer🏫 </a>

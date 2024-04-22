@@ -18,7 +18,7 @@ import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import { CTAButton } from "../styles/common/CTAButton.styled";
 import { ContactFormContainer,ImageCardImage } from "../styles/sections/ContactForm.styled";
 import { HeroSocialIcons, SocialIcon } from "../styles/sections/AboutSection.styled";
-import { FaAddressBook, FaEnvelope, FaFacebook, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaAddressBook, FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { Button, Form, Input, Label, Textarea } from "../styles/sections/ContactSection.styled";
 import { Container } from "../styles/common/Container.styled";
 import { FaLocationCrosshairs } from "react-icons/fa6";
@@ -39,17 +39,18 @@ export const  HomeSection = () =>{
           <CTAButton href="/AboutUs">About Us</CTAButton>
           <CTAButton href="/Facilities" primary margin="0 0 0 20px">Facilities</CTAButton>
         </div>
+        {/* ont-family: "Share Tech Mono", monospace; */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '40px'}}>
           <a href="/ContactUs" style={{ display: 'flex', alignItems: 'center', marginRight: '20px', padding: '10px', border: '1px solid transparent', borderRadius: '5px', textDecoration: 'none' }}>
-            <FaLocationCrosshairs style={{ color: 'orange', transform: 'scaleX(-1)', fontSize: '32px', marginRight: '15px', fontFamily:'monospace' }} />
-            <span style={{ fontSize: '2rem', marginBottom: '0', fontStyle:'normal', color: 'white', textTransform: 'none' }}>Located at 25 Othaya road in Kileleshwa, Lavington, Nairobi</span>
+            <FaLocationCrosshairs style={{ color: 'orange', transform: 'scaleX(-1)', fontSize: '32px', marginRight: '15px', fontFamily:'share Tech Mono' }} />
+            <span style={{ fontSize: '2rem', marginBottom: '0', fontStyle:'normal', color: 'white', textTransform: 'none',
+          fontFamily:'share Tech Mono' }}>Located at 25 Othaya road in Kileleshwa, Lavington, Nairobi</span>
           </a>
           <a href="/ContactUs" style={{ display: 'flex', alignItems: 'center', padding: '10px', border: '1px solid transparent', borderRadius: '5px', textDecoration: 'none' }}>
             <FaAddressBook style={{ color: 'orange', transform: 'scaleX(-1)', fontSize: '32px', marginRight: '15px'}} />
             <span style={{ fontSize: '2rem', marginBottom: '0', whiteSpace:'nowrap', fontStyle:'normal', color: 'white', textTransform: 'none' }}>00603 – Lavington</span>
           </a>
         </div>
-
 
 
       </HeroContent>
@@ -159,7 +160,7 @@ export const  HomeSection = () =>{
   </SectionHeading>
       <CardContainer>
         <Card>
-          <CardImage style={{borderRadius:'10%'}} src="./images/competition.jpg" alt="physical education" />
+          <CardImage style={{borderRadius:'15%'}} src="./images/competition.jpg" alt="physical education" />
           <CardContent>
             <CardTitle>Sack racing</CardTitle>
             <CardText>Kids sack racing during an sport event at the school</CardText>
@@ -167,7 +168,7 @@ export const  HomeSection = () =>{
           </CardContent>
         </Card>
         <Card>
-          <CardImage style={{borderRadius:'50%'}} src="./images/basket_ball.JPG" alt="basket ball" />
+          <CardImage style={{borderRadius:'15%'}} src="./images/basket_ball.JPG" alt="basket ball" />
           <CardContent>
             <CardTitle>Play time</CardTitle>
             <CardText>basket ball, soccer & bicycle riding at break session</CardText>
@@ -175,7 +176,7 @@ export const  HomeSection = () =>{
           </CardContent>
         </Card>
         <Card>
-          <CardImage style={{borderRadius:'10%'}} src="./images/tennis.jpg" alt="lawn tennis" />
+          <CardImage style={{borderRadius:'15%'}} src="./images/tennis.jpg" alt="lawn tennis" />
           <CardContent>
             <CardTitle>Tennis</CardTitle>
             <CardText>Lawn tennis training session in progress.</CardText>

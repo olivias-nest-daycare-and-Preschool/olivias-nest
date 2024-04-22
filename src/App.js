@@ -63,11 +63,10 @@ const  App = () =>{
         <Route path="/Transport" element ={<TransportSection /> } />
         </Routes>
       </Container>
-      <Container>
+      
         <Routes>
         <Route path="/Co-curricular" element ={<Cocurricular />} />
         </Routes>
-      </Container>
     <Footer />
     </Router>
     </ThemeProvider>

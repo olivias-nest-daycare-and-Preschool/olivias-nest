@@ -5,7 +5,7 @@ import { GalleryImage, GalleryItems, SingleGallery, StyledGallerySection } from 
 export const TransportSection = () =>{
     return (
         <>
-        <StyledGallerySection>
+        <StyledGallerySection style={{marginTop:'20rem'}}>
             <SectionHeading>
             <h1>Transport</h1>
             <h3>We offer affordable and safe transport system.</h3>
