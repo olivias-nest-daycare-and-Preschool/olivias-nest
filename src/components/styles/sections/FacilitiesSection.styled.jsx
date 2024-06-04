@@ -187,9 +187,14 @@ span{
 
 
 export const FacilityContainer = styled.div`
-display: flex;
+/* display: flex;
 justify-content: center;
-flex-wrap: wrap;
+flex-wrap: wrap; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 0 auto; /* Center the container within its parent */
 `;
 
 

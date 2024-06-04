@@ -34,8 +34,8 @@ const  App = () =>{
     <>
     <ThemeProvider theme={theme}>
     <GlobalStyles />
-    <Router>
     <TopBanner />
+    <Router>
     <NavBar />
     
       <Routes>

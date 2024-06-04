@@ -121,8 +121,8 @@ useEffect(() => {
     </FeatureContent>
   </FeatureItem>
 </Bait2Section>
-
       </HomeContainer>
+      
       <FacilityContainer style={{marginBottom:'15rem'}}>
           <FacilityCard>
               <FacilityCardContent>
