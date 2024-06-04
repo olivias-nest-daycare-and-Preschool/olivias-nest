@@ -1,11 +1,7 @@
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import {FacilityDescription, FacilityImageContainer,SingleFacility, SlantCard, StyledFacilitiesSection, Tags } from "../styles/sections/FacilitiesSection.styled";
 import {IndoorFacilities} from "../../data/IndoorFacilities";
-import { HeroSocialIcons, SocialIcon } from "../styles/sections/AboutSection.styled";
-import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { Container } from "../styles/common/Container.styled";
-import { Card, CardButton, CardContainer, CardContent, CardImage, CardText, CardTitle, SomeDataSection } from "../styles/sections/HomeSection.styled";
-import { HomeContainer } from "../styles/sections/ContactForm.styled";
 export const FacilitiesSection = () =>{
     return (
         <> 
