@@ -531,7 +531,7 @@ export const DivCard = styled.div`
 `;
 
 export const DivCardImage = styled.img`
-  width: 150%;
+  width: 120%;
   height: 100%;
   object-fit: cover; 
   border-radius: 20px;
