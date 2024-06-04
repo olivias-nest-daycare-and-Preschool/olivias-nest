@@ -111,7 +111,7 @@ export const NavList = styled.ul`
 `;
 export const NavItem = styled.li`
   position: relative;
-  margin: 1rem 3rem;
+  margin: 1rem 2rem;
 
   &:last-child {
     margin-right: 0;
