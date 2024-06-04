@@ -132,6 +132,7 @@ export const FeatureItem = styled.div`
   align-items: center;
   width: 100%;
   margin-bottom: 2rem; /* Reduce vertical space between items */
+  margin-top: 20rem;
   transition: all 300ms ease-in-out;
   &:hover{
     transform: translateY(-1rem);
@@ -140,6 +141,7 @@ export const FeatureItem = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 5rem;
   }
 `;
 
@@ -181,60 +183,117 @@ export const FeatureDescription = styled.p`
   color: rgba(255,255,255,0.7);
 `;
 
+export const BlockQuote = styled.blockquote`
+ font-style: italic;
+  margin: 20px;
+  padding: 10px 20px;
+  border-left: 5px solid #ccc;
+  color: white;
+  /* background-color: #f9f9f9; */
+  position: relative;
+  quotes: "“" "”" "‘" "’";
+  
+  &::before {
+    content: open-quote;
+    font-size: 4rem;
+    line-height: 0;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    color: #ccc;
+  }
+
+  &::after {
+    content: close-quote;
+    font-size: 4rem;
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+    color: #ccc;
+  }
+`;
+
+export const Cite = styled.cite`
+ display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-style: normal;
+  color: #777;
+`;
 
 export const SomeDataSection = styled.section`
 min-height: 90vh;
-padding: 10rem 0 5rem 0;
 width: 100%;
+position: relative;
 `;
 
 export const CardContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Card = styled.div`
   width: 90%;
   padding: 1rem;
-  margin-right: 2rem;
   background-color: rgba(0, 0, 0, 0.0);
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 900px; //newly-incorporated
+  border-radius: 20px;
   transition: all 300ms ease-in-out;
-
-&:hover{
+  margin-bottom: 1rem;
+  &.scrolled {
     transform: translateY(-1rem);
-}
+  }
+  &:hover{
+    transform: translateY(-1rem);
+  }
+ @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 90%;
+    margin-bottom: 1rem;
+    /* height: 20vh; */
+  }
 `;
 
 export const CardImage = styled.img`
   width: 100%;
-  height: 80%;
+  height: 60%;
   border-radius: 10px;
 `;
 
 export const CardContent = styled.div`
   margin-top: 1rem;
+  margin-top: 2rem; /* Increase space between cards */
+  margin-left: 1rem; /* Pull left margin */
+  margin-right: 1rem; /* Pull right margin */
 `;
 
 export const CardTitle = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight:200;
   margin-bottom: 0.5rem;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poetsen One",sans-serif;
   font-weight: bold;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 2rem;
+  }
 `;
 
 export const CardText = styled.p`
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 1rem;
   font-size: 2rem;
   font-family: "Poppins",sans-serif;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 1.6rem;
+  }
 `;
 
 export const CardButton = styled.a`
   display: inline-block;
-  
   margin-right: 18px;
   padding: 0.5rem 1rem;
   background-color: ${({theme})=> theme.colors.orange};
@@ -246,6 +305,10 @@ export const CardButton = styled.a`
   border-radius: 20px;
   font-size: 2rem;
   font-family: "Poppins",sans-serif;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 1.6rem;
+    padding: 0.5rem 0.8rem;
+  }
 `;
 
 
@@ -275,6 +338,11 @@ width: 100%;
 max-width:58rem;
 color: ${({theme})=>theme.colors.white};
 text-transform: uppercase;
+transition: all 300ms ease-in-out;
+  &:hover{
+    transform: translateY(-1rem);
+  }
+
 h1{
     letter-spacing: 0.5rem;
     font-size: 3rem;
@@ -283,7 +351,6 @@ h1{
     white-space: nowrap;
     width: 54ch;
     margin: auto;
-    /* border-right: 4px solid rgba(255,255,255,1); */
 }
 h3{
     font-size: 4rem;
@@ -314,7 +381,7 @@ div{
     h1{
         letter-spacing: 1rem;
         font-size: 1.5rem;
-        width: 40ch;
+        width: 50ch;
     }
     h3{
         font-size: 2.2rem;
@@ -379,3 +446,144 @@ background-color: rgba(0, 0, 0, 0.0);
     transform: translateY(-1rem);
 }
 `;
+
+
+export const PaginationButtons = styled.div`
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+`;
+
+export const Button = styled.button`
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+`;
+
+export const ImageContainer = styled.div`
+  width: 100%;
+  min-height: 60vh;
+  padding: 10rem 0 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+`;
+
+
+export const SchoolName = styled.div`
+  min-height: 50vh;
+  padding: 10rem 0 5rem 0;
+  width: 80%;
+  border-radius: 10px;
+  transform: translateY(-50px); /* Move the AdvertMenu up by 50px */
+  margin: 0 auto; /* Center the AdvertMenu */
+  display: flex;
+  justify-content: space-around;
+  transition: all 300ms ease-in-out;
+  &:scrolled{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  &:not-scrolled{
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+   @media (max-width: ${({theme})=>theme.mobile}){
+    /* min-height: 50vh; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20rem;
+  }
+`;
+
+export const DivCard = styled.div`
+  flex: 0 1 45%; /* Each card takes up 30% of the available space */
+  margin: 1rem;
+  background-color: black;
+  border-radius: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure the card is a positioned container */
+  border-radius: 20px;
+  transition: all 300ms ease-in-out;
+  &:hover{
+    transform: translateY(-1rem);
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex: 0 1 100%;
+    margin: 16rem 0;
+  }
+`;
+
+export const DivCardImage = styled.img`
+  width: 150%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 100%; /* Reset width to auto for mobile */
+    height: auto; /* Reset height to auto for mobile */
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+  }
+`;
+
+
+export const ButtonInsideBeforeComp = styled.button`
+  margin: 0 1rem; /* Add margin between buttons */
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #04273e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #ccc;
+  }
+`;
+
+
+export const StyledBeforeFooter = styled.footer`
+  width: 100%;
+  height: 40vh;
+  background-color: #311616;
+  display: flex;
+  border-radius: 50% 50% 0 0 / 50% 50% 0 0;
+
+  @media(max-width: ${({ theme }) => theme.mobile}) {
+    height: 90vh;
+    border-radius: 50% 50% 0 0 / 50% 50% 0 0;
+  }
+`;
+
+export const SloppyContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: white;
+  clip-path: path('M0,50 Q25,0 50,50 T100,50 T150,50 T200,50 L200,100 L0,100 Z');
+  border: 1px solid #000;
+`;
+
+
+export const Content = styled.div`
+  padding: 50px;
+  background: green;
+  height: 100%;
+`;
+

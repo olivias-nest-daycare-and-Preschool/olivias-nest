@@ -1,43 +1,79 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
+  position: relative;
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   padding: 2.5rem;
   color: #1d2022;
   text-align: center;
   font-size: 20px;
-  display: block;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background-color: #1d2022;
-  @media (min-width: 768px) {
-    flex-direction: row;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  @media(max-width:${({ theme })=> theme.mobile}){
     align-items: flex-start;
+    width: 100%;
+    background-color: #1d2022;
+    height: 58vh;
+    border-radius: 0; /* Reset border-radius for mobile */
   }
 `;
 
 export const FooterLogo = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-right: 0rem;
   font-weight: bold;
+  display: inline;
   img {
     height: 10rem;
     width: auto;
     border-radius: 50%;
-    display: block;
     margin: 1.5rem 0;
   }
-   @media (min-width: 768px) {
-    flex-direction: row;
+  @media (min-width: 768px) {
     align-items: center;
     justify-content: center;
-    img{
+    img {
       height: 10rem;
       width: auto;
       border-radius: 50%;
       display: block;
       margin: 1.5rem 0;
+      gap: -2px;
+    }
+  }
+`;
+
+export const FooterLogoRight = styled.div`
+ position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0rem;
+  font-weight: bold;
+  display: inline;
+  img {
+    height: 10rem;
+    width: auto;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+  }
+  @media (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 10rem;
+      width: auto;
+      border-radius: 50%;
+      display: block;
+      margin: 1.5rem 0;
+      gap: -2px;
     }
   }
 `;
@@ -45,6 +81,7 @@ export const FooterLogo = styled.div`
 export const ContactInfo = styled.div`
 margin-right: 0rem;
 font-weight: bold;
+margin-bottom: -10rem;
 a{
   height: 9rem;
   width: auto;
@@ -52,7 +89,6 @@ a{
   margin: 1.5rem 0;
 }
 @media (min-width: 768px) {
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   a{
@@ -69,9 +105,9 @@ a{
 
 export const FooterNav = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
+  margin-top: 1rem; /* Add margin to drop it down */
   a {
     margin-right: 1.5rem;
     margin-bottom: 0.5rem;
@@ -83,14 +119,14 @@ export const FooterNav = styled.div`
   &:last-child {
     margin: 0;
   }
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    align-items: center;
-
+  @media(max-width: ${({ theme })=> theme.mobile}){
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 5rem;
     a {
       margin-right: 1rem;
       margin-bottom: 0;
+      margin-top: 0.8rem;
     }
   }
 `;
@@ -106,8 +142,8 @@ export const FooterContent = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
+  @media (max-width: ${({ theme })=> theme.mobile}) {
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -159,4 +195,106 @@ letter-spacing: 1.5px;
         width: 100%;
     }
 }
+`;
+
+export const DeveloperInfoContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0.7rem;
+  font-size: 1.9rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+
+
+export const FooterNavContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0.7rem; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+
+export const FooterCard = styled.div`
+  position: absolute;
+  top: 14rem; /* Adjust this value based on your design */
+  left: 8rem; /* Adjust this value based on your design */
+  width: 30rem; /* Set the width of the card */
+  height: 30rem; /* Set the height of the card */
+  background-color: black; /* Set the background color of the card */
+  border-radius: 10px; /* Add some border radius to the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a floating effect */
+  padding: 1rem; /* Add some padding inside the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: white;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 40%; /* Adjust the width for mobile view */
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 12rem; /* Adjust this value based on your design */
+    left: 10rem; /* Adjust this value based on your design */
+    width: 15rem; /* Set the width of the card */
+    height: 20rem; /* Set the height of the card */
+    background-color: black; /* Set the background color of the card */
+    border-radius: 10px; /* Add some border radius to the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a floating effect */
+    padding: 1rem; /* Add some padding inside the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+`;
+
+
+export const RightFooterCard = styled.div`
+  position: absolute;
+  top: 14rem; /* Adjust this value based on your design */
+  right: 8rem; /* Adjust this value based on your design */
+  width: 30rem; /* Set the width of the card */
+  height: 30rem; /* Set the height of the card */
+  background-color: black; /* Set the background color of the card */
+  border-radius: 10px; /* Add some border radius to the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a floating effect */
+  padding: 1rem; /* Add some padding inside the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: white;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 50%; /* Adjust the width for mobile view */
+    right: 50%;
+    transform: translateX(240%);
+    position: absolute;
+    top: 12rem; /* Adjust this value based on your design */
+    left: 10rem; /* Adjust this value based on your design */
+    width: 15rem; /* Set the width of the card */
+    height: 20rem; /* Set the height of the card */
+    background-color: black; /* Set the background color of the card */
+    border-radius: 10px; /* Add some border radius to the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a floating effect */
+    padding: 1rem; /* Add some padding inside the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
 `;

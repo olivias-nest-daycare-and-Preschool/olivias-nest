@@ -55,7 +55,7 @@ font-weight: bold;
 export const Button = styled.button`
 padding: 1.5rem 1rem;
 border:none;
-border-radius: 20px;
+border-radius: 40px;
 background-color: ${({theme})=> theme.colors.orange};
 color: white;
 cursor: pointer;

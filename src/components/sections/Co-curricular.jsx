@@ -2,7 +2,7 @@
 import { Container } from "../styles/common/Container.styled";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import { HomeContainer } from "../styles/sections/ContactForm.styled";
-import { ClipHexagon, GalleryImage, GalleryItems,SingleGallery, StyledGallerySection } from "../styles/sections/GallerySection.styled";
+import {GalleryImage, GalleryItems,SingleGallery, StyledGallerySection } from "../styles/sections/GallerySection.styled";
 export const Cocurricular = ({isFloating}) =>{
     return(
         <>
@@ -16,9 +16,7 @@ export const Cocurricular = ({isFloating}) =>{
     <GalleryItems>
       <SingleGallery>
         <GalleryImage>
-          <ClipHexagon>
             <img src="./images/soccer.jpg" alt="kids modelling" />
-          </ClipHexagon>
         </GalleryImage>
         <p style={{ marginTop: '1rem' }}>
           We keep our children pre-occupied with sports at Olivia's Nest.
@@ -27,17 +25,13 @@ export const Cocurricular = ({isFloating}) =>{
       </SingleGallery>
       <SingleGallery>
         <GalleryImage>
-          <ClipHexagon>
             <img src="./images/kids.jpg" alt="stretching" />
-          </ClipHexagon>
         </GalleryImage>
         <p style={{ marginTop: '1rem' }}>Kids stretching as part of the co-curricular activities.</p>
       </SingleGallery>
       <SingleGallery>
         <GalleryImage>
-          <ClipHexagon>
             <img src="./images/soccer.jpg" alt="kids modelling" />
-          </ClipHexagon>
         </GalleryImage>
         <p style={{ marginTop: '1rem' }}>
           We keep our children pre-occupied with sports at Olivia's Nest.

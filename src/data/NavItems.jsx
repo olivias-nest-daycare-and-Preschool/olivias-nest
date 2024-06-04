@@ -1,82 +1,52 @@
-
 export const NavItems = [
     {
-        isProfile: true,
+      isProfile: true,
     },
     {
-        href: "/",
-        text: "Home",
+      href: "/",
+      text: "Home",
     },
     {
-        href: "/AboutUs",
-        text: "About Us",
+      href: "/AboutUs",
+      text: "About Us",
     },
     {
-        href: "/Facilities",
-        text: "Facilities",
+      href: "/Facilities",
+      text: "Facilities",
+      subItems: [
+        {
+          href: "/Facilities/Outdoor",
+          text: "Outdoor",
+          sectionId: "outdoor-facility",
+        },
+        {
+          href: "/Facilities/Indoor",
+          text: "Indoor",
+          sectionId: "indoor-facility",
+        },
+      ],
     },
     {
-        href: "/Co-curricular",
-        text: "Co-curricular",
+      href: "/Co-curricular",
+      text: "Co-curricular",
     },
     {
-        href: "/Transport",
-        text: "Transport",
+      href: "/Transport",
+      text: "Transport",
     },
     {
-        href: "/Gallery",
-        text: "Gallery",
+      href: "/Gallery",
+      text: "Gallery",
     },
     {
-        hasSocialIcons: true,
+      href: "/News",
+      text: "News",
     },
     {
-        hasCTA: true,
+      hasSocialIcons: true,
     },
-];
-
-// export const NavItems = [
-//     {
-//         isProfile: true,
-//     },
-//     {
-//         href: "#Home",
-//         text: "Home",
-//     },
-//     {
-//         href: "#AboutUs",
-//         text: "About-Us",
-//     },
-//     {
-//         href: "#Gallery",
-//         text: "Gallery",
-//     },
-//     {
-//         href: "#Facilities",
-//         text: "Facilities",
-//         submenu: [ // Add a submenu for Facilities
-//             {
-//                 href: "#Indoors", // Indoor Facilities
-//                 text: "Indoors",
-//             },
-//             {
-//                 href: "#Outdoors", // Outdoor Facilities
-//                 text: "Outdoors",
-//             },
-//         ],
-//     },
-//     {
-//         href: "#ContactUs",
-//         text: "Contact-Us",
-//     },
-//     {
-//         href: "#Co-curricular",
-//         text: "Co-curricular",
-//     },
-//     {
-//         hasSocialIcons: true,
-//     },
-//     {
-//         hasCTA: true,
-//     },
-// ];
+    {
+      hasCTA: true,
+    },
+  ];
+  

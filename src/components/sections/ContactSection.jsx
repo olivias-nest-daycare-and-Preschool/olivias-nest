@@ -6,8 +6,7 @@ import { HomeContainer} from "../styles/common/HomeConatiner";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import {Button, Form, Input, Label, StyledContactSectionMain,StyledSemiContactSectionMain, Textarea } from "../styles/sections/ContactSection.styled";
 import { Card, CardContainer,SomeDataSection } from "../styles/sections/HomeSection.styled";
-import {CardForm,Title,Paragraph,CheckBoxWrapper,CheckBoxLabel,CheckBox,Select,
-TextArea} from "../styles/sections/ContactForm.styled"
+import {CardForm,Title,Paragraph,CheckBoxWrapper,CheckBoxLabel,CheckBox,Select} from "../styles/sections/ContactForm.styled"
 import { Link } from "react-router-dom";
 export const ContactSection = () =>{
     const [selectedService, setSelectedService] = useState('');
@@ -18,13 +17,14 @@ export const ContactSection = () =>{
     return (
         <>
         <StyledContactSectionMain>
-            <StyledSemiContactSectionMain>
+            <StyledSemiContactSectionMain> 
             <SectionHeading>
-                <h1>Reach out please</h1>
+                <h1 style={{marginTop:'8rem'}}>Let's get in touch</h1>
                 <p><Link to="/ContactUs"><Link to="/">Home</Link> / Contact Us</Link></p>
-                {/* <h3>What would you like to hear more about?</h3> */}
             </SectionHeading>
+
        <CardForm>
+                <Card  style={{flexDirection:'column',justifyContent:'center'}}>
                 <Title>What would you like to hear more about?</Title>
                 <Paragraph>What services are interested in?</Paragraph>
                 <CheckBoxWrapper>
@@ -68,13 +68,21 @@ export const ContactSection = () =>{
                     <option>4-5yrs</option>
                     <option>5-6yrs</option>
                 </Select>
-                <Paragraph>Anything in particular you'd like to hear about?</Paragraph>
-                <TextArea placeholder='anything? the response is on the way...'/>
-                <Button>Send</Button>
+                </Card>
+
+                <Card style={{marginLeft:'-5rem'}}>
+                <Form>
+                        <Label htmlFor="email">Email:</Label>
+                        <Input type="email" id="email" name="email" />
+                        <Label htmlFor="message">Your Message:</Label>
+                        <Textarea id="message" name="message"  rows="4" placeholder="Write to Olivia's Nest..."/>
+                        <Button type="submit">Send Message</Button>
+                    </Form>
+                </Card>
     </CardForm>
             </StyledSemiContactSectionMain>
         </StyledContactSectionMain>
-        <HomeContainer>
+        <HomeContainer style={{marginTop:'10rem'}}>
             <SomeDataSection>
                 <CardContainer>
                     <Card>

@@ -126,3 +126,72 @@ span{
     margin-right: 1rem;
 }
 `;
+
+// IndoorFacilitySection.js
+ export const IndoorFacilitySection = () => {
+    return (
+      <section id="indoor-facility">
+        {/* Indoor facility content */}
+      </section>
+    );
+  };
+  
+  // OutdoorFacilitySection.js
+  export const OutdoorFacilitySection = () => {
+    return (
+      <section id="outdoor-facility">
+        {/* Outdoor facility content */}
+      </section>
+    );
+  };
+
+
+  export const FacilityCard =  styled.div`
+  width: 350px;
+  margin: 10px 10px;
+  box-shadow: 14px -12px 26px 5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px -1px 15px -5px #dad0d0;
+  box-shadow: 0px -1px 15px -5px #a8a4a4;
+  background: linear-gradient(to right, aliceblue 50%, ${({ theme })=> theme.colors.lightNavyBlue} 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+  height: 40vh;
+  &:hover{
+    color: darkblue;
+    border: 2px solid blue;
+    background-position: left bottom;
+    cursor: pointer;
+  }
+  `;
+
+  export const FacilityCardContent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+  margin-top: 4rem;
+  `;
+
+  export const FacilityCardTitle = styled.h1`
+  color: linear-gradient(to right, green, yellow, orange);
+  `;
+  export const FacilityCardDescription = styled.div`
+  color: gray;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5rem;
+  `;
+
+
+export const FacilityContainer = styled.div`
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+`;
+
+
+
+  

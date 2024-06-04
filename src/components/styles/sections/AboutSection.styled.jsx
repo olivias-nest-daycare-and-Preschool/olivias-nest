@@ -40,8 +40,8 @@ position: relative;
 `;
 
 export const StyledImage = styled.img`
-height: 12rem;
-width: 12rem;
+height: 20rem;
+width: 20rem;
 border-radius: 50%;
 position: absolute;
 z-index: 4;
@@ -136,4 +136,35 @@ export const AboutUsSection = styled.section`
 min-height: 60vh;
 padding: 10rem 0 5rem 0;
 width: 100%;
+`;
+
+
+export const ImageCoveredContainer = styled.div`
+  width: 100%;
+  height: 383vh;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/wall2.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(20px); /* For Safari */
+  @media(max-width:${({ theme })=> theme.mobile}){
+    /* align-items: flex-start;
+    width: 100%;
+    height: 90vh;
+    display: inline; */
+    position: relative;
+    align-items: flex-start;
+    width: 100%;
+    height: 383vh;
+    display: inline;
+    background-size: cover !important;/* Ensures the image is fully visible */
+    background-repeat: no-repeat !important; /* Prevents the image from repeating */
+    backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+    -webkit-backdrop-filter: blur(20px); /* For Safari */
+  }
+`;
+
+export const StyledFooter = styled.footer`
+
 `;

@@ -1,13 +1,18 @@
 import { FaBus, FaChild, FaPaintBrush} from "react-icons/fa";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
-import { GalleryImage, GalleryItems, IconGalleryWrapper, SingleGallery, StyledGallerySection } from "../styles/sections/GallerySection.styled";
+import { 
+    GalleryImage, 
+    GalleryItems, 
+    IconGalleryWrapper, 
+    SingleGallery, 
+    StyledGallerySection } from "../styles/sections/GallerySection.styled";
 export const GallerySection = () =>{
     return (
         <>
-        <StyledGallerySection id="Gallery">
+        <StyledGallerySection style={{marginTop:'18rem'}} id="Gallery">
             <SectionHeading>
-                <h1>Gallery</h1>
-                <h3>Classrooms & Indoors</h3>
+                <h1>Our Gallery</h1>
+                <h3>Our decorated pictures</h3>
             </SectionHeading>
             <GalleryItems>
                 <SingleGallery>
@@ -45,6 +50,7 @@ export const GallerySection = () =>{
                 </SingleGallery>
             </GalleryItems>
         </StyledGallerySection>
+        <StyledGallerySection>
         <GalleryItems>
                 <SingleGallery>
                     <IconGalleryWrapper>
@@ -80,8 +86,9 @@ export const GallerySection = () =>{
                     </p>
                 </SingleGallery>
             </GalleryItems>
-        {/*classrooms and studies*/}
+        </StyledGallerySection>
         <hr />
+
         <StyledGallerySection>
                 <SectionHeading>
                 <h3>sports</h3>
@@ -122,8 +129,8 @@ export const GallerySection = () =>{
                 </SingleGallery>
             </GalleryItems>
         </StyledGallerySection>
-        {/*sports*/}
         <hr />
+
         <StyledGallerySection>
             <SectionHeading>
                 <h3>Facilities</h3>

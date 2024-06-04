@@ -1,15 +1,17 @@
-import { AboutContent, AboutUsSection, DullCircle, GradCircle, HeroSocialIcons, ImageContainer, SocialIcon, StyledHeading, StyledImage } from "../styles/sections/AboutSection.styled";
+import { AboutContent, AboutUsSection, DullCircle, GradCircle, HeroSocialIcons, ImageContainer, ImageCoveredContainer, SocialIcon, StyledHeading, StyledImage } from "../styles/sections/AboutSection.styled";
 import { CTAButton } from "../styles/common/CTAButton.styled";
 import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { Container } from "../styles/common/Container.styled";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
-import { Card,CardContainer,CardImage, CardText} from "../styles/sections/HomeSection.styled";
-import { HomeContainer } from "../styles/common/HomeConatiner";
-
+import { BlockQuote, Card,CardContainer,CardContent,CardImage, CardText, CardTitle, Cite, SomeDataSection} from "../styles/sections/HomeSection.styled";
+import { GalleryItems, HomeContainer, SingleGallery, StaffDetails } from "../styles/common/HomeConatiner";
+import { StyledGallerySection } from "../styles/sections/GallerySection.styled";
 export const AboutSection = () =>{
+
     return <> 
+    <ImageCoveredContainer>
     <Container>
-    <AboutUsSection id="/AboutUs" style={{marginTop:'15rem'}}>
+    <AboutUsSection id="/AboutUs" style={{marginTop:'20rem'}}>
         <ImageContainer>
             <StyledImage src="./images/wall2.jpg" alt="olivia's nest jpg file"/>
             <DullCircle/>
@@ -56,63 +58,150 @@ export const AboutSection = () =>{
                 </HeroSocialIcons>
     </AboutUsSection>
     </Container>
+
     <HomeContainer>
-    <AboutUsSection>
-        <SectionHeading>
-            <h1>About Olivia's Nest</h1>
-            <h3>Our Faculty  & School Premises</h3>
-        </SectionHeading>
-        <CardContainer>
+      <SomeDataSection>
+  <SectionHeading>
+    <h1>Our Staff</h1>
+  </SectionHeading>
+  <CardContainer>
         <Card>
-          <CardImage style={{borderRadius:'50%'}} src="./images/wall2.jpg" alt="paintings on the road" />
-          <CardText>
-            premise of the school & perimeter wall
-          </CardText>
+          <CardImage src="./images/staff/admin-head-teacher.jpg" alt="head teacher"style={{borderRadius:'50%'}}/>
+          <CardContent>
+            <CardTitle>Admin</CardTitle>
+            <CardText>
+              School's admin and head teacher. She is very steadfast in 
+              overseeing and coordinating learning and placement of our
+              teachers. Such a pure soul.
+            </CardText>
+          </CardContent>
         </Card>
+        
         <Card>
-          <CardImage style={{borderRadius:'50%'}} src="./images/gate2.jpg" alt="picture for the new gate" />
-          <CardText>
-            School gate ushering you to the school premise
-          </CardText>
+          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%'}}/>
+          <CardContent>
+            <CardTitle>Teachers</CardTitle>
+            <CardText>
+              We are very appreciative of the dedication and determination
+              that our teachers take to educate and take care of our 
+              children. We really thank them.
+            </CardText>
+          </CardContent>
         </Card>
+
         <Card>
-          <CardImage style={{borderRadius:'50%'}} src="./images/meetings.jpg" alt="parent meetings" />
-          <CardText>
-            preparation for annual parent's meeting
-          </CardText>
+          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%'}}/>
+          <CardContent>
+            <CardTitle>Teachers</CardTitle>
+            <CardText>
+              We are very appreciative of the dedication and determination
+              that our teachers take to educate and take care of our 
+              children. We really thank them.
+            </CardText>
+          </CardContent>
         </Card>
       </CardContainer>
-    </AboutUsSection>
 
-    {/* Second row */}
+      <CardContainer style={{marginTop:'-10rem'}}>
+      <Card>
+          <CardImage src="./images/staff/chef.jpg" alt="parent meetings" style={{borderRadius:'50%'}}/>
+          <CardContent>
+            <CardTitle>Chef</CardTitle>
+            <CardText>
+            <BlockQuote>
+        "One cannot think well,love well,sleep well, if one has not dined well." 
+        <Cite style={{color:'white'}}>Virginia Woolf</Cite>
+        </BlockQuote>
+        Cheers to our amazing Chef for the cuisines and dietary.
+            </CardText>
+          </CardContent>
+        </Card>
+      <Card>
+          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%'}}/>
+          <CardContent>
+            <CardTitle>Teachers</CardTitle>
+            <CardText>
+              We are very appreciative of the dedication and determination
+              that our teachers take to educate and take care of our 
+              children. We really thank them.
+            </CardText>
+          </CardContent>
+        </Card>
 
-    <AboutUsSection>
-        {/* <SectionHeading>
-            <h1>About Olivia's Nest</h1>
-            <h3>Our Faculty  & School Premises</h3>
-        </SectionHeading> */}
-        <CardContainer>
         <Card>
-          <CardImage style={{borderRadius:'50%'}} src="./images/wall2.jpg" alt="paintings on the road" />
-          <CardText>
-            premise of the school & perimeter wall
-          </CardText>
-        </Card>
-        <Card>
-          <CardImage style={{borderRadius:'50%'}} src="./images/gate2.jpg" alt="picture for the new gate" />
-          <CardText>
-            School gate ushering you to the school premise
-          </CardText>
-        </Card>
-        <Card>
-          <CardImage style={{borderRadius:'50%'}} src="./images/meetings.jpg" alt="parent meetings" />
-          <CardText>
-            preparation for annual parent's meeting
-          </CardText>
+          <CardImage src="./images/staff/cleaning staff.jpg" alt="parent meetings" style={{borderRadius:'50%'}}/>
+          <CardContent>
+            <CardTitle>Hygiene Department</CardTitle>
+            <CardText>
+            <BlockQuote>
+        "Hygiene is the health care of the soul as well as of the body." 
+        <Cite style={{color:'white'}}>John Randolph</Cite>
+        </BlockQuote>
+            </CardText>
+          </CardContent>
         </Card>
       </CardContainer>
-    </AboutUsSection>
-    </HomeContainer>
-    <hr/>
+      <hr style={{marginTop:'5rem'}}/>
+  </SomeDataSection>
+      </HomeContainer>
+    
+    <HomeContainer>
+   <StyledGallerySection>
+    <SectionHeading>
+        <h1>Our Premises</h1>
+    </SectionHeading>
+    <GalleryItems>
+        <SingleGallery>
+          <StaffDetails>
+                <h3>School</h3>
+                <img src="./images/wall2.jpg" alt="our school" />
+                <p>Welcome to our school</p>
+            </StaffDetails>
+        </SingleGallery>
+        <SingleGallery>
+        <StaffDetails>
+                <h3>Child monitoring</h3>
+                <img src="./images/toons/toddler.png" alt="tolder" />
+                <p style={{marginTop:'4rem'}}>This is a critical thing for a child's growth</p>
+            </StaffDetails>
+        </SingleGallery>
+        <SingleGallery>
+        <StaffDetails>
+                <h3>Child monitoring</h3>
+                <img src="./images/toons/toddler.png" alt="tolder" />
+                <p style={{marginTop:'4rem'}}>This is a critical thing for a child's growth</p>
+            </StaffDetails>
+        </SingleGallery>
+    </GalleryItems>
+
+    <GalleryItems>
+        <SingleGallery>
+        <StaffDetails>
+                <h3>Child monitoring</h3>
+                <img src="./images/soccer.jpg" alt="soccer"  />
+                <p>Our children participate in tournaments.
+                </p>
+            </StaffDetails>
+        </SingleGallery>
+        <SingleGallery>
+        <StaffDetails>
+                <h3>Tennis Training session</h3>
+                <img src="./images/tennis.jpg" alt="tennis at the court"/>
+                <p>Tennis session ongoing at our Court</p>
+            </StaffDetails>
+        </SingleGallery>
+        <SingleGallery>
+        <StaffDetails>
+                <h3>Tennis court</h3>
+                <img src="./images/skating.jpg" alt="kids skating" />
+                <p>Skating session ongoing</p>
+            </StaffDetails>
+        </SingleGallery>
+    </GalleryItems>
+</StyledGallerySection>
+
+   </HomeContainer>
+    </ImageCoveredContainer>
+    <hr />
     </>
 };

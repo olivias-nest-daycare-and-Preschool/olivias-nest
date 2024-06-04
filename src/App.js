@@ -5,15 +5,17 @@ import { GlobalStyles } from "./components/styles/Globals.styled";
 import { NavBar } from "./components/layout/NavBar";
 import { TopBanner } from "./components/layout/TopBanner";
 import { HomeSection } from "./components/sections/HomeSection";
-import { Container } from "./components/styles/common/Container.styled";
 import { AboutSection } from "./components/sections/AboutSection";
 import { FacilitiesSection } from "./components/sections/FacilitiesSection";
 import { GallerySection } from "./components/sections/GallerySection";
 import { ContactSection } from "./components/sections/ContactSection";
 import { Footer } from "./components/layout/Footer";
 import { TransportSection } from "./components/sections/TransportSection";
-import { HomeContainer } from "./components/styles/common/HomeConatiner";
 import { Cocurricular } from "./components/sections/Co-curricular";
+import IndoorFacilitySection from "./components/layout/IndoorFacilitySection";
+import OutdoorFacilitySection from "./components/layout/OutdoorFacilitySection";
+import News from "./components/sections/News";
+import { HomeContainer } from "./components/styles/common/HomeConatiner";
 const  App = () =>{
   const theme = {
     colors: {
@@ -35,11 +37,10 @@ const  App = () =>{
     <Router>
     <TopBanner />
     <NavBar />
-    <HomeContainer>
+    
       <Routes>
         <Route path="/" element={<HomeSection />} />
       </Routes>
-    </HomeContainer>
 
       <Routes>
       <Route path="/AboutUs" element={<AboutSection />} />
@@ -48,21 +49,27 @@ const  App = () =>{
       {/* <Container> */}
         <Routes>
         <Route path="/Facilities" element={<FacilitiesSection />} />
+        <Route path="/Facilities/Indoor" element={<IndoorFacilitySection />} /> 
+        <Route path="/Facilities/Outdoor" element={<OutdoorFacilitySection />} /> 
         </Routes>
       {/* </Container> */}
-      <Container>
-        <Routes>
+      <HomeContainer>
+      <Routes>
         <Route path="/Gallery" element={<GallerySection />} />
         </Routes>
-      </Container>
+      </HomeContainer>
+       <Routes>
+        <Route path="/News" element={<News />} />
+       </Routes>
+
         <Routes>
         <Route path="/ContactUs" element={<ContactSection />} />
         </Routes>
-      <Container>
+
         <Routes>
         <Route path="/Transport" element ={<TransportSection /> } />
         </Routes>
-      </Container>
+
       
         <Routes>
         <Route path="/Co-curricular" element ={<Cocurricular />} />

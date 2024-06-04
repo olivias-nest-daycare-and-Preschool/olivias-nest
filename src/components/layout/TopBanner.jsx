@@ -5,16 +5,19 @@ import { StyledBannerSection, StyledTopBanner } from "../styles/layout/TopBanner
 export const TopBanner = () =>{
     return <>
     <StyledTopBanner>
-        <StyledBannerSection>
+        {/* <StyledBannerSection>
             <a href="mailto:oliviasnest1@gmail.com">
                 <SparklingText text="🙋‍♀️ oliviasnest1@gmail.com 🙋‍♀️"/>
             </a>
-        </StyledBannerSection>
+        </StyledBannerSection> */}
+
+    
         <StyledBannerSection showOnMobile>
            <a href="/ContactUs">
            <SparklingText text="intake ongoing" />
            </a>
         </StyledBannerSection>
+
         <StyledBannerSection>
             <a href="/Facilities"> 
             <SparklingText text="🏫what we offer🏫" /> </a>

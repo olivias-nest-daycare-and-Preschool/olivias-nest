@@ -8,9 +8,9 @@ color: ${({primary,theme})=> primary ? theme.colors.white:"none"};
 padding: 10px 20px;
 margin: ${({margin})=>margin};
 border: 2px solid ${({ theme })=> theme.colors.orange}; 
-border-radius: 5px;
+/* border-radius: 5px; */
 font-size: 22px;
-font-family: "Poppins",sans-serif;
+font-family: "Poetsen One",monospace;
 font-weight: 700;
 border-radius: 20px;
 cursor: pointer;
@@ -24,5 +24,8 @@ margin-right: 40px;
     primary ? theme.colors.white: theme.colors.orange};
     border: 2px solid  ${({ theme })=>theme.colors.orange};
 }
+ @media (max-width: ${({theme})=>theme.mobile}){
+  margin: 10px 10px; //adjust cta buttons
+  }
 
 `;

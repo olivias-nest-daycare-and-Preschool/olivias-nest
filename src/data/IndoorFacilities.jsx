@@ -37,6 +37,35 @@ export const IndoorFacilities = [
         tags: ["outdoor","amenities","co-curricular"],
         paragraph: "Fitness is part of our culture, we indulge our kids into sports and fitness."+
         "We offer various sports and games."
-    }
+    },   {
+        thumbnail: "./images/kids.jpg",
+        title: "Co-curricular activities",
+        tags: ["outdoor","amenities","co-curricular"],
+        paragraph: "Fitness is part of our culture, we indulge our kids into sports and fitness."+
+        "We offer various sports and games."
+    }, 
+      {
+        thumbnail: "./images/kids.jpg",
+        title: "Co-curricular activities",
+        tags: ["outdoor","amenities","co-curricular"],
+        paragraph: "Fitness is part of our culture, we indulge our kids into sports and fitness."+
+        "We offer various sports and games."
+    },
+    
+    {
+        thumbnail: "./images/kids.jpg",
+        title: "Co-curricular activities",
+        tags: ["outdoor","amenities","co-curricular"],
+        paragraph: "Fitness is part of our culture, we indulge our kids into sports and fitness."+
+        "We offer various sports and games."
+    }, 
+    
+    {
+        thumbnail: "./images/kids.jpg",
+        title: "Co-curricular activities",
+        tags: ["outdoor","amenities","co-curricular"],
+        paragraph: "Fitness is part of our culture, we indulge our kids into sports and fitness."+
+        "We offer various sports and games."
+    },
     
 ];

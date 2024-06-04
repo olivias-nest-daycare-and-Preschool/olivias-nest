@@ -1,3 +1,4 @@
+import { HomeContainer } from "../styles/common/HomeConatiner";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import { GalleryImage, GalleryItems, SingleGallery, StyledGallerySection } from "../styles/sections/GallerySection.styled";
 
@@ -5,6 +6,7 @@ import { GalleryImage, GalleryItems, SingleGallery, StyledGallerySection } from 
 export const TransportSection = () =>{
     return (
         <>
+        <HomeContainer>
         <StyledGallerySection style={{marginTop:'20rem'}}>
             <SectionHeading>
             <h1>Transport</h1>
@@ -13,12 +15,12 @@ export const TransportSection = () =>{
             <GalleryItems>
                 <SingleGallery>
                     <GalleryImage>
-                    <img src="./images/van.jpg" alt="school van" />
+                    <img src="./images/van/boarding_C.jpg" alt="school van" />
                     </GalleryImage>
                 </SingleGallery>
                 <SingleGallery>
                     <SectionHeading>
-                        <h1>About Transport System.</h1>
+                        <h1>Transport System.</h1>
                     </SectionHeading>
                 <p>
                         We offer affordable transport to our esteemed customers.
@@ -40,24 +42,27 @@ export const TransportSection = () =>{
                     </p>
                 </SingleGallery>
             </GalleryItems>
-            <GalleryItems>
+        </StyledGallerySection>
+        <StyledGallerySection>
+        <GalleryItems>
                 <SingleGallery>
                 <GalleryImage>
-                    <img src="./images/van.jpg" alt="school van" />
+                    <img src="./images/van/boarding_G.jpg" alt="school van" />
                 </GalleryImage>
                 </SingleGallery>
                 <SingleGallery>
                 <GalleryImage>
-                    <img src="./images/van.jpg" alt="school van" />
+                    <img src="./images/van/boarding_C.jpg" alt="school van" />
                 </GalleryImage>
                 </SingleGallery>
                 <SingleGallery>
                 <GalleryImage>
-                    <img src="./images/van.jpg" alt="school van" />
+                    <img src="./images/van/boarding_D.jpg" alt="school van" />
                 </GalleryImage>
                 </SingleGallery>
             </GalleryItems>
         </StyledGallerySection>
+        </HomeContainer>
         <hr />
         </>
     );

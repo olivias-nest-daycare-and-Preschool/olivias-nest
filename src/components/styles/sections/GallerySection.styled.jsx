@@ -16,6 +16,7 @@ flex-wrap: wrap;
     flex-direction: column;
 }
 `;
+
 export const ClipHexagon = styled.div`
   width: 100%;
   height: 100%;
@@ -84,7 +85,7 @@ position: relative;
 perspective: 1000px;
 img{
     width: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
     z-index: 3;
  }
  @media(max-width: ${({theme})=> theme.mobile}){

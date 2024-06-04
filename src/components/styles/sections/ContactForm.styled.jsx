@@ -10,6 +10,12 @@ export const ContactFormContainer = styled.div`
 &:hover{
     transform: translateY(-1rem);
 }
+@media (max-width: ${({ theme }) => theme.mobile}) {
+    padding: 1rem; 
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const ContactForm = styled.form`
@@ -84,14 +90,13 @@ export const HomeContainer = styled.div`
 
 export const CardForm = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   margin-left: 120px;
   width: 90%;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.0);
   border-radius: 25px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   transition: all 300ms ease-in-out;
   font-family: "Poppins", sans-serif;
 `;

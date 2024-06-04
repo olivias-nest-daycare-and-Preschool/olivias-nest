@@ -10,11 +10,13 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 }
 
+
 html{
-    font-family: "Share Tech Mono", monospace;
+    font-family: "Poetsen One", monospace;
     scroll-behavior: smooth;
     color: ${({ theme })=> theme.colors.white};
     background: ${({ theme })=> theme.colors.lightNavyBlue};
+    /* background: grey; */
     font-size: 12px;
 }
 
@@ -57,5 +59,10 @@ hr{
 ::-webkit-scrollbar-thumb:hover{
     background: #202e46;
 }
-
+select{
+    option {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
 `;
