@@ -27,6 +27,12 @@ export const Footer = () =>{
             <img src="./images/logo.png" alt="olivia's nest logo" />
         </FooterLogo>
 
+        <FooterContent>
+       <ContactInfo>
+            <a href="mailto:oliviasnest1@gmail.com">🙋‍♀️ oliviasnest1@gmail.com 🙋‍♀️</a>
+            </ContactInfo>
+       </FooterContent>
+
        <FooterContent>
        <FooterNav>
           <Link to="/">Home</Link>
@@ -41,12 +47,6 @@ export const Footer = () =>{
        </FooterContent>
 
        <FooterContent>
-       <ContactInfo>
-            <a href="mailto:oliviasnest1@gmail.com">🙋‍♀️ oliviasnest1@gmail.com 🙋‍♀️</a>
-            </ContactInfo>
-       </FooterContent>
-
-       <FooterContent>
         <ContactInfo>
             <p>Olivia's Nest International & Kindergaten</p>
         </ContactInfo>
@@ -56,6 +56,7 @@ export const Footer = () =>{
        <img src="./images/logo.png" alt="olivia's nest logo" />
        </FooterLogoRight>
 
+           <FooterContent>
            <ContactInfo>
            <SocialIcons>
             <NavLink href="https://www.facebook.com/oliviasnest" target="_blank">
@@ -71,6 +72,7 @@ export const Footer = () =>{
             </NavLink>
           </SocialIcons>
            </ContactInfo>
+           </FooterContent>
 
            <FooterCard>
            <h2>VALUES</h2>
@@ -90,8 +92,16 @@ export const Footer = () =>{
 
            <hr />
         <DeveloperInfoContainer>
-        <DeveloperInfo><FaHeart /> Olivia's Nest International.<FaHeart /></DeveloperInfo>
-        <DeveloperInfo> All rights reserved</DeveloperInfo>
+        <DeveloperInfo>
+            <FooterContent>
+            <FaHeart /> Olivia's Nest International.<FaHeart />
+            </FooterContent>
+        </DeveloperInfo>
+        <DeveloperInfo> 
+            <FooterContent>
+            All rights reserved
+            </FooterContent>
+        </DeveloperInfo>
         <CopyRightInfo>&copy;{new Date().getFullYear()}</CopyRightInfo>
         </DeveloperInfoContainer>
     </StyledFooter>

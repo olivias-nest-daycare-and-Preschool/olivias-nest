@@ -632,6 +632,7 @@ export const DivCard = styled.div`
     flex: 0 1 100%;
     margin: 16rem 0;
     margin-top: 5rem;
+    margin-bottom: 20rem;
   }
 `;
 

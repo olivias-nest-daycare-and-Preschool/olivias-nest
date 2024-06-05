@@ -19,7 +19,7 @@ export const StyledFooter = styled.footer`
     align-items: flex-start;
     width: 100%;
     background-color: #1d2022;
-    height: 58vh;
+    height: 90vh;
     border-radius: 0; /* Reset border-radius for mobile */
   }
 `;
@@ -81,7 +81,7 @@ export const FooterLogoRight = styled.div`
 export const ContactInfo = styled.div`
 margin-right: 0rem;
 font-weight: bold;
-margin-bottom: -10rem;
+margin-bottom: -6rem;
 a{
   height: 9rem;
   width: auto;
@@ -135,6 +135,7 @@ export const DeveloperInfo = styled.div`
   margin-top: 0.7rem;
   font-size: 1.9rem;
   color: white;
+  /* @media(max-width: $) */
 `;
 
 export const FooterContent = styled.div`
@@ -241,23 +242,7 @@ export const FooterCard = styled.div`
   text-align: left;
   color: white;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 40%; /* Adjust the width for mobile view */
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    top: 12rem; /* Adjust this value based on your design */
-    left: 10rem; /* Adjust this value based on your design */
-    width: 15rem; /* Set the width of the card */
-    height: 20rem; /* Set the height of the card */
-    background-color: black; /* Set the background color of the card */
-    border-radius: 10px; /* Add some border radius to the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a floating effect */
-    padding: 1rem; /* Add some padding inside the card */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+    display: none;
   }
 `;
 
