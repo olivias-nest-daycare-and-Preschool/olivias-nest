@@ -180,7 +180,6 @@ useEffect(() => {
               </FacilityCardContent>
             </FacilityCard>
         </FacilityContainer>
-
       <HomeContainer>
   <SectionHeading>
     <h1>Facilities & What we offer</h1>

@@ -136,12 +136,11 @@ export const FeatureItem = styled.div`
   transition: all 300ms ease-in-out;
   &:hover{
     transform: translateY(-1rem);
-}
-
+  }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 `;
 
@@ -254,7 +253,7 @@ export const Card = styled.div`
  @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 90%;
     margin-bottom: 1rem;
-    /* height: 20vh; */
+    height: 600px;
   }
 `;
 
@@ -521,7 +520,7 @@ export const DivCard = styled.div`
   position: relative; /* Ensure the card is a positioned container */
   border-radius: 20px;
   transition: all 300ms ease-in-out;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   /* left: 2rem; */
   &:hover{
     transform: translateY(-1rem);
