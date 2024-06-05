@@ -60,7 +60,7 @@ useEffect(() => {
 <SchoolContainer>
         <SchoolName>
           <DivHero>
-          <HeroContent style={{fontFamily: 'Poetsen One, sans-serif', marginRight:'15rem',}}>
+          <HeroContent style={{fontFamily: 'Poetsen One, sans-serif'}}>
         <h1>Welcome to Olivia's Nest.</h1>
         <h3>international Daycare and PreSchool</h3>
         <p>A happy place to be, where love is shown daily...</p>

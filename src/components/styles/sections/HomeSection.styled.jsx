@@ -237,7 +237,7 @@ export const CardContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  width: 90%;
+  width: 100%;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.0);
   height: 700px; //newly-incorporated
@@ -332,64 +332,84 @@ padding: 20px 0;
 text-align: center;
 `;
 
-export const HeroContent = styled.div `
-width: 100%;
-max-width:58rem;
-color: ${({theme})=>theme.colors.white};
-text-transform: uppercase;
-transition: all 300ms ease-in-out;
-  &:hover{
+
+export const HeroContent = styled.div`
+  width: 100%;
+  max-width: 58rem;
+  color: ${({ theme }) => theme.colors.white};
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+  &:hover {
     transform: translateY(-1rem);
   }
 
-h1{
+  h1 {
     letter-spacing: 0.5rem;
     font-size: 3rem;
     font-weight: 900;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: nowrap; // Prevent wrapping on larger screens
     width: 54ch;
     margin: auto;
-}
-h3{
+  }
+
+  h3 {
     font-size: 4rem;
     margin: 1.5rem 0;
     background: linear-gradient(
-        to right,
-        ${({theme})=>theme.colors.orange} 0%,
-        ${({theme})=>theme.colors.purple} 100%
+      to right,
+      ${({ theme }) => theme.colors.orange} 0%,
+      ${({ theme }) => theme.colors.purple} 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 3rem 0;
-}
-p{
+    white-space: nowrap; // Prevent wrapping on larger screens
+  }
+
+  p {
     font-size: 2rem;
     font-weight: 400;
     text-transform: none;
     margin: 3rem 0;
-}
-div{
+    white-space: nowrap; // Prevent wrapping on larger screens
+  }
+
+  div {
     margin: 3rem 0;
-    p{
+
+    p {
       font-style: italic;
+      white-space: nowrap; // Prevent wrapping on larger screens
     }
-}
-@media (max-width: ${({theme})=>theme.mobile}){
-    h1{
-        letter-spacing: 1rem;
-        font-size: 1.5rem;
-        width: 50ch;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    h1 {
+      letter-spacing: 0.8rem;
+      font-size: 1.5rem;
+      width: 100%; // Use full width for wrapping
+      white-space: normal; // Allow text to wrap on mobile
+      word-wrap: break-word; // Ensure text wraps on mobile
     }
-    h3{
-        font-size: 2.2rem;
+    h3 {
+      font-size: 2.1rem;
+      white-space: normal; // Allow text to wrap on mobile
+      word-wrap: break-word; // Ensure text wraps on mobile
     }
-    p{
-        font-size: 1.3rem;
+    p {
+      font-size: 1.2rem;
+      white-space: normal; // Allow text to wrap on mobile
+      word-wrap: break-word; // Ensure text wraps on mobile
     }
-}
+    div p {
+      white-space: normal; // Allow text to wrap on mobile
+      word-wrap: break-word; // Ensure text wraps on mobile
+    }
+  }
 `;
+
 
 
 export const ShortSomeDataSection = styled.section`
@@ -535,11 +555,12 @@ export const DivCard = styled.div`
 
 export const DivHero = styled.div`
 width: 40%;
-height: 50vh;
-
+height: 80vh;
 @media(max-width: ${({theme})=> theme.mobile}){
   width: 160%;
   height: 50vh;
+  flex-direction: column;
+  left: 15rem;
 }
 `;
 
@@ -547,10 +568,10 @@ export const DivCardImage = styled.img`
   width: 120%;
   height: 100%;
   object-fit: cover; 
-  border-radius: 20px;
+  border-radius: 10px;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%; /* Reset width to auto for mobile */
-    height: auto; /* Reset height to auto for mobile */
+    width: 300%; /* Reset width to auto for mobile */
+    height: 100; /* Reset height to auto for mobile */
     max-width: 100%; /* Ensure the image doesn't exceed its container width */
   }
 `;

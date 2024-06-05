@@ -11,7 +11,7 @@ export const SchoolContainer = styled.section`
   margin: 0 auto;
   padding: 0 20px;
   margin-top: 25rem;
-  //change
+  height: 120vh;
   display: flex;
   flex-direction: column; /* Ensure column layout for mobile */
   align-items: center; /* Center align items */
