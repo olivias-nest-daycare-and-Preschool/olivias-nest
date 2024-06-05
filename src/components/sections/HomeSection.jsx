@@ -18,8 +18,7 @@ import {
   FeatureItem,
   FeatureTitle,
   HeroContent,
-   SchoolName, 
-   SomeDataSection} from "../styles/sections/HomeSection.styled";
+   SchoolName} from "../styles/sections/HomeSection.styled";
 import {GalleryItems, 
   HomeContainer, 
   SchoolContainer, 
@@ -59,13 +58,15 @@ useEffect(() => {
 <StyledHomeBackground>
 <SchoolContainer>
         <SchoolName>
-        <HeroContent style={{fontFamily: 'Poetsen One, sans-serif', marginRight:'15rem',}}>
+          <div>
+          <HeroContent style={{fontFamily: 'Poetsen One, sans-serif', marginRight:'15rem',}}>
         <h1>Welcome to Olivia's Nest.</h1>
         <h3>international Daycare and PreSchool</h3>
         <p>A happy place to be, where love is shown daily...</p>
           <CTAButton href="/AboutUs">About Us</CTAButton>
           <CTAButton href="/Facilities" primary margin="0 0 0 20px">Facilities</CTAButton>
       </HeroContent>
+          </div>
       <DivCard>
         <DivCardImage src={images[currentImageIndex]} alt="gate section and our wall" />
       </DivCard>
@@ -79,8 +80,8 @@ useEffect(() => {
         <InfoCard>
           <Image src="./images/pexels-pixabay-459957.jpg" alt="Description of the image" />
         </InfoCard>
-
         </InfoCardContainer>
+        
 </SchoolContainer>
 </StyledHomeBackground>
 
@@ -181,7 +182,6 @@ useEffect(() => {
         </FacilityContainer>
 
       <HomeContainer>
-      <SomeDataSection>
   <SectionHeading>
     <h1>Facilities & What we offer</h1>
     <h3>some facilities</h3>
@@ -223,10 +223,21 @@ useEffect(() => {
             <CardButton href="/Gallery">sports</CardButton>
           </CardContent>
         </Card>
+        <Card>
+          <CardImage src="./images/study_rooms.JPG" alt="basket ball" style={{borderRadius:'50%'}}/>
+          <CardContent>
+            <CardTitle>Classrooms & Lockers</CardTitle>
+            <CardText>
+              We have perfect fitting lockers for our classrooms.
+              The lockers can conjoin during discussions and made separate for 
+              individual assessment.
+            </CardText>
+            <CardButton href="/Gallery">sports</CardButton>
+          </CardContent>
+        </Card>
       </CardContainer>
-      <hr style={{marginTop:'5rem'}}/>
-  </SomeDataSection>
       </HomeContainer>
+      <hr style={{marginTop:'5rem'}}/>
 
    <StyledGallerySection>
     <SectionHeading>

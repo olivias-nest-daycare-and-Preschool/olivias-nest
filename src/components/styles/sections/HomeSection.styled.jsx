@@ -241,7 +241,7 @@ export const Card = styled.div`
   width: 90%;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.0);
-  height: 900px; //newly-incorporated
+  height: 700px; //newly-incorporated
   border-radius: 20px;
   transition: all 300ms ease-in-out;
   margin-bottom: 1rem;
@@ -521,6 +521,8 @@ export const DivCard = styled.div`
   position: relative; /* Ensure the card is a positioned container */
   border-radius: 20px;
   transition: all 300ms ease-in-out;
+  margin-top: 10rem;
+  /* left: 2rem; */
   &:hover{
     transform: translateY(-1rem);
   }
@@ -535,7 +537,6 @@ export const DivCardImage = styled.img`
   height: 100%;
   object-fit: cover; 
   border-radius: 20px;
-
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100%; /* Reset width to auto for mobile */
     height: auto; /* Reset height to auto for mobile */
