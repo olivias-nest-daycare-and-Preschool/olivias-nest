@@ -187,6 +187,7 @@ useEffect(() => {
     <h1>Facilities & What we offer</h1>
     <h3>some facilities</h3>
   </SectionHeading>
+  
   <CardContainer>
         <Card>
           <CardImage  src="./images/beds.jpg" alt="king size beds" style={{borderRadius:'50%'}}/>
