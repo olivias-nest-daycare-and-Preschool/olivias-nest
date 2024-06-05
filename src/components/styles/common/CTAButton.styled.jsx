@@ -9,7 +9,7 @@ padding: 10px 20px;
 margin: ${({margin})=>margin};
 border: 2px solid ${({ theme })=> theme.colors.orange}; 
 /* border-radius: 5px; */
-font-size: 22px;
+font-size: 18px;
 font-family: "Poetsen One",monospace;
 font-weight: 700;
 border-radius: 20px;
@@ -26,6 +26,7 @@ margin-right: 40px;
 }
  @media (max-width: ${({theme})=>theme.mobile}){
   margin: 10px 10px; //adjust cta buttons
+  font-size: 1.4rem;
   }
 
 `;

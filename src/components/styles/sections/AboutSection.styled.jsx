@@ -82,7 +82,7 @@ p{
 }
 @media(max-width:${({theme})=>theme.mobile}){
    p{
-    font-size: 1.9rem;
+    font-size: 1.2rem;
    }
 }
 ` ;

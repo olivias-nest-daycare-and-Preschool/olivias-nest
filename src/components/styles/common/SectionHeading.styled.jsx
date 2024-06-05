@@ -34,5 +34,8 @@ p{
 }
 @media(max-width: ${({theme})=>theme.mobile}){
     text-align: left;
+    p{
+        font-size: 10px;
+    }
 }
 `;

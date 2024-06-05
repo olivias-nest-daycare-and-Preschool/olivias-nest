@@ -287,7 +287,7 @@ export const CardText = styled.p`
   font-size: 2rem;
   font-family: "Poppins",sans-serif;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -305,7 +305,7 @@ export const CardButton = styled.a`
   font-size: 2rem;
   font-family: "Poppins",sans-serif;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     padding: 0.5rem 0.8rem;
   }
 `;

@@ -32,17 +32,6 @@ export const AboutSection = () =>{
             All are welcome at Olivia's Nest.👶
 
             </p>
-            <p>
-            Olivia's Nest is an Edu-care center for kids all over Nairobi. We cater for kids starting with kids in
-            day-care to kindergarten to pre-school. We are located located in Kileleshwa, Lavington area. 
-            In Olivia's Nest, your child will be in a safe setting, in a continuously learning environment to make them 
-            the best they can ever be.
-            We have a team of caring and competent, and qualified teachers to make your dream of seeing your child 
-            excel come true. Teachers, embody skills, knowledge with a little bit of enthusiasm to spark a good impression
-            on Young developing minds. 
-            All are welcome at Olivia's Nest.👶
-
-            </p>
             <CTAButton href="/ContactUs">Inquiries ? reach out...</CTAButton>
         </AboutContent>
         <HeroSocialIcons>
