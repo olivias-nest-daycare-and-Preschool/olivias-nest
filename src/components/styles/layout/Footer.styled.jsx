@@ -129,7 +129,7 @@ export const FooterNav = styled.div`
     align-items: flex-start;
     padding-right: 5rem;
     a {
-      margin-right: 1rem;
+      margin-right: -6rem;
       margin-bottom: 0;
       margin-top: 1rem;
     }
@@ -140,7 +140,16 @@ export const DeveloperInfo = styled.div`
   margin-top: 0.7rem;
   font-size: 1.9rem;
   color: white;
-  /* @media(max-width: $) */
+  @media(max-width: ${({theme})=> theme.mobile}){
+    p{
+      white-space: nowrap;
+    }
+    svg{
+      color: red;
+      /* font-size: 2rem; */
+      display: inline;
+    }
+  }
 `;
 
 export const FooterContent = styled.div`

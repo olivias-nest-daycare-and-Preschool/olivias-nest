@@ -243,8 +243,9 @@ export const SocialIcons = styled.div`
     a {
       margin: 0 0.5rem;
       font-size: 2rem;
-      margin-top: -5rem;
-      left: -4rem;
+      margin-top: -4rem;
+      /* left: -4rem; */
+      margin-right:2rem ;
     }
   }
 `;

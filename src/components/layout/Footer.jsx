@@ -95,7 +95,7 @@ export const Footer = () =>{
            <hr />
         <DeveloperInfoContainer>
         <DeveloperInfo>
-            <FaHeart /> Olivia's Nest International.<FaHeart />
+            <p><FaHeart /> Olivia's Nest International.<FaHeart /></p>
         </DeveloperInfo>
         <DeveloperInfo> 
             <FooterContent>
