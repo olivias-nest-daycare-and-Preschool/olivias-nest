@@ -143,6 +143,7 @@ export const DeveloperInfo = styled.div`
   @media(max-width: ${({theme})=> theme.mobile}){
     p{
       white-space: nowrap;
+      margin-right: -6rem;
     }
     svg{
       color: red;

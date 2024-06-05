@@ -102,7 +102,9 @@ export const Footer = () =>{
             All rights reserved
             </FooterContent>
         </DeveloperInfo>
+        <DeveloperInfo>
         <CopyRightInfo>&copy;{new Date().getFullYear()}</CopyRightInfo>
+        </DeveloperInfo>
         </DeveloperInfoContainer>
     </StyledFooter>
     <div></div>
