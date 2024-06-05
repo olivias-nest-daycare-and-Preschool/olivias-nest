@@ -17,10 +17,10 @@ export const StyledHomeBackground = styled.footer`
 `;
 
 export const InfoCard = styled.div`
-  top: 30rem; /* Adjust this value based on your design */
-  left: -27rem; /* Adjust this value based on your design */
+  top: 42rem; /* Adjust this value based on your design */
+  left: -35rem; /* Adjust this value based on your design */
   width: 43rem; /* Set the width of the card */
-  height: 45rem; /* Set the height of the card */
+  height: 40rem; /* Set the height of the card */
   background-color: black; /* Set the background color of the card */
   border-radius: 40px; /* Add some border radius to the card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a floating effect */
@@ -39,8 +39,12 @@ export const InfoCard = styled.div`
     transform: translateY(-1rem);
   }
    @media (max-width: ${({theme})=>theme.mobile}){
-    width: 90%; /* Adjust width for mobile */
-    height: 90%; /* Adjust height for mobile */
+    top: 14rem; /* Adjust this value based on your design */
+    left: 0.8rem; /* Adjust this value based on your design */
+    /* width: 43rem; 
+    height: 45rem; */
+    width: 80%; /* Adjust width for mobile */
+    height: 80%; /* Adjust height for mobile */
     margin-top: 2rem; /* Adjust margin for mobile */
     margin-right: 1; /* Remove right margin for mobile */
   }

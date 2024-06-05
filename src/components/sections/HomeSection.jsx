@@ -12,6 +12,7 @@ import {
   Cite,
   DivCard,
   DivCardImage,
+  DivHero,
   FeatureContent,
   FeatureDescription,
   FeatureImage,
@@ -58,7 +59,7 @@ useEffect(() => {
 <StyledHomeBackground>
 <SchoolContainer>
         <SchoolName>
-          <div>
+          <DivHero>
           <HeroContent style={{fontFamily: 'Poetsen One, sans-serif', marginRight:'15rem',}}>
         <h1>Welcome to Olivia's Nest.</h1>
         <h3>international Daycare and PreSchool</h3>
@@ -66,7 +67,8 @@ useEffect(() => {
           <CTAButton href="/AboutUs">About Us</CTAButton>
           <CTAButton href="/Facilities" primary margin="0 0 0 20px">Facilities</CTAButton>
       </HeroContent>
-          </div>
+          </DivHero>
+         
       <DivCard>
         <DivCardImage src={images[currentImageIndex]} alt="gate section and our wall" />
       </DivCard>

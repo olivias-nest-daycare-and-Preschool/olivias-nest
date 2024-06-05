@@ -520,6 +520,8 @@ export const DivCard = styled.div`
   position: relative; /* Ensure the card is a positioned container */
   border-radius: 20px;
   transition: all 300ms ease-in-out;
+  height: 50vh;
+  width: 40%;
   /* margin-top: 10rem; */
   /* left: 2rem; */
   &:hover{
@@ -529,6 +531,16 @@ export const DivCard = styled.div`
     flex: 0 1 100%;
     margin: 16rem 0;
   }
+`;
+
+export const DivHero = styled.div`
+width: 40%;
+height: 50vh;
+
+@media(max-width: ${({theme})=> theme.mobile}){
+  width: 160%;
+  height: 50vh;
+}
 `;
 
 export const DivCardImage = styled.img`
