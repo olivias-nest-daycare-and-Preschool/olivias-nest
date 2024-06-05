@@ -333,83 +333,164 @@ text-align: center;
 `;
 
 
-export const HeroContent = styled.div`
-  width: 100%;
-  max-width: 58rem;
-  color: ${({ theme }) => theme.colors.white};
-  text-transform: uppercase;
-  transition: all 300ms ease-in-out;
-  &:hover {
+// export const HeroContent = styled.div`
+//   width: 100%;
+//   max-width: 58rem;
+//   color: ${({ theme }) => theme.colors.white};
+//   text-transform: uppercase;
+//   transition: all 300ms ease-in-out;
+//   &:hover {
+//     transform: translateY(-1rem);
+//   }
+
+//   h1 {
+//     letter-spacing: 0.5rem;
+//     font-size: 3rem;
+//     font-weight: 900;
+//     overflow: hidden;
+//     white-space: nowrap; // Prevent wrapping on larger screens
+//     width: 54ch;
+//     margin: auto;
+//   }
+
+//   h3 {
+//     font-size: 4rem;
+//     margin: 1.5rem 0;
+//     background: linear-gradient(
+//       to right,
+//       ${({ theme }) => theme.colors.orange} 0%,
+//       ${({ theme }) => theme.colors.purple} 100%
+//     );
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     margin: 3rem 0;
+//     white-space: nowrap; // Prevent wrapping on larger screens
+//   }
+
+//   p {
+//     font-size: 2rem;
+//     font-weight: 400;
+//     text-transform: none;
+//     margin: 3rem 0;
+//     white-space: nowrap; // Prevent wrapping on larger screens
+//   }
+
+//   div {
+//     margin: 3rem 0;
+
+//     p {
+//       font-style: italic;
+//       white-space: nowrap; // Prevent wrapping on larger screens
+//     }
+//   }
+
+//   @media (max-width: ${({ theme }) => theme.mobile}) {
+//     h1 {
+//       letter-spacing: 0.8rem;
+//       font-size: 1.5rem;
+//       width: 100%; // Use full width for wrapping
+//       white-space: normal; // Allow text to wrap on mobile
+//       word-wrap: break-word; // Ensure text wraps on mobile
+//     }
+//     h3 {
+//       font-size: 2.1rem;
+//       white-space: normal; // Allow text to wrap on mobile
+//       word-wrap: break-word; // Ensure text wraps on mobile
+//     }
+//     p {
+//       font-size: 1.2rem;
+//       white-space: normal; // Allow text to wrap on mobile
+//       word-wrap: break-word; // Ensure text wraps on mobile
+//     }
+//     div p {
+//       white-space: normal; // Allow text to wrap on mobile
+//       word-wrap: break-word; // Ensure text wraps on mobile
+//     }
+//   }
+// `;
+
+export const HeroContent = styled.div `
+width: 100%;
+max-width:58rem;
+color: ${({theme})=>theme.colors.white};
+text-transform: uppercase;
+transition: all 300ms ease-in-out;
+  &:hover{
     transform: translateY(-1rem);
   }
 
-  h1 {
+h1{
     letter-spacing: 0.5rem;
     font-size: 3rem;
     font-weight: 900;
     overflow: hidden;
-    white-space: nowrap; // Prevent wrapping on larger screens
+    white-space: nowrap;
     width: 54ch;
     margin: auto;
-  }
-
-  h3 {
+}
+h3{
     font-size: 4rem;
     margin: 1.5rem 0;
     background: linear-gradient(
-      to right,
-      ${({ theme }) => theme.colors.orange} 0%,
-      ${({ theme }) => theme.colors.purple} 100%
+        to right,
+        ${({theme})=>theme.colors.orange} 0%,
+        ${({theme})=>theme.colors.purple} 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 3rem 0;
-    white-space: nowrap; // Prevent wrapping on larger screens
-  }
-
-  p {
+}
+p{
     font-size: 2rem;
     font-weight: 400;
     text-transform: none;
     margin: 3rem 0;
-    white-space: nowrap; // Prevent wrapping on larger screens
-  }
-
-  div {
+}
+div{
     margin: 3rem 0;
-
-    p {
+    p{
       font-style: italic;
-      white-space: nowrap; // Prevent wrapping on larger screens
     }
-  }
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
+}
+/* @media (max-width: ${({theme})=>theme.mobile}){
+    h1{
+        letter-spacing: 0.8rem;
+        font-size: 1.5rem;
+        width: 45ch;
+    }
+    h3{
+        font-size: 2.1rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+} */
+@media (max-width: ${({ theme }) => theme.mobile}) {
     h1 {
-      letter-spacing: 0.8rem;
+     letter-spacing: 0.8rem;
       font-size: 1.5rem;
-      width: 100%; // Use full width for wrapping
-      white-space: normal; // Allow text to wrap on mobile
-      word-wrap: break-word; // Ensure text wraps on mobile
+       width: 100%; // Use full width for wrapping
+       white-space: normal; // Allow text to wrap on mobile
+       word-wrap: break-word; // Ensure text wraps on mobile
+     }
+     h3 {
+       font-size: 2.1rem;
+       white-space: normal; // Allow text to wrap on mobile
+       word-wrap: break-word; // Ensure text wraps on mobile
+     }
+     p {
+       font-size: 1.2rem;
+       white-space: normal; // Allow text to wrap on mobile
+       word-wrap: break-word; // Ensure text wraps on mobile
+     }
+     div p {
+       white-space: normal; // Allow text to wrap on mobile
+       word-wrap: break-word; // Ensure text wraps on mobile
+     }
     }
-    h3 {
-      font-size: 2.1rem;
-      white-space: normal; // Allow text to wrap on mobile
-      word-wrap: break-word; // Ensure text wraps on mobile
-    }
-    p {
-      font-size: 1.2rem;
-      white-space: normal; // Allow text to wrap on mobile
-      word-wrap: break-word; // Ensure text wraps on mobile
-    }
-    div p {
-      white-space: normal; // Allow text to wrap on mobile
-      word-wrap: break-word; // Ensure text wraps on mobile
-    }
-  }
 `;
-
 
 
 export const ShortSomeDataSection = styled.section`
@@ -533,15 +614,15 @@ export const SchoolName = styled.div`
 
 export const DivCard = styled.div`
   flex: 0 1 45%; /* Each card takes up 30% of the available space */
-  margin: 1rem;
+  margin: 4rem;
   background-color: black;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   position: relative; /* Ensure the card is a positioned container */
   border-radius: 20px;
   transition: all 300ms ease-in-out;
   height: 50vh;
-  width: 40%;
+  width: auto;
   /* margin-top: 10rem; */
   /* left: 2rem; */
   &:hover{
@@ -550,28 +631,30 @@ export const DivCard = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex: 0 1 100%;
     margin: 16rem 0;
+    margin-top: 5rem;
   }
 `;
 
 export const DivHero = styled.div`
-width: 40%;
+width: auto;
 height: 80vh;
 @media(max-width: ${({theme})=> theme.mobile}){
-  width: 160%;
+  width: auto;
   height: 50vh;
   flex-direction: column;
-  left: 15rem;
+  left: 2rem;
+  margin-top:20rem;
 }
 `;
 
 export const DivCardImage = styled.img`
   width: 120%;
-  height: 100%;
+  height: 140%;
   object-fit: cover; 
   border-radius: 10px;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 300%; /* Reset width to auto for mobile */
-    height: 100; /* Reset height to auto for mobile */
+    width: auto; /* Reset width to auto for mobile */
+    height: auto; /* Reset height to auto for mobile */
     max-width: 100%; /* Ensure the image doesn't exceed its container width */
   }
 `;

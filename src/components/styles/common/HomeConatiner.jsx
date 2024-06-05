@@ -11,12 +11,12 @@ export const SchoolContainer = styled.section`
   margin: 0 auto;
   padding: 0 20px;
   margin-top: 25rem;
-  height: 120vh;
+  height: 100vh;
   display: flex;
   flex-direction: column; /* Ensure column layout for mobile */
   align-items: center; /* Center align items */
    @media (max-width: ${({theme})=>theme.mobile}){
-    margin-top: 45rem !important;
+    margin-top: 25rem !important;
   }
 `;
 

@@ -12,7 +12,7 @@ export const StyledHomeBackground = styled.footer`
   backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
   -webkit-backdrop-filter: blur(20px); /* For Safari */
   @media(max-width:${({ theme })=> theme.mobile}){ 
-    height: 87vh;
+    /* height: 120vh; */
   }
 `;
 
