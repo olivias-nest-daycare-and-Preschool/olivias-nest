@@ -29,7 +29,9 @@ export const Footer = () =>{
 
         <FooterContent>
        <ContactInfo>
-            <a href="mailto:oliviasnest1@gmail.com">🙋‍♀️ oliviasnest1@gmail.com 🙋‍♀️</a>
+            <a href="mailto:oliviasnest1@gmail.com"
+             style={{marginTop:'5rem',marginBottom:'-5rem'}}>
+                🙋‍♀️ oliviasnest1@gmail.com 🙋‍♀️</a>
             </ContactInfo>
        </FooterContent>
 
@@ -93,9 +95,7 @@ export const Footer = () =>{
            <hr />
         <DeveloperInfoContainer>
         <DeveloperInfo>
-            <FooterContent>
             <FaHeart /> Olivia's Nest International.<FaHeart />
-            </FooterContent>
         </DeveloperInfo>
         <DeveloperInfo> 
             <FooterContent>

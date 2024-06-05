@@ -47,6 +47,7 @@ export const FooterLogo = styled.div`
       display: block;
       margin: 1.5rem 0;
       gap: -2px;
+      
     }
   }
 `;
@@ -81,21 +82,25 @@ export const FooterLogoRight = styled.div`
 export const ContactInfo = styled.div`
 margin-right: 0rem;
 font-weight: bold;
-margin-bottom: -6rem;
+margin-bottom: -5rem;
 a{
   height: 9rem;
   width: auto;
   display: block;
   margin: 1.5rem 0;
 }
+
+
+
 @media (min-width: 768px) {
   align-items: center;
   justify-content: center;
   a{
-    height: 9rem;
+  height: 9rem;
   width: auto;
   display: block;
   margin: 1.5rem 0; 
+  margin-bottom: 4rem;
   }
   div{
 
@@ -126,7 +131,7 @@ export const FooterNav = styled.div`
     a {
       margin-right: 1rem;
       margin-bottom: 0;
-      margin-top: 0.8rem;
+      margin-top: 1rem;
     }
   }
 `;
@@ -201,7 +206,7 @@ letter-spacing: 1.5px;
 export const DeveloperInfoContainer = styled.div`
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 40%;
   transform: translateX(-50%);
   margin-bottom: 0.7rem;
   font-size: 1.9rem;
