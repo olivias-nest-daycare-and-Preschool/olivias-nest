@@ -43,8 +43,8 @@ export const InfoCard = styled.div`
     left: 0.8rem; /* Adjust this value based on your design */
     /* width: 43rem; 
     height: 45rem; */
-    width: 80%; /* Adjust width for mobile */
-    height: 80%; /* Adjust height for mobile */
+    width: 100%; /* Adjust width for mobile */
+    height: 120%; /* Adjust height for mobile */
     margin-top: 2rem; /* Adjust margin for mobile */
     margin-right: 1; /* Remove right margin for mobile */
   }
@@ -54,11 +54,11 @@ export const InfoCard = styled.div`
 export const InfoCardContainer = styled.div`
 display: flex;
 margin-top: -35rem;
- /* @media (max-width: ${({theme})=>theme.mobile}){
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2rem;
-  } */
+ @media (max-width: ${({theme})=>theme.mobile}){
+  /* flex-direction: column;
+  align-items: center; */
+  /* margin-top: 3rem; */
+  }
 `;
 
 export const Heading = styled.h1`
