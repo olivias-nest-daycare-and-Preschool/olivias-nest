@@ -141,7 +141,7 @@ width: 100%;
 
 export const ImageCoveredContainer = styled.div`
   width: 100%;
-  height: 383vh;
+  height: 80vh;
   position: relative;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/wall2.jpg');
   background-size: cover;

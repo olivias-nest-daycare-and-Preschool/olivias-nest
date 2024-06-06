@@ -189,12 +189,12 @@ useEffect(() => {
               </FacilityCardContent>
             </FacilityCard>
         </FacilityContainer>
+
       <HomeContainer>
   <SectionHeading>
     <h1>Facilities & What we offer</h1>
     <h3> <BsSunglasses /> sneaky link <BsSunglasses /> </h3>
   </SectionHeading>
-  
   <CardContainer>
         <Card>
           <CardImage  src="./images/beds.jpg" alt="king size beds" style={{borderRadius:'50%'}}/>
@@ -207,7 +207,6 @@ useEffect(() => {
             <CardButton href="/Facilities">Facilities</CardButton>
           </CardContent>
         </Card>
-        
         <Card>
           <CardImage  src="./images/about_us.jpg" alt="king size beds" style={{borderRadius:'50%'}}/>
           <CardContent>
@@ -234,7 +233,7 @@ useEffect(() => {
         </Card>
       </CardContainer>
       </HomeContainer>
-      <hr style={{marginTop:'7rem'}}/>
+      <hr style={{marginTop:'8rem'}}/>
 
    <StyledGallerySection>
     <SectionHeading>

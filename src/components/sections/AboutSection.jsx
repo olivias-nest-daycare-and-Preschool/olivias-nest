@@ -3,13 +3,13 @@ import { CTAButton } from "../styles/common/CTAButton.styled";
 import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { Container } from "../styles/common/Container.styled";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
-import { BlockQuote, Card,CardContainer,CardContent,CardImage, CardText, CardTitle, Cite, SomeDataSection} from "../styles/sections/HomeSection.styled";
+import { BlockQuote, Card,CardContainer,CardContent,CardImage, CardText, CardTitle, Cite} from "../styles/sections/HomeSection.styled";
 import { GalleryItems, HomeContainer, SingleGallery, StaffDetails } from "../styles/common/HomeConatiner";
 import { StyledGallerySection } from "../styles/sections/GallerySection.styled";
 export const AboutSection = () =>{
 
     return <> 
-    <ImageCoveredContainer>
+    <ImageCoveredContainer> 
     <Container>
     <AboutUsSection id="/AboutUs" style={{marginTop:'20rem'}}>
         <ImageContainer>
@@ -47,15 +47,15 @@ export const AboutSection = () =>{
                 </HeroSocialIcons>
     </AboutUsSection>
     </Container>
+    </ImageCoveredContainer>
 
     <HomeContainer>
-      <SomeDataSection>
-  <SectionHeading>
+    <SectionHeading>
     <h1>Our Staff</h1>
-  </SectionHeading>
-  <CardContainer>
+   </SectionHeading>
+    <CardContainer>
         <Card>
-          <CardImage src="./images/staff/admin-head-teacher.jpg" alt="head teacher"style={{borderRadius:'50%'}}/>
+          <CardImage src="./images/staff/admin-head-teacher.jpg" alt="head teacher"style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
           <CardContent>
             <CardTitle>Admin</CardTitle>
             <CardText>
@@ -67,7 +67,7 @@ export const AboutSection = () =>{
         </Card>
         
         <Card>
-          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%'}}/>
+          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
           <CardContent>
             <CardTitle>Teachers</CardTitle>
             <CardText>
@@ -79,7 +79,7 @@ export const AboutSection = () =>{
         </Card>
 
         <Card>
-          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%'}}/>
+          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
           <CardContent>
             <CardTitle>Teachers</CardTitle>
             <CardText>
@@ -90,23 +90,25 @@ export const AboutSection = () =>{
           </CardContent>
         </Card>
       </CardContainer>
+    </HomeContainer>
+    
 
-      <CardContainer style={{marginTop:'-10rem'}}>
+      <CardContainer style={{marginTop:'2rem'}}>
       <Card>
-          <CardImage src="./images/staff/chef.jpg" alt="parent meetings" style={{borderRadius:'50%'}}/>
+          <CardImage src="./images/staff/chef.jpg" alt="parent meetings" style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
           <CardContent>
             <CardTitle>Chef</CardTitle>
             <CardText>
             <BlockQuote>
-        "One cannot think well,love well,sleep well, if one has not dined well." 
-        <Cite style={{color:'white'}}>Virginia Woolf</Cite>
-        </BlockQuote>
-        Cheers to our amazing Chef for the cuisines and dietary.
+            "One cannot think well,love well,sleep well, if one has not dined well." 
+            <Cite style={{color:'white'}}>Virginia Woolf</Cite>
+            </BlockQuote>
+            Cheers to our amazing Chef for the cuisines and dietary.
             </CardText>
           </CardContent>
         </Card>
       <Card>
-          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%'}}/>
+          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
           <CardContent>
             <CardTitle>Teachers</CardTitle>
             <CardText>
@@ -118,7 +120,7 @@ export const AboutSection = () =>{
         </Card>
 
         <Card>
-          <CardImage src="./images/staff/cleaning staff.jpg" alt="parent meetings" style={{borderRadius:'50%'}}/>
+          <CardImage src="./images/staff/cleaning staff.jpg" alt="parent meetings" style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
           <CardContent>
             <CardTitle>Hygiene Department</CardTitle>
             <CardText>
@@ -130,10 +132,9 @@ export const AboutSection = () =>{
           </CardContent>
         </Card>
       </CardContainer>
+
       <hr style={{marginTop:'5rem'}}/>
-  </SomeDataSection>
-      </HomeContainer>
-    
+
     <HomeContainer>
    <StyledGallerySection>
     <SectionHeading>
@@ -190,7 +191,6 @@ export const AboutSection = () =>{
 </StyledGallerySection>
 
    </HomeContainer>
-    </ImageCoveredContainer>
     <hr />
     </>
 };

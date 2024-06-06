@@ -239,14 +239,13 @@ export const CardContainer = styled.div`
 
 export const Card = styled.div`
   width: 50%;
-  /* height: 100%; */
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.0);
   transition: all 300ms ease-in-out;
   margin-bottom: 1rem;
-  &.scrolled {
+  /* &.scrolled {
     transform: translateY(-1rem);
-  }
+  } */
   &:hover{
     transform: translateY(-1rem);
   }
@@ -258,13 +257,13 @@ export const Card = styled.div`
 `;
 
 export const CardImage = styled.img`
-  width: 60%;
-  height: 75%;
-  border-radius: 10px;
+  width: 70%;
+  height: 80%;
+  /* border-radius: 10px; */
   @media(max-width: ${({theme})=> theme.mobile}){
-  width: 100%;
-  height: 60%;
-  border-radius: 10px;
+  /* width: 100%;
+  height: 60%; */
+  /* border-radius: 10px; */
   }
 `;
 
