@@ -258,9 +258,14 @@ export const Card = styled.div`
 `;
 
 export const CardImage = styled.img`
+  width: 60%;
+  height: 75%;
+  border-radius: 10px;
+  @media(max-width: ${({theme})=> theme.mobile}){
   width: 100%;
   height: 60%;
   border-radius: 10px;
+  }
 `;
 
 export const CardContent = styled.div`

@@ -147,7 +147,7 @@ useEffect(() => {
              
             <FacilityCard>
               <FacilityCardContent>
-                <FacilityCardTitle> View on education</FacilityCardTitle>
+                <FacilityCardTitle> Our view on education</FacilityCardTitle>
                 <FacilityCardDescription>Lorem ipsum dolor sit, 
                   amet consectetur adipisicing elit. 
                   Dicta odit vitae at sit beatae id itaque dignissimos?
@@ -232,21 +232,9 @@ useEffect(() => {
             <CardButton href="/Gallery">sports</CardButton>
           </CardContent>
         </Card>
-        {/* <Card>
-          <CardImage src="./images/study_rooms.JPG" alt="basket ball" style={{borderRadius:'50%'}}/>
-          <CardContent>
-            <CardTitle>Classrooms & Lockers</CardTitle>
-            <CardText>
-              We have perfect fitting lockers for our classrooms.
-              The lockers can conjoin during discussions and made separate for 
-              individual assessment.
-            </CardText>
-            <CardButton href="/Gallery">sports</CardButton>
-          </CardContent>
-        </Card> */}
       </CardContainer>
       </HomeContainer>
-      <hr style={{marginTop:'5rem'}}/>
+      <hr style={{marginTop:'7rem'}}/>
 
    <StyledGallerySection>
     <SectionHeading>
