@@ -20,7 +20,8 @@ import {
   FeatureTitle,
   HeroContent,
    SchoolName} from "../styles/sections/HomeSection.styled";
-import {GalleryItems, 
+import {
+  GalleryItems, 
   HomeContainer, 
   SchoolContainer, 
   SingleGallery, 
@@ -28,12 +29,17 @@ import {GalleryItems,
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import { CTAButton } from "../styles/common/CTAButton.styled";
 import { StyledGallerySection } from "../styles/sections/GallerySection.styled";
-import { FacilityCard,
-   FacilityCardContent, 
+import {
+  FacilityCard,
+  FacilityCardContent, 
   FacilityCardDescription,
-   FacilityCardTitle,
-   FacilityContainer } from "../styles/sections/FacilitiesSection.styled";
-import { Image, InfoCard, InfoCardContainer,StyledHomeBackground } from "../styles/HomeBackground.styled";
+  FacilityCardTitle,
+  FacilityContainer } from "../styles/sections/FacilitiesSection.styled";
+import { 
+  Image, 
+  InfoCard, 
+  InfoCardContainer,
+  StyledHomeBackground } from "../styles/HomeBackground.styled";
 import { BsSunglasses } from "react-icons/bs";
    
 const images = [
@@ -62,7 +68,7 @@ useEffect(() => {
         <SchoolName>
           <DivHero>
           <HeroContent style={{fontFamily: 'Poetsen One, sans-serif'}}>
-        <h1>Welcome to Olivia's Nest.</h1>
+        <h1 style={{fontSize:'3.3rem'}}>Welcome to Olivia's Nest</h1>
         <h3>international Daycare and PreSchool</h3>
         <p>A happy place to be, where love is shown daily...</p>
           <CTAButton href="/AboutUs">About Us</CTAButton>
