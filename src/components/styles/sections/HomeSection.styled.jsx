@@ -239,10 +239,9 @@ export const CardContainer = styled.div`
 
 export const Card = styled.div`
   width: 50%;
-  padding: 1.2rem;
+  /* height: 100%; */
+  padding: 1rem;
   background-color: rgba(0, 0, 0, 0.0);
-  /* height: 500px; //newly-incorporated */
-  border-radius: 20px;
   transition: all 300ms ease-in-out;
   margin-bottom: 1rem;
   &.scrolled {
@@ -254,7 +253,7 @@ export const Card = styled.div`
  @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 90%;
     margin-bottom: 1rem;
-    /* height: 600px; */
+    height: 500px;
   }
 `;
 
