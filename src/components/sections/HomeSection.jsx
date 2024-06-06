@@ -34,6 +34,7 @@ import { FacilityCard,
    FacilityCardTitle,
    FacilityContainer } from "../styles/sections/FacilitiesSection.styled";
 import { Image, InfoCard, InfoCardContainer,StyledHomeBackground } from "../styles/HomeBackground.styled";
+import { BsSunglasses } from "react-icons/bs";
    
 const images = [
   "./images/beds.jpg",
@@ -185,7 +186,7 @@ useEffect(() => {
       <HomeContainer>
   <SectionHeading>
     <h1>Facilities & What we offer</h1>
-    <h3>some facilities</h3>
+    <h3> <BsSunglasses /> sneaky link <BsSunglasses /> </h3>
   </SectionHeading>
   
   <CardContainer>
@@ -251,20 +252,17 @@ useEffect(() => {
             <StaffDetails>
                 <h3>Child monitoring</h3>
                 <img src="./images/toons/toddler.png" alt="tolder" />
-                <p style={{marginTop:'4rem'}}>This is a critical thing for a child's growth</p>
             </StaffDetails>
-        </SingleGallery>s
+        </SingleGallery>
         <SingleGallery>
             <StaffDetails>
                 <h3>Firstname Lastname</h3>
-                {/* <p>Job Title</p> */}
                 <img src="./images/toons/kid-bubbles.jpg" alt="kid playing with bubbles" />
             </StaffDetails>
         </SingleGallery>
         <SingleGallery>
             <StaffDetails>
                 <h3>Firstname Lastname</h3>
-                {/* <p>Job Title</p> */}
                 <img src="./images/toons/girl-toon.png" alt="cartoon girl" style={{height:'500px'}}/>
             </StaffDetails>
         </SingleGallery>

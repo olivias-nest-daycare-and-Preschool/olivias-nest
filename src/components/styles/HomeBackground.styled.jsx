@@ -21,9 +21,9 @@ export const InfoCard = styled.div`
   left: -35rem; /* Adjust this value based on your design */
   width: 43rem; /* Set the width of the card */
   height: 40rem; /* Set the height of the card */
-  background-color: black; /* Set the background color of the card */
+  /* background-color: #c7c3c3;  */
   border-radius: 40px; /* Add some border radius to the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a floating effect */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
   padding: 1rem; /* Add some padding inside the card */
   display: flex;
   justify-content: center;

@@ -14,8 +14,6 @@ align-items: center;
 justify-content: space-between;
 padding: 9px 20px;
 z-index: 99;
-
-
     @media(max-width: ${({ theme })=> theme.mobile}){
         justify-content: center;
     }

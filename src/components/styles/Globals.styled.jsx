@@ -9,7 +9,11 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 }
-
+body,html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 html{
     font-family: "Poetsen One", monospace;
@@ -65,4 +69,7 @@ select{
         padding: 15px;
     }
 }
+    @media(max-width: ${({theme})=>theme.mobile}){
+        
+    }
 `;

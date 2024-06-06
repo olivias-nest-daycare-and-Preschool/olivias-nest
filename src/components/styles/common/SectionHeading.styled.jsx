@@ -23,7 +23,7 @@ h1{
     }
 }
 h3{
-    font-family: "Poppins",sans-serif;
+    font-family: "Poetsen One",sans-serif;
     font-size: 20px;
     margin-bottom: 5rem;
 }

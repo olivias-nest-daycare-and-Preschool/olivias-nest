@@ -174,6 +174,7 @@ export const FeatureTitle = styled.h3`
   align-items: center;
   text-align: left; /* Align text to the left */
   font-size:2rem;
+  font-family: "Poetsen One",sans-serif;
 `;
 
 export const FeatureDescription = styled.p`
@@ -271,7 +272,7 @@ export const CardContent = styled.div`
 `;
 
 export const CardTitle = styled.h1`
-  font-size: 2.7rem;
+  font-size: 2rem;
   font-weight:200;
   margin-bottom: 0.5rem;
   font-family: "Poetsen One",sans-serif;
@@ -284,7 +285,7 @@ export const CardTitle = styled.h1`
 export const CardText = styled.p`
   margin-top: 0rem;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Poppins",sans-serif;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 1.2rem;
@@ -415,10 +416,10 @@ width: 100%;
 max-width:58rem;
 color: ${({theme})=>theme.colors.white};
 text-transform: uppercase;
-transition: all 300ms ease-in-out;
+/* transition: all 300ms ease-in-out;
   &:hover{
     transform: translateY(-1rem);
-  }
+  } */
 
 h1{
     letter-spacing: 0.5rem;
@@ -620,14 +621,14 @@ export const DivCard = styled.div`
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   position: relative; /* Ensure the card is a positioned container */
   border-radius: 20px;
-  transition: all 300ms ease-in-out;
+  /* transition: all 300ms ease-in-out; */
   height: 50vh;
   width: auto;
   /* margin-top: 10rem; */
   /* left: 2rem; */
-  &:hover{
+  /* &:hover{
     transform: translateY(-1rem);
-  }
+  } */
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex: 0 1 100%;
     margin: 16rem 0;
