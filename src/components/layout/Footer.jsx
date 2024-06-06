@@ -49,7 +49,7 @@ export const Footer = () =>{
 
        <FooterContent>
         <ContactInfo>
-            <p>Olivia's Nest International & Kindergaten</p>
+            <p>Olivia's Nest International & Kindergarten</p>
         </ContactInfo>
        </FooterContent>
 
@@ -59,7 +59,7 @@ export const Footer = () =>{
 
            <FooterContent>
            <ContactInfo>
-           <SocialIcons>
+           <SocialIcons style={{marginBottom:'-2rem'}}>
             <NavLink href="https://www.facebook.com/oliviasnest" target="_blank">
             <p><FaFacebook/></p>
             </NavLink>                      
@@ -88,7 +88,7 @@ export const Footer = () =>{
             target="_blank" rel="noopener noreferrer">25 Othaya Rd.</a></FancyListItem>
             <FancyListItem>Kileleshwa/Lavington</FancyListItem>
             <FancyListItem>00603-Nairobi</FancyListItem>
-            </FancyList>
+            </FancyList>s
             </RightFooterCard>
 
            <hr />
@@ -102,11 +102,11 @@ export const Footer = () =>{
             </p>
         </DeveloperInfo>
         <DeveloperInfo>
-        {/* <CopyRightInfo> */}
+
         <p>
         &copy;{new Date().getFullYear()}
         </p>
-        {/* </CopyRightInfo> */}
+
         </DeveloperInfo>
         </DeveloperInfoContainer>
     </StyledFooter>
