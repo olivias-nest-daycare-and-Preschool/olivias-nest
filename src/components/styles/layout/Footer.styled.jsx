@@ -19,7 +19,7 @@ export const StyledFooter = styled.footer`
     align-items: flex-start;
     width: 100%;
     background-color: #1d2022;
-    height: 90vh;
+    height: 104vh;
     border-radius: 0; /* Reset border-radius for mobile */
   }
 `;

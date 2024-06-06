@@ -29,13 +29,13 @@ export const Footer = () =>{
         <FooterContent>
        <ContactInfo>
             <a href="mailto:oliviasnest1@gmail.com"
-             style={{marginTop:'5rem',marginBottom:'-5rem'}}>
+             style={{marginTop:'7rem',marginBottom:'-7rem'}}>
                 🙋‍♀️ oliviasnest1@gmail.com 🙋‍♀️</a>
             </ContactInfo>
        </FooterContent>
 
        <FooterContent>
-       <FooterNav>
+       <FooterNav style={{marginTop:'3.5rem'}}>
           <Link to="/">Home</Link>
           <Link to="/AboutUs">About Us</Link>
           <Link to="/Facilities">Facilities</Link>
@@ -57,9 +57,9 @@ export const Footer = () =>{
        <img src="./images/logo.png" alt="olivia's nest logo" />
        </FooterLogoRight>
 
-           <FooterContent style={{marginBottom:'12rem'}}>
+           <FooterContent>
            <ContactInfo>
-           <SocialIcons>
+           <SocialIcons style={{marginBottom:'18rem'}}>
             <NavLink href="https://www.facebook.com/oliviasnest" target="_blank">
             <p><FaFacebook/></p>
             </NavLink>                      
@@ -68,7 +68,7 @@ export const Footer = () =>{
             target="_blank">
             <p><FaWhatsapp/></p>
             </NavLink>
-            <NavLink href="#" target="_blank">
+            <NavLink href="https://www.tiktok.com/signup" target="_blank">
             <p><FaTiktok/></p>
             </NavLink>
           </SocialIcons>
