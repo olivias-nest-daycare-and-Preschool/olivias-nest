@@ -68,7 +68,7 @@ useEffect(() => {
         <SchoolName>
           <DivHero>
           <HeroContent style={{fontFamily: 'Poetsen One, sans-serif'}}>
-        <h1 style={{fontSize:'3.3rem'}}>Welcome to Olivia's Nest</h1>
+        <h1 style={{marginTop:'3rem'}}>Welcome to Olivia's Nest</h1>
         <h3>international Daycare and PreSchool</h3>
         <p>A happy place to be, where love is shown daily...</p>
           <CTAButton href="/AboutUs">About Us</CTAButton>
