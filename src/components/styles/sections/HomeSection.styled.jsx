@@ -259,11 +259,11 @@ export const Card = styled.div`
 export const CardImage = styled.img`
   width: 70%;
   height: 80%;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   @media(max-width: ${({theme})=> theme.mobile}){
-  /* width: 100%;
-  height: 60%; */
-  /* border-radius: 10px; */
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
   }
 `;
 

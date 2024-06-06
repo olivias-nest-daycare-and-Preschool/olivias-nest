@@ -55,7 +55,7 @@ export const AboutSection = () =>{
    </SectionHeading>
     <CardContainer>
         <Card>
-          <CardImage src="./images/staff/admin-head-teacher.jpg" alt="head teacher"style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
+          <CardImage src="./images/staff/admin-head-teacher.jpg" alt="head teacher"style={{height:'50%',width:'80%'}}/>
           <CardContent>
             <CardTitle>Admin</CardTitle>
             <CardText>
@@ -67,7 +67,7 @@ export const AboutSection = () =>{
         </Card>
         
         <Card>
-          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
+          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{height:'50%',width:'80%'}}/>
           <CardContent>
             <CardTitle>Teachers</CardTitle>
             <CardText>
@@ -79,7 +79,7 @@ export const AboutSection = () =>{
         </Card>
 
         <Card>
-          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
+          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{height:'50%',width:'80%'}}/>
           <CardContent>
             <CardTitle>Teachers</CardTitle>
             <CardText>
@@ -95,7 +95,7 @@ export const AboutSection = () =>{
 
       <CardContainer style={{marginTop:'2rem'}}>
       <Card>
-          <CardImage src="./images/staff/chef.jpg" alt="parent meetings" style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
+          <CardImage src="./images/staff/chef.jpg" alt="parent meetings" style={{height:'50%',width:'80%'}}/>
           <CardContent>
             <CardTitle>Chef</CardTitle>
             <CardText>
@@ -108,7 +108,7 @@ export const AboutSection = () =>{
           </CardContent>
         </Card>
       <Card>
-          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
+          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{height:'50%',width:'80%'}}/>
           <CardContent>
             <CardTitle>Teachers</CardTitle>
             <CardText>
@@ -120,7 +120,7 @@ export const AboutSection = () =>{
         </Card>
 
         <Card>
-          <CardImage src="./images/staff/cleaning staff.jpg" alt="parent meetings" style={{borderRadius:'50%',height:'50%',width:'60%'}}/>
+          <CardImage src="./images/staff/cleaning staff.jpg" alt="parent meetings" style={{height:'50%',width:'80%'}}/>
           <CardContent>
             <CardTitle>Hygiene Department</CardTitle>
             <CardText>
