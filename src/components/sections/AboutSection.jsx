@@ -34,22 +34,11 @@ export const AboutSection = () =>{
             </p>
             <CTAButton href="/ContactUs">Inquiries ? reach out...</CTAButton>
         </AboutContent>
-        <HeroSocialIcons>
-                    <SocialIcon href="https://www.facebook.com/oliviasnest" target="_blank">
-                        <FaFacebook />
-                    </SocialIcon>
-                    <SocialIcon href="https://api.whatsapp.com/send?phone=%2B254114592463&data=ARBW7i2sNRnh_SYg--pLwrcblva2Sv2XMulYjeVNdJPkAAwwQhvptz5QKOPIj7sX9zoF9WtypFACzr9TJrgt0IECJmJUGeP47zqbWdsrwyhiJmlgxumOZzuLcAa2F-cgiI2UB-ZDwc9GY64pJbAE6VPP2Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR3yzQow8PHmNvcndOF-JWg2OZboLEZ9g5syQ6AjO5eokZ5pL1TctkPbAUM" target="_blank">
-                        <FaWhatsapp/>
-                    </SocialIcon>
-                    <SocialIcon href="mailto:oliviasnest1@gmail.com" target="_blank">
-                        <FaEnvelope/>
-                    </SocialIcon>
-                </HeroSocialIcons>
     </AboutUsSection>
     </Container>
     </ImageCoveredContainer>
 
-    <HomeContainer>
+    <Container>
     <SectionHeading>
     <h1>Our Staff</h1>
    </SectionHeading>
@@ -90,10 +79,10 @@ export const AboutSection = () =>{
           </CardContent>
         </Card>
       </CardContainer>
-    </HomeContainer>
+    </Container>
     
-
-      <CardContainer style={{marginTop:'2rem'}}>
+    <Container>
+    <CardContainer style={{marginTop:'2rem'}}>
       <Card>
           <CardImage src="./images/staff/chef.jpg" alt="parent meetings" style={{height:'50%',width:'80%'}}/>
           <CardContent>
@@ -103,7 +92,7 @@ export const AboutSection = () =>{
             "One cannot think well,love well,sleep well, if one has not dined well." 
             <Cite style={{color:'white'}}>Virginia Woolf</Cite>
             </BlockQuote>
-            Cheers to our amazing Chef for the cuisines and dietary.
+            cuisines master.
             </CardText>
           </CardContent>
         </Card>
@@ -122,7 +111,7 @@ export const AboutSection = () =>{
         <Card>
           <CardImage src="./images/staff/cleaning staff.jpg" alt="parent meetings" style={{height:'50%',width:'80%'}}/>
           <CardContent>
-            <CardTitle>Hygiene Department</CardTitle>
+            <CardTitle>Hygiene</CardTitle>
             <CardText>
             <BlockQuote>
         "Hygiene is the health care of the soul as well as of the body." 
@@ -132,8 +121,20 @@ export const AboutSection = () =>{
           </CardContent>
         </Card>
       </CardContainer>
-
+      <HeroSocialIcons>
+                    <SocialIcon href="https://www.facebook.com/oliviasnest" target="_blank">
+                        <FaFacebook />
+                    </SocialIcon>
+                    <SocialIcon href="https://api.whatsapp.com/send?phone=%2B254114592463&data=ARBW7i2sNRnh_SYg--pLwrcblva2Sv2XMulYjeVNdJPkAAwwQhvptz5QKOPIj7sX9zoF9WtypFACzr9TJrgt0IECJmJUGeP47zqbWdsrwyhiJmlgxumOZzuLcAa2F-cgiI2UB-ZDwc9GY64pJbAE6VPP2Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR3yzQow8PHmNvcndOF-JWg2OZboLEZ9g5syQ6AjO5eokZ5pL1TctkPbAUM" target="_blank">
+                        <FaWhatsapp/>
+                    </SocialIcon>
+                    <SocialIcon href="mailto:oliviasnest1@gmail.com" target="_blank">
+                        <FaEnvelope/>
+                    </SocialIcon>
+                </HeroSocialIcons>
       <hr style={{marginTop:'5rem'}}/>
+    </Container>
+
 
     <HomeContainer>
    <StyledGallerySection>
