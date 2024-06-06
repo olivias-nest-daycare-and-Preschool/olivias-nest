@@ -232,7 +232,7 @@ useEffect(() => {
             <CardButton href="/Gallery">sports</CardButton>
           </CardContent>
         </Card>
-        <Card>
+        {/* <Card>
           <CardImage src="./images/study_rooms.JPG" alt="basket ball" style={{borderRadius:'50%'}}/>
           <CardContent>
             <CardTitle>Classrooms & Lockers</CardTitle>
@@ -243,7 +243,7 @@ useEffect(() => {
             </CardText>
             <CardButton href="/Gallery">sports</CardButton>
           </CardContent>
-        </Card>
+        </Card> */}
       </CardContainer>
       </HomeContainer>
       <hr style={{marginTop:'5rem'}}/>
