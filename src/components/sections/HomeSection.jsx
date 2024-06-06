@@ -257,14 +257,14 @@ useEffect(() => {
         <SingleGallery>
             <StaffDetails>
                 <h3>Firstname Lastname</h3>
-                <p>Job Title</p>
+                {/* <p>Job Title</p> */}
                 <img src="./images/toons/kid-bubbles.jpg" alt="kid playing with bubbles" />
             </StaffDetails>
         </SingleGallery>
         <SingleGallery>
             <StaffDetails>
                 <h3>Firstname Lastname</h3>
-                <p>Job Title</p>
+                {/* <p>Job Title</p> */}
                 <img src="./images/toons/girl-toon.png" alt="cartoon girl" style={{height:'500px'}}/>
             </StaffDetails>
         </SingleGallery>

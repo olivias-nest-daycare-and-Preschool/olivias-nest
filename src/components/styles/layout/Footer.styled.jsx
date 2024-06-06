@@ -112,13 +112,16 @@ export const FooterNav = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem; /* Add margin to drop it down */
+  margin-top: 2rem; /* Add margin to drop it down */
   a {
     margin-right: 1.5rem;
     margin-bottom: 0.5rem;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    &:hover{
+      color:${({ theme })=>theme.colors.orange};
+    }
   }
 
   &:last-child {
@@ -137,9 +140,10 @@ export const FooterNav = styled.div`
 `;
 
 export const DeveloperInfo = styled.div`
-  margin-top: 0.7rem;
+  margin-top: 4rem;
   font-size: 1.9rem;
   color: white;
+  margin-left: 30rem;
   @media(max-width: ${({theme})=> theme.mobile}){
     p{
       white-space: nowrap;
