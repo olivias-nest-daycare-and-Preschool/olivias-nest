@@ -284,22 +284,6 @@ export const RightFooterCard = styled.div`
   text-align: left;
   color: white;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 50%; /* Adjust the width for mobile view */
-    right: 50%;
-    transform: translateX(240%);
-    position: absolute;
-    top: 12rem; /* Adjust this value based on your design */
-    left: 10rem; /* Adjust this value based on your design */
-    width: 15rem; /* Set the width of the card */
-    height: 20rem; /* Set the height of the card */
-    background-color: black; /* Set the background color of the card */
-    border-radius: 10px; /* Add some border radius to the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a floating effect */
-    padding: 1rem; /* Add some padding inside the card */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+   display: none;
   }
 `;

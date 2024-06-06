@@ -242,13 +242,13 @@ export const SocialIcons = styled.div`
     flex-direction: column;
     margin-top: -3rem;
     a {
-      margin: 0 0.7rem;
+      margin: 0.5 0.9rem;
       font-size: 2rem;
       margin-bottom: -3rem;
       margin-right: 18rem;
     }
     margin-top: -25rem;
-    margin-right: 10rem;
+    margin-right: 18rem;
   }
 `;
 
