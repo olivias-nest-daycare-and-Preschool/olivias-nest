@@ -57,9 +57,9 @@ export const Footer = () =>{
        <img src="./images/logo.png" alt="olivia's nest logo" />
        </FooterLogoRight>
 
-           <FooterContent>
+           <FooterContent style={{marginBottom:'12rem'}}>
            <ContactInfo>
-           <SocialIcons style={{marginBottom:'-2rem'}}>
+           <SocialIcons>
             <NavLink href="https://www.facebook.com/oliviasnest" target="_blank">
             <p><FaFacebook/></p>
             </NavLink>                      
