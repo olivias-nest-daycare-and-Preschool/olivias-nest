@@ -16,7 +16,7 @@ export const FacilitiesSection = () =>{
                 {IndoorFacilities && IndoorFacilities.map((indoor, index)=>(
                     <SingleFacility key="index">
                         <FacilityImageContainer>
-                            <img src={indoor.thumbnail} alt={indoor.title} />
+                            <img src={indoor.thumbnail} alt={indoor.title}/>
                             <SlantCard />
                         </FacilityImageContainer>
                         <FacilityDescription>

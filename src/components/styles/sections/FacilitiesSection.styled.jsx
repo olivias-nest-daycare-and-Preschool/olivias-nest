@@ -20,6 +20,8 @@ align-items: center;
         flex-direction: column;
         img{
             transform: rotateY(0deg);
+            width: 40%;
+            height: 40%;
         }
         div{
             
@@ -107,6 +109,14 @@ p{
 div{
     display:flex;
     align-items: center;
+}
+@media(max-width: ${({theme})=> theme.mobile}){
+  h1{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
 }
 `;
 
