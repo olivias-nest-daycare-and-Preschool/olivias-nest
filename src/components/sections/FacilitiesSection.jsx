@@ -1,5 +1,11 @@
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
-import {FacilityDescription, FacilityImageContainer,SingleFacility, SlantCard, StyledFacilitiesSection, Tags } from "../styles/sections/FacilitiesSection.styled";
+import {
+    FacilityDescription, 
+    FacilityImageContainer,
+    SingleFacility,
+    SlantCard, 
+    StyledFacilitiesSection, 
+    Tags } from "../styles/sections/FacilitiesSection.styled";
 import {IndoorFacilities} from "../../data/IndoorFacilities";
 import { Container } from "../styles/common/Container.styled";
 export const FacilitiesSection = () =>{

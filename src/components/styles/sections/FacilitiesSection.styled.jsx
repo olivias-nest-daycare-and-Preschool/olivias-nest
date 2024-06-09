@@ -20,12 +20,18 @@ align-items: center;
         flex-direction: column;
         img{
             transform: rotateY(0deg);
-            width: 40%;
-            height: 40%;
+            width: 180%;
+            height: 180%;
         }
         div{
             
         }
+    }
+    &:nth-child(odd){
+      img{
+        width: 180%;
+        height: 180%;
+      }
     }
 }
 `;
@@ -103,7 +109,7 @@ h1{
 }
 p{
     font-family: "Poppins",sans-serif;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     text-align: justify;
 }
 div{
@@ -115,7 +121,7 @@ div{
     font-size: 2rem;
   }
   p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 `;
