@@ -30,21 +30,26 @@ min-height: 90vh;
 padding: 10rem 0 5rem 0;
 width: 100%;
 background-color: #172332;
+@media(max-width: ${({theme})=> theme.mobile}){
+  min-height: 150vh;
+}
 `;
 
 export const AdvertMenu = styled.div`
-  min-height: 12vh;
+  min-height: 30vh;
   padding: 10rem 0 5rem 0;
   width: 80%;
-  /* background-color: #172332; */
   border-radius: 40px;
   transform: translateY(-50px); /* Move the AdvertMenu up by 50px */
   margin: 0 auto; /* Center the AdvertMenu */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  @media(max-width: ${({theme})=> theme.mobile}){
+    min-height: 50vh;
+  }
 `;
 
 export const AdvertSectioning = styled.div`
-  min-height: 50vh;
+  min-height: 70vh;
   padding: 10rem 0 5rem 0;
   width: 80%;
   border-radius: 10px;
@@ -54,10 +59,13 @@ export const AdvertSectioning = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media(max-width: ${({theme})=> theme.mobile}){
+    min-height: 120vh;
+  }
 `;
 
 export const ImageCard = styled.div`
- flex: 0 1 30%; /* Each card takes up 30% of the available space */
+  flex: 0 1 30%; /* Each card takes up 30% of the available space */
   margin: 1rem;
   padding: 1rem;
   background-color: #030f20;
@@ -82,6 +90,9 @@ export const ImageCardContainer = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
+  @media(max-width: ${({theme})=> theme.mobile}){
+    flex-direction: column;
+  }
 `;
 
 
@@ -96,7 +107,7 @@ export const NewsNavList = styled.ul`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 24rem;
-    height: 100vh;
+    height: 120vh;
     background: ${({ theme }) => theme.colors.lightNavyBlue};
     position: fixed;
     top: 0;
@@ -125,7 +136,7 @@ export const NewsNavItem = styled.li`
 
 
 export const NewsNav = styled.nav`
-  height: 280px;
+  height: 350px;
   width: 100%;
   padding: 0 25px;
   display: flex;
@@ -138,6 +149,10 @@ export const NewsNav = styled.nav`
   color: ${({ theme }) => theme.colors.white};
   top: ${({ scrollDirection }) => (scrollDirection === 'down' ? '-80px' : '40px')};
   margin-top: -10rem;
+  @media(max-width: ${({theme})=> theme.mobile}){
+    flex-direction: column;
+    height: 500px;
+  }
 `;
 
 

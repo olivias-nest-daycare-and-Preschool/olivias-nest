@@ -1,6 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { SectionHeading } from '../styles/common/SectionHeading.styled';
-import { AdvertMenu, AdvertSection, AdvertSectioning, ArrowUp, Header, Image, ImageCard, ImageCardContainer, NewsNav, NewsNavItem, NewsNavList, NewsSection} from '../styles/sections/NewsSection.styled';
+import {
+   AdvertMenu, 
+  AdvertSection, 
+  AdvertSectioning, 
+  ArrowUp, 
+  Header, 
+  Image, 
+  ImageCard, 
+  ImageCardContainer, 
+  NewsNav, 
+  NewsNavItem, 
+  NewsNavList, 
+  NewsSection} from '../styles/sections/NewsSection.styled';
 import useScrollDirection from '../../hooks/useScrollDirection';
 import { Logo } from '../styles/layout/Nav.styled';
 import { NewsData } from '../../data/NewsData';
@@ -53,7 +65,7 @@ const News = () => {
           <NewsNav style={{ background: '#082736', borderRadius: '40px' }} scrollDirection={scrollDirection}>
             <div>
               <a href="/">
-                <Logo style={{ width: '150px', marginTop: '-4rem' }} src="./images/logo.png" />
+                <Logo style={{ width: '150px', marginTop: '-8rem' }} src="./images/logo.png" />
               </a>
             </div>
 
@@ -83,7 +95,8 @@ const News = () => {
           </NewsNav>
         </AdvertMenu>
 
-        <AdvertSectioning id="AWL" style={{ height: activeSection === 'AWL' ? '50vh' : '0', overflow: 'hidden', transition: 'height 0.3s ease' }}>
+        <AdvertSectioning id="AWL" 
+        style={{ height: activeSection === 'AWL' ? '50vh' : '0', overflow: 'hidden', transition: 'height 0.2s ease' }}>
           <Header>AWL</Header>
           <ImageCardContainer>
           <ImageCard>
@@ -100,7 +113,7 @@ const News = () => {
           </ImageCardContainer>
         </AdvertSectioning>
 
-        <AdvertSectioning id="Graduation" style={{ height: activeSection === 'Graduation' ? '80vh' : '0', overflow: 'hidden', transition: 'height 0.3s ease' }}>
+        <AdvertSectioning id="Graduation" style={{ height: activeSection === 'Graduation' ? '80vh' : '0', overflow: 'hidden', transition: 'height 0.2s ease' }}>
       <Header>Graduation</Header>
       <ImageCardContainer>
         <ImageCard>
@@ -115,7 +128,7 @@ const News = () => {
       </ImageCardContainer>
     </AdvertSectioning>
 
-        <AdvertSectioning id="Cultural-day" style={{ height: activeSection === 'Cultural-day' ? '80vh' : '0', overflow: 'hidden', transition: 'height 0.3s ease' }}>
+        <AdvertSectioning id="Cultural-day" style={{ height: activeSection === 'Cultural-day' ? '80vh' : '0', overflow: 'hidden', transition: 'height 0.2s ease' }}>
         <Header>Cultural Day</Header>
       <ImageCardContainer>
       <ImageCard>
@@ -130,7 +143,6 @@ const News = () => {
             <Image src="./images/cultural/decor5.jpg"></Image>
           </ImageCard>
       </ImageCardContainer>
-      <Header>Cultural Day</Header>
         </AdvertSectioning>
 
         <ArrowUp href="#News">
