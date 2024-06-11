@@ -68,4 +68,8 @@ margin-top: 20px;
 &:hover{
     background-color: #0056b3;
 }
+@media(max-width: ${({theme})=> theme.mobile}){
+    font-size: 1.5rem;
+    margin-right: auto;
+}
 `;

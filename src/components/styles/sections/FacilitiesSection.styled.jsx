@@ -45,7 +45,7 @@ position: relative;
 perspective: 1000px;
 margin-right: 10rem;
 img{
-    width: 80%;
+    width: 65%;
     border-radius: 20px;
     transform: rotateY(30deg);
     transition: ${({theme})=>theme.transition};
@@ -73,7 +73,7 @@ img{
 
 export const SlantCard = styled.div`
 position: absolute;
-width: 80%;
+width: 65%;
 height: 100%;
 background: linear-gradient(
     to right,
@@ -94,7 +94,6 @@ z-index: 2;
 
 export const FacilityDescription = styled.div`
 flex:1;
-
 h1{
     font-size: 3rem;
     margin: 0 0 2rem 0;
@@ -111,6 +110,7 @@ p{
     font-family: "Poppins",sans-serif;
     font-size: 1.5rem;
     text-align: justify;
+    margin-bottom: -2rem;
 }
 div{
     display:flex;

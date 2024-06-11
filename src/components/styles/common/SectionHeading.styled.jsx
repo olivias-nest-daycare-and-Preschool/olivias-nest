@@ -25,7 +25,12 @@ h1{
 h3{
     font-family: "Poetsen One",sans-serif;
     font-size: 20px;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+}
+h2{
+    font-family: "Poetsen One",sans-serif;
+    font-size: 15px;
+    margin-bottom: 1rem;
 }
 p{
     font-family: "Poppins",sans-serif;

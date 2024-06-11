@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { FaPhone} from "react-icons/fa";
 import {FaAddressBook, FaLocationCrosshairs} from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
-import { HomeContainer} from "../styles/common/HomeConatiner";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import {Button, Form, Input, Label, StyledContactSectionMain,StyledSemiContactSectionMain, Textarea } from "../styles/sections/ContactSection.styled";
-import { Card, CardContainer,SomeDataSection } from "../styles/sections/HomeSection.styled";
-import {CardForm,Title,Paragraph,CheckBoxWrapper,CheckBoxLabel,CheckBox,Select} from "../styles/sections/ContactForm.styled"
+import { Card } from "../styles/sections/HomeSection.styled";
+import {CardForm,Title,Paragraph,CheckBoxWrapper,CheckBoxLabel,CheckBox,Select, FlexContainer, Icon, Text} from "../styles/sections/ContactForm.styled"
 import { Link } from "react-router-dom";
+
 export const ContactSection = () =>{
     const [selectedService, setSelectedService] = useState('');
 
@@ -20,12 +20,12 @@ export const ContactSection = () =>{
             <StyledSemiContactSectionMain> 
             <SectionHeading>
                 <h1 style={{marginTop:'8rem'}}>Let's get in touch</h1>
-                <p><Link to="/ContactUs"><Link to="/">Home</Link> / Contact Us</Link></p>
+                <p style={{fontSize:'2rem'}}><Link to="/ContactUs"><Link to="/">Home</Link> / Contact Us</Link></p>
             </SectionHeading>
 
        <CardForm>
                 <Card  style={{flexDirection:'column',justifyContent:'center'}}>
-                <Title>What would you like to hear more about?</Title>
+                <Title style={{color: 'orange'}}>What would you like to hear more about?</Title>
                 <Paragraph>What services are interested in?</Paragraph>
                 <CheckBoxWrapper>
                 <CheckBoxLabel>
@@ -59,7 +59,7 @@ export const ContactSection = () =>{
           Preschool / Kindergarten
         </CheckBoxLabel>
                 </CheckBoxWrapper>
-                <Paragraph>How old is your child?*</Paragraph>
+                <Paragraph>How old is your child?<div style={{display:'inline',color:'red'}}>*</div></Paragraph>
                 <Select>
                     <option>Under 1yr</option>
                     <option>1-2yrs</option>
@@ -82,40 +82,39 @@ export const ContactSection = () =>{
     </CardForm>
             </StyledSemiContactSectionMain>
         </StyledContactSectionMain>
-        <HomeContainer style={{marginTop:'10rem'}}>
-            <SomeDataSection>
-                <CardContainer>
-                    <Card>
-                        <SectionHeading>
+
+        <StyledContactSectionMain>
+            <StyledSemiContactSectionMain>
+            <SectionHeading  style={{marginTop:'-20rem'}}>
                             <h1>Contact Info</h1>
-                            <p>Go ahead and contact us or write a message to us and we'll get back to you</p>
                         </SectionHeading>
-                        <div style={{display: 'flex', alignItems:'center',fontFamily:'Poppins'}}>
-                        <FaPhone style={{color:'orange',transform:'scaleX(-1)',fontSize:'32',marginRight:'15px'}}/>
-                        <p style={{marginLeft:'10px',fontSize:'32px'}}>0743794650 or 0114 592463 </p>
-                        </div>
-
-                        <div style={{display: 'flex', alignItems:'center',marginTop:'40px', fontFamily:'Poppins'}}>
-                        <FaLocationCrosshairs style={{color:'orange',transform:'scaleX(-1)',fontSize:'32',marginRight:'15px'}}/>
-                        <p style={{marginLeft:'10px',fontSize:'32px'}}>Located at 25 Othaya road in Kileleshwa / Lavington, Nairobi</p>
-                        </div>
-
-                        <div style={{display: 'flex', alignItems:'center',marginTop:'40px',fontFamily:'Poppins'}}>
-                        <FaAddressBook style={{color:'orange',transform:'scaleX(-1)',fontSize:'32',marginRight:'15px'}}/>
-                        <p style={{marginLeft:'10px',fontSize:'32px'}}>00603 – Lavington</p>
-                        </div>
-
-                        <div style={{display: 'flex', alignItems:'center',marginTop:'40px',fontFamily:'Poppins'}}>
-                        <MdMarkEmailUnread style={{color:'orange',transform:'scaleX(-1)',fontSize:'32',marginRight:'15px'}}/>
-                        <p style={{marginLeft:'10px',fontSize:'32px'}}>oliviasnest3@gmail.com</p>
-                        </div>
-                         
-                    </Card> 
+                <CardForm>
                     <Card>
-                    <SectionHeading>
-                       <h1>Send us a message</h1>
-                       
-                    </SectionHeading>
+                      <p style={{fontSize:'20px',color:'orange',marginBottom:'1rem'}}>Go ahead and contact us or write a message to us and we'll get back to you</p>
+                         <FlexContainer>
+                          <Icon as={FaPhone} />
+                          <Text>0743794650 or 0114 592463</Text>
+                        </FlexContainer>
+                        
+                        <FlexContainer>
+                          <Icon as={FaLocationCrosshairs} />
+                          <Text>Located at 25 Othaya road in Kileleshwa / Lavington, Nairobi</Text>
+                        </FlexContainer>
+                        
+                        <FlexContainer>
+                          <Icon as={FaAddressBook} />
+                          <Text>00603 – Lavington</Text>
+                        </FlexContainer>
+                        
+                        <FlexContainer>
+                          <Icon as={MdMarkEmailUnread} />
+                          <Text>oliviasnest3@gmail.com</Text>
+                        </FlexContainer>
+                    </Card> 
+
+                    <Card>
+                    <p style={{fontSize:'20px',color:'orange',marginBottom:'1rem'}}>
+                      Send us your message and we'll get back to you.</p>
                     <Form>
                         <Label htmlFor="name">Name:</Label>
                         <Input type="text" id="name" name="name" />
@@ -132,9 +131,9 @@ export const ContactSection = () =>{
                         <Button type="submit">Send Message</Button>
                     </Form>
                     </Card>
-                </CardContainer>
-            </SomeDataSection>
-        </HomeContainer>
+                </CardForm>
+            </StyledSemiContactSectionMain>
+        </StyledContactSectionMain>
         <hr />
         </>
     );

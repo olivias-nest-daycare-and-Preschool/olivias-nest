@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const ContactFormContainer = styled.div`
   width: 50%;
   padding: 7rem;
@@ -96,9 +97,13 @@ export const CardForm = styled.div`
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.0);
   border-radius: 25px;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   transition: all 300ms ease-in-out;
   font-family: "Poppins", sans-serif;
+  @media(max-width: ${({theme})=> theme.mobile}){
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h2`
@@ -111,6 +116,9 @@ export const Paragraph = styled.p`
   font-size: 25px;
   margin-bottom: 10px;
   color: white;
+  @media(max-width: ${({theme})=>theme.mobile}){
+    font-size: 16px;
+  }
 `;
 
 export const CheckBoxWrapper = styled.div`
@@ -122,6 +130,9 @@ export const CheckBoxLabel = styled.label`
   margin-bottom: 20px;
   color: white;
   font-size: 25px;
+    @media(max-width: ${({theme})=>theme.mobile}){
+    font-size: 16px;
+  }
 `;
 
 export const CheckBox = styled.input.attrs({type: 'radio'})`
@@ -156,5 +167,30 @@ export const Button = styled.button`
 
 /* end of card form */
 
+
+
+
+export const FlexContainer = styled.div`
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: ${({ marginTop }) => (marginTop ? marginTop : '0')};
+  margin-top:40px;
+`;
+
+export const Icon = styled.div`
+  color: orange;
+  transform: scaleX(-1);
+  font-size: 32px;
+  margin-right: 15px;
+`;
+
+export const Text = styled.p`
+  margin-left: 10px;
+  font-size: 32px;
+  @media(max-width: ${({theme})=> theme.mobile}){
+    font-size: 16px;
+  }
+`;
 
 

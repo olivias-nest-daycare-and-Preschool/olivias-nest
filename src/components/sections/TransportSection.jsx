@@ -19,7 +19,7 @@ export const TransportSection = () =>{
                     </GalleryImage>
                 </SingleGallery>
                 <SingleGallery>
-                    <SectionHeading>
+                    <SectionHeading style={{marginBottom:'-1rem'}}>
                         <h1>Transport System.</h1>
                     </SectionHeading>
                 <p>
@@ -28,12 +28,14 @@ export const TransportSection = () =>{
                         transport system is pocket friendly and we have chats on the routes and considerable
                         charges for that. For any unclear issues please feel free to reach out to us.
                     </p>
+                    
                     <p>
                         We offer affordable transport to our esteemed customers.
                         We have a very reliable and safety focused transport system. Our 
                         transport system is pocket friendly and we have chats on the routes and considerable
                         charges for that. For any unclear issues please feel free to reach out to us.
                     </p>
+                    
                     <p>
                         We offer affordable transport to our esteemed customers.
                         We have a very reliable and safety focused transport system. Our 
@@ -43,8 +45,9 @@ export const TransportSection = () =>{
                 </SingleGallery>
             </GalleryItems>
         </StyledGallerySection>
+
         <StyledGallerySection>
-        <GalleryItems>
+        <GalleryItems style={{marginTop:'-10rem'}}>
                 <SingleGallery>
                 <GalleryImage>
                     <img src="./images/van/boarding_G.jpg" alt="school van" />
@@ -59,7 +62,7 @@ export const TransportSection = () =>{
                 <GalleryImage>
                     <img src="./images/van/boarding_D.jpg" alt="school van" />
                 </GalleryImage>
-                </SingleGallery>
+                </SingleGallery >
             </GalleryItems>
         </StyledGallerySection>
         </HomeContainer>

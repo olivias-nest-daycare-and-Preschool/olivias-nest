@@ -243,9 +243,6 @@ export const Card = styled.div`
   background-color: rgba(0, 0, 0, 0.0);
   transition: all 300ms ease-in-out;
   margin-bottom: 1rem;
-  /* &.scrolled {
-    transform: translateY(-1rem);
-  } */
   &:hover{
     transform: translateY(-1rem);
   }

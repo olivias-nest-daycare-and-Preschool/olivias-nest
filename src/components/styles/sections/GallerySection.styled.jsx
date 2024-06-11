@@ -55,11 +55,16 @@ export const SingleGallery  = styled.div`
     }
     p{
         font-family: "Poppins",sans-serif;
-        font-size: 1.9rem;
+        font-size: 1.7rem;
+        margin-top: 2rem;
     }
     @media(max-width: ${({theme})=> theme.mobile}){
         margin: 0 0 4rem 0;
         width: 100%;
+        p{
+          font-size: 1.2rem;
+          margin-top: 1rem;
+        }
     }
 `;
 
@@ -93,7 +98,7 @@ img{
     justify-content: flex-start;
 
     img{
-        width: 80%;
+        width: 100%;
         border-radius: 9px;
     }
  }
