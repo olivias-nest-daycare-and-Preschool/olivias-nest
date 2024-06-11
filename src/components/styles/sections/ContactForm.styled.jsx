@@ -99,6 +99,7 @@ export const CardForm = styled.div`
   border-radius: 25px;
   transition: all 300ms ease-in-out;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
   @media(max-width: ${({theme})=> theme.mobile}){
     flex-direction: column;
     margin-left: 0;
