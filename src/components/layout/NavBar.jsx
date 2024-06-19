@@ -1,5 +1,6 @@
 import { NavItems } from "../../data/NavItems";
 import useScrollDirection from "../../hooks/useScrollDirection";
+import LogoImage from './../../Images/nest.png'
 import { CTAButton } from "../styles/common/CTAButton.styled";
 import {
   LineOne,
@@ -28,7 +29,7 @@ export const NavBar = () => {
       <Nav scrollDirection={scrollDirection}>
         <div>
           <a href="/">
-            <Logo src="./images/logo.png" />
+            <Logo src={LogoImage} alt="Ameda" />
           </a>
         </div>
         <MenuIcon menuopen={menuopen} onClick={() => setMenuopen(!menuopen)}>
@@ -48,7 +49,7 @@ export const NavBar = () => {
                 {navItem.isProfile ? (
                   <NavLink href="/">
                     <Profile>
-                      <img src="./images/nest.jpg" alt="Olivias Nest " />
+                      <img src={LogoImage} alt="Ameda" />
                       <span>Olivia's Nest</span>
                     </Profile>
                   </NavLink>
@@ -82,8 +83,8 @@ export const NavBar = () => {
               <FaTiktok />
             </NavLink>
             <NavLink
-            href="https://api.whatsapp.com/send?phone=%2B254114592463&data=ARBW7i2sNRnh_SYg--pLwrcblva2Sv2XMulYjeVNdJPkAAwwQhvptz5QKOPIj7sX9zoF9WtypFACzr9TJrgt0IECJmJUGeP47zqbWdsrwyhiJmlgxumOZzuLcAa2F-cgiI2UB-ZDwc9GY64pJbAE6VPP2Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR3yzQow8PHmNvcndOF-JWg2OZboLEZ9g5syQ6AjO5eokZ5pL1TctkPbAUM" 
-            target="_blank">
+              href="https://api.whatsapp.com/send?phone=%2B254114592463&data=ARBW7i2sNRnh_SYg--pLwrcblva2Sv2XMulYjeVNdJPkAAwwQhvptz5QKOPIj7sX9zoF9WtypFACzr9TJrgt0IECJmJUGeP47zqbWdsrwyhiJmlgxumOZzuLcAa2F-cgiI2UB-ZDwc9GY64pJbAE6VPP2Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR3yzQow8PHmNvcndOF-JWg2OZboLEZ9g5syQ6AjO5eokZ5pL1TctkPbAUM"
+              target="_blank">
               <FaWhatsapp />
             </NavLink>
           </SocialIcons>

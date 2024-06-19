@@ -16,27 +16,35 @@ const navItemAnimation = ({ index }) => css`
 `;
 
 export const Nav = styled.nav`
-  height: 300px;
+  height: 100px;
   width: 100%;
-  padding: 0 25px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
+  margin-top: 3.5rem;
   z-index: 98;
   transition: all 1s ease-in-out;
   background: rgba(11, 11, 11, 0.6);
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    justify-content: space-between;
+  }
   color: ${({ theme }) => theme.colors.white};
   top: ${({ scrollDirection }) =>
     scrollDirection === "down" ? "-80px" : "40px"};
 `;
 
 export const Logo = styled.img`
-  margin-top: 7rem;
-  width: 350px;
+  width: 100px;
+  height: 100px;
+  // background: red;
+  object-fit: cover;
   border-radius: 50%;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 200px;
+    width: 100px;
+    object-fit: cover;
+    height: 100px;
   }
 `;
 
@@ -88,12 +96,14 @@ export const LineThree = styled.div`
 `;
 
 export const NavList = styled.ul`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: 23px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  font-size: 14px;
+  overflow: hidden;
   font-weight: 700;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  // background: red;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 24rem;
@@ -101,17 +111,19 @@ export const NavList = styled.ul`
     background: ${({ theme }) => theme.colors.lightNavyBlue};
     position: fixed;
     top: 0;
+    flex-wrap: nowrap;
     right: ${({ menuopen }) => (menuopen ? "0" : "-24rem")};
     padding-top: 3rem;
     justify-content: flex-start;
     flex-direction: column;
+    overflow-y: scroll;
     z-index: 998;
     transition: ${({ theme }) => theme.transition};
   }
 `;
 export const NavItem = styled.li`
-  position: relative;
-  margin: 1rem 2rem;
+  padding: 1rem 5px;
+  margin-left: .5rem;
 
   &:last-child {
     margin-right: 0;
@@ -119,7 +131,7 @@ export const NavItem = styled.li`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     opacity: 0;
-    margin: 1.2rem 0;
+    margin: 0rem;
     ${({ menuopen }) => (menuopen ? navItemAnimation : null)};
 
     &:hover > ul {
