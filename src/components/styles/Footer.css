@@ -1,0 +1,274 @@
+.Footer {
+  background: #151414;
+  min-height: 10vh;
+  padding: 1rem;
+}
+.Footer .Top-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem auto;
+  gap: 2rem;
+  width: 80%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.Footer .Top-container .Data1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* justify-content: space-between; */
+}
+.Footer .Top-container .Data1 .icon {
+  font-size: 35px;
+  color: rgba(255, 151, 0, 1);
+}
+.Footer .Top-container .Data1 .info h2 {
+  font-size: 28px;
+  padding-left: 0.3rem;
+}
+.Footer .Top-container .Data1 .info p {
+  font-size: 16px;
+  padding-left: 0.3rem;
+  color: rgb(136, 136, 136);
+}
+.Footer .HR {
+  margin: auto;
+  width: 80%;
+  background: rgb(71, 71, 71);
+  height: 1px;
+}
+
+.Footer .Bottom-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem auto;
+  width: 80%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.Footer .Bottom-container .Data1 .Top:nth-child(1) {
+  display: flex;
+  /* flex-direction: column; */
+}
+.Footer .Bottom-container .Data1 .Logo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.Footer .Bottom-container .Data1 .info {
+  font-size: 16px;
+  padding: 1rem 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #7c7c7c;
+}
+.Footer .Bottom-container .Data1 .socials {
+  padding: 1rem 4rem;
+}
+.Footer .Bottom-container .Data1 .socials .wrap {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.Footer .Bottom-container .Data1 .socials .wrap .icon1 {
+  font-size: 35px;
+  background: white;
+  width: 40px;
+  height: 40px;
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+.Footer .Bottom-container .Data1 .socials .wrap .icon2 {
+  font-size: 35px;
+  background: rgb(21, 47, 133);
+  width: 40px;
+  height: 40px;
+  color: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+.Footer .Bottom-container .Data1 .socials .wrap .icon3 {
+  font-size: 35px;
+  background: rgb(253, 253, 253);
+  width: 40px;
+  height: 40px;
+  color: rgb(201, 57, 57);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+
+.Footer .Bottom-container .Data1 h2 {
+  font-size: 30px;
+}
+.Footer .Bottom-container .Data1 .HR2 {
+  /* margin: auto; */
+  width: 10%;
+  background: rgba(255, 151, 0, 1);
+  height: 3px;
+  margin-bottom: 2rem;
+}
+.Footer .Bottom-container .Data1 .wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 2rem;
+}
+.Footer .Bottom-container .Data1 .wrap .Links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.Footer .Bottom-container .Data1 .wrap .Links .LinksData {
+  font-size: 16px;
+  color: #7c7c7c;
+}
+
+.Footer .Bottom-container .Data1 h2 {
+  font-size: 30px;
+}
+.Footer .Bottom-container .Data1 .HR2 {
+  /* margin: auto; */
+  width: 10%;
+  background: rgba(255, 151, 0, 1);
+  height: 3px;
+  margin-bottom: 2rem;
+}
+.Footer .Bottom-container .Data1 .form {
+  display: flex;
+  align-items: center;
+  /* justify-content: center;     */
+}
+.Footer .Bottom-container .Data1 .form input {
+  padding: 1.5rem;
+  /* border-radius: 5px; */
+  outline: none;
+  width: 80%;
+  border: none;
+}
+.Footer .Bottom-container .Data1 .form button {
+  /* padding: 1rem; */
+  /* border-radius: 5px; */
+  outline: none;
+  width: 50px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  border: none;
+  background: rgba(255, 151, 0, 1);
+  color: white;
+}
+
+.copy{
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+    color: #7c7c7c;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 400px) {
+
+  .Footer .Top-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5rem auto;
+    gap: 2rem;
+    width: 100%;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .Footer .Top-container .Data1 {
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
+    text-align: left;
+    justify-content: left;
+  }
+  .Footer .Top-container .Data1 .icon {
+    font-size: 35px;
+    color: rgba(255, 151, 0, 1);
+  }
+  .Footer .Top-container .Data1 .info h2 {
+    font-size: 24px;
+    padding-left: 3rem;
+  }
+  .Footer .Top-container .Data1 .info p {
+    font-size: 16px;
+    padding-left: 3rem;
+    color: rgb(136, 136, 136);
+  }
+  .Footer .HR {
+    margin: auto;
+    width: 100%;
+    background: rgb(71, 71, 71);
+    height: 1px;
+  }
+
+  
+.Footer .Bottom-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5rem auto;
+    width: 100%;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .Footer .Bottom-container .Data1 .Top:nth-child(1) {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .Footer .Bottom-container .Data1 .Logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .Footer .Bottom-container .Data1 .info {
+    font-size: 12px;
+    padding: 1rem 0.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #7c7c7c;
+  }
+  .Footer .Bottom-container .Data1 .socials {
+    padding: 1rem 7rem;
+  }
+
+
+  
+.Footer .Bottom-container .Data1 h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .Footer .Bottom-container .Data1 .HR2 {
+    margin: 1rem auto;
+    width: 20%;
+    margin-left: 11rem;
+    background: rgba(255, 151, 0, 1);
+    height: 3px;
+    margin-bottom: 2rem;
+  }
+  .Footer .Bottom-container .Data1 .wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+  }
+  .Footer .Bottom-container .Data1 .wrap .Links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .Footer .Bottom-container .Data1 .wrap .Links .LinksData {
+    font-size: 16px;
+    color: #7c7c7c;
+  }
+}

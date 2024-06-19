@@ -19,6 +19,7 @@ import {
 } from "../styles/layout/Nav.styled";
 import { useState } from "react";
 import { FaFacebook, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const [menuopen, setMenuopen] = useState(false);
@@ -55,7 +56,9 @@ export const NavBar = () => {
                   </NavLink>
                 ) : null}
                 {navItem.text ? (
-                  <NavLink href={navItem.href}>{navItem.text}</NavLink>
+                  <NavLink>
+                    <Link to={navItem.href}>{navItem.text}</Link>
+                  </NavLink>
                 ) : null}
                 {navItem.subItems ? (
                   <SubMenu>
