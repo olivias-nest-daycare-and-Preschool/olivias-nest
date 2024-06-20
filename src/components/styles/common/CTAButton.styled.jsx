@@ -26,7 +26,7 @@ margin-right: 40px;
 }
  @media (max-width: ${({theme})=>theme.mobile}){
   margin: 10px 10px; //adjust cta buttons
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   }
 
 `;

@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 
 export const StyledHomeBackground = styled.footer`
-  position: relative;
   width: 100%;
-  height: 120vh;
+  height: 100%;
   position: relative;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/wall2.jpg');
   background-size: cover;
@@ -16,7 +15,7 @@ export const StyledHomeBackground = styled.footer`
 `;
 
 export const InfoCard = styled.div`
-  top: 42rem; /* Adjust this value based on your design */
+  top: 42rem;
   left: -35rem; /* Adjust this value based on your design */
   width: 43rem; /* Set the width of the card */
   height: 40rem; /* Set the height of the card */

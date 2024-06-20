@@ -464,9 +464,11 @@ div{
     }
     h3{
         font-size: 2.1rem;
+         margin: .5rem 0;
     }
     p{
         font-size: 1.2rem;
+        margin: 1rem 0;
     }
 } */
 @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -481,15 +483,18 @@ div{
        font-size: 2.1rem;
        white-space: normal; // Allow text to wrap on mobile
        word-wrap: break-word; // Ensure text wraps on mobile
+        margin: 1rem 0;
      }
      p {
        font-size: 1.2rem;
        white-space: normal; // Allow text to wrap on mobile
        word-wrap: break-word; // Ensure text wraps on mobile
+       margin: 1rem 0;
      }
      div p {
        white-space: normal; // Allow text to wrap on mobile
        word-wrap: break-word; // Ensure text wraps on mobile
+       margin: 1rem 0;
      }
     }
 `;
@@ -615,26 +620,18 @@ export const SchoolName = styled.div`
 `;
 
 export const DivCard = styled.div`
-  flex: 0 1 45%; /* Each card takes up 30% of the available space */
-  margin: 4rem;
+  margin: 0 ;
   background-color: black;
   /* border-radius: 30px; */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  position: relative; /* Ensure the card is a positioned container */
   border-radius: 20px;
-  /* transition: all 300ms ease-in-out; */
   height: 50vh;
-  width: auto;
-  /* margin-top: 10rem; */
-  /* left: 2rem; */
-  /* &:hover{
-    transform: translateY(-1rem);
-  } */
+  width: 350px;
+
+  
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    flex: 0 1 100%;
-    margin: 16rem 0;
-    margin-top: 5rem;
-    margin-bottom: 20rem;
+    margin-top: 1rem;
+    // margin-bottom: 20rem;
   }
 `;
 
@@ -659,6 +656,9 @@ export const DivCardImage = styled.img`
     width: auto; /* Reset width to auto for mobile */
     height: auto; /* Reset height to auto for mobile */
     max-width: 100%; /* Ensure the image doesn't exceed its container width */
+   -webkit-box-shadow: 10px 13px 57px 60px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 13px 57px 60px rgba(0,0,0,0.75);
+box-shadow: 10px 13px 57px 60px rgba(0,0,0,0.75);
   }
 `;
 

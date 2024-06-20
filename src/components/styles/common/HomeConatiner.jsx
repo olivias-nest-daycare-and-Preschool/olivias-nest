@@ -10,13 +10,13 @@ export const SchoolContainer = styled.section`
   max-width: 2000px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-top: 25rem;
+//   margin-top: 25rem;
   height: 100vh;
   display: flex;
   flex-direction: column; /* Ensure column layout for mobile */
   align-items: center; /* Center align items */
    @media (max-width: ${({theme})=>theme.mobile}){
-    margin-top: 25rem !important;
+    padding-top: 9rem !important;
   }
 `;
 
