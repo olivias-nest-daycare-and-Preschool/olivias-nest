@@ -74,17 +74,27 @@
   }
 
   .slider-container h2 {
-    text-align: left;
-    background: white;
-    font-size: 25px;
-    animation: slideInFromLeft 1s ease-out;
+    text-align: center;
+    /* background: white; */
+    font-size: 15px;
+    /* animation: slideInFromLeft 1s ease-out; */
   }
   .slider-container h1 {
-    font-size: 20px;
-    background: white;
-    text-align: left;
+    font-size: 15px;
+    /* background: white; */
+    text-align: center;
     margin-bottom: 5rem;
-    animation: slideInFromRight 1s ease-out;
+    /* animation: slideInFromRight 1s ease-out; */
+  }
+  .slider-container {
+    margin: auto;
+    width: 90%;
+    /* background: rgb(71, 56, 56); */
+    z-index: 100;
+    position: relative;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%);
   }
 }
 
