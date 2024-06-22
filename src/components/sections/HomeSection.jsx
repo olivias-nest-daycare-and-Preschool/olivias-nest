@@ -86,7 +86,7 @@ export const HomeSection = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true
