@@ -104,6 +104,7 @@ export const NavList = styled.ul`
   font-weight: 700;
   flex-wrap: wrap;
   // background: red;
+  // position: relative;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 24rem;
@@ -148,7 +149,7 @@ export const SubMenu = styled.ul`
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 50 %;
   background: ${({ theme }) => theme.colors.lightNavyBlue};
   padding: 1rem;
   border-radius: 5px;
@@ -197,6 +198,7 @@ export const NavLink = styled.a`
   color: ${({ theme }) => theme.colors.white};
   letter-spacing: 1.5px;
   position: relative;
+
 
   &:hover {
     &::after {
