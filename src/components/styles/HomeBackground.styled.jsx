@@ -31,7 +31,6 @@ export const InfoCard = styled.div`
   // margin-right: 2rem;
   position: relative; /* Position relative to allow absolute positioning of the image */
   overflow: hidden; /* Hide any overflow to ensure the image stays within the container */
-  // margin-top: -15rem;
   transition: all 300ms ease-in-out;
   &:hover{
     transform: translateY(-1rem);
