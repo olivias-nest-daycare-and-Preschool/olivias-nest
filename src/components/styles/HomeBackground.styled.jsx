@@ -5,14 +5,15 @@ export const StyledHomeBackground = styled.footer`
   width: 100%;
   height: 100%;
   // position: relative;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/wall2.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('./images/wall2.jpg');
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
   -webkit-backdrop-filter: blur(20px); /* For Safari */
-  @media(max-width:${({ theme })=> theme.mobile}){ 
+  @media(max-width:${({ theme }) => theme.mobile}){ 
   }
 `;
+
 
 export const InfoCard = styled.div`
   top: 30rem;
@@ -35,7 +36,7 @@ export const InfoCard = styled.div`
   &:hover{
     transform: translateY(-1rem);
   }
-   @media (max-width: ${({theme})=>theme.mobile}){
+   @media (max-width: ${({ theme }) => theme.mobile}){
     top: 19rem; /* Adjust this value based on your design */
     width: 150px; /* Adjust width for mobile */
     height: 150px; /* Adjust height for mobile */
@@ -48,7 +49,7 @@ export const InfoCardContainer = styled.div`
 display: flex;
 justify-content: space-between;
 margin-top: -35rem;
- @media (max-width: ${({theme})=>theme.mobile}){
+ @media (max-width: ${({ theme }) => theme.mobile}){
   /* flex-direction: column;
   align-items: center; */
   /* margin-top: 3rem; */

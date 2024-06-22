@@ -38,8 +38,7 @@
   margin-bottom: 15rem;
 }
 
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .image {
     width: 300px;
     height: auto;
@@ -58,7 +57,7 @@
     margin-bottom: 5rem;
   }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .carousel {
     margin: auto;
     width: 90%;
@@ -76,6 +75,7 @@
 
   .slider-container h2 {
     text-align: center;
+    background: white;
     font-size: 30px;
     animation: slideInFromLeft 1s ease-out;
   }
@@ -86,3 +86,9 @@
     animation: slideInFromRight 1s ease-out;
   }
 }
+
+/* .animated-heading {
+  background: white;
+  width: 50%;
+  margin:auto;
+} */
