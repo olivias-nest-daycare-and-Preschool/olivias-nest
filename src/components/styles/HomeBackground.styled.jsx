@@ -15,42 +15,39 @@ export const StyledHomeBackground = styled.footer`
 `;
 
 export const InfoCard = styled.div`
-  top: 42rem;
-  left: -35rem; /* Adjust this value based on your design */
-  width: 43rem; /* Set the width of the card */
+  top: 30rem;
+  left: 0rem; /* Adjust this value based on your design */
+  width: 100%; /* Set the width of the card */
   height: 40rem; /* Set the height of the card */
   /* background-color: #c7c3c3;  */
   border-radius: 40px; /* Add some border radius to the card */
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
   padding: 1rem; /* Add some padding inside the card */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: left;
   color: white;
-  margin-right: 2rem;
+  // margin-right: 2rem;
   position: relative; /* Position relative to allow absolute positioning of the image */
   overflow: hidden; /* Hide any overflow to ensure the image stays within the container */
-  margin-top: -15rem;
+  // margin-top: -15rem;
   transition: all 300ms ease-in-out;
   &:hover{
     transform: translateY(-1rem);
   }
    @media (max-width: ${({theme})=>theme.mobile}){
-    top: 14rem; /* Adjust this value based on your design */
-    left: 0.8rem; /* Adjust this value based on your design */
-    /* width: 43rem; 
-    height: 45rem; */
-    width: 100%; /* Adjust width for mobile */
-    height: 120%; /* Adjust height for mobile */
-    margin-top: 2rem; /* Adjust margin for mobile */
-    margin-right: 1; /* Remove right margin for mobile */
+    top: 19rem; /* Adjust this value based on your design */
+    width: 150px; /* Adjust width for mobile */
+    height: 150px; /* Adjust height for mobile */
+    border-radius: 50%; /* Add border-radius for mobile */
   }
 `;
 
 
 export const InfoCardContainer = styled.div`
 display: flex;
+justify-content: space-between;
 margin-top: -35rem;
  @media (max-width: ${({theme})=>theme.mobile}){
   /* flex-direction: column;

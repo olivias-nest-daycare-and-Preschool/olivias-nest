@@ -25,7 +25,7 @@ export const StyledHomeSection = styled.section`
 export const StyledHomeContent = styled.div`
 width: 100%;
 max-width:58rem;
-color: ${({theme})=>theme.colors.white};
+color: ${({ theme }) => theme.colors.white};
 text-transform: uppercase;
 h1{
     letter-spacing: 1.2rem;
@@ -42,8 +42,8 @@ h3{
     margin: 1.5rem 0;
     background: linear-gradient(
         to right,
-        ${({theme})=>theme.colors.orange} 0%,
-        ${({theme})=>theme.colors.purple} 100%
+        ${({ theme }) => theme.colors.orange} 0%,
+        ${({ theme }) => theme.colors.purple} 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -57,7 +57,7 @@ p{
 div{
     margin: 2.5rem 0;
 }
-@media (max-width: ${({theme})=>theme.mobile}){
+@media (max-width: ${({ theme }) => theme.mobile}){
     h1{
         letter-spacing: 1rem;
         font-size: 1.5rem;
@@ -258,7 +258,7 @@ export const CardImage = styled.img`
   height: 80%;
   border-radius: 10px;
   margin-bottom: 1rem;
-  @media(max-width: ${({theme})=> theme.mobile}){
+  @media(max-width: ${({ theme }) => theme.mobile}){
   width: 100%;
   height: 60%;
   border-radius: 10px;
@@ -297,7 +297,7 @@ export const CardButton = styled.a`
   display: inline-block;
   margin-right: 18px;
   padding: 0.5rem 1rem;
-  background-color: ${({theme})=> theme.colors.orange};
+  background-color: ${({ theme }) => theme.colors.orange};
   color: black;
   text-decoration: none;
   border-radius: 5px;
@@ -412,10 +412,10 @@ text-align: center;
 //   }
 // `;
 
-export const HeroContent = styled.div `
+export const HeroContent = styled.div`
 width: 100%;
 max-width:58rem;
-color: ${({theme})=>theme.colors.white};
+color: ${({ theme }) => theme.colors.white};
 text-transform: uppercase;
 /* transition: all 300ms ease-in-out;
   &:hover{
@@ -436,8 +436,8 @@ h3{
     margin: 1.5rem 0;
     background: linear-gradient(
         to right,
-        ${({theme})=>theme.colors.orange} 0%,
-        ${({theme})=>theme.colors.purple} 100%
+        ${({ theme }) => theme.colors.orange} 0%,
+        ${({ theme }) => theme.colors.purple} 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -456,7 +456,7 @@ div{
       font-style: italic;
     }
 }
-/* @media (max-width: ${({theme})=>theme.mobile}){
+/* @media (max-width: ${({ theme }) => theme.mobile}){
     h1{
         letter-spacing: 0.8rem;
         font-size: 1.5rem;
@@ -518,7 +518,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 `;
-export const  ShortCenter = styled.section`
+export const ShortCenter = styled.section`
 min-height: 10vh;
 padding: 10rem 0 5rem 0;
 width: 100%;
@@ -541,7 +541,7 @@ export const CustomImageCard = styled.div`
 }
 `;
 
-export const CustomWordingCard =styled.div`
+export const CustomWordingCard = styled.div`
 width: 50%;
 padding: 1rem;
 background-color: rgba(0, 0, 0, 0.0);
@@ -601,6 +601,7 @@ export const SchoolName = styled.div`
   transform: translateY(-50px); /* Move the AdvertMenu up by 50px */
   margin: 0 auto; /* Center the AdvertMenu */
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   transition: all 300ms ease-in-out;
   &:scrolled{
@@ -611,46 +612,48 @@ export const SchoolName = styled.div`
     transform: translateY(2rem);
     opacity: 0;
   }
-   @media (max-width: ${({theme})=>theme.mobile}){
+   @media (max-width: ${({ theme }) => theme.mobile}){
     /* min-height: 50vh; */
     flex-direction: column;
     align-items: center;
-    margin-top: -20rem;
+    margin-top: 0rem;
   }
 `;
 
 export const DivCard = styled.div`
-  margin: 0 ;
+  margin: 0 auto;
   background-color: black;
-  /* border-radius: 30px; */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   height: 50vh;
-  width: 350px;
-
+  width: width: 90%;
   
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-top: 1rem;
-    // margin-bottom: 20rem;
+    width: 300px;
+     margin: 0 ;
   }
 `;
 
 export const DivHero = styled.div`
-width: auto;
 height: 80vh;
-@media(max-width: ${({theme})=> theme.mobile}){
+@media(max-width: ${({ theme }) => theme.mobile}){
   width: auto;
-  height: 50vh;
+  // height: 50vh;
   flex-direction: column;
-  left: 2rem;
-  margin-top:20rem;
+  // left: 2rem;
+  // margin-top:20rem;
 }
 `;
 
 export const DivCardImage = styled.img`
-  width: 120%;
-  height: 140%;
+margin: 0 auto;
+  width:100%;
+  height: 100%;
   object-fit: cover; 
+  -webkit-box-shadow: 10px 13px 57px 60px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 13px 57px 60px rgba(0,0,0,0.75);
+box-shadow: 10px 13px 57px 60px rgba(0,0,0,0.75);
   border-radius: 10px;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: auto; /* Reset width to auto for mobile */

@@ -87,7 +87,7 @@ export const HomeSection = () => {
           </DivCard>
         </SchoolName>
 
-        {/* <InfoCardContainer>
+        <InfoCardContainer>
         <InfoCard>
           <Image src="./images/pexels-magda-ehlers-1337387.jpg" alt="Description of the image" />
         </InfoCard>
@@ -95,7 +95,7 @@ export const HomeSection = () => {
         <InfoCard>
           <Image src="./images/pexels-pixabay-459957.jpg" alt="Description of the image" />
         </InfoCard>
-        </InfoCardContainer> */}
+        </InfoCardContainer>
 
       </SchoolContainer>
     </StyledHomeBackground>
