@@ -415,6 +415,7 @@ text-align: center;
 export const HeroContent = styled.div`
 width: 100%;
 max-width:58rem;
+margin-top: 8rem;
 color: ${({ theme }) => theme.colors.white};
 text-transform: uppercase;
 /* transition: all 300ms ease-in-out;
@@ -595,8 +596,9 @@ export const ImageContainer = styled.div`
 
 export const SchoolName = styled.div`
   min-height: 50vh;
-  padding: 10rem 0 5rem 0;
-  width: 80%;
+  padding: 1rem;
+  background:blue;
+  width: 100%;
   border-radius: 10px;
   transform: translateY(-50px); /* Move the AdvertMenu up by 50px */
   margin: 0 auto; /* Center the AdvertMenu */
@@ -636,19 +638,16 @@ export const DivCard = styled.div`
 `;
 
 export const DivHero = styled.div`
-height: 80vh;
+background: pink;
 @media(max-width: ${({ theme }) => theme.mobile}){
   width: auto;
-  // height: 50vh;
   flex-direction: column;
-  // left: 2rem;
-  // margin-top:20rem;
 }
 `;
 
 export const DivCardImage = styled.img`
-margin: 0 auto;
-  width:100%;
+margin: 0;
+  width:80vw;
   height: 100%;
   object-fit: cover; 
   -webkit-box-shadow: 10px 13px 57px 60px rgba(0,0,0,0.75);

@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const StyledHomeBackground = styled.footer`
   width: 100%;
   height: 100%;
-  position: relative;
+  // position: relative;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/wall2.jpg');
   background-size: cover;
   background-position: center;

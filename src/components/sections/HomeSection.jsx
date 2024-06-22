@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import './../styles/sections/Carousel/carousel.css'
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import {
   Bait2Section,
   BlockQuote,
@@ -66,38 +70,80 @@ export const HomeSection = () => {
     return () => clearInterval(intervalId); // Cleanup the interval on component unmount
   }, []);
 
+
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
+  const carouselImages = [
+    { id: 1, url: 'https://images.unsplash.com/photo-1588072432836-e10032774350?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2Nob29sfGVufDB8fDB8fHww', title: 'Image 1' },
+    { id: 2, url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sfGVufDB8fDB8fHww', title: 'Image 2' },
+    { id: 3, url: 'https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 3' },
+    { id: 4, url: 'https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 4' },
+    { id: 5, url: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 5' },
+    { id: 1, url: 'https://images.unsplash.com/photo-1588072432836-e10032774350?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2Nob29sfGVufDB8fDB8fHww', title: 'Image 1' },
+    { id: 2, url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sfGVufDB8fDB8fHww', title: 'Image 2' },
+    { id: 3, url: 'https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 3' },
+    { id: 4, url: 'https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 4' },
+    { id: 5, url: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 5' },
+    { id: 6, url: 'https://plus.unsplash.com/premium_photo-1680807868955-805266ef99f0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 6' },
+    { id: 7, url: 'https://plus.unsplash.com/premium_photo-1682955296238-61cdc3338b30?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 7' },
+  ];
+
   return <>
     <StyledHomeBackground>
-      <SchoolContainer>
-        <SchoolName>
-          <DivHero>
-            <HeroContent style={{ fontFamily: 'Poetsen One, sans-serif' }}>
-              <h1 style={{ marginTop: '1rem' }}>Welcome to Olivia's Nest</h1>
-              <h3>international Daycare and PreSchool</h3>
-              <p>A happy place to be, where love is shown daily...</p>
-              <div className="home-section-cta-btn">
-                <CTAButton href="/AboutUs">About Us</CTAButton>
-                <CTAButton href="/Facilities" primary margin="0 0 0 20px">Facilities</CTAButton>
-              </div>
-            </HeroContent>
-          </DivHero>
+      <div className="carousel">
 
-          <DivCard>
-            <DivCardImage src={images[currentImageIndex]} alt="gate section and our wall" />
-          </DivCard>
-        </SchoolName>
-
-        <InfoCardContainer>
-        <InfoCard>
-          <Image src="./images/pexels-magda-ehlers-1337387.jpg" alt="Description of the image" />
-        </InfoCard>
-
-        <InfoCard>
-          <Image src="./images/pexels-pixabay-459957.jpg" alt="Description of the image" />
-        </InfoCard>
-        </InfoCardContainer>
-
-      </SchoolContainer>
+        <div className="slider-container">
+          <h2>Olivia's Nest.</h2>
+          <h2>International Daycare & Preschool</h2>
+          <h1>a place where love is shown daily</h1>
+          <Slider {...settings}>
+            {
+              carouselImages.map((image) => (
+                <div className="image-container">
+                  <img src={image.url} alt={image.title} className="image" />
+                </div>
+              ))
+            }
+          </Slider>
+        </div>
+      </div>
     </StyledHomeBackground>
 
     <HomeContainer>

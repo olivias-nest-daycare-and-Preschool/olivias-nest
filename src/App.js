@@ -15,6 +15,8 @@ import { Cocurricular } from "./components/sections/Co-curricular";
 import IndoorFacilitySection from "./components/layout/IndoorFacilitySection";
 import OutdoorFacilitySection from "./components/layout/OutdoorFacilitySection";
 import News from "./components/sections/News";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { HomeContainer } from "./components/styles/common/HomeConatiner";
 const  App = () =>{
   const theme = {
