@@ -130,9 +130,79 @@ export const HomeSection = () => {
       <div className="carousel">
 
         <div className="slider-container">
-          <h2>Olivia's Nest.</h2>
-          <h2>International Daycare & Preschool</h2>
-          <h1>a place where love is shown daily</h1>
+        <h2 className="animated-heading">
+          <span style={{ color: '#FF5733' }}>O</span>
+          <span style={{ color: '#C70039' }}>l</span>
+          <span style={{ color: '#900C3F' }}>i</span>
+          <span style={{ color: '#581845' }}>v</span>
+          <span style={{ color: '#2C2A4A' }}>i</span>
+          <span style={{ color: '#3F88C5' }}>a</span>'s&nbsp;
+          <span style={{ color: '#2C7873' }}>N</span>
+          <span style={{ color: '#6FB98F' }}>e</span>
+          <span style={{ color: '#9BC53D' }}>s</span>
+          <span style={{ color: '#FF5733' }}>t</span>.
+        </h2>
+        <h2 className="animated-heading">
+          <span style={{ color: '#FFC300' }}>I</span>
+          <span style={{ color: '#FF5733' }}>n</span>
+          <span style={{ color: '#C70039' }}>t</span>
+          <span style={{ color: '#900C3F' }}>e</span>
+          <span style={{ color: '#581845' }}>r</span>
+          <span style={{ color: '#2C2A4A' }}>n</span>
+          <span style={{ color: '#3F88C5' }}>a</span>
+          <span style={{ color: '#2C7873' }}>t</span>
+          <span style={{ color: '#6FB98F' }}>i</span>
+          <span style={{ color: '#9BC53D' }}>o</span>
+          <span style={{ color: '#FF5733' }}>n</span>
+          <span style={{ color: '#FFC300' }}>a</span>
+          <span style={{ color: '#FF5733' }}>l</span>&nbsp;
+          <span style={{ color: '#C70039' }}>D</span>
+          <span style={{ color: '#900C3F' }}>a</span>
+          <span style={{ color: '#581845' }}>y</span>
+          <span style={{ color: '#2C2A4A' }}>c</span>
+          <span style={{ color: '#3F88C5' }}>a</span>
+          <span style={{ color: '#2C7873' }}>r</span>
+          <span style={{ color: '#6FB98F' }}>e</span>&nbsp;
+          <span style={{ color: '#9BC53D' }}>&</span>&nbsp;
+          <span style={{ color: '#FF5733' }}>P</span>
+          <span style={{ color: '#FFC300' }}>r</span>
+          <span style={{ color: '#FF5733' }}>e</span>
+          <span style={{ color: '#C70039' }}>s</span>
+          <span style={{ color: '#900C3F' }}>c</span>
+          <span style={{ color: '#581845' }}>h</span>
+          <span style={{ color: '#2C2A4A' }}>o</span>
+          <span style={{ color: '#3F88C5' }}>o</span>
+          <span style={{ color: '#2C7873' }}>l</span>
+        </h2>
+        <h1 className="animated-heading">
+          <span style={{ color: '#FF5733' }}>a</span>&nbsp;
+          <span style={{ color: '#FFC300' }}>p</span>
+          <span style={{ color: '#FF5733' }}>l</span>
+          <span style={{ color: '#C70039' }}>a</span>
+          <span style={{ color: '#900C3F' }}>c</span>
+          <span style={{ color: '#581845' }}>e</span>&nbsp;
+          <span style={{ color: '#2C2A4A' }}>w</span>
+          <span style={{ color: '#3F88C5' }}>h</span>
+          <span style={{ color: '#2C7873' }}>e</span>
+          <span style={{ color: '#6FB98F' }}>r</span>
+          <span style={{ color: '#9BC53D' }}>e</span>&nbsp;
+          <span style={{ color: '#FF5733' }}>l</span>
+          <span style={{ color: '#FFC300' }}>o</span>
+          <span style={{ color: '#FF5733' }}>v</span>
+          <span style={{ color: '#C70039' }}>e</span>&nbsp;
+          <span style={{ color: '#900C3F' }}>i</span>
+          <span style={{ color: '#581845' }}>s</span>&nbsp;
+          <span style={{ color: '#2C2A4A' }}>s</span>
+          <span style={{ color: '#3F88C5' }}>h</span>
+          <span style={{ color: '#2C7873' }}>o</span>
+          <span style={{ color: '#6FB98F' }}>w</span>
+          <span style={{ color: '#9BC53D' }}>n</span>&nbsp;
+          <span style={{ color: '#FF5733' }}>d</span>
+          <span style={{ color: '#FFC300' }}>a</span>
+          <span style={{ color: '#FF5733' }}>i</span>
+          <span style={{ color: '#C70039' }}>l</span>
+          <span style={{ color: '#900C3F' }}>y</span>
+        </h1>
           <Slider {...settings}>
             {
               carouselImages.map((image) => (

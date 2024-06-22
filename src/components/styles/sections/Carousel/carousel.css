@@ -77,10 +77,12 @@
   .slider-container h2 {
     text-align: center;
     font-size: 30px;
+    animation: slideInFromLeft 1s ease-out;
   }
   .slider-container h1 {
     font-size: 20px;
     text-align: center;
     margin-bottom: 5rem;
+    animation: slideInFromRight 1s ease-out;
   }
 }
