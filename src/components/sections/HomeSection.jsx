@@ -202,6 +202,9 @@ export const HomeSection = () => {
             <span style={{ color: '#FF5733' }}>i</span>
             <span style={{ color: '#C70039' }}>l</span>
             <span style={{ color: '#FF5733' }}>y</span>
+            <span style={{ color: '#FF5733' }}>.</span>
+            <span style={{ color: '#FFC300' }}>.</span>
+            <span style={{ color: '#2C7873' }}>.</span>
           </h1>
           <Slider {...settings}>
             {
