@@ -148,12 +148,14 @@ export const NavItem = styled.li`
 export const SubMenu = styled.ul`
   display: none;
   position: absolute;
-  top: 100%;
-  left: 50 %;
+  top: 70%;
+  left: 55%;
+  transition : .5s ease-in-out;
   background: ${({ theme }) => theme.colors.lightNavyBlue};
   padding: 1rem;
   border-radius: 5px;
   z-index: 999;
+  
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     position: static;

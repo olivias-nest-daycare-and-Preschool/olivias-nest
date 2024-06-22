@@ -74,14 +74,15 @@
   }
 
   .slider-container h2 {
-    text-align: center;
+    text-align: left;
     background: white;
-    font-size: 30px;
+    font-size: 25px;
     animation: slideInFromLeft 1s ease-out;
   }
   .slider-container h1 {
     font-size: 20px;
-    text-align: center;
+    background: white;
+    text-align: left;
     margin-bottom: 5rem;
     animation: slideInFromRight 1s ease-out;
   }
