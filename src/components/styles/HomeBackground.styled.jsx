@@ -15,6 +15,7 @@ export const StyledHomeBackground = styled.footer`
 `;
 
 
+
 export const InfoCard = styled.div`
   top: 30rem;
   left: 0rem; /* Adjust this value based on your design */

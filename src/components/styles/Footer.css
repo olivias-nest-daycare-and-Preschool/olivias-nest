@@ -9,8 +9,7 @@
   margin: 5rem auto;
   gap: 2rem;
   width: 80%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Poetsen one",monospace;
 }
 
 .Footer .Top-container .Data1 {
@@ -31,6 +30,7 @@
   font-size: 16px;
   padding-left: 0.3rem;
   color: rgb(136, 136, 136);
+  font-size: 2rem;
 }
 .Footer .HR {
   margin: auto;
@@ -44,8 +44,7 @@
   grid-template-columns: repeat(3, 1fr);
   margin: 5rem auto;
   width: 80%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Poetsen one",monospace;
 }
 .Footer .Bottom-container .Data1 .Top:nth-child(1) {
   display: flex;
@@ -57,9 +56,9 @@
   object-fit: cover;
 }
 .Footer .Bottom-container .Data1 .info {
-  font-size: 16px;
-  padding: 1rem 0.5rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding: 1rem 1rem;
+  font-family: "Poetsen one",monospace;
   color: #7c7c7c;
 }
 .Footer .Bottom-container .Data1 .socials {
@@ -128,7 +127,7 @@
   gap: 1rem;
 }
 .Footer .Bottom-container .Data1 .wrap .Links .LinksData {
-  font-size: 16px;
+  font-size: 20px;
   color: #7c7c7c;
 }
 
@@ -170,10 +169,11 @@
 
 .copy{
     text-align: center;
-    font-size: 13px;
+    font-size: 20px;
     font-style: italic;
     color: #7c7c7c;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: 10px;
+    font-family: 'Poetsen one', Courier, monospace;
 }
 
 @media screen and (max-width: 600px) {

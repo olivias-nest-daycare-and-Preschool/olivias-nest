@@ -256,6 +256,7 @@ export const Card = styled.div`
 export const CardImage = styled.img`
   width: 80%;
   height: 80%;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
   @media(max-width: ${({ theme }) => theme.mobile}){

@@ -1,8 +1,19 @@
-import { useEffect, useState } from "react";
+
 import './../styles/sections/Carousel/carousel.css'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Art from "../../Images/homeImages/art.jpg";
+import Beddings from "../../Images/homeImages/beddings.jpg";
+import Birthday from "../../Images/homeImages/birthday.jpg";
+import Gate1 from "../../Images/homeImages/gate1.jpg";
+import Stretching from "../../Images/homeImages/stretching.jpg";
+import Study_2 from "../../Images/homeImages/study_2.jpg";
+import Study_rooms from "../../Images/homeImages/study_rooms.jpg";
+import Van from "../../Images/homeImages/van.jpg";
+import Teachers from "../../Images/homeImages/teachers.jpg";
+import Wall2 from "../../Images/homeImages/wall2.jpg";
+import Toys from "../../Images/homeImages/toy_room.jpg";
 import {
   Bait2Section,
   BlockQuote,
@@ -14,26 +25,19 @@ import {
   CardText,
   CardTitle,
   Cite,
-  DivCard,
-  DivCardImage,
-  DivHero,
   FeatureContent,
   FeatureDescription,
   FeatureImage,
   FeatureItem,
   FeatureTitle,
-  HeroContent,
-  SchoolName
 } from "../styles/sections/HomeSection.styled";
 import {
   GalleryItems,
   HomeContainer,
-  SchoolContainer,
   SingleGallery,
   StaffDetails
 } from "../styles/common/HomeConatiner";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
-import { CTAButton } from "../styles/common/CTAButton.styled";
 import { StyledGallerySection } from "../styles/sections/GallerySection.styled";
 import {
   FacilityCard,
@@ -43,32 +47,30 @@ import {
   FacilityContainer
 } from "../styles/sections/FacilitiesSection.styled";
 import {
-  Image,
-  InfoCard,
-  InfoCardContainer,
   StyledHomeBackground
 } from "../styles/HomeBackground.styled";
 import { BsSunglasses } from "react-icons/bs";
 
-const images = [
-  "./images/beds.jpg",
-  "./images/study_rooms.jpg",
-  "./images/painting_landing3.jpg"
-];
+// const images = [
+//   "./images/beds.jpg",
+//   "./images/study_rooms.jpg",
+//   "./images/painting_landing3.jpg"
+// ];
+
 
 export const HomeSection = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000); // Change image every 5 seconds
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setCurrentImageIndex((prevIndex) =>
+  //       prevIndex === images.length - 1 ? 0 : prevIndex + 1
+  //     );
+  //   }, 5000); // Change image every 5 seconds
 
-    return () => clearInterval(intervalId); // Cleanup the interval on component unmount
-  }, []);
+  //   return () => clearInterval(intervalId); // Cleanup the interval on component unmount
+  // }, []);
 
 
 
@@ -111,18 +113,17 @@ export const HomeSection = () => {
   };
 
   const carouselImages = [
-    { id: 1, url: 'https://images.unsplash.com/photo-1588072432836-e10032774350?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2Nob29sfGVufDB8fDB8fHww', title: 'Image 1' },
-    { id: 2, url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sfGVufDB8fDB8fHww', title: 'Image 2' },
-    { id: 3, url: 'https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 3' },
-    { id: 4, url: 'https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 4' },
-    { id: 5, url: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 5' },
-    { id: 1, url: 'https://images.unsplash.com/photo-1588072432836-e10032774350?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2Nob29sfGVufDB8fDB8fHww', title: 'Image 1' },
-    { id: 2, url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sfGVufDB8fDB8fHww', title: 'Image 2' },
-    { id: 3, url: 'https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 3' },
-    { id: 4, url: 'https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 4' },
-    { id: 5, url: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 5' },
-    { id: 6, url: 'https://plus.unsplash.com/premium_photo-1680807868955-805266ef99f0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 6' },
-    { id: 7, url: 'https://plus.unsplash.com/premium_photo-1682955296238-61cdc3338b30?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D', title: 'Image 7' },
+    { id: 1, url: Art, title: 'art' },
+    { id: 2, url: Beddings, title: 'beddings' },
+    { id: 3, url: Birthday, title: 'birthday' },
+    { id: 4, url: Gate1, title: 'gate1' },
+    { id: 1, url: Stretching, title: 'stretching' },
+    { id: 2, url: Study_2, title: 'stud2_2' },
+    { id: 3, url: Study_rooms, title: 'study_rooms' },
+    { id: 4, url: Van, title: 'van' },
+    { id: 5, url: Teachers, title: 'teachers' },
+    { id: 6, url: Wall2, title: 'our premises' },
+    { id: 7, url: Toys, title: 'Toys' },
   ];
 
   return <>
@@ -280,29 +281,6 @@ export const HomeSection = () => {
             repellendus obcaecati deserunt. Omnis, reiciendis! Dignissimos?</FacilityCardDescription>
         </FacilityCardContent>
       </FacilityCard>
-
-      <FacilityCard>
-        <FacilityCardContent>
-          <FacilityCardTitle>Vision</FacilityCardTitle>
-          <FacilityCardDescription>Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit.
-            Dicta odit vitae at sit beatae id itaque dignissimos?
-            Repudiandae ut at voluptates officiis praesentium veritatis,
-            repellendus obcaecati deserunt. Omnis, reiciendis! Dignissimos?</FacilityCardDescription>
-        </FacilityCardContent>
-      </FacilityCard>
-
-      <FacilityCard>
-        <FacilityCardContent>
-          <FacilityCardTitle>Mission</FacilityCardTitle>
-          <FacilityCardDescription>Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit.
-            Dicta odit vitae at sit beatae id itaque dignissimos?
-            Repudiandae ut at voluptates officiis praesentium veritatis,
-            repellendus obcaecati deserunt. Omnis, reiciendis! Dignissimos?</FacilityCardDescription>
-        </FacilityCardContent>
-      </FacilityCard>
-
       <FacilityCard>
         <FacilityCardContent>
           <FacilityCardTitle>Core Values</FacilityCardTitle>
@@ -357,8 +335,8 @@ export const HomeSection = () => {
           </CardContent>
         </Card>
       </CardContainer>
+      <hr style={{ marginTop: '8rem' }} />
     </HomeContainer>
-    <hr style={{ marginTop: '8rem' }} />
 
     <StyledGallerySection>
       <SectionHeading>
@@ -369,19 +347,19 @@ export const HomeSection = () => {
         <SingleGallery>
           <StaffDetails>
             <h3>Child monitoring</h3>
-            <img src="./images/toons/toddler.png" alt="tolder" />
+            <img src="./images/beds.jpg"  style={{height:'100%',width:'100%', objectFit:'cover'}} alt="beds" />
           </StaffDetails>
         </SingleGallery>
         <SingleGallery>
           <StaffDetails>
-            <h3>Firstname Lastname</h3>
-            <img src="./images/toons/kid-bubbles.jpg" alt="kid playing with bubbles" />
+            <h3>Board games</h3>
+            <img src="./images/board_games.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="modelling" />
           </StaffDetails>
         </SingleGallery>
         <SingleGallery>
           <StaffDetails>
-            <h3>Firstname Lastname</h3>
-            <img src="./images/toons/girl-toon.png" alt="cartoon girl" style={{ height: '500px' }} />
+            <h3>Basket ball</h3>
+            <img src="./images/basket_ball.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="cartoon girl"/>
           </StaffDetails>
         </SingleGallery>
       </GalleryItems>

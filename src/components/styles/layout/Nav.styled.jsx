@@ -197,7 +197,7 @@ export const SubMenuItem = styled.li`
 
 export const NavLink = styled.a`
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.white};
+  /* color: ${({ theme }) => theme.colors.white}; */
   letter-spacing: 1.5px;
   position: relative;
 

@@ -50,7 +50,7 @@ export const NavBar = () => {
                 {navItem.isProfile ? (
                   <NavLink href="/">
                     <Profile>
-                      <img src={LogoImage} alt="Ameda" />
+                      <img src={LogoImage} alt="olivias" />
                       <span>Olivia's Nest</span>
                     </Profile>
                   </NavLink>

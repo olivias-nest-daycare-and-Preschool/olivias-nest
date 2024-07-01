@@ -18,7 +18,7 @@ export const Footer = () => {
                         </div>
                         <div className="info">
                             <h2>Find us</h2>
-                            <p>001100, Kenya 777778</p>
+                            <p>25 othaya road in Kileleshwa/ Lavington, Nairobi.</p>
                         </div>
                     </div>
                     <div className="Data1">
@@ -27,7 +27,7 @@ export const Footer = () => {
                         </div>
                         <div className="info">
                             <h2>Call us</h2>
-                            <p>+25484768468</p>
+                            <p>0743794650 or / 0114 592463</p>
                         </div>
                     </div>
                     <div className="Data1">
@@ -36,7 +36,7 @@ export const Footer = () => {
                         </div>
                         <div className="info">
                             <h2>Mail us</h2>
-                            <p>Olivia@gmail.com</p>
+                            <p>oliviasnest1@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -48,46 +48,58 @@ export const Footer = () => {
                                 <img src={Logo} alt="Logo" />
                             </div>
                             <div className="info">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae unde facere repellendus inventore fugit ipsa ratione, consequuntur ex ducimus sapiente asperiores quaerat vel sequi, maxime provident deserunt tenetur beatae.</p>
+                                <p>
+                                    We have admissions with inclusion of:
+                                    Daycare (1-2 years).
+                                    Internation Preschool (3-6 years).
+                                    Extra Curricular activities.
+                                    Transport available.
+                                </p>
                             </div>
                         </div>
                         <div className="socials">
                             <h2>Follow us</h2>
                             <div className="wrap">
                                 <div className="icon1">
-                                    <IoLogoWhatsapp />
+                                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D%252B254114592463%26context%3DARAv37ri3dGdLBTDhKq0GAc7il6evk4InBbyWaOjqsoSJ2c3yNKz7GYEgM3-Yvsx0nBWxiFETUr-iYpZZavHIoYRLiqNDRMCqUL94NynvCYa-blxwTYsOz82iUaOV2veXEtXU3olQQZWyxph8abTai-iLw%26source%3DFB_Page%26app%3Dfacebook%26entry_point%3Dpage_cta%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3JlXPF1rhScsGbC_LaLAH60rpuplPhtjFCSV9ds5rKAYm0YKNADNIdQoU_aem_1B69idGnGUUvw_nTa9ZBFg&h=AT3SV7l0fHV6Ukj8PkQ9leBBPn_3JoJ4Lo2qlocOnqPNALtzHSjClZhpnNUtyI6Qoq5CVpUCjsqCe97eBJ4cIJ_iuwIgNhQ-YLD-5WjP-ScxKF2qKo2PMdFh5iHCfCrYuKIydQ" 
+                                target="_blank" rel="noopener noreferrer">
+                                <IoLogoWhatsapp />
+                                </a>
                                 </div>
                                 <div className="icon2">
+                                    <a href="https://www.facebook.com/oliviasnest" 
+                                    target="_blank" rel="noopener noreferrer">
                                     <FaFacebookF />
+                                    </a>
                                 </div>
                                 <div className="icon3">
+                                <a href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener noreferrer">
                                     <FaInstagram />
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="Data1">
-                        <h2>Useful Links</h2>
+                        <h2>Menu</h2>
                         <hr className='HR2' />
                         <div className="wrap">
                             <div className="Links">
-                                <Link className='LinksData'>Home</Link>
-                                <Link className='LinksData'>Services</Link>
-                                <Link className='LinksData'>Contact</Link>
-                                <Link className='LinksData'>Our Service</Link>
-                                <Link className='LinksData'>Contact Us</Link>
+                                <Link to="/" className='LinksData'>Home</Link>
+                                <Link to="/AboutUs" className='LinksData'>About Us</Link>
+                                <Link to="/Facilities" className='LinksData'>Facilities</Link>
+                                <Link to="/Co-curricular" className='LinksData'>Co-curricular</Link>
                             </div>
                             <div className="Links">
-                                <Link className='LinksData'>About</Link>
-                                <Link className='LinksData'>Portfolio</Link>
-                                <Link className='LinksData'>About Us</Link>
-                                <Link className='LinksData'>Expert Team</Link>
-                                <Link className='LinksData'>Latest News </Link>
+                                <Link to="/Transport" className='LinksData'>Transport</Link>
+                                <Link to="/Gallery" className='LinksData'>Gallery</Link>
+                                <Link to="/News" className='LinksData'>News</Link>
+                                <Link to="/ContactUs" className='LinksData'>Contact Us</Link>
                             </div>
                         </div>
                     </div>
                     <div className="Data1">
-                        <h2>Useful Links</h2>
+                        <h2>News Letter</h2>
                         <hr className='HR2' />
                         <div className="info">
                             Don’t miss to subscribe to our new feeds, kindly fill the form below.
@@ -100,18 +112,10 @@ export const Footer = () => {
                 </div>
 
                 <div className="copy">
-                    <p>Copyright © 2024 <a href="www.ameda,com">Olivia</a>. All rights reserved.</p>
+                <p>Copyright © <script>document.write(new Date().getFullYear());</script>
+                 <a href="mailto:oliviasnest1@gmail.com">Olivia's Nest</a>. All rights reserved.</p>
                 </div>
             </div>
         </>
     );
 };
-
-
-// orange:"rgba(255,151,0,1.000)",
-//       white:"rgba(240,247,255,1)",
-//       green:"rgba(152,219,5,1.000)",
-//       navyBlue:"rgba(2,12,27,1)",
-//       lightNavyBlue:"rgba(4,22,48,1)",
-//       purple:"rgba(58,17,1,1.000)",
-//       black: "rgba(0,0,0,1.000)",
