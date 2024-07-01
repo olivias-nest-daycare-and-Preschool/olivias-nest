@@ -1,4 +1,3 @@
-// import {css} from 'styled-components';
 import { Container } from "../styles/common/Container.styled";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import { AboutUsSection } from "../styles/sections/AboutSection.styled";
@@ -7,7 +6,7 @@ export const Cocurricular = ({isFloating}) =>{
     return(
         <>
         <Container>
-        <AboutUsSection id="Gallery" style={{marginTop:'20rem'}}>
+        <AboutUsSection id="Gallery" style={{marginTop:'15rem'}}>
     <SectionHeading>
       <h1>Co-curricular</h1>
       <h3>Enhancing a child's life skills, fitness and engaging their minds with productive sports</h3>

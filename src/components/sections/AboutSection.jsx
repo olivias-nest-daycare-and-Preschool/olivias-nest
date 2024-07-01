@@ -11,7 +11,7 @@ export const AboutSection = () =>{
     return <> 
     <ImageCoveredContainer> 
     <Container>
-    <AboutUsSection id="/AboutUs" style={{marginTop:'20rem'}}>
+    <AboutUsSection id="/AboutUs" style={{marginTop:'15rem'}}>
         <ImageContainer>
             <StyledImage src="./images/wall2.jpg" alt="olivia's nest jpg file"/>
             <DullCircle/>
@@ -144,23 +144,17 @@ export const AboutSection = () =>{
     <GalleryItems>
         <SingleGallery>
           <StaffDetails>
-                <h3>School</h3>
-                <img src="./images/wall2.jpg" alt="our school" />
-                <p>Welcome to our school</p>
+                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="our school" />
             </StaffDetails>
         </SingleGallery>
         <SingleGallery>
         <StaffDetails>
-                <h3>Child monitoring</h3>
-                <img src="./images/toons/toddler.png" alt="tolder" />
-                <p style={{marginTop:'4rem'}}>This is a critical thing for a child's growth</p>
+                <img src="./images/wall2.jpg"  style={{height:'100%',width:'100%', objectFit:'cover'}} alt="tolder" />
             </StaffDetails>
         </SingleGallery>
         <SingleGallery>
         <StaffDetails>
-                <h3>Child monitoring</h3>
-                <img src="./images/toons/toddler.png" alt="tolder" />
-                <p style={{marginTop:'4rem'}}>This is a critical thing for a child's growth</p>
+                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="tolder" />
             </StaffDetails>
         </SingleGallery>
     </GalleryItems>
@@ -168,24 +162,17 @@ export const AboutSection = () =>{
     <GalleryItems>
         <SingleGallery>
         <StaffDetails>
-                <h3>Child monitoring</h3>
-                <img src="./images/soccer.jpg" alt="soccer"  />
-                <p>Our children participate in tournaments.
-                </p>
+                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="soccer"  />
             </StaffDetails>
         </SingleGallery>
         <SingleGallery>
         <StaffDetails>
-                <h3>Tennis Training session</h3>
-                <img src="./images/tennis.jpg" alt="tennis at the court"/>
-                <p>Tennis session ongoing at our Court</p>
+                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="tennis at the court"/>
             </StaffDetails>
         </SingleGallery>
         <SingleGallery>
         <StaffDetails>
-                <h3>Tennis court</h3>
-                <img src="./images/skating.jpg" alt="kids skating" />
-                <p>Skating session ongoing</p>
+                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="kids skating" />
             </StaffDetails>
         </SingleGallery>
     </GalleryItems>

@@ -9,7 +9,7 @@ import {
 export const GallerySection = () =>{
     return (
         <>
-        <StyledGallerySection style={{marginTop:'18rem'}} id="Gallery">
+        <StyledGallerySection style={{marginTop:'15rem'}} id="Gallery">
             <SectionHeading>
                 <h1>Our Gallery</h1>
                 <h3>Our decorated pictures</h3>

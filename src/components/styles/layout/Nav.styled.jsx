@@ -36,11 +36,11 @@ export const Nav = styled.nav`
 `;
 
 export const Logo = styled.img`
-  width: 100px;
-  height: 100px;
-  // background: red;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
+  /* background: red; */
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100px;
     object-fit: cover;
@@ -99,7 +99,7 @@ export const NavList = styled.ul`
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  font-size: 14px;
+  font-size: 18px;
   overflow: hidden;
   font-weight: 700;
   flex-wrap: wrap;

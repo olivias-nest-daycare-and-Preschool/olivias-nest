@@ -239,7 +239,7 @@ export const CardContainer = styled.div`
 
 export const Card = styled.div`
   width: 50%;
-  padding: 1rem;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.0);
   transition: all 300ms ease-in-out;
   margin-bottom: 1rem;
