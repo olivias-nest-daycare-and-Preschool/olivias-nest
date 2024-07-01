@@ -70,11 +70,11 @@
   padding: 1rem 0;
 }
 .Footer .Bottom-container .Data1 .socials .wrap .icon1 {
-  font-size: 35px;
-  background: white;
-  width: 40px;
-  height: 40px;
-  color: green;
+  font-size: 30px;
+  background: green;
+  width: 30px;
+  height: 30px;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,24 +82,29 @@
   padding: 0.8rem;
 }
 .Footer .Bottom-container .Data1 .socials .wrap .icon2 {
-  font-size: 35px;
+  font-size: 32px;
   background: rgb(21, 47, 133);
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
   color: rgb(241, 241, 241);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 40%;
   padding: 1.2rem;
 }
 .Footer .Bottom-container .Data1 .socials .wrap .icon3 {
   font-size: 35px;
-  background: rgb(253, 253, 253);
+  background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
   width: 40px;
   height: 40px;
   color: rgb(201, 57, 57);
   display: flex;
+  object-fit: contain;
   align-items: center;
   justify-content: center;
   border-radius: 50%;

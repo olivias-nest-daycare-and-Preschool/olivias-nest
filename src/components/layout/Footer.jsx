@@ -102,7 +102,7 @@ export const Footer = () => {
                         <h2>News Letter</h2>
                         <hr className='HR2' />
                         <div className="info">
-                            Don’t miss to subscribe to our new feeds, kindly fill the form below.
+                            Don’t miss to subscribe to our new feeds, fill the form below.
                         </div>
                         <div className="form">
                             <input type="email" placeholder="Email Address" />
@@ -113,7 +113,7 @@ export const Footer = () => {
 
                 <div className="copy">
                 <p>Copyright © <script>document.write(new Date().getFullYear());</script>
-                 <a href="mailto:oliviasnest1@gmail.com">Olivia's Nest</a>. All rights reserved.</p>
+                 <a href="mailto:oliviasnest1@gmail.com">Olivia's Nest 2024</a>. All rights reserved.</p>
                 </div>
             </div>
         </>
