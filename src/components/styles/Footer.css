@@ -71,10 +71,10 @@
 }
 .Footer .Bottom-container .Data1 .socials .wrap .icon1 {
   font-size: 30px;
-  background: green;
+  /* background: green; */
   width: 30px;
   height: 30px;
-  color: white;
+  color: green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,11 +83,11 @@
 }
 .Footer .Bottom-container .Data1 .socials .wrap .icon2 {
   font-size: 32px;
-  background: rgb(21, 47, 133);
+  /* background: rgb(21, 47, 133); */
   width: 32px;
   height: 32px;
   object-fit: cover;
-  color: rgb(241, 241, 241);
+  color: rgb(21, 47, 133);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,10 +96,10 @@
 }
 .Footer .Bottom-container .Data1 .socials .wrap .icon3 {
   font-size: 35px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #833ab4,#fd1d1d,#fcb045
-  );
+  ); */
   width: 40px;
   height: 40px;
   color: rgb(201, 57, 57);
