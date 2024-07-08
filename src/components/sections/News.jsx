@@ -1,159 +1,208 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react'
+import "../../components/styles/sections/News/News.css";
 import { SectionHeading } from '../styles/common/SectionHeading.styled';
-import {
-   AdvertMenu, 
-  AdvertSection, 
-  AdvertSectioning, 
-  ArrowUp, 
-  Header, 
-  Image, 
-  ImageCard, 
-  ImageCardContainer, 
-  NewsNav, 
-  NewsNavItem, 
-  NewsNavList, 
-  NewsSection} from '../styles/sections/NewsSection.styled';
-import useScrollDirection from '../../hooks/useScrollDirection';
-import { Logo } from '../styles/layout/Nav.styled';
-import { NewsData } from '../../data/NewsData';
-import { NavLink } from 'react-router-dom';
+import { HomeContainer } from '../styles/common/HomeConatiner';
+import Birthday  from "../../Images/homeImages/birthday.jpg";
+import { StyledHomeBackground } from '../styles/HomeBackground.styled';
+
+
 
 const News = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('AWL'); // Set default active section
-  const scrollDirection = useScrollDirection("down");
-
-  const handleNavigation = (path, sectionId) => {
-    setMenuOpen(false);
-    setActiveSection(sectionId); // Set the active section
-    window.location.hash = path; // Change the URL hash
-    
-    if (sectionId) {
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 0);
-    }
-  };
-
-  useEffect(() => {
-    // Scroll to the default active section on mount
-    const element = document.getElementById(activeSection);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [activeSection]);
-
   return (
     <>
-      <NewsSection id="News" style={{ marginTop: '20rem' }}>
-        <SectionHeading>
-          <h1>Get some News from us!!!</h1>
-          <p style={{ fontSize: '2.3rem', fontFamily: 'Poetsen One, sans-serif' }}>
-            Learn about events, cultural day and further information from this page
-          </p>
-          <p style={{ fontFamily: 'Poetsen One, sans-serif' }}>
-            A sneak peek of how we break the monotony...
-          </p>
-        </SectionHeading>
-      </NewsSection>
-
-      <AdvertSection>
-        <AdvertMenu>
-          <NewsNav style={{ background: '#082736', borderRadius: '40px' }} scrollDirection={scrollDirection}>
-            <div>
-              <a href="/">
-                <Logo style={{ width: '150px', marginTop: '-8rem' }} src="./images/logo.png" />
-              </a>
-            </div>
-
-            {/* Menu items */}
-            <NewsNavList menuOpen={menuOpen}>
-              {/* NewsData mapping */}
-              {NewsData && NewsData.map((newsItem, index) => (
-                <NewsNavItem
-                  key={index}
-                  index={index}
-                  menuOpen={menuOpen}
-                  isActive={activeSection === newsItem.sectionId} // Pass isActive prop
-                  onClick={() => setMenuOpen(false)}
-                >
-                  <NavLink
-                    to={newsItem.href}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleNavigation(newsItem.href, newsItem.sectionId);
-                    }}
-                  >
-                    {newsItem.text}
-                  </NavLink>
-                </NewsNavItem>
-              ))}
-            </NewsNavList>
-          </NewsNav>
-        </AdvertMenu>
-
-        <AdvertSectioning id="AWL" 
-        style={{ height: activeSection === 'AWL' ? '50vh' : '0', overflow: 'hidden', transition: 'height 0.2s ease' }}>
-          <Header>AWL</Header>
-          <ImageCardContainer>
-          <ImageCard>
-            <Image src="./images/AWL/AWL1.jpg"></Image>
-          </ImageCard>
-
-          <ImageCard>
-            <Image src="./images/AWL/AWL2.jpg"></Image>
-          </ImageCard>
-
-          <ImageCard>
-            <Image src="./images/AWL/AWL3.jpg"></Image>
-          </ImageCard>
-          </ImageCardContainer>
-        </AdvertSectioning>
-
-        <AdvertSectioning id="Graduation" style={{ height: activeSection === 'Graduation' ? '80vh' : '0', overflow: 'hidden', transition: 'height 0.2s ease' }}>
-      <Header>Graduation</Header>
-      <ImageCardContainer>
-        <ImageCard>
-          <Image src="./images/skating.jpg" alt="Skating" />
-        </ImageCard>
-        <ImageCard>
-          <Image src="./images/skating.jpg" alt="Skating" />
-        </ImageCard>
-        <ImageCard>
-          <Image src="./images/skating.jpg" alt="Skating" />
-        </ImageCard>
-      </ImageCardContainer>
-    </AdvertSectioning>
-
-        <AdvertSectioning id="Cultural-day" style={{ height: activeSection === 'Cultural-day' ? '80vh' : '0', overflow: 'hidden', transition: 'height 0.2s ease' }}>
-        <Header>Cultural Day</Header>
-      <ImageCardContainer>
-      <ImageCard>
-            <Image src="./images/cultural/decor3.jpg"></Image>
-          </ImageCard>
-
-          <ImageCard>
-            <Image src="./images/cultural/decor4.jpg"></Image>
-          </ImageCard>
-
-          <ImageCard>
-            <Image src="./images/cultural/decor5.jpg"></Image>
-          </ImageCard>
-      </ImageCardContainer>
-        </AdvertSectioning>
-
-        <ArrowUp href="#News">
-          ↑
-        </ArrowUp>
-      </AdvertSection>
+    return (
+    <>
+    <StyledHomeBackground>
+    <HomeContainer style={{marginTop:'15rem'}}>
+     <SectionHeading >
+        <h1>Get Posted</h1>
+        <h3>Take a look at how we do our cultural day and other special events</h3>
+      </SectionHeading>
+    <div className="wrapper">
+    <div className="home-hero">
+    <div className="feature">
+      <h3>We like balloons</h3>
+      <p>You can find all kinds of balloon related things here.</p>
+    </div>
+    <div className="special">
+      <h3>Special Shapes</h3>
+      <p>Why are some of them so scary looking?</p>
+    </div>
+    <div className="amazing">
+      <h3>10 things you discover when taking a balloon ride.</h3>
+      <p>Number 8 will AMAZE you.</p>
+    </div>
+    <div className="news">
+      <h3>Angry people at balloon fiestas</h3>
+      <p>Hot air balloons. A bit weather sensitive.</p>
+    </div>
+    <div className="photos">
+      <h3>Balloon photos</h3>
+      <p>I have quite a few.</p>
+    </div>
+    <div className="cta">
+      <p>Sign up for more information about balloons.</p>
+      <a className="spam-button" href="/ContactUs">contact us!</a>
+    </div>
+  </div>
+</div>
+    </HomeContainer>
 
 
-        
+    <HomeContainer>
+      <div className="wrapper">
+  <SectionHeading style={{paddingTop:'2rem'}}>
+    <h1>School Events</h1>
+  </SectionHeading>
+  <div className="cols">
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: `url(${Birthday})` }}>
+          <div className="inner">
+            <p>Diligord</p>
+            <span>Lorem ipsum</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/511/511/)" }}>
+          <div className="inner">
+            <p>Rocogged</p>
+            <span>Lorem ipsum</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/502/502/)" }}>
+          <div className="inner">
+            <p>Strizzes</p>
+            <span>Lorem ipsum</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+          <div className="inner">
+            <p>Clossyo</p>
+            <span>Lorem ipsum</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+          <div className="inner">
+            <p>Clossyo</p>
+            <span>Lorem ipsum</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+          <div className="inner">
+            <p>Clossyo</p>
+            <span>Lorem ipsum</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+          <div className="inner">
+            <p>Clossyo</p>
+            <span>Lorem ipsum</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+          <div className="inner">
+            <p>Clossyo</p>
+            <span>Lorem ipsum</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </HomeContainer>
+    </StyledHomeBackground>
+    <div></div>
+    </> 
+  )
     </>
-  );
+    
+  )
 }
 
-export default News;
+export default News
+
+
+
+
+  
+  
+ 
+  
+
