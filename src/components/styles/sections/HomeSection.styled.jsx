@@ -106,7 +106,7 @@ export const BaitSection = styled.section`
   padding: 10rem 0 5rem 0;
   width: 100%;
   display: flex;
-  align-items: start;
+  align-items: end;
   justify-content: left;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -117,7 +117,7 @@ export const BaitSection = styled.section`
 export const Bait2Section = styled.div`
 min-height: 40vh;
 padding: 10rem 0 5rem 0;
-width: 100%;
+width: 90%;
 display: flex;
 align-items: start;
 justify-content: left;
@@ -131,6 +131,8 @@ export const FeatureItem = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
+  padding-right:'-2rem';
+  padding-left:'-2rem';
   margin-bottom: 2rem; /* Reduce vertical space between items */
   margin-top: 20rem;
   transition: all 300ms ease-in-out;

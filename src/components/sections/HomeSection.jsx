@@ -50,6 +50,7 @@ import {
   StyledHomeBackground
 } from "../styles/HomeBackground.styled";
 import { BsSunglasses } from "react-icons/bs";
+import { Container } from '../styles/common/Container.styled';
 
 // const images = [
 //   "./images/beds.jpg",
@@ -258,8 +259,84 @@ export const HomeSection = () => {
         </FeatureItem>
       </Bait2Section>
     </HomeContainer>
+   
 
-    <FacilityContainer style={{ marginBottom: '15rem' }}>
+    <HomeContainer>
+      <div className="wrapper">
+  <SectionHeading style={{paddingTop:'2rem'}}>
+    <h1>Our Principles</h1>
+  </SectionHeading>
+  <div className="cols">
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+          <div className="inner">
+            <p>Our philosophy</p>
+            <span>Philosophy</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>We believe in fostering creativity, curiosity, and compassion in a nurturing environment, empowering each child to explore and grow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+          <div className="inner">
+            <p>Core Values</p>
+            <span>values</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>We uphold core values of kindness, curiosity, and growth, 
+              fostering an environment where every child feels valued and inspired to explore their potential.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+          <div className="inner">
+            <p>View on education</p>
+            <span>education</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="col" ontouchstart="this.classList.toggle('hover');">
+      <div className="container">
+        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+          <div className="inner">
+            <p>Mission</p>
+            <span>Pursuit</span>
+          </div>
+        </div>
+        <div className="back">
+          <div className="inner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+    </HomeContainer>
+
+    {/* <FacilityContainer style={{ marginBottom: '10rem', marginTop:'5rem' }}>
       <FacilityCard>
         <FacilityCardContent>
           <FacilityCardTitle>Our Philosophy</FacilityCardTitle>
@@ -291,7 +368,7 @@ export const HomeSection = () => {
             repellendus obcaecati deserunt. Omnis, reiciendis! Dignissimos?</FacilityCardDescription>
         </FacilityCardContent>
       </FacilityCard>
-    </FacilityContainer>
+    </FacilityContainer> */}
 
     <HomeContainer>
       <SectionHeading>
