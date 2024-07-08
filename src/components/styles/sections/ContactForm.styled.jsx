@@ -146,6 +146,14 @@ export const Select = styled.select`
   border-radius: 45px;
   margin-bottom: 20px;
   font-weight: bold;
+  outline-style: none;
+  
+  @media(max-width: ${({theme})=>theme.mobile}){
+    option{
+    width:20px;
+  }
+  margin-bottom: -3rem;
+  }
 `;
 
 export const TextArea = styled.textarea`
@@ -167,8 +175,6 @@ export const Button = styled.button`
 `;
 
 /* end of card form */
-
-
 
 
 export const FlexContainer = styled.div`
@@ -193,5 +199,25 @@ export const Text = styled.p`
     font-size: 16px;
   }
 `;
+
+
+export const CardInForm = styled.div`
+  width: 50%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.0);
+  /* transition: all 300ms ease-in-out; */
+  margin-bottom:-5rem;
+  height: auto;
+  /* &:hover{
+    transform: translateY(-1rem);
+  } */
+ @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 95%;
+    margin-bottom: 6.5rem;
+    height: 500px;
+    margin-top: -3.8rem;
+  }
+`;
+
 
 
