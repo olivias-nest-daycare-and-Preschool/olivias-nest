@@ -41,6 +41,7 @@ border: 1px solid black;
 font-family: "Poppins",sans-serif;
 font-weight: bold;
 resize: vertical;
+outline-style: none;
 `;
 
 export const Input = styled.input`
@@ -50,6 +51,10 @@ border-radius: 20px;
 border:1px solid #ccc;
 font-family: "Poppins",sans-serif;
 font-weight: bold;
+outline-style: none;
+@media(max-width: ${({theme})=> theme.mobile}){
+    padding: 1.8rem;
+}
 `;
 
 export const Button = styled.button`
@@ -61,7 +66,7 @@ color: white;
 cursor: pointer;
 justify-content: center;
 transition: background-color 0.3s;
-font-size: 3rem;
+font-size: 1.7rem;
 font-weight: bold;
 width: fit-content;
 margin-top: 20px;

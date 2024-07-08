@@ -4,9 +4,9 @@ import {FaAddressBook, FaLocationCrosshairs} from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import {Button, Form, Input, Label, StyledContactSectionMain,StyledSemiContactSectionMain, Textarea } from "../styles/sections/ContactSection.styled";
-import { Card } from "../styles/sections/HomeSection.styled";
-import {CardForm,Title,Paragraph,CheckBoxWrapper,CheckBoxLabel,CheckBox,Select, FlexContainer, Icon, Text} from "../styles/sections/ContactForm.styled"
+import {CardForm,Title,Paragraph,CheckBoxWrapper,CheckBoxLabel,CheckBox,Select, FlexContainer, Icon, Text, CardInForm} from "../styles/sections/ContactForm.styled"
 import { Link } from "react-router-dom";
+import { StyledHomeBackground } from '../styles/HomeBackground.styled';
 
 export const ContactSection = () =>{
     const [selectedService, setSelectedService] = useState('');
@@ -16,15 +16,16 @@ export const ContactSection = () =>{
     };
     return (
         <>
+        <StyledHomeBackground>
         <StyledContactSectionMain>
             <StyledSemiContactSectionMain> 
             <SectionHeading>
-                <h1 style={{marginTop:'8rem'}}>Let's get in touch</h1>
+                <h1>Let's get in touch</h1>
                 <p style={{fontSize:'2rem'}}><Link to="/ContactUs"><Link to="/">Home</Link> / Contact Us</Link></p>
             </SectionHeading>
 
        <CardForm>
-                <Card  style={{flexDirection:'column',justifyContent:'center'}}>
+                <CardInForm  style={{flexDirection:'column',justifyContent:'center', marginBottom:'-5rem'}}>
                 <Title style={{color: 'orange'}}>What would you like to hear more about?</Title>
                 <Paragraph>What services are interested in?</Paragraph>
                 <CheckBoxWrapper>
@@ -61,16 +62,15 @@ export const ContactSection = () =>{
                 </CheckBoxWrapper>
                 <Paragraph>How old is your child?<div style={{display:'inline',color:'red'}}>*</div></Paragraph>
                 <Select>
-                    <option>Under 1yr</option>
+                    <option>&lt;=1yr</option>
                     <option>1-2yrs</option>
                     <option>2-3yrs</option>
                     <option>3-4yrs</option>
                     <option>4-5yrs</option>
                     <option>5-6yrs</option>
                 </Select>
-                </Card>
-
-                <Card style={{marginLeft:'-5rem'}}>
+                </CardInForm>
+                <CardInForm>
                 <Form>
                         <Label htmlFor="email">Email:</Label>
                         <Input type="email" id="email" name="email" />
@@ -78,19 +78,19 @@ export const ContactSection = () =>{
                         <Textarea id="message" name="message"  rows="4" placeholder="Write to Olivia's Nest..."/>
                         <Button type="submit">Send Message</Button>
                     </Form>
-                </Card>
+                </CardInForm>
     </CardForm>
             </StyledSemiContactSectionMain>
         </StyledContactSectionMain>
-
+  
         <StyledContactSectionMain>
             <StyledSemiContactSectionMain>
-            <SectionHeading  style={{marginTop:'-20rem'}}>
+            <SectionHeading  style={{marginTop:'-30rem', paddingTop:'-5rem'}}>
                             <h1>Contact Info</h1>
                         </SectionHeading>
                 <CardForm>
-                    <Card>
-                      <p style={{fontSize:'20px',color:'orange',marginBottom:'1rem'}}>Go ahead and contact us or write a message to us and we'll get back to you</p>
+                    <CardInForm style={{marginBottom:'3rem'}}>
+                      <p style={{fontSize:'20px',color:'orange',marginBottom:'-1rem'}}>Go ahead and contact us or write a message to us and we'll get back to you</p>
                          <FlexContainer>
                           <Icon as={FaPhone} />
                           <Text>0743794650 or 0114 592463</Text>
@@ -110,10 +110,10 @@ export const ContactSection = () =>{
                           <Icon as={MdMarkEmailUnread} />
                           <Text>oliviasnest3@gmail.com</Text>
                         </FlexContainer>
-                    </Card> 
+                    </CardInForm> 
 
-                    <Card>
-                    <p style={{fontSize:'20px',color:'orange',marginBottom:'1rem'}}>
+                    <CardInForm>
+                    <p style={{fontSize:'20px',color:'orange'}}>
                       Send us your message and we'll get back to you.</p>
                     <Form>
                         <Label htmlFor="name">Name:</Label>
@@ -130,10 +130,11 @@ export const ContactSection = () =>{
 
                         <Button type="submit">Send Message</Button>
                     </Form>
-                    </Card>
+                    </CardInForm>
                 </CardForm>
             </StyledSemiContactSectionMain>
         </StyledContactSectionMain>
+        </StyledHomeBackground>
         <hr />
         </>
     );
