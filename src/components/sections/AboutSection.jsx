@@ -134,51 +134,6 @@ export const AboutSection = () =>{
                 </HeroSocialIcons>
       <hr style={{marginTop:'5rem'}}/>
     </Container>
-
-
-    <HomeContainer>
-   <StyledGallerySection>
-    <SectionHeading>
-        <h1>Our Premises</h1>
-    </SectionHeading>
-    <GalleryItems>
-        <SingleGallery>
-          <StaffDetails>
-                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="our school" />
-            </StaffDetails>
-        </SingleGallery>
-        <SingleGallery>
-        <StaffDetails>
-                <img src="./images/wall2.jpg"  style={{height:'100%',width:'100%', objectFit:'cover'}} alt="tolder" />
-            </StaffDetails>
-        </SingleGallery>
-        <SingleGallery>
-        <StaffDetails>
-                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="tolder" />
-            </StaffDetails>
-        </SingleGallery>
-    </GalleryItems>
-
-    <GalleryItems>
-        <SingleGallery>
-        <StaffDetails>
-                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="soccer"  />
-            </StaffDetails>
-        </SingleGallery>
-        <SingleGallery>
-        <StaffDetails>
-                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="tennis at the court"/>
-            </StaffDetails>
-        </SingleGallery>
-        <SingleGallery>
-        <StaffDetails>
-                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="kids skating" />
-            </StaffDetails>
-        </SingleGallery>
-    </GalleryItems>
-</StyledGallerySection>
-
-   </HomeContainer>
     <hr />
     </>
 };

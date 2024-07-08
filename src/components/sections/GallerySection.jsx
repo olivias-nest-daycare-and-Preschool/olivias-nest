@@ -1,177 +1,104 @@
-import { FaBus, FaChild, FaPaintBrush} from "react-icons/fa";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
-import { 
-    GalleryImage, 
-    GalleryItems, 
-    IconGalleryWrapper, 
-    SingleGallery, 
-    StyledGallerySection } from "../styles/sections/GallerySection.styled";
+import "../styles/sections/Gallery/Gallery.css";
+import "../styles/sections/Home/Beauty.css"
 export const GallerySection = () =>{
     return (
         <>
-        <StyledGallerySection style={{marginTop:'15rem'}} id="Gallery">
-            <SectionHeading>
-                <h1>Our Gallery</h1>
-                <h3>Our decorated pictures</h3>
-            </SectionHeading>
-            <GalleryItems>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaBus />
-                    </IconGalleryWrapper>
-                    <h1>Models</h1>
-                    <GalleryImage>
-                    <img src="./images/art.jpg" alt="models prepared by kids" />
-                    </GalleryImage>
-                    <p>Creativity and kids making models as part of their assignment.</p>
-                </SingleGallery>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaChild/>
-                    </IconGalleryWrapper>
-                    <h1>Kids stretching</h1>
-                    <GalleryImage>
-                        <img src="./images/kids.jpg" alt="stretching" />
-                    </GalleryImage>
-                    <p>Kids stretching as part of the co-curricular activities.</p>
-                </SingleGallery>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaPaintBrush />
-                    </IconGalleryWrapper>
-                    <h1>painting</h1>
-                    <GalleryImage>
-                        <img src="./images/painting.jpg" alt="kids painting and modelling" />
-                    </GalleryImage>
-                    <p>
-                        We pride ourselves for nurturing talents at Olivia's nest. We have an array of tools that 
-                        facilitate talent nurturing and crafting. 
-                    </p>
-                </SingleGallery>
-            </GalleryItems>
-        </StyledGallerySection>
-        <StyledGallerySection>
-        <GalleryItems>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaBus />
-                    </IconGalleryWrapper>
-                    <h1>Transport</h1>
-                    <GalleryImage>
-                    <img src="./images/art.jpg" alt="models prepared by kids" />
-                    </GalleryImage>
-                    <p>Creativity and kids making models as part of their assignment.</p>
-                </SingleGallery>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaChild/>
-                    </IconGalleryWrapper>
-                    <h1>indoor activity</h1>
-                    <GalleryImage>
-                        <img src="./images/kids.jpg" alt="stretching" />
-                    </GalleryImage>
-                    <p>Kids stretching as part of the co-curricular activities.</p>
-                </SingleGallery>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaPaintBrush />
-                    </IconGalleryWrapper>
-                    <h1>Arts & Craft</h1>
-                    <GalleryImage>
-                        <img src="./images/painting.jpg" alt="kids painting and modelling" />
-                    </GalleryImage>
-                    <p>
-                        We pride ourselves for nurturing talents at Olivia's nest. We have an array of tools that 
-                        facilitate talent nurturing and crafting. 
-                    </p>
-                </SingleGallery>
-            </GalleryItems>
-        </StyledGallerySection>
-        <hr />
+       <div className="message">
+</div>
+<section className="section"  style={{marginTop:'15rem'}}>
+   <SectionHeading>
+                <h1>Take a look at our gallery</h1>
+    </SectionHeading>
+  <div className="grid">
 
-        <StyledGallerySection>
-                <SectionHeading>
-                <h3>sports</h3>
-                </SectionHeading>
-                <GalleryItems>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaBus />
-                    </IconGalleryWrapper>
-                    <h1>Transport</h1>
-                    <GalleryImage>
-                    <img src="./images/van.jpg" alt="kids modelling" />
-                    </GalleryImage>
-                    <p>We offer affordable transportation services for our children.</p>
-                </SingleGallery>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaChild/>
-                    </IconGalleryWrapper>
-                    <h1>indoor activity</h1>
-                    <GalleryImage>
-                        <img src="./images/kids.jpg" alt="stretching" />
-                    </GalleryImage>
-                    <p>Kids stretching as part of the co-curricular activities.</p>
-                </SingleGallery>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaPaintBrush />
-                    </IconGalleryWrapper>
-                    <h1>Arts & Craft</h1>
-                    <GalleryImage>
-                        <img src="./images/painting.jpg" alt="kids painting and modelling" />
-                    </GalleryImage>
-                    <p>
-                        We pride ourselves for nurturing talents at Olivia's nest. We have an array of tools that 
-                        facilitate talent nurturing and crafting. 
-                    </p>
-                </SingleGallery>
-            </GalleryItems>
-        </StyledGallerySection>
-        <hr />
+    <div className="item">
+      <div className="item" style={{backgroundImage: `url('./images/staff/Teachers.jpg')`}}>
+      <div className="item__details">
+        jelly-o brownie sweet
+      </div>
+      </div>
+    </div>
 
-        <StyledGallerySection>
-            <SectionHeading>
-                <h3>Facilities</h3>
-            </SectionHeading>
-            <GalleryItems>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaBus />
-                    </IconGalleryWrapper>
-                    <h1>Transport</h1>
-                    <GalleryImage>
-                    <img src="./images/van.jpg" alt="kids modelling" />
-                    </GalleryImage>
-                    <p>We offer affordable transportation services for our children.</p>
-                </SingleGallery>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaChild/>
-                    </IconGalleryWrapper>
-                    <h1>indoor activity</h1>
-                    <GalleryImage>
-                        <img src="./images/kids.jpg" alt="stretching" />
-                    </GalleryImage>
-                    <p>Kids stretching as part of the co-curricular activities.</p>
-                </SingleGallery>
-                <SingleGallery>
-                    <IconGalleryWrapper>
-                        <FaPaintBrush />
-                    </IconGalleryWrapper>
-                    <h1>Arts & Craft</h1>
-                    <GalleryImage>
-                        <img src="./images/painting.jpg" alt="kids painting and modelling" />
-                    </GalleryImage>
-                    <p>
-                        We pride ourselves for nurturing talents at Olivia's nest. We have an array of tools that 
-                        facilitate talent nurturing and crafting. 
-                    </p>
-                </SingleGallery>
-            </GalleryItems>
-        </StyledGallerySection>
-        <hr />
+    <div className="item item--large">
+      <div className="item__details">
+        Muffin jelly gingerbread 
+      </div>
+    </div>
+
+    <div className="item item--medium">
+      <div className="item__details">
+        sesame snaps chocolate
+      </div>
+    </div>
+
+    <div className="item item--large">
+      <div className="item__details">
+        Oat cake
+      </div>
+    </div>
+
+    <div className="item item--full">
+      <div className="item__details">
+         jujubes cheesecake
+      </div>
+    </div>
+
+    <div className="item item--large">
+      <div className="item__details">
+        Dragée pudding brownie
+      </div>
+    </div>
+
+    <div className="item item--large">
+      <div className="item__details">
+        Oat cake
+      </div>
+    </div>
+
+    <div className="item">
+      <div className="item__details">
+        powder toffee
+      </div>
+    </div>
+
+    <div className="item item--large">
+      <div className="item__details">
+        pudding cheesecake
+      </div>
+    </div>
+
+    <div className="item item--large">
+      <div className="item__details">
+        toffee bear claw 
+      </div>
+    </div>
+
+    <div className="item">
+      <div className="item__details">
+        cake cookie croissant
+      </div>
+    </div>
+
+    <div className="item item--large">
+      <div className="item__details">
+        liquorice sweet roll
+      </div>
+    </div>
+
+    <div className="item item--large">
+      <div className="item__details">
+        chocolate marzipan
+      </div>
+    </div>
+
+    <div className="item">
+      <div className="item__details">
+        sugar plum dragée
+      </div>
+    </div>
+  </div>
+</section>
         </>
     );
 };

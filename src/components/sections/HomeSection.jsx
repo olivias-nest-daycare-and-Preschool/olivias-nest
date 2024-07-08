@@ -17,13 +17,6 @@ import Toys from "../../Images/homeImages/toy_room.jpg";
 import {
   Bait2Section,
   BlockQuote,
-  Card,
-  CardButton,
-  CardContainer,
-  CardContent,
-  CardImage,
-  CardText,
-  CardTitle,
   Cite,
   FeatureContent,
   FeatureDescription,
@@ -32,49 +25,18 @@ import {
   FeatureTitle,
 } from "../styles/sections/HomeSection.styled";
 import {
-  GalleryItems,
   HomeContainer,
-  SingleGallery,
-  StaffDetails
 } from "../styles/common/HomeConatiner";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
-import { StyledGallerySection } from "../styles/sections/GallerySection.styled";
-import {
-  FacilityCard,
-  FacilityCardContent,
-  FacilityCardDescription,
-  FacilityCardTitle,
-  FacilityContainer
-} from "../styles/sections/FacilitiesSection.styled";
 import {
   StyledHomeBackground
 } from "../styles/HomeBackground.styled";
 import { BsSunglasses } from "react-icons/bs";
+import "../styles/sections/Home/CustomCards.css"
+import "../styles/sections/Home/Extra.css"
 import { Container } from '../styles/common/Container.styled';
 
-// const images = [
-//   "./images/beds.jpg",
-//   "./images/study_rooms.jpg",
-//   "./images/painting_landing3.jpg"
-// ];
-
-
 export const HomeSection = () => {
-  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setCurrentImageIndex((prevIndex) =>
-  //       prevIndex === images.length - 1 ? 0 : prevIndex + 1
-  //     );
-  //   }, 5000); // Change image every 5 seconds
-
-  //   return () => clearInterval(intervalId); // Cleanup the interval on component unmount
-  // }, []);
-
-
-
   var settings = {
     dots: true,
     infinite: true,
@@ -221,7 +183,7 @@ export const HomeSection = () => {
       </div>
     </StyledHomeBackground>
 
-    <HomeContainer>
+    {/* <HomeContainer> */}
       <Bait2Section>
         <FeatureItem>
           <FeatureImage src="./images/paperplane.png" alt="learning is fun" />
@@ -258,7 +220,10 @@ export const HomeSection = () => {
           </FeatureContent>
         </FeatureItem>
       </Bait2Section>
-    </HomeContainer>
+    {/* </HomeContainer> */}
+
+    
+
    
 
     <HomeContainer>
@@ -336,111 +301,76 @@ export const HomeSection = () => {
 </div>
     </HomeContainer>
 
-    {/* <FacilityContainer style={{ marginBottom: '10rem', marginTop:'5rem' }}>
-      <FacilityCard>
-        <FacilityCardContent>
-          <FacilityCardTitle>Our Philosophy</FacilityCardTitle>
-          <FacilityCardDescription>Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit.
-            Dicta odit vitae at sit beatae id itaque dignissimos?
-            Repudiandae ut at voluptates officiis praesentium veritatis,
-            repellendus obcaecati deserunt. Omnis, reiciendis! Dignissimos?</FacilityCardDescription>
-        </FacilityCardContent>
-      </FacilityCard>
-
-      <FacilityCard>
-        <FacilityCardContent>
-          <FacilityCardTitle> Our view on education</FacilityCardTitle>
-          <FacilityCardDescription>Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit.
-            Dicta odit vitae at sit beatae id itaque dignissimos?
-            Repudiandae ut at voluptates officiis praesentium veritatis,
-            repellendus obcaecati deserunt. Omnis, reiciendis! Dignissimos?</FacilityCardDescription>
-        </FacilityCardContent>
-      </FacilityCard>
-      <FacilityCard>
-        <FacilityCardContent>
-          <FacilityCardTitle>Core Values</FacilityCardTitle>
-          <FacilityCardDescription>Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit.
-            Dicta odit vitae at sit beatae id itaque dignissimos?
-            Repudiandae ut at voluptates officiis praesentium veritatis,
-            repellendus obcaecati deserunt. Omnis, reiciendis! Dignissimos?</FacilityCardDescription>
-        </FacilityCardContent>
-      </FacilityCard>
-    </FacilityContainer> */}
-
     <HomeContainer>
-      <SectionHeading>
+      <SectionHeading style={{marginTop:'4rem'}}>
         <h1>Facilities & What we offer</h1>
         <h3> <BsSunglasses /> sneaky link <BsSunglasses /> </h3>
       </SectionHeading>
-      <CardContainer>
-        <Card>
-          <CardImage src="./images/beds.jpg" alt="king size beds" style={{ borderRadius: '50%' }} />
-          <CardContent>
-            <CardTitle>Sleeping Area</CardTitle>
-            <CardText>
-              We took part in curating the sleeping area and making it an awesome experience.
-              The experience is just sensational!
-            </CardText>
-            <CardButton href="/Facilities">Facilities</CardButton>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardImage src="./images/about_us.jpg" alt="king size beds" style={{ borderRadius: '50%' }} />
-          <CardContent>
-            <CardTitle>Hallway</CardTitle>
-            <CardText>
-              We took part in curating the sleeping area and making it an awesome experience.
-              The experience is just sensational!
-            </CardText>
-            <CardButton href="/Facilities">Facilities</CardButton>
-          </CardContent>
-        </Card>
 
-        <Card>
-          <CardImage src="./images/study_rooms.JPG" alt="basket ball" style={{ borderRadius: '50%' }} />
-          <CardContent>
-            <CardTitle>Classrooms & Lockers</CardTitle>
-            <CardText>
-              We have perfect fitting lockers for our classrooms.
-              The lockers can conjoin during discussions and made separate for
-              individual assessment.
-            </CardText>
-            <CardButton href="/Gallery">sports</CardButton>
-          </CardContent>
-        </Card>
-      </CardContainer>
-      <hr style={{ marginTop: '8rem' }} />
+      <section className="hero-section">
+  <div className="card-grid">
+    <a className="card" href="/ContactUs">
+      <div className="card__background" style={{ backgroundImage: "url(./images/beds.jpg)" }}></div>
+      <div className="card__content">
+        <p className="card__category">Category</p>
+        <h3 className="card__heading">Example Card Heading</h3>
+      </div>
+    </a>
+    <a className="card" href="/ContactUs">
+      <div className="card__background" style={{ backgroundImage: "url(./images/beds.jpg)" }}></div>
+      <div className="card__content">
+        <p className="card__category">Category</p>
+        <h3 className="card__heading">Example Card Heading</h3>
+      </div>
+    </a>
+    <a className="card" href="/ContactUs">
+      <div className="card__background" style={{ backgroundImage: "url(./images/board_games.jpg)" }}></div>
+      <div className="card__content">
+        <p className="card__category">Category</p>
+        <h3 className="card__heading">Example Card Heading</h3>
+      </div>
+    </a>
+    <a className="card" href="/ContactUs">
+      <div className="card__background" style={{ backgroundImage: "url(./images/basket_ball.jpg)" }}></div>
+      <div className="card__content">
+        <p className="card__category">Basket ball</p>
+        <h3 className="card__heading">Basket ball court</h3>
+      </div>
+    </a>
+  </div>
+</section>
     </HomeContainer>
 
-    <StyledGallerySection>
-      <SectionHeading>
-        <h1>Why Olivia's Nest?</h1>
-        <h3>We incorporate learning with games as it makes our children's brain develop</h3>
-      </SectionHeading>
-      <GalleryItems style={{ marginBottom: '-8rem' }}>
-        <SingleGallery>
-          <StaffDetails>
-            <h3>Child monitoring</h3>
-            <img src="./images/beds.jpg"  style={{height:'100%',width:'100%', objectFit:'cover'}} alt="beds" />
-          </StaffDetails>
-        </SingleGallery>
-        <SingleGallery>
-          <StaffDetails>
-            <h3>Board games</h3>
-            <img src="./images/board_games.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="modelling" />
-          </StaffDetails>
-        </SingleGallery>
-        <SingleGallery>
-          <StaffDetails>
-            <h3>Basket ball</h3>
-            <img src="./images/basket_ball.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="cartoon girl"/>
-          </StaffDetails>
-        </SingleGallery>
-      </GalleryItems>
-    </StyledGallerySection>
+    <Container>
+    <hr/>
+    </Container>
+
+    <HomeContainer>
+
+      <div className="card_wrap_extra">
+      <div class="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/beds.jpg" class="card__photo" alt="Good food" />
+  <div class="card__content_extra">
+    <h2 class="card__title_extra">Swimming pool</h2>
+    <p class="card__description_extra">We have swimming lessons</p>
+  </div>
+</div>
+<div class="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src= "./images/board_games.jpg" class="card__photo" alt="Good food" />
+  <div class="card__content_extra">
+    <h2 class="card__title_extra">Skating</h2>
+    <p class="card__description_extra">We have skating</p>
+  </div>
+</div>
+<div class="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/basket_ball.jpg" class="card__photo" alt="Good food" />
+  <div class="card__content_extra">
+    <h2 class="card__title_extra">Soccer</h2>
+    <p class="card__description_extra">We offer soccer trainging and tournaments</p>
+  </div>
+</div>
+      </div>
+    </HomeContainer>
     <hr />
   </>
 
