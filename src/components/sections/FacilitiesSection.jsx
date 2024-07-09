@@ -13,7 +13,7 @@ export const FacilitiesSection = () =>{
         <> 
 
         <Container>
-        <StyledFacilitiesSection id="Facilities" style={{marginTop:'15rem'}}>
+        <StyledFacilitiesSection id="Facilities" style={{marginTop:'8rem'}}>
             <SectionHeading>
                 <h1>Facilities</h1>
                 <h3>Overview</h3>

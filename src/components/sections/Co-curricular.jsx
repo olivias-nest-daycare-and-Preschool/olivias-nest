@@ -6,7 +6,7 @@ export const Cocurricular = ({isFloating}) =>{
     return(
         <>
         <Container>
-        <AboutUsSection id="Gallery" style={{marginTop:'15rem'}}>
+        <AboutUsSection id="Gallery" style={{marginTop:'8rem'}}>
     <SectionHeading>
       <h1>Co-curricular</h1>
       <h3>Enhancing a child's life skills, fitness and engaging their minds with productive sports</h3>

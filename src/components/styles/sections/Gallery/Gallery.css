@@ -68,7 +68,7 @@ h1 {
   color: #fff;
   grid-column-start: auto;
   grid-row-start: auto;
-  background: url('../../../../Images/homeImages/beddings.jpg');
+  background: url('../../../../Images/homeImages/5.png');
   background-size: cover;
   background-position: center;
   box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
@@ -76,22 +76,27 @@ h1 {
   cursor: pointer;
   counter-increment: item-counter;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .item:nth-of-type(3n) {
-  background-image: url('../../../../Images/homeImages/art.jpg');
+  background-image: url('../../../../Images/homeImages/2.png');
+  object-fit: cover;
 }
 
 .item:nth-of-type(4n) {
-  background-image: url('../../../../Images/homeImages/chef.jpg');
+  background-image: url('../../../../Images/homeImages/7.png');
+  object-fit: cover;
 }
 
 .item:nth-of-type(5n) {
-  background-image: url('../../../../Images/homeImages/study_rooms.jpg');
+  background-image: url('../../../../Images/homeImages/9.png');
+  object-fit: cover;
 }
 
 .item:nth-of-type(6n) {
-  background-image: url('../../../../Images/homeImages/toy_room.jpg');
+  background-image: url('../../../../Images/homeImages/12.png');
+  object-fit: cover;
 }
 
 .item:after {
@@ -140,6 +145,7 @@ h1 {
   text-transform: lowercase;
   letter-spacing: 1px;
   color: #828282;
+  border-radius: 20px;
 }
 
 .item__details:before {

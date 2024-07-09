@@ -20,6 +20,7 @@ html{
     scroll-behavior: smooth;
     color: ${({ theme })=> theme.colors.white};
     background: ${({ theme })=> theme.colors.lightNavyBlue};
+    background: ${({ theme })=> theme.colors.lightNavyBlue};
     /* background: grey; */
     font-size: 12px;
 }

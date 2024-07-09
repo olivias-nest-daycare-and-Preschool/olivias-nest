@@ -2,8 +2,16 @@ import React from 'react'
 import "../../components/styles/sections/News/News.css";
 import { SectionHeading } from '../styles/common/SectionHeading.styled';
 import { HomeContainer } from '../styles/common/HomeConatiner';
-import Birthday  from "../../Images/homeImages/birthday.jpg";
 import { StyledHomeBackground } from '../styles/HomeBackground.styled';
+
+import One from "../../Images/homeImages/1.png";
+import Two from "../../Images/homeImages/2.png";
+import Three from "../../Images/homeImages/3.png";
+import Four from "../../Images/homeImages/4.png";
+import Five from "../../Images/homeImages/5.png";
+import Six from "../../Images/homeImages/6.png";
+import Eight from "../../Images/homeImages/8.png";
+import Nine from "../../Images/homeImages/9.png";
 
 
 
@@ -22,15 +30,18 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Birthday})` }}>
+        <div className="front" style={{ backgroundImage: `url(${One})` }}>
           <div className="inner">
-            <p>Diligord</p>
-            <span>Lorem ipsum</span>
+            <p>Class rooms with comfy furniture</p>
+            <span>Furniture</span>
           </div>
         </div>
         <div className="back">
           <div className="inner">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+            <p>
+              We have amazing furniture which are well suited for our children.
+              They are are puzzled together to power group discussions.
+            </p>
           </div>
         </div>
       </div>
@@ -38,15 +49,16 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/511/511/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Four})` }}>
           <div className="inner">
-            <p>Rocogged</p>
-            <span>Lorem ipsum</span>
+            <p>Location and security</p>
+            <span>Security</span>
           </div>
         </div>
         <div className="back">
           <div className="inner">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+            <p>Our premises are secured well mannered. Our security team is doing an 
+              amazing job. They also play a crucial role in ushering in visitors. </p>
           </div>
         </div>
       </div>
@@ -54,7 +66,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/502/502/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Eight})`}}>
           <div className="inner">
             <p>Strizzes</p>
             <span>Lorem ipsum</span>
@@ -70,7 +82,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Nine})`}}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -86,7 +98,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Five})` }}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -102,7 +114,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Three})` }}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -118,7 +130,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Six})` }}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -134,7 +146,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Two})`}}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>

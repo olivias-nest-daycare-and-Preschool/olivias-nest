@@ -36,7 +36,7 @@ export const TransportSection = () =>{
 				<article>
 					<h1>Transport system</h1>
 					<span>overview</span>
-                    <p style={{color:'white'}}> We offer affordable transport to our esteemed customers.
+                    <p style={{color:'black'}}> We offer affordable transport to our esteemed customers.
                         We have a very reliable and safety focused transport system. Our 
                         transport system is pocket friendly and we have chats on the routes and considerable
                         charges for that. For any unclear issues please feel free to reach out to us.
@@ -51,7 +51,7 @@ export const TransportSection = () =>{
 				<article>
 					<h1>Child safety</h1>
 					<span> we care for our children</span>
-                    <p style={{color:'white'}}>Our teachers are very careful in handling our children.
+                    <p style={{color:'black'}}>Our teachers are very careful in handling our children.
                         We are very thorough in the safety of every child at Olivia's nest.
                     </p>
 				</article>
@@ -63,7 +63,7 @@ export const TransportSection = () =>{
 				<div className="thumb_transport" style={{backgroundImage:`url(${Boarding_B})`}}></div>
 				<article>
 					<h1>Created by You, July Edition</h1>
-					<p style={{color:'white'}}>Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community! </p>
+					<p style={{color:'black'}}>Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community! </p>
 					<span>Melody Nieves</span>
 				</article>
 			</a>
@@ -74,7 +74,7 @@ export const TransportSection = () =>{
 				<div className="thumb" style={{backgroundImage:`url(${Boarding_A})`}}></div>
 				<article>
 					<h1>How to Code a Scrolling “Alien Lander” Website</h1>
-					<p style={{color:'white'}}>We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander” making its way to touch down.</p>
+					<p style={{color:'black'}}>We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander” making its way to touch down.</p>
 					<span>Kezz Bracey</span>
 				</article>
 			</a>

@@ -3,17 +3,24 @@ import './../styles/sections/Carousel/carousel.css'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Art from "../../Images/homeImages/art.jpg";
-import Beddings from "../../Images/homeImages/beddings.jpg";
-import Birthday from "../../Images/homeImages/birthday.jpg";
-import Gate1 from "../../Images/homeImages/gate1.jpg";
-import Stretching from "../../Images/homeImages/stretching.jpg";
-import Study_2 from "../../Images/homeImages/study_2.jpg";
-import Study_rooms from "../../Images/homeImages/study_rooms.jpg";
-import Van from "../../Images/homeImages/van.jpg";
-import Teachers from "../../Images/homeImages/teachers.jpg";
-import Wall2 from "../../Images/homeImages/wall2.jpg";
-import Toys from "../../Images/homeImages/toy_room.jpg";
+import One from "../../Images/homeImages/1.png";
+import Two from "../../Images/homeImages/2.png";
+import Three from "../../Images/homeImages/3.png";
+import Four from "../../Images/homeImages/4.png";
+import Five from "../../Images/homeImages/5.png";
+import Six from "../../Images/homeImages/6.png";
+import Seven from "../../Images/homeImages/7.png";
+import Eight from "../../Images/homeImages/8.png";
+import Nine from "../../Images/homeImages/9.png";
+import Ten from "../../Images/homeImages/10.png";
+import Eleven from "../../Images/homeImages/11.png";
+import Twelve from "../../Images/homeImages/12.png";
+import Thirteen from "../../Images/homeImages/13.png";
+// import Fourteen from "../../Images/homeImages/14.png";
+import Fifteen from "../../Images/homeImages/15.png";
+// import Sixteen from "../../Images/homeImages/16.png";
+import Seventeen from "../../Images/homeImages/17.png";
+import Eighteen from "../../Images/homeImages/18.png";
 import {
   Bait2Section,
   BlockQuote,
@@ -76,17 +83,18 @@ export const HomeSection = () => {
   };
 
   const carouselImages = [
-    { id: 1, url: Art, title: 'art' },
-    { id: 2, url: Beddings, title: 'beddings' },
-    { id: 3, url: Birthday, title: 'birthday' },
-    { id: 4, url: Gate1, title: 'gate1' },
-    { id: 1, url: Stretching, title: 'stretching' },
-    { id: 2, url: Study_2, title: 'stud2_2' },
-    { id: 3, url: Study_rooms, title: 'study_rooms' },
-    { id: 4, url: Van, title: 'van' },
-    { id: 5, url: Teachers, title: 'teachers' },
-    { id: 6, url: Wall2, title: 'our premises' },
-    { id: 7, url: Toys, title: 'Toys' },
+    { id: 1, url: One, title: 'art' },
+    { id: 2, url: Two, title: 'beddings' },
+    { id: 3, url: Three, title: 'birthday' },
+    { id: 4, url: Four, title: 'gate1' },
+    { id: 1, url: Five, title: 'stretching' },
+    { id: 2, url: Six, title: 'stud2_2' },
+    { id: 3, url: Seven, title: 'study_rooms' },
+    { id: 4, url: Eight, title: 'van' },
+    { id: 5, url: Nine, title: 'teachers' },
+    { id: 6, url: Ten, title: 'our premises' },
+    { id: 7, url: Eleven, title: 'Toys' },
+    { id: 7, url: Twelve, title: 'Toys' },
   ];
 
   return <>
@@ -194,6 +202,7 @@ export const HomeSection = () => {
             </FeatureDescription>
           </FeatureContent>
         </FeatureItem>
+
         <FeatureItem>
           <FeatureImage src="./images/babyfood.png" alt="learning is fun" />
           <FeatureContent>
@@ -208,6 +217,7 @@ export const HomeSection = () => {
             </FeatureDescription>
           </FeatureContent>
         </FeatureItem>
+
         <FeatureItem>
           <FeatureImage src="./images/mortarboards.png" alt="learning is fun" />
           <FeatureContent>
@@ -234,7 +244,7 @@ export const HomeSection = () => {
   <div className="cols">
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Six})` }}>
           <div className="inner">
             <p>Our philosophy</p>
             <span>Philosophy</span>
@@ -250,7 +260,7 @@ export const HomeSection = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Eleven})` }}>
           <div className="inner">
             <p>Core Values</p>
             <span>values</span>
@@ -267,7 +277,7 @@ export const HomeSection = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Ten})` }}>
           <div className="inner">
             <p>View on education</p>
             <span>education</span>
@@ -283,7 +293,7 @@ export const HomeSection = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: "url(https://unsplash.it/503/503/)" }}>
+        <div className="front" style={{ backgroundImage: `url(${Two})`}}>
           <div className="inner">
             <p>Mission</p>
             <span>Pursuit</span>
@@ -310,31 +320,31 @@ export const HomeSection = () => {
       <section className="hero-section">
   <div className="card-grid">
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: "url(./images/beds.jpg)" }}></div>
+      <div className="card__background" style={{ backgroundImage: `url(${Thirteen})`}}></div>
       <div className="card__content">
-        <p className="card__category">Category</p>
-        <h3 className="card__heading">Example Card Heading</h3>
+        <p className="card__category">Indoor games</p>
+        <h3 className="card__heading">Indoor games & Stretching area</h3>
       </div>
     </a>
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: "url(./images/beds.jpg)" }}></div>
+      <div className="card__background" style={{ backgroundImage: `url(${Fifteen})` }}></div>
       <div className="card__content">
-        <p className="card__category">Category</p>
-        <h3 className="card__heading">Example Card Heading</h3>
+        <p className="card__category">Outdoor festivities</p>
+        <h3 className="card__heading">Swing area</h3>
       </div>
     </a>
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: "url(./images/board_games.jpg)" }}></div>
+      <div className="card__background" style={{ backgroundImage: `url(${Eighteen})`}}></div>
       <div className="card__content">
-        <p className="card__category">Category</p>
-        <h3 className="card__heading">Example Card Heading</h3>
+        <p className="card__category">Cartoons & Animations</p>
+        <h3 className="card__heading">School environs</h3>
       </div>
     </a>
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: "url(./images/basket_ball.jpg)" }}></div>
+      <div className="card__background" style={{ backgroundImage: `url(${Seventeen})` }}></div>
       <div className="card__content">
-        <p className="card__category">Basket ball</p>
-        <h3 className="card__heading">Basket ball court</h3>
+        <p className="card__category">Court area</p>
+        <h3 className="card__heading">Skating, basket ball and Lawn Tennis.</h3>
       </div>
     </a>
   </div>

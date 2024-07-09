@@ -231,25 +231,25 @@
   }
   
   .feature {
-    background-image: url('');
+    /* background-image: url(''); */
     background-position: bottom left;
     color: #fff;
     object-fit: cover;
   }
   
   .photos {
-    background-image: url(''); 
+    /* background-image: url('');  */
     color: #fff;
     object-fit: cover;
   }
   
   .news {
-    background-image: url(''); 
+    /* background-image: url('');  */
     color: #fff;
   }
   
   .special {
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),url('https://unsplash.it/511/511/'); 
+    /* background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),url('https://unsplash.it/511/511/');  */
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -261,7 +261,7 @@
   }
   
   .amazing {
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url('https://unsplash.it/511/511/'); 
+    /* background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url('https://unsplash.it/511/511/');  */
     color: #fff;
     display: flex;
     flex-direction: column;

@@ -142,7 +142,9 @@ export const FeatureItem = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-top: -5rem;
   }
 `;
 
@@ -256,14 +258,15 @@ export const Card = styled.div`
 `;
 
 export const CardImage = styled.img`
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
   @media(max-width: ${({ theme }) => theme.mobile}){
   width: 100%;
-  height: 60%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
   }
 `;
@@ -293,6 +296,9 @@ export const CardText = styled.p`
   font-family: "Poppins",sans-serif;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word;
   }
 `;
 
