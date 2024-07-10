@@ -3,9 +3,14 @@ import { CTAButton } from "../styles/common/CTAButton.styled";
 import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { Container } from "../styles/common/Container.styled";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
-import { BlockQuote, Card,CardContainer,CardContent,CardImage, CardText, CardTitle, Cite} from "../styles/sections/HomeSection.styled";
-import { GalleryItems, HomeContainer, SingleGallery, StaffDetails } from "../styles/common/HomeConatiner";
-import { StyledGallerySection } from "../styles/sections/GallerySection.styled";
+import { 
+  BlockQuote,
+  CardText, 
+  Cite
+} from "../styles/sections/HomeSection.styled";
+import { HomeContainer } from "../styles/common/HomeConatiner";
+
+import "../styles/sections/Home/Extra.css"
 export const AboutSection = () =>{
 
     return <> 
@@ -38,90 +43,138 @@ export const AboutSection = () =>{
     </Container>
     </ImageCoveredContainer>
 
-    <Container>
-    <SectionHeading>
-    <h1>Our Staff</h1>
-   </SectionHeading>
-    <CardContainer>
-        <Card>
-          <CardImage src="./images/staff/admin-head-teacher.jpg" alt="head teacher"style={{height:'50%',width:'100%'}}/>
-          <CardContent>
-            <CardTitle>Admin</CardTitle>
-            <CardText>
+    <HomeContainer>
+      <SectionHeading>
+        <h1>Our Team</h1>
+      </SectionHeading>
+      <div className="card_wrap_extra">
+      <div className="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/admin-head-teacher.jpg" className="card__photo" alt="Good food" />
+  <div className="card__content_extra">
+    <h2 className="card__title_extra">Admin</h2>
+    <p className="card__description_extra">
               School's admin and head teacher. She is very steadfast in 
               overseeing and coordinating learning and placement of our
               teachers. Such a pure soul.
-            </CardText>
-          </CardContent>
-        </Card>
-        
-        <Card>
-          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{height:'50%',width:'100%'}}/>
-          <CardContent>
-            <CardTitle>Teachers</CardTitle>
-            <CardText>
+    </p>
+  </div>
+</div>
+<div className="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src= "./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
+  <div className="card__content_extra">
+    <h2 className="card__title_extra">Teachers</h2>
+    <p className="card__description_extra">
               We are very appreciative of the dedication and determination
               that our teachers take to educate and take care of our 
               children. We really thank them.
-            </CardText>
-          </CardContent>
-        </Card>
+    </p>
+  </div>
+</div>
+<div className="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
+  <div className="card__content_extra">
+    <h2 className="card__title_extra">Teachers</h2>
+    <p className="card__description_extra">
+              We are very appreciative of the dedication and determination
+              that our teachers take to educate and take care of our 
+              children. We really thank them.
+    </p>
+  </div>
+</div>
+      </div>
+    </HomeContainer>
 
-        <Card>
-          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{height:'50%',width:'100%'}}/>
-          <CardContent>
-            <CardTitle>Teachers</CardTitle>
-            <CardText>
-              We are very appreciative of the dedication and determination
-              that our teachers take to educate and take care of our 
-              children. We really thank them.
-            </CardText>
-          </CardContent>
-        </Card>
-      </CardContainer>
-    </Container>
-    
-    <Container>
-    <CardContainer style={{marginTop:'2rem'}}>
-      <Card>
-          <CardImage src="./images/staff/chef.jpg" alt="parent meetings" style={{height:'50%',width:'100%'}}/>
-          <CardContent>
-            <CardTitle>Chef</CardTitle>
-            <CardText>
+    <HomeContainer>
+      <div className="card_wrap_extra">
+      <div className="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/chef.jpg" className="card__photo" alt="Good food" />
+  <div className="card__content_extra">
+    <h2 className="card__title_extra">Chef</h2>
+    <p className="card__description_extra">
+    <CardText>
             <BlockQuote>
             "One cannot think well,love well,sleep well, if one has not dined well." 
             <Cite style={{color:'white'}}>Virginia Woolf</Cite>
             </BlockQuote>
             cuisines master.
             </CardText>
-          </CardContent>
-        </Card>
-      <Card>
-          <CardImage  src="./images/staff/Teachers.jpg" alt="teachers"  style={{height:'50%',width:'100%'}}/>
-          <CardContent>
-            <CardTitle>Teachers</CardTitle>
-            <CardText>
+    </p>
+  </div>
+</div>
+<div className="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src= "./images/staff/cleaning staff.jpg" className="card__photo" alt="Good food" />
+  <div className="card__content_extra">
+    <h2 className="card__title_extra">Sanitary engineers</h2>
+    <p className="card__description_extra">
+        <CardText>
+            <BlockQuote>
+                "Hygiene is the health care of the soul as well as of the body." 
+                <Cite style={{color:'white'}}>John Randolph</Cite>
+            </BlockQuote>
+        </CardText>
+    </p>
+  </div>
+</div>
+<div className="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
+  <div className="card__content_extra">
+    <h2 className="card__title_extra">Teachers</h2>
+    <p className="card__description_extra">
               We are very appreciative of the dedication and determination
               that our teachers take to educate and take care of our 
               children. We really thank them.
-            </CardText>
-          </CardContent>
-        </Card>
+    </p>
+  </div>
+</div>
+      </div>
+    </HomeContainer>
 
-        <Card>
-          <CardImage src="./images/staff/cleaning staff.jpg" alt="parent meetings" style={{height:'50%',width:'100%'}}/>
-          <CardContent>
-            <CardTitle>Hygiene</CardTitle>
-            <CardText>
+
+    <HomeContainer>
+      <div className="card_wrap_extra">
+      <div className="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/chef.jpg" className="card__photo" alt="Good food" />
+  <div className="card__content_extra">
+    <h2 className="card__title_extra">Chef</h2>
+    <p className="card__description_extra">
+    <CardText>
             <BlockQuote>
-        "Hygiene is the health care of the soul as well as of the body." 
-        <Cite style={{color:'white'}}>John Randolph</Cite>
-        </BlockQuote>
+            "One cannot think well,love well,sleep well, if one has not dined well." 
+            <Cite style={{color:'white'}}>Virginia Woolf</Cite>
+            </BlockQuote>
+            cuisines master.
             </CardText>
-          </CardContent>
-        </Card>
-      </CardContainer>
-      <HeroSocialIcons>
+    </p>
+  </div>
+</div>
+<div className="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src= "./images/staff/cleaning staff.jpg" className="card__photo" alt="Good food" />
+  <div className="card__content_extra">
+    <h2 className="card__title_extra">Sanitary engineers</h2>
+    <p className="card__description_extra">
+        <CardText>
+            <BlockQuote>
+                "Hygiene is the health care of the soul as well as of the body." 
+                <Cite style={{color:'white'}}>John Randolph</Cite>
+            </BlockQuote>
+        </CardText>
+    </p>
+  </div>
+</div>
+<div className="card_extra">
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
+  <div className="card__content_extra">
+    <h2 className="card__title_extra">Teachers</h2>
+    <p className="card__description_extra">
+              We are very appreciative of the dedication and determination
+              that our teachers take to educate and take care of our 
+              children. We really thank them.
+    </p>
+  </div>
+</div>
+      </div>
+    </HomeContainer>
+    <HeroSocialIcons>
                     <SocialIcon href="https://www.facebook.com/oliviasnest" target="_blank">
                         <FaFacebook />
                     </SocialIcon>
@@ -132,53 +185,6 @@ export const AboutSection = () =>{
                         <FaEnvelope/>
                     </SocialIcon>
                 </HeroSocialIcons>
-      <hr style={{marginTop:'5rem'}}/>
-    </Container>
-
-
-    <HomeContainer>
-   <StyledGallerySection>
-    <SectionHeading>
-        <h1>Our Premises</h1>
-    </SectionHeading>
-    <GalleryItems>
-        <SingleGallery>
-          <StaffDetails>
-                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="our school" />
-            </StaffDetails>
-        </SingleGallery>
-        <SingleGallery>
-        <StaffDetails>
-                <img src="./images/wall2.jpg"  style={{height:'100%',width:'100%', objectFit:'cover'}} alt="tolder" />
-            </StaffDetails>
-        </SingleGallery>
-        <SingleGallery>
-        <StaffDetails>
-                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="tolder" />
-            </StaffDetails>
-        </SingleGallery>
-    </GalleryItems>
-
-    <GalleryItems>
-        <SingleGallery>
-        <StaffDetails>
-                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="soccer"  />
-            </StaffDetails>
-        </SingleGallery>
-        <SingleGallery>
-        <StaffDetails>
-                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="tennis at the court"/>
-            </StaffDetails>
-        </SingleGallery>
-        <SingleGallery>
-        <StaffDetails>
-                <img src="./images/wall2.jpg" style={{height:'100%',width:'100%', objectFit:'cover'}} alt="kids skating" />
-            </StaffDetails>
-        </SingleGallery>
-    </GalleryItems>
-</StyledGallerySection>
-
-   </HomeContainer>
     <hr />
     </>
 };

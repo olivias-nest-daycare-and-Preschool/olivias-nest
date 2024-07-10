@@ -10,7 +10,7 @@ margin: ${({margin})=>margin};
 border: 2px solid ${({ theme })=> theme.colors.orange}; 
 /* border-radius: 5px; */
 font-size: 18px;
-font-family: "Poetsen One",monospace;
+font-family: "Roboto Slab",monospace;
 font-weight: 700;
 border-radius: 20px;
 cursor: pointer;

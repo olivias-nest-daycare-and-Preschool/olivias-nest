@@ -20,7 +20,7 @@ export const ContactSection = () =>{
         <StyledContactSectionMain>
             <StyledSemiContactSectionMain> 
             <SectionHeading>
-                <h1>Let's get in touch</h1>
+                <h1 style={{color:'white'}}>Let's get in touch</h1>
                 <p style={{fontSize:'2rem'}}><Link to="/ContactUs"><Link to="/">Home</Link> / Contact Us</Link></p>
             </SectionHeading>
 
@@ -73,7 +73,7 @@ export const ContactSection = () =>{
                 <CardInForm>
                 <Form>
                         <Label htmlFor="email">Email:</Label>
-                        <Input type="email" id="email" name="email" />
+                        <Input type="email" id="email" name="email" placeholder="example@gmail.com"/>
                         <Label htmlFor="message">Your Message:</Label>
                         <Textarea id="message" name="message"  rows="4" placeholder="Write to Olivia's Nest..."/>
                         <Button type="submit">Send Message</Button>
@@ -86,29 +86,29 @@ export const ContactSection = () =>{
         <StyledContactSectionMain>
             <StyledSemiContactSectionMain>
             <SectionHeading  style={{marginTop:'-30rem', paddingTop:'-5rem'}}>
-                            <h1>Contact Info</h1>
+                            <h1 style={{color:'white'}}>Contact Info</h1>
                         </SectionHeading>
                 <CardForm>
                     <CardInForm style={{marginBottom:'3rem'}}>
                       <p style={{fontSize:'20px',color:'orange',marginBottom:'-1rem'}}>Go ahead and contact us or write a message to us and we'll get back to you</p>
                          <FlexContainer>
                           <Icon as={FaPhone} />
-                          <Text>0743794650 or 0114 592463</Text>
+                          <Text style={{color:'white'}}>0743794650 or 0114 592463</Text>
                         </FlexContainer>
                         
                         <FlexContainer>
                           <Icon as={FaLocationCrosshairs} />
-                          <Text>Located at 25 Othaya road in Kileleshwa / Lavington, Nairobi</Text>
+                          <Text style={{color:'white'}}>Located at 25 Othaya road in Kileleshwa / Lavington, Nairobi</Text>
                         </FlexContainer>
                         
                         <FlexContainer>
                           <Icon as={FaAddressBook} />
-                          <Text>00603 – Lavington</Text>
+                          <Text style={{color:'white'}}>00603 – Lavington</Text>
                         </FlexContainer>
                         
                         <FlexContainer>
                           <Icon as={MdMarkEmailUnread} />
-                          <Text>oliviasnest3@gmail.com</Text>
+                          <Text style={{color:'white'}}>oliviasnest3@gmail.com</Text>
                         </FlexContainer>
                     </CardInForm> 
 
@@ -117,13 +117,13 @@ export const ContactSection = () =>{
                       Send us your message and we'll get back to you.</p>
                     <Form>
                         <Label htmlFor="name">Name:</Label>
-                        <Input type="text" id="name" name="name" />
+                        <Input type="text" id="name" name="name" placeholder="Name"/>
 
                         <Label htmlFor="email">Email:</Label>
-                        <Input type="email" id="email" name="email" />
+                        <Input type="email" id="email" name="email" placeholder="example@gmail.com"/>
 
                         <Label htmlFor="subject">Subject:</Label>
-                        <Input type="text" id="subject" name="subject" />
+                        <Input type="text" id="subject" name="subject" placeholder="subject"/>
 
                         <Label htmlFor="message">Your Message:</Label>
                         <Textarea id="message" name="message"  rows="4" placeholder="Write to Olivia's Nest..."/>

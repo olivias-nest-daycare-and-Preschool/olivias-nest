@@ -2,6 +2,8 @@
   background: #151414;
   min-height: 10vh;
   padding: 1rem;
+  color: white;
+  font-family: "Roboto Sab",monospace;
 }
 .Footer .Top-container {
   display: grid;
@@ -9,13 +11,13 @@
   margin: 5rem auto;
   gap: 2rem;
   width: 80%;
-  font-family: "Poetsen one",monospace;
 }
 
 .Footer .Top-container .Data1 {
   display: flex;
   align-items: center;
   gap: 1rem;
+  color: white;
   /* justify-content: space-between; */
 }
 .Footer .Top-container .Data1 .icon {
@@ -24,12 +26,13 @@
 }
 .Footer .Top-container .Data1 .info h2 {
   font-size: 28px;
-  padding-left: 0.3rem;
+  /* padding-left: 0.3rem; */
+  padding-right: 1rem;
 }
 .Footer .Top-container .Data1 .info p {
   font-size: 16px;
   padding-left: 0.3rem;
-  color: rgb(136, 136, 136);
+  color: white;
   font-size: 2rem;
 }
 .Footer .HR {
@@ -44,7 +47,7 @@
   grid-template-columns: repeat(3, 1fr);
   margin: 5rem auto;
   width: 80%;
-  font-family: "Poetsen one",monospace;
+  /* font-family: "Poetsen one",monospace; */
 }
 .Footer .Bottom-container .Data1 .Top:nth-child(1) {
   display: flex;
@@ -58,8 +61,8 @@
 .Footer .Bottom-container .Data1 .info {
   font-size: 20px;
   padding: 1rem 1rem;
-  font-family: "Poetsen one",monospace;
-  color: #7c7c7c;
+  /* font-family: "Poetsen one",monospace; */
+  color: white;
 }
 .Footer .Bottom-container .Data1 .socials {
   padding: 1rem 4rem;
@@ -133,7 +136,7 @@
 }
 .Footer .Bottom-container .Data1 .wrap .Links .LinksData {
   font-size: 20px;
-  color: #7c7c7c;
+  color: white;
 }
 
 .Footer .Bottom-container .Data1 h2 {
@@ -178,9 +181,15 @@
     font-style: italic;
     color: #7c7c7c;
     font-weight: 10px;
-    font-family: 'Poetsen one', Courier, monospace;
+    /* font-family: 'Poetsen one', Courier, monospace; */
 }
 
+.Data1 >.menu{
+  padding-left: 2rem;
+}
+.Data1 > #menu_hr{
+  margin-left: 1.5rem;
+}
 @media screen and (max-width: 600px) {
 
   .Footer .Top-container {
@@ -189,8 +198,8 @@
     margin: 5rem auto;
     gap: 2rem;
     width: 100%;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", */
+      /* "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
   }
   .Footer .Top-container .Data1 {
     display: flex;
@@ -225,8 +234,8 @@
     grid-template-columns: repeat(1, 1fr);
     margin: 5rem auto;
     width: 100%;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
   }
   .Footer .Bottom-container .Data1 .Top:nth-child(1) {
     display: flex;
@@ -240,7 +249,7 @@
   .Footer .Bottom-container .Data1 .info {
     font-size: 12px;
     padding: 1rem 0.5rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
     color: #7c7c7c;
   }
   .Footer .Bottom-container .Data1 .socials {

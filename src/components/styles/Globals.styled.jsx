@@ -13,14 +13,15 @@ body,html{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 html{
-    font-family: "Poetsen One", monospace;
+    font-family: "Roboto Slab", monospace;
     scroll-behavior: smooth;
-    color: ${({ theme })=> theme.colors.white};
+    color: ${({ theme })=> theme.colors.black};
     background: ${({ theme })=> theme.colors.lightNavyBlue};
-    background: ${({ theme })=> theme.colors.lightNavyBlue};
+    background: ${({ theme })=> theme.colors.white};
     /* background: grey; */
     font-size: 12px;
 }

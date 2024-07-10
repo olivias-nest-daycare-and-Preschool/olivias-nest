@@ -16,35 +16,39 @@ import Ten from "../../Images/homeImages/10.png";
 import Eleven from "../../Images/homeImages/11.png";
 import Twelve from "../../Images/homeImages/12.png";
 import Thirteen from "../../Images/homeImages/13.png";
-// import Fourteen from "../../Images/homeImages/14.png";
 import Fifteen from "../../Images/homeImages/15.png";
-// import Sixteen from "../../Images/homeImages/16.png";
 import Seventeen from "../../Images/homeImages/17.png";
 import Eighteen from "../../Images/homeImages/18.png";
 import {
   Bait2Section,
   BlockQuote,
   Cite,
+  FacilityDescription,
+  FacilityImageContainer,
   FeatureContent,
   FeatureDescription,
   FeatureImage,
   FeatureItem,
   FeatureTitle,
+  InfoButton,
+  SingleFacility,
+  SlantCard,
+  StyledFacilitiesSection,
+  Tags,
 } from "../styles/sections/HomeSection.styled";
 import {
-  HomeContainer,
+  HomeContainer
 } from "../styles/common/HomeConatiner";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import {
   StyledHomeBackground
 } from "../styles/HomeBackground.styled";
 import { BsSunglasses } from "react-icons/bs";
-import "../styles/sections/Home/CustomCards.css"
-import "../styles/sections/Home/Extra.css"
+import "../styles/sections/Home/CustomCards.css";
 import { Container } from '../styles/common/Container.styled';
 
 export const HomeSection = () => {
-  var settings = {
+  let settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -190,8 +194,7 @@ export const HomeSection = () => {
         </div>
       </div>
     </StyledHomeBackground>
-
-    {/* <HomeContainer> */}
+    <HomeContainer>
       <Bait2Section>
         <FeatureItem>
           <FeatureImage src="./images/paperplane.png" alt="learning is fun" />
@@ -202,7 +205,6 @@ export const HomeSection = () => {
             </FeatureDescription>
           </FeatureContent>
         </FeatureItem>
-
         <FeatureItem>
           <FeatureImage src="./images/babyfood.png" alt="learning is fun" />
           <FeatureContent>
@@ -230,12 +232,56 @@ export const HomeSection = () => {
           </FeatureContent>
         </FeatureItem>
       </Bait2Section>
-    {/* </HomeContainer> */}
+    </HomeContainer>
 
+    {/* <CTASection>
+    <DivideSemiSection>
+    <SingleFacility>
+                        <FacilityImageContainer>
+                            <img src={Thirteen } alt={'olivias nest'}/>
+                            <SlantCard />
+                        </FacilityImageContainer>
+                        <FacilityDescription>
+                            <h1>
+                                {'our school'}
+                            </h1>
+                            <Tags>
+                              School 
+                            </Tags>
+                            <p>our school</p>
+                        </FacilityDescription>
+                    </SingleFacility>
+
+    </DivideSemiSection>
+    <DivideSemiSection>
+    <InfoButton href="/AboutUs">About Us </InfoButton>
+    <InfoButton href="/ContactUs"> Contact Us </InfoButton>
+    </DivideSemiSection>
+    </CTASection> */}
     
+    <Container>
+    <StyledFacilitiesSection style={{marginTop:'-8rem'}}>
+    <SingleFacility>
+                        <FacilityImageContainer>
+                            <img src={Thirteen } alt={'olivias nest'}/>
+                            <SlantCard />
+                        </FacilityImageContainer>
+                        <FacilityDescription>
+                        <h1 style={{fontWeight:'700'}}>Olivia's Nest International <hr /> </h1>
+                            <Tags>
+                               <InfoButton href="/AboutUs">About Us </InfoButton>
+                               <InfoButton href="/ContactUs"> Contact Us </InfoButton>
+                            </Tags>
+                            <p> Welcome to Olivia's Nest where we offer small class sizes, balanced teacher-learner ratios, 
+                              a fun environment and learning through play. 
+                              luxury preschool and daycare in kileleshwa/lavington. 25 Othaya Road, Nairobi, Kenya ... 
+                              At Olivia's Nest our emphasis is to boost our little children's ability ...
+                              </p>
+                        </FacilityDescription>
+                    </SingleFacility>
+    </StyledFacilitiesSection>
 
-   
-
+    </Container>
     <HomeContainer>
       <div className="wrapper">
   <SectionHeading style={{paddingTop:'2rem'}}>
@@ -311,7 +357,7 @@ export const HomeSection = () => {
 </div>
     </HomeContainer>
 
-    <HomeContainer>
+    <HomeContainer style={{marginBottom:'-5rem'}}>
       <SectionHeading style={{marginTop:'4rem'}}>
         <h1>Facilities & What we offer</h1>
         <h3> <BsSunglasses /> sneaky link <BsSunglasses /> </h3>
@@ -349,37 +395,6 @@ export const HomeSection = () => {
     </a>
   </div>
 </section>
-    </HomeContainer>
-
-    <Container>
-    <hr/>
-    </Container>
-
-    <HomeContainer>
-
-      <div className="card_wrap_extra">
-      <div class="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/beds.jpg" class="card__photo" alt="Good food" />
-  <div class="card__content_extra">
-    <h2 class="card__title_extra">Swimming pool</h2>
-    <p class="card__description_extra">We have swimming lessons</p>
-  </div>
-</div>
-<div class="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src= "./images/board_games.jpg" class="card__photo" alt="Good food" />
-  <div class="card__content_extra">
-    <h2 class="card__title_extra">Skating</h2>
-    <p class="card__description_extra">We have skating</p>
-  </div>
-</div>
-<div class="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/basket_ball.jpg" class="card__photo" alt="Good food" />
-  <div class="card__content_extra">
-    <h2 class="card__title_extra">Soccer</h2>
-    <p class="card__description_extra">We offer soccer trainging and tournaments</p>
-  </div>
-</div>
-      </div>
     </HomeContainer>
     <hr />
   </>

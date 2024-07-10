@@ -135,6 +135,7 @@ margin-bottom:0.5rem;
 span{
     margin-bottom: 0.5rem;
     background: #0e213c;
+    color: white;
     display: inline-block;
     padding:7px;
     border-radius: 5px;

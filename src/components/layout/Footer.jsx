@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 import './../styles/Footer.css'
-import { RiMapPin2Fill } from "react-icons/ri";
+import { RiMapPin2Fill, RiPhoneLine,RiMailLine } from "react-icons/ri";
 import Logo from './../../Images/nest.png'
 import { IoLogoWhatsapp } from "react-icons/io";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF,FaInstagram } from "react-icons/fa";
 import { BsFillSendFill } from "react-icons/bs";
 
 export const Footer = () => {
@@ -23,7 +22,7 @@ export const Footer = () => {
                     </div>
                     <div className="Data1">
                         <div className="icon">
-                            <RiMapPin2Fill />
+                            < RiPhoneLine />
                         </div>
                         <div className="info">
                             <h2>Call us</h2>
@@ -32,7 +31,7 @@ export const Footer = () => {
                     </div>
                     <div className="Data1">
                         <div className="icon">
-                            <RiMapPin2Fill />
+                            <RiMailLine />
                         </div>
                         <div className="info">
                             <h2>Mail us</h2>
@@ -49,11 +48,13 @@ export const Footer = () => {
                             </div>
                             <div className="info">
                                 <p>
-                                    We have admissions with inclusion of:
-                                    Daycare (1-2 years).
-                                    Internation Preschool (3-6 years).
-                                    Extra Curricular activities.
-                                    Transport available.
+                                    We have admissions with inclusion of:   <hr />
+                                    <ul>
+                                        <li>- Daycare (1-2 years).</li>
+                                        <li>- Internation Preschool (3-6 years).</li>
+                                        <li>- Extra Curricular activities.</li>
+                                        <li>- Transport available.</li>
+                                    </ul>
                                 </p>
                             </div>
                         </div>
@@ -81,8 +82,8 @@ export const Footer = () => {
                         </div>
                     </div>
                     <div className="Data1">
-                        <h2>Menu</h2>
-                        <hr className='HR2' />
+                        <h2 className="menu">Menu</h2>
+                        <hr className='HR2' id="menu_hr"/>
                         <div className="wrap">
                             <div className="Links">
                                 <Link to="/" className='LinksData'>Home</Link>
@@ -116,6 +117,7 @@ export const Footer = () => {
                  <a href="mailto:oliviasnest1@gmail.com">Olivia's Nest 2024</a>. All rights reserved.</p>
                 </div>
             </div>
+            <div></div>
         </>
     );
 };

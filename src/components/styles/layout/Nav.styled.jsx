@@ -39,7 +39,7 @@ export const Logo = styled.img`
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   /* background: red; */
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100px;

@@ -1,13 +1,12 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap'); */
-
 .card_wrap_extra {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  /* font-family: Roboto, sans-serif; */
   gap: 90px;
+  margin-bottom: -15rem;
+  margin-top: -15rem;
 }
 
 .card_extra {
@@ -21,21 +20,21 @@
 }
 
 .card__photo_extra {
+  width: 70%;
+  height: 70%;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
   border-radius: inherit;
 }
 
 .card__content_extra {
   position: absolute;
   bottom: 0;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 300;
   boder-radius: 15px;
-  overflow: hidden;
-  padding: 20px;
-  padding-bottom: 20px;
+  /* overflow: hidden; */
+  padding: 10px;
+  padding-bottom: 10px;
   color: #fff;
   transition: all 900ms;
   width: 100%;
@@ -72,11 +71,65 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw;
-        height: 100vh;
-        gap: 20px;
-      }
-      .card_wrap_extra{
-        display: none;
-      }
+        width: 70vw;
+        height: 60vh;
+        gap: 10px;
+        margin-bottom: -5rem;
+        margin-top: -5rem;
+  }
+  .card_extra {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #aaa;
+    cursor: pointer;
+    /* overflow: hidden; */
+  }
+  
+  .card__photo_extra {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  
+  .card__content_extra {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 400;
+    boder-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    transition: all 900ms;
+    width: 100%;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    transform: translateY(85%);
+  }
+  
+  .card__title_extra {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .card__description_extra {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 80%;
+    line-height: 1.3;
+  }
+  
+  .card_extra:hover > .card__content_extra {
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, .25);
+    transform: translateY(0%);
+  }
+  
 }

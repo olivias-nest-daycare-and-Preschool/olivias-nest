@@ -121,6 +121,7 @@ width: 90%;
 display: flex;
 align-items: start;
 justify-content: left;
+padding-left: 5rem;
 @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
     align-items: flex-start;
@@ -131,8 +132,8 @@ export const FeatureItem = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  padding-right:'-2rem';
-  padding-left:'-2rem';
+  padding-right:'1rem';
+  padding-left:'1rem';
   margin-bottom: 2rem; /* Reduce vertical space between items */
   margin-top: 20rem;
   transition: all 300ms ease-in-out;
@@ -144,6 +145,7 @@ export const FeatureItem = styled.div`
     align-items: flex-start;
     margin-top: 1rem;
     padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: -5rem;
   }
 `;
@@ -184,7 +186,7 @@ export const FeatureTitle = styled.h3`
 export const FeatureDescription = styled.p`
   margin-top: 0.5rem; /* Adjust spacing between title and description */
   font-size: 1.5rem;
-  color: rgba(255,255,255,0.7);
+  /* color: rgba(255,255,255,0.7); */
 `;
 
 export const BlockQuote = styled.blockquote`
@@ -192,7 +194,7 @@ export const BlockQuote = styled.blockquote`
   margin: 20px;
   padding: 10px 20px;
   border-left: 5px solid #ccc;
-  color: white;
+  /* color: white; */
   /* background-color: #f9f9f9; */
   position: relative;
   quotes: "“" "”" "‘" "’";
@@ -204,7 +206,7 @@ export const BlockQuote = styled.blockquote`
     position: absolute;
     left: 10px;
     top: -10px;
-    color: #ccc;
+    color: black;
   }
 
   &::after {
@@ -214,7 +216,7 @@ export const BlockQuote = styled.blockquote`
     position: absolute;
     right: 10px;
     bottom: -10px;
-    color: #ccc;
+    color: black;
   }
 `;
 
@@ -223,7 +225,7 @@ export const Cite = styled.cite`
   text-align: right;
   margin-top: 10px;
   font-style: normal;
-  color: #777;
+  /* color: #777; */
 `;
 
 export const SomeDataSection = styled.section`
@@ -717,3 +719,235 @@ export const Content = styled.div`
   height: 100%;
 `;
 
+
+export const CTASection = styled.div`
+min-height: 60vh;
+padding: 10rem 0 5rem 0;
+width: 90%;
+display: flex;
+align-items: start;
+justify-content: left;
+/* padding-left: 50rem; */
+@media (max-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5rem;
+  }
+`;
+
+export const DivideSemiSection = styled.div`
+width: 50%;
+`;
+
+
+
+export const InfoButton = styled.a`
+/* background: ${({primary,theme})=> primary ? theme.colors.orange:
+"none"}; */
+background: ${({theme})=>theme.colors.orange};
+color: ${({primary,theme})=>theme.colors.black};
+padding: 10px 20px;
+margin: ${({margin})=>margin};
+border: 2px solid ${({ theme })=> theme.colors.orange}; 
+/* border-radius: 5px; */
+font-size: 18px;
+font-family: "Roboto Slab",monospace;
+font-weight: 700;
+border-radius: 20px;
+cursor: pointer;
+display: inline-block;
+margin-right: 40px;
+
+&:hover{
+    background: ${({primary,theme})=> 
+    primary ? theme.colors.orange:"none"};
+    color: ${({primary,theme})=>
+    primary ? theme.colors.white: theme.colors.orange};
+    border: 2px solid  ${({ theme })=>theme.colors.orange};
+}
+ @media (max-width: ${({theme})=>theme.mobile}){
+  margin: 10px 10px; //adjust cta buttons
+  font-size: 1.1rem;
+  }
+
+`;
+
+
+
+//informative
+
+
+export const StyledFacilitiesSection = styled.section`
+min-height: 90vh;
+padding: 10rem 0 5rem 0;
+width: 100%;
+`;
+
+
+
+
+export const SingleFacility = styled.div`
+display: flex;
+align-items: center;
+&:nth-child(even){
+    flex-direction: row-reverse;
+    margin: 10rem 0;
+}
+@media(max-width: ${({theme})=> theme.mobile}){
+    flex-direction: column;
+    &:nth-child(even){
+        flex-direction: column;
+        img{
+            transform: rotateY(0deg);
+            width: 180%;
+            height: 180%;
+        }
+        div{
+            
+        }
+    }
+    &:nth-child(odd){
+      img{
+        width: 180%;
+        height: 180%;
+      }
+    }
+}
+`;
+
+export const FacilityImageContainer = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+flex: 1;
+position: relative;
+perspective: 1000px;
+margin-right: 10rem;
+img{
+    /* width: 65%; */
+    width: 100%;
+    /* height: 120%; */
+    /* width: 85%; */
+    border-radius: 20px;
+    /* transform: rotateY(20deg);
+    transition: ${({theme})=>theme.transition}; */
+    z-index: 3;
+ }
+ &:hover{
+    img{
+        transform: rotateY(0deg);
+    }
+    div{
+        transform: skew(-3deg,3deg) rotateY(0deg);
+    }
+ }
+ @media(max-width: ${({theme})=> theme.mobile}){
+    margin-top: 3rem;
+    justify-content: flex-start;
+
+    img{
+        transform: rotateY(0deg);
+        width: 80%;
+        border-radius: 9px;
+    }
+ }
+`;
+
+export const SlantCard = styled.div`
+position: absolute;
+/* width: 65%; */
+width: 100%;
+height: 100%;
+background: linear-gradient(
+    to right,
+    ${({theme})=>theme.colors.orange} 0%,
+    ${({theme})=> theme.colors.purple} 100%
+);
+border-radius: 20px;
+/* transition: ${({theme})=>theme.transition};
+transform: skew(3deg, -3deg) rotateY(20deg); */
+z-index: 2;
+
+@media(max-width: ${({theme})=> theme.mobile}){
+    transform: skew(3deg,-3deg) rotateY(0deg);
+    width: 80%;
+    border-radius: 9px;
+ }
+`; 
+
+
+export const FacilityDescription = styled.div`
+flex:1;
+h1{
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+    background: linear-gradient(
+        to right,
+        ${({theme})=> theme.colors.orange} 0%,
+        ${({theme})=> theme.colors.purple} 100%
+    );
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p{
+    font-family: "Poppins",sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: -2rem;
+}
+div{
+    display:flex;
+    align-items: center;
+}
+@media(max-width: ${({theme})=> theme.mobile}){
+  h1{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.4rem;
+  }
+}
+`;
+
+export const Tags = styled.div`
+display: flex;
+align-items: center; 
+flex-wrap: wrap;
+margin-bottom:0.5rem;
+
+span{
+    margin-bottom: 0.5rem;
+    background: #0e213c;
+    display: inline-block;
+    padding:7px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 1rem;
+}
+@media (max-width: 1200px) { /* Large desktops and laptops */
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 992px) { /* Medium-sized devices (desktops, tablets) */
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) { /* Small devices (tablets, large phones) */
+    justify-content: center;
+
+    span {
+      margin-right: 0.5rem;
+    }
+  }
+
+  @media (max-width: 576px) { /* Extra small devices (phones) */
+    flex-direction: column;
+    align-items: flex-start;
+
+    span {
+      margin-bottom: 0.5rem;
+      margin-right: 0;
+    }
+  }
+`;
