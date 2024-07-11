@@ -778,7 +778,7 @@ margin-right: 40px;
 
 
 export const StyledFacilitiesSection = styled.section`
-min-height: 90vh;
+min-height: auto;
 padding: 10rem 0 5rem 0;
 width: 100%;
 `;
@@ -938,6 +938,7 @@ span{
 
     span {
       margin-right: 0.5rem;
+      display: none;
     }
   }
 
@@ -946,8 +947,7 @@ span{
     align-items: flex-start;
 
     span {
-      margin-bottom: 0.5rem;
-      margin-right: 0;
+      display: none;
     }
   }
 `;

@@ -10,12 +10,75 @@ import Five from "../../Images/homeImages/5.png";
 import Six from "../../Images/homeImages/6.png";
 import Eight from "../../Images/homeImages/8.png";
 import Nine from "../../Images/homeImages/9.png";
+import { Container } from '../styles/common/Container.styled';
+import { 
+  FacilityDescription, 
+  FacilityImageContainer, 
+  SingleFacility, 
+  SlantCard, 
+  StyledFacilitiesSection, 
+  Tags } from '../styles/sections/HomeSection.styled';
+import Admissions from "../../Images/news/Admissions.jpg";
+import WhatWeOffer from "../../Images/news/What-we-offer.jpg";
 
 
 
 const News = () => {
   return (
     <>
+    <Container>
+    <SectionHeading style={{marginTop:'15rem'}}>  
+        <h1>News</h1>
+        <p>Stay in the know with our news board</p>
+      </SectionHeading>
+    </Container>
+  <Container style={{marginTop:'-10rem'}}>
+    <StyledFacilitiesSection>
+    <SingleFacility>
+                        <FacilityImageContainer>
+                            <img src={Admissions} alt={'olivias nest'}/>
+                            <SlantCard />
+                        </FacilityImageContainer>
+                        <FacilityDescription>
+                        <h1 style={{fontWeight:'700'}}>Admissions and School Tour<hr /></h1>
+                            <Tags>
+                              <span style={{color:'white'}}>in-take</span>
+                              <span style={{color:'white'}}>child-care</span>
+                              <span style={{color:'white'}}>edu-care</span>
+                            </Tags>
+                            <p> Welcome to Olivia's Nest where we offer small class sizes, balanced teacher-learner ratios, 
+                              a fun environment and learning through play. 
+                              luxury preschool and daycare in kileleshwa/lavington. 25 Othaya Road, Nairobi, Kenya ... 
+                              At Olivia's Nest our emphasis is to boost our little children's ability ...
+                              </p>
+                        </FacilityDescription>
+                    </SingleFacility>
+    </StyledFacilitiesSection>
+    </Container>
+    <Container>
+    <StyledFacilitiesSection>
+    <SingleFacility>
+                        <FacilityImageContainer>
+                            <img src={WhatWeOffer} alt={'olivias nest'}/>
+                            <SlantCard />
+                        </FacilityImageContainer>
+                        <FacilityDescription>
+                        <h1 style={{fontWeight:'700'}}>Admissions and School Tour<hr /> </h1>
+                            <Tags>
+                              <span style={{color:'white'}}>olivias nest</span>
+                              <span style={{color:'white'}}>olivias nest</span>
+                              <span style={{color:'white'}}>olivias nest</span>
+                            </Tags>
+                            <p> Welcome to Olivia's Nest where we offer small class sizes, balanced teacher-learner ratios, 
+                              a fun environment and learning through play. 
+                              luxury preschool and daycare in kileleshwa/lavington. 25 Othaya Road, Nairobi, Kenya ... 
+                              At Olivia's Nest our emphasis is to boost our little children's ability ...
+                              </p>
+                        </FacilityDescription>
+                    </SingleFacility>
+    </StyledFacilitiesSection>
+    </Container>
+
       <div className="wrapper">
   <SectionHeading style={{paddingTop:'2rem'}}>
     <h1>School Events</h1>
