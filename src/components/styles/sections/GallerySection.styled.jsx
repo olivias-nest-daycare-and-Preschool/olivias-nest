@@ -141,3 +141,163 @@ export const LayeredCard = styled.div`
     font-size: 1.9rem;
   }
 `;
+
+
+
+//newly
+
+
+
+export const ScrollAnimationsExample = styled.div`
+  padding: 10vh 10vh 10vh 10vmax;
+  min-width: 550vh;
+`;
+
+export const ScrollSection = styled.div`
+  padding: 10vh 10vh 10vh 10vmax;
+  min-width: 550vh;
+`;
+
+export const Item = styled.div`
+  display: inline-block;
+  position: relative;
+  margin: 0 -30vh 0 3vh;
+
+  &.-big {
+    height: 80vh;
+    width: 60vh;
+  }
+
+  &.-big.-horizontal {
+    height: 60vh;
+    width: 80vh;
+  }
+
+  &.-normal {
+    height: 60vh;
+    width: 45vh;
+    z-index: 1;
+  }
+
+  &.-normal.-horizontal {
+    height: 45vh;
+    width: 60vh;
+  }
+
+  &.-normal:nth-of-type(3n) {
+    bottom: 5vh;
+  }
+
+  &.-normal:nth-of-type(4n) {
+    bottom: -5vh;
+  }
+
+  &.-small {
+    height: 40vh;
+    width: 30vh;
+    z-index: 2;
+  }
+
+  &.-small.-horizontal {
+    height: 30vh;
+    width: 40vh;
+  }
+
+  &.-small:nth-of-type(3n) {
+    bottom: 13vh;
+  }
+
+  &.-small:nth-of-type(4n) {
+    bottom: -13vh;
+  }
+`;
+
+export const Image = styled.img`
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(0) translateY(0) scale(1);
+  transition: filter .3s ease, opacity 1s ease, transform 1s ease;
+
+  &:nth-of-type(4n) {
+    transform: translateX(-30vh) translateY(-30vh) scale(.8);
+    transition-delay: 0;
+  }
+
+  &:nth-of-type(4n - 1) {
+    transform: translateX(30vh) translateY(30vh) scale(.8);
+    transition-delay: .05s;
+  }
+
+  &:nth-of-type(4n - 2) {
+    transform: translateX(-30vh) translateY(30vh) scale(.8);
+    transition-delay: .1s;
+  }
+
+  &:nth-of-type(4n - 3) {
+    transform: translateX(-30vh) translateY(-30vh) scale(.8);
+    transition-delay: .15s;
+  }
+
+  &.-active {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: .8;
+    pointer-events: auto;
+    transition: filter .3s ease, opacity 1s ease, transform 1s ease;
+  }
+
+  &.-clicked {
+    transform: translateX(0) translateY(0) scale(5);
+    opacity: 0;
+    pointer-events: auto;
+    transition: filter .3s ease, opacity 1s ease, transform 1s ease;
+  }
+
+  &.-active:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    cursor: pointer;
+  }
+`;
+
+export const FakeUI = styled.div`
+  font-size: 0;
+  
+  .logo {
+    position: fixed;
+    top: 2vh;
+    left: 2vh;
+    height: 3vh;
+    width: 2.5vh;
+    border: solid 1vh #999;
+  }
+
+  .nav {
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+
+    .item {
+      background: #999;
+      display: inline-block;
+      height: 2vh;
+      width: 10vh;
+      margin-left: 2vh;
+    }
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2vh;
+    width: 40vh;
+    background: #999;
+  }
+`;

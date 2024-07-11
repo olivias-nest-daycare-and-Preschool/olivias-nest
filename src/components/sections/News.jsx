@@ -1,8 +1,6 @@
 import React from 'react'
 import "../../components/styles/sections/News/News.css";
 import { SectionHeading } from '../styles/common/SectionHeading.styled';
-import { HomeContainer } from '../styles/common/HomeConatiner';
-import { StyledHomeBackground } from '../styles/HomeBackground.styled';
 
 import One from "../../Images/homeImages/1.png";
 import Two from "../../Images/homeImages/2.png";
@@ -18,10 +16,6 @@ import Nine from "../../Images/homeImages/9.png";
 const News = () => {
   return (
     <>
-    return (
-    <>
-    <StyledHomeBackground>
-    <HomeContainer>
       <div className="wrapper">
   <SectionHeading style={{paddingTop:'2rem'}}>
     <h1>School Events</h1>
@@ -162,11 +156,7 @@ const News = () => {
 
   </div>
 </div>
-    </HomeContainer>
-    </StyledHomeBackground>
     <div></div>
-    </> 
-  )
     </>
     
   )

@@ -3,10 +3,12 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
-  gap: 90px;
-  margin-bottom: -15rem;
-  margin-top: -15rem;
+  /* height: 100vh; */
+  height: auto;
+  gap: 20px;
+  /* margin-bottom: -15rem;
+  margin-top: -15rem; */
+  padding: 30px;
 }
 
 .card_extra {
@@ -20,8 +22,8 @@
 }
 
 .card__photo_extra {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: inherit;
 }
@@ -71,16 +73,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 70vw;
-        height: 60vh;
-        gap: 10px;
-        margin-bottom: -5rem;
-        margin-top: -5rem;
+        /* width: 70vw;
+        height: 60vh; */
+        gap: 15px;
+        /* margin-bottom: -5rem;
+        margin-top: -5rem; */
+        padding-right: 5.5rem;
   }
   .card_extra {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 15px;
     box-shadow: 0 0 25px #aaa;
     cursor: pointer;
@@ -88,9 +91,8 @@
   }
   
   .card__photo_extra {
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
+    width: 50%;
+    height: 60%;
   }
   
   .card__content_extra {
@@ -98,7 +100,7 @@
     bottom: 0;
     font-size: 20px;
     font-weight: 400;
-    boder-radius: 15px;
+    border-radius: 15px;
     overflow: hidden;
     padding: 20px;
     padding-bottom: 20px;
@@ -112,17 +114,16 @@
   }
   
   .card__title_extra {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 400;
   }
   
   .card__description_extra {
-    margin-top: 10px;
-    font-size: 16px;
-    width: 80%;
+    margin-top: 12px;
+    font-size: 10px;
+    width: 60%;
     line-height: 1.3;
   }
-  
   .card_extra:hover > .card__content_extra {
     height: calc(100% - 40px);
     display: flex;
@@ -131,5 +132,5 @@
     background: rgba(0, 0, 0, .25);
     transform: translateY(0%);
   }
-  
+
 }

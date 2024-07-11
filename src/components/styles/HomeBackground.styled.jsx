@@ -5,12 +5,16 @@ export const StyledHomeBackground = styled.footer`
   width: 100%;
   height: 100%;
   // position: relative;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('./images/wall2.jpg');
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./images/wall2.jpg'); */
+  /* background-color: rgba(11, 11, 11, 0.6); */
+  background-color: rgb(61,19,0,0.8);
+  /* background: rgba(0, 0, 0, .25); */
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
   -webkit-backdrop-filter: blur(20px); /* For Safari */
   @media(max-width:${({ theme }) => theme.mobile}){ 
+    height: 45%;
   }
 `;
 

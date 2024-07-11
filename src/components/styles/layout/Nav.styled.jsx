@@ -25,7 +25,7 @@ export const Nav = styled.nav`
   margin-top: 3.5rem;
   z-index: 98;
   transition: all 1s ease-in-out;
-  background: rgba(11, 11, 11, 0.6);
+  background: black;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     justify-content: space-between;

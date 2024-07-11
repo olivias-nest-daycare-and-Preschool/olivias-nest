@@ -1,6 +1,20 @@
-import { AboutContent, AboutUsSection, DullCircle, GradCircle, HeroSocialIcons, ImageContainer, ImageCoveredContainer, SocialIcon, StyledHeading, StyledImage } from "../styles/sections/AboutSection.styled";
+import { 
+  AboutContent, 
+  AboutUsSection, 
+  DullCircle, 
+  GradCircle, 
+  HeroSocialIcons, 
+  ImageContainer,
+  SocialIcon, 
+  StyledHeading, 
+  StyledImage 
+  } from "../styles/sections/AboutSection.styled";
 import { CTAButton } from "../styles/common/CTAButton.styled";
-import { FaEnvelope, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import {
+  FaEnvelope, 
+  FaFacebook,
+  FaWhatsapp 
+  } from "react-icons/fa";
 import { Container } from "../styles/common/Container.styled";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import { 
@@ -14,9 +28,8 @@ import "../styles/sections/Home/Extra.css"
 export const AboutSection = () =>{
 
     return <> 
-    <ImageCoveredContainer> 
     <Container>
-    <AboutUsSection id="/AboutUs" style={{marginTop:'15rem'}}>
+    <AboutUsSection id="/AboutUs" style={{marginTop:'10rem'}}>
         <ImageContainer>
             <StyledImage src="./images/wall2.jpg" alt="olivia's nest jpg file"/>
             <DullCircle/>
@@ -37,11 +50,10 @@ export const AboutSection = () =>{
             All are welcome at Olivia's Nest.👶
 
             </p>
-            <CTAButton href="/ContactUs">Inquiries ? reach out...</CTAButton>
+            <CTAButton style={{color:'black'}} href="/ContactUs">Inquiries ? reach out...</CTAButton>
         </AboutContent>
     </AboutUsSection>
     </Container>
-    </ImageCoveredContainer>
 
     <HomeContainer>
       <SectionHeading>
@@ -49,7 +61,7 @@ export const AboutSection = () =>{
       </SectionHeading>
       <div className="card_wrap_extra">
       <div className="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/admin-head-teacher.jpg" className="card__photo" alt="Good food" />
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}}  src="./images/staff/admin-head-teacher.jpg" className="card__photo" alt="Good food" />
   <div className="card__content_extra">
     <h2 className="card__title_extra">Admin</h2>
     <p className="card__description_extra">
@@ -60,7 +72,7 @@ export const AboutSection = () =>{
   </div>
 </div>
 <div className="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src= "./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
+  <img  style={{height:'100%',width:'100%',objectFit:'cover'}}  src= "./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
   <div className="card__content_extra">
     <h2 className="card__title_extra">Teachers</h2>
     <p className="card__description_extra">
@@ -71,7 +83,7 @@ export const AboutSection = () =>{
   </div>
 </div>
 <div className="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}}  src="./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
   <div className="card__content_extra">
     <h2 className="card__title_extra">Teachers</h2>
     <p className="card__description_extra">
@@ -87,7 +99,7 @@ export const AboutSection = () =>{
     <HomeContainer>
       <div className="card_wrap_extra">
       <div className="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/chef.jpg" className="card__photo" alt="Good food" />
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}}  src="./images/staff/chef.jpg" className="card__photo" alt="Good food" />
   <div className="card__content_extra">
     <h2 className="card__title_extra">Chef</h2>
     <p className="card__description_extra">
@@ -102,7 +114,7 @@ export const AboutSection = () =>{
   </div>
 </div>
 <div className="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src= "./images/staff/cleaning staff.jpg" className="card__photo" alt="Good food" />
+  <img  style={{height:'100%',width:'100%',objectFit:'cover'}}  src= "./images/staff/cleaning staff.jpg" className="card__photo" alt="Good food" />
   <div className="card__content_extra">
     <h2 className="card__title_extra">Sanitary engineers</h2>
     <p className="card__description_extra">
@@ -116,7 +128,7 @@ export const AboutSection = () =>{
   </div>
 </div>
 <div className="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
+  <img  style={{height:'100%',width:'100%',objectFit:'cover'}}  src="./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
   <div className="card__content_extra">
     <h2 className="card__title_extra">Teachers</h2>
     <p className="card__description_extra">
@@ -133,7 +145,7 @@ export const AboutSection = () =>{
     <HomeContainer>
       <div className="card_wrap_extra">
       <div className="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/chef.jpg" className="card__photo" alt="Good food" />
+  <img  style={{height:'100%',width:'100%',objectFit:'cover'}}  src="./images/staff/chef.jpg" className="card__photo" alt="Good food" />
   <div className="card__content_extra">
     <h2 className="card__title_extra">Chef</h2>
     <p className="card__description_extra">
@@ -148,7 +160,7 @@ export const AboutSection = () =>{
   </div>
 </div>
 <div className="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src= "./images/staff/cleaning staff.jpg" className="card__photo" alt="Good food" />
+  <img style={{height:'100%',width:'100%',objectFit:'cover'}}  src= "./images/staff/cleaning staff.jpg" className="card__photo" alt="Good food" />
   <div className="card__content_extra">
     <h2 className="card__title_extra">Sanitary engineers</h2>
     <p className="card__description_extra">
@@ -162,7 +174,7 @@ export const AboutSection = () =>{
   </div>
 </div>
 <div className="card_extra">
-  <img style={{height:'100%',width:'100%',objectFit:'cover'}} src="./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
+  <img  style={{height:'100%',width:'100%',objectFit:'cover'}}  src="./images/staff/Teachers.jpg" className="card__photo" alt="Good food" />
   <div className="card__content_extra">
     <h2 className="card__title_extra">Teachers</h2>
     <p className="card__description_extra">
@@ -174,6 +186,7 @@ export const AboutSection = () =>{
 </div>
       </div>
     </HomeContainer>
+
     <HeroSocialIcons>
                     <SocialIcon href="https://www.facebook.com/oliviasnest" target="_blank">
                         <FaFacebook />

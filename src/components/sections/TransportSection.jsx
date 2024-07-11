@@ -1,115 +1,86 @@
 import { HomeContainer } from "../styles/common/HomeConatiner";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
-import { 
-    StyledGallerySection 
-} from "../styles/sections/GallerySection.styled";
 
 
 import '../styles/sections/transport/Transport.css';
 
-
 import VanCartoon from "../../Images/van/boarding_A.jpg"
-import Boarding_C from "../../Images/van/boarding_C.jpg"
 import Boarding_B from "../../Images/van/boarding_B.jpg"
 import Boarding_A from "../../Images/van/boarding_A.jpg"
-import Boarding_F from "../../Images/van/boarding_F.jpg"
-import Boarding_G from "../../Images/van/boarding_G.jpg"
-import Caregiver from "../../Images/van/caregiver.jpg"
+
 
 
 export const TransportSection = () =>{
     return (
         <>
         <HomeContainer>
-        <StyledGallerySection style={{marginTop:'5rem', marginBottom:'-45rem'}}>
-            <SectionHeading>
+            <SectionHeading style={{marginTop:'20rem'}}>
             <h1>Transport</h1>
             <h3>We offer affordable and safe transport system.</h3>
             </SectionHeading>
-        </StyledGallerySection>
-        </HomeContainer>
-
-        <div className="band_transport" style={{padding: `2rem`,marginTop:`-5rem`}}>
-		<div className="item-1_transport">
-			<a href="/ContactUs" className="card_transport">
-				<div className="thumb_transport" style={{backgroundImage:`url(${VanCartoon})`}}></div>
-				<article>
-					<h1>Transport system</h1>
-					<span>overview</span>
-                    <p style={{color:'black'}}> We offer affordable transport to our esteemed customers.
+			<div className="content-wrapper" >
+  <div className="news-card">
+    <a href="/Transport" className="news-card__card-link">Contact us</a>
+    <img src={VanCartoon} alt="" className="news-card__image" />
+    <div className="news-card__text-wrapper">
+      <h2 className="news-card__title">Transport</h2>
+      <div className="news-card__post-date">Transport</div>
+      <div className="news-card__details-wrapper">
+	  <p className="news-card__excerpt"> We offer affordable transport to our esteemed customers.
                         We have a very reliable and safety focused transport system. Our 
                         transport system is pocket friendly and we have chats on the routes and considerable
                         charges for that. For any unclear issues please feel free to reach out to us.
                     </p>
-				</article>
-			</a>
-		</div>
+      </div>
+    </div>
+  </div>
+  <div className="news-card">
+    <a href="/Transport" className="news-card__card-link">Information</a>
+    <img src={Boarding_A} alt="" className="news-card__image" />
+    <div className="news-card__text-wrapper">
+      <h2 className="news-card__title">Amazing Title</h2>
+      <div className="news-card__post-date">Jan 29, 2018</div>
+      <div className="news-card__details-wrapper">
+        <p className="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae&hellip;</p>
+        <a href="/Transport" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
 
-		<div className="item-2">
-			<a href="/ContactUs" className="card_transport">
-				<div className="thumb_transport" style={{backgroundImage:`url(${Boarding_C})`}}></div>
-				<article>
-					<h1>Child safety</h1>
-					<span> we care for our children</span>
-                    <p style={{color:'black'}}>Our teachers are very careful in handling our children.
-                        We are very thorough in the safety of every child at Olivia's nest.
-                    </p>
-				</article>
-			</a>
-		</div>
+  <div className="news-card">
+    <a href="/Transport" className="news-card__card-link">Reach out</a>
+    <img src= {Boarding_B} alt="" className="news-card__image" />
+    <div className="news-card__text-wrapper">
+      <h2 className="news-card__title">Amazing Forth Title that is Quite Long</h2>
+      <div className="news-card__post-date">Jan 29, 2018</div>
+      <div className="news-card__details-wrapper">
+        <p className="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
+        <a href="/Transport" className="news-card__read-more">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+  </HomeContainer>
 
-		<div className="item-3">
-			<a href="/ContactUs" className="card_transport">
-				<div className="thumb_transport" style={{backgroundImage:`url(${Boarding_B})`}}></div>
-				<article>
-					<h1>Created by You, July Edition</h1>
-					<p style={{color:'black'}}>Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community! </p>
-					<span>Melody Nieves</span>
-				</article>
-			</a>
-		</div>
+			<HomeContainer>
+			<SectionHeading>
+				<h1>Routes and Information</h1>
+				<p>We offer pocket friendly transport solution</p>
+			</SectionHeading>
 
-		<div class="item-4">
-			<a href="/ContactUs" className="card_transport">
-				<div className="thumb" style={{backgroundImage:`url(${Boarding_A})`}}></div>
-				<article>
-					<h1>How to Code a Scrolling “Alien Lander” Website</h1>
-					<p style={{color:'black'}}>We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander” making its way to touch down.</p>
-					<span>Kezz Bracey</span>
-				</article>
-			</a>
-		</div>
-
-		<div className="item-5">
-			<a href="/ContactUs" className="card_transport">
-				<div className="thumb_transport" style={{backgroundImage:`url(${Boarding_F})`}}></div>
-				<article>
-					<h1>How to Create a “Stranger Things” Text Effect in Adobe Photoshop</h1>
-					<span>Rose</span>
-				</article>
-			</a>
-		</div>
-
-		<div className="item-6">
-			<a href="/ContactUs" className="card">
-				<div className="thumb_transport" style={{backgroundImage:`url(${Boarding_G})`}}></div>
-				<article>
-					<h1>5 Inspirational Business Portraits and How to Make Your Own</h1>
-					<span>Marie Gardiner</span>
-				</article>
-			</a>
-		</div>
-
-		<div className="item-7">
-			<a href="/ContactUs" className="card_transport">
-				<div className="thumb_transport" style={{backgroundImage:`url(${Caregiver})`}}></div>
-				<article>
-					<h1>Notes From Behind the Firewall: The State of Web Design in China</h1>
-					<span>Kendra Schaefer</span>
-				</article>
-			</a>
-		</div>
-	</div>
+			<div className="info-container">
+				<div className="side_a">
+					<div className="van_container">
+					<img src={Boarding_B} alt="van image1" />
+					</div>
+				</div>
+				<div className="side_b">
+					<div className="van_container">
+					<img src={Boarding_A} alt="van image2" />
+					</div>
+				</div>
+			</div>
+			</HomeContainer>
         <hr />
         </>
     );
