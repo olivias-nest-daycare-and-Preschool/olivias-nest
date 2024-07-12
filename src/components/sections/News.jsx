@@ -2,14 +2,14 @@ import React from 'react'
 import "../../components/styles/sections/News/News.css";
 import { SectionHeading } from '../styles/common/SectionHeading.styled';
 
-import One from "../../Images/homeImages/1.png";
-import Two from "../../Images/homeImages/2.png";
-import Three from "../../Images/homeImages/3.png";
-import Four from "../../Images/homeImages/4.png";
-import Five from "../../Images/homeImages/5.png";
-import Six from "../../Images/homeImages/6.png";
-import Eight from "../../Images/homeImages/8.png";
-import Nine from "../../Images/homeImages/9.png";
+// import One from "../../Images/homeImages/1.png";
+// import Two from "../../Images/homeImages/2.png";
+// import Three from "../../Images/homeImages/3.png";
+// import Four from "../../Images/homeImages/4.png";
+// import Five from "../../Images/homeImages/5.png";
+// import Six from "../../Images/homeImages/6.png";
+// import Eight from "../../Images/homeImages/8.png";
+// import Nine from "../../Images/homeImages/9.png";
 import { Container } from '../styles/common/Container.styled';
 import { 
   FacilityDescription, 
@@ -18,8 +18,8 @@ import {
   SlantCard, 
   StyledFacilitiesSection, 
   Tags } from '../styles/sections/HomeSection.styled';
-import Admissions from "../../Images/news/Admissions.jpg";
-import WhatWeOffer from "../../Images/news/What-we-offer.jpg";
+// import Admissions from "../../Images/news/Admissions.jpg";
+// import WhatWeOffer from "../../Images/news/What-we-offer.jpg";
 
 
 
@@ -36,7 +36,7 @@ const News = () => {
     <StyledFacilitiesSection>
     <SingleFacility>
                         <FacilityImageContainer>
-                            <img src={Admissions} alt={'olivias nest'}/>
+                            <img src="./images/teachers.jpg" alt={'olivias nest'}/>
                             <SlantCard />
                         </FacilityImageContainer>
                         <FacilityDescription>
@@ -59,7 +59,7 @@ const News = () => {
     <StyledFacilitiesSection>
     <SingleFacility>
                         <FacilityImageContainer>
-                            <img src={WhatWeOffer} alt={'olivias nest'}/>
+                            <img src="./images/teachers.jpg" alt={'olivias nest'}/>
                             <SlantCard />
                         </FacilityImageContainer>
                         <FacilityDescription>
@@ -87,7 +87,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${One})` }}>
+        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")' }}>
           <div className="inner">
             <p>Class rooms with comfy furniture</p>
             <span>Furniture</span>
@@ -106,7 +106,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Four})` }}>
+        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")' }}>
           <div className="inner">
             <p>Location and security</p>
             <span>Security</span>
@@ -123,7 +123,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Eight})`}}>
+        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")'}}>
           <div className="inner">
             <p>Strizzes</p>
             <span>Lorem ipsum</span>
@@ -139,7 +139,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Nine})`}}>
+        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")'}}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -155,7 +155,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Five})` }}>
+        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")' }}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -171,7 +171,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Three})` }}>
+        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")' }}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -187,7 +187,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Six})` }}>
+        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")' }}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -203,7 +203,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Two})`}}>
+        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")'}}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>

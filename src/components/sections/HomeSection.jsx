@@ -3,22 +3,22 @@ import './../styles/sections/Carousel/carousel.css'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import One from "../../Images/homeImages/1.png";
-import Two from "../../Images/homeImages/2.png";
-import Three from "../../Images/homeImages/3.png";
-import Four from "../../Images/homeImages/4.png";
-import Five from "../../Images/homeImages/5.png";
-import Six from "../../Images/homeImages/6.png";
-import Seven from "../../Images/homeImages/7.png";
-import Eight from "../../Images/homeImages/8.png";
-import Nine from "../../Images/homeImages/9.png";
-import Ten from "../../Images/homeImages/10.png";
-import Eleven from "../../Images/homeImages/11.png";
-import Twelve from "../../Images/homeImages/12.png";
-import Thirteen from "../../Images/homeImages/13.png";
-import Fifteen from "../../Images/homeImages/15.png";
-import Seventeen from "../../Images/homeImages/17.png";
-import Eighteen from "../../Images/homeImages/18.png";
+// import One from "../../Images/homeImages/1.png";
+// import Two from "../../Images/homeImages/2.png";
+// import Three from "../../Images/homeImages/3.png";
+// import Four from "../../Images/homeImages/4.png";
+// import Five from "../../Images/homeImages/5.png";
+// import Six from "../../Images/homeImages/6.png";
+// import Seven from "../../Images/homeImages/7.png";
+// import Eight from "../../Images/homeImages/8.png";
+// import Nine from "../../Images/homeImages/9.png";
+// import Ten from "../../Images/homeImages/10.png";
+// import Eleven from "../../Images/homeImages/11.png";
+// import Twelve from "../../Images/homeImages/12.png";
+// import Thirteen from "../../Images/homeImages/13.png";
+// import Fifteen from "../../Images/homeImages/15.png";
+// import Seventeen from "../../Images/homeImages/17.png";
+// import Eighteen from "../../Images/homeImages/18.png";
 import {
   Bait2Section,
   BlockQuote,
@@ -87,18 +87,18 @@ export const HomeSection = () => {
   };
 
   const carouselImages = [
-    { id: 1, url: One, title: 'art' },
-    { id: 2, url: Two, title: 'beddings' },
-    { id: 3, url: Three, title: 'birthday' },
-    { id: 4, url: Four, title: 'gate1' },
-    { id: 1, url: Five, title: 'stretching' },
-    { id: 2, url: Six, title: 'stud2_2' },
-    { id: 3, url: Seven, title: 'study_rooms' },
-    { id: 4, url: Eight, title: 'van' },
-    { id: 5, url: Nine, title: 'teachers' },
-    { id: 6, url: Ten, title: 'our premises' },
-    { id: 7, url: Eleven, title: 'Toys' },
-    { id: 7, url: Twelve, title: 'Toys' },
+    { id: 1, url: "./images/landingPage/one.png", title: 'art' },
+    { id: 2, url: "./images/landingPage/twi.png", title: 'beddings' },
+    { id: 3, url: "./images/landingPage/three.png", title: 'birthday' },
+    { id: 4, url: "./images/landingPage/four.png", title: 'gate1' },
+    { id: 1, url: "./images/landingPage/five.png", title: 'stretching' },
+    { id: 2, url: "./images/landingPage/six.png", title: 'stud2_2' },
+    { id: 3, url: "./images/landingPage/seven.png", title: 'study_rooms' },
+    { id: 4, url: "./images/landingPage/eight.png", title: 'van' },
+    { id: 5, url: "./images/landingPage/nine.png", title: 'teachers' },
+    { id: 6, url: "./images/landingPage/ten.png", title: 'our premises' },
+    { id: 7, url: "./images/landingPage/eleven.png", title: 'Toys' },
+    { id: 7, url: "./images/landingPage/one.png", title: 'Toys' },
   ];
 
   return <>
@@ -232,38 +232,12 @@ export const HomeSection = () => {
           </FeatureContent>
         </FeatureItem>
       </Bait2Section>
-    </HomeContainer>
-
-    {/* <CTASection>
-    <DivideSemiSection>
-    <SingleFacility>
-                        <FacilityImageContainer>
-                            <img src={Thirteen } alt={'olivias nest'}/>
-                            <SlantCard />
-                        </FacilityImageContainer>
-                        <FacilityDescription>
-                            <h1>
-                                {'our school'}
-                            </h1>
-                            <Tags>
-                              School 
-                            </Tags>
-                            <p>our school</p>
-                        </FacilityDescription>
-                    </SingleFacility>
-
-    </DivideSemiSection>
-    <DivideSemiSection>
-    <InfoButton href="/AboutUs">About Us </InfoButton>
-    <InfoButton href="/ContactUs"> Contact Us </InfoButton>
-    </DivideSemiSection>
-    </CTASection> */}
-    
+    </HomeContainer>    
     <Container>
     <StyledFacilitiesSection style={{marginTop:'-8rem'}}>
     <SingleFacility>
                         <FacilityImageContainer>
-                            <img src={Thirteen } alt={'olivias nest'}/>
+                            <img src="./images/landingPage/nine.png" alt={'olivias nest'}/>
                             <SlantCard />
                         </FacilityImageContainer>
                         <FacilityDescription>
@@ -290,7 +264,8 @@ export const HomeSection = () => {
   <div className="cols">
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Six})` }}>
+        {/* <div className="front" style={{ backgroundImage: `url(${Six})` }}> */}
+        <div className="front" style={{ backgroundImage:"url('./images/landingPage/one.png')" }}>
           <div className="inner">
             <p>Our philosophy</p>
             <span>Philosophy</span>
@@ -306,7 +281,7 @@ export const HomeSection = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Eleven})` }}>
+        <div className="front" style={{ backgroundImage: "url('./images/landingPage/two.png')" }}>
           <div className="inner">
             <p>Core Values</p>
             <span>values</span>
@@ -323,7 +298,7 @@ export const HomeSection = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Ten})` }}>
+        <div className="front" style={{ backgroundImage: "url('./images/landingPage/three.png')" }}>
           <div className="inner">
             <p>View on education</p>
             <span>education</span>
@@ -339,7 +314,7 @@ export const HomeSection = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: `url(${Two})`}}>
+        <div className="front" style={{ backgroundImage: "url('./images/landingPage/four.png')"}}>
           <div className="inner">
             <p>Mission</p>
             <span>Pursuit</span>
@@ -366,28 +341,28 @@ export const HomeSection = () => {
       <section className="hero-section">
   <div className="card-grid">
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: `url(${Thirteen})`}}></div>
+      <div className="card__background" style={{ backgroundImage: "url('./images/landingPage/five.png')"}}></div>
       <div className="card__content">
         <p className="card__category">Indoor games</p>
         <h3 className="card__heading">Indoor games & Stretching area</h3>
       </div>
     </a>
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: `url(${Fifteen})` }}></div>
+      <div className="card__background" style={{ backgroundImage: "url('./images/landingPage/six.png')" }}></div>
       <div className="card__content">
         <p className="card__category">Outdoor festivities</p>
         <h3 className="card__heading">Swing area</h3>
       </div>
     </a>
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: `url(${Eighteen})`}}></div>
+      <div className="card__background" style={{ backgroundImage: "url('./images/landingPage/seven.png')"}}></div>
       <div className="card__content">
         <p className="card__category">Cartoons & Animations</p>
         <h3 className="card__heading">School environs</h3>
       </div>
     </a>
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: `url(${Seventeen})` }}></div>
+      <div className="card__background" style={{ backgroundImage: "url('./images/landingPage/eight.png')" }}></div>
       <div className="card__content">
         <p className="card__category">Court area</p>
         <h3 className="card__heading">Skating, basket ball and Lawn Tennis.</h3>

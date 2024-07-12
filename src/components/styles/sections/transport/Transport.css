@@ -1,80 +1,3 @@
-.card_transport span {
-  font-size: 12px;
-  font-weight: bold;
-  color: #999;
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  margin: 2em 0 0 0;
-}
-
-.band_transport {
-  width: 100%;
-  max-width: 1700px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 20px;
-}
-.card_transport {
-  background: #f0eeee;
-  text-decoration: none;
-  color: #111;
-  box-shadow: 0px 2px 5px rgba(0,0,0,.1);
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  top: 0;
-  transition: .2s ease-in-out;
-  border-radius: 20px;
-}
-
-
-
-.card_transport:hover {
-  top: -4px;
-  box-shadow: 0px 6px 5px rgba(0,0,0,.2);
-}
-
-.thumb_transport {
-  padding-bottom: 60%;
-  background-size: cover;
-  background-position: center center;
-}
-
-article {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px;
-}
-
-article p {
-  flex: 1;
-}
-
-
-@media screen and (min-width: 500px) {
-  .band_transport {
-    grid-template-columns: 1fr 1fr;
-  }
-  .item-1_transport {
-    grid-column: 1/3;
-  }
-}
-
-@media screen and (min-width: 850px) {
-  .band_transport {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-
-
-
 /*first component*/
 
 /* Global settings */
@@ -93,7 +16,7 @@ article p {
 }
 
 /* Content wrapper */
-.content-wrapper {
+.content-wrapper_transport {
   margin: 0 auto;
   max-width: 1200px;
   height: auto;
@@ -108,11 +31,14 @@ article p {
   border: 0px solid aqua;
   margin: 0.5rem;
   position: relative;
-  height: 300%;
+  height: auto;
   overflow: hidden;
   border-radius: 0.5rem;
   flex: 1;
-  min-width: 290px;
+  margin-right:3rem;
+  margin-left: 3rem;
+  min-width: 320px;
+  width: 320px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -255,5 +181,63 @@ article p {
 }
 
 
+/* following card*/
+/* van and some additional information*/
+
+.body_info_wrapper {
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+.cards_transport_info {
+  margin: 40px auto;
+  max-width: 1140px;
+  display: flex;
+}
+.card_transport_info, .img-card_transport_info {
+  width: calc(50% - 2rem);
+  margin: 0 1rem;
+}
+.card_transport_info {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.card_transport_info :first-child {
+  margin-top: 0;
+}
+.card_transport_info .card-footer_transport_info {
+  margin-top: auto;
+}
+.img-card_transport_info img {
+  border-radius: px;
+}
+.cta_transport_info {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background: #06c;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cards_transport_info {
+    flex-direction: column;
+  }
+
+  .card_transport_info, .img-card_transport_info {
+    width: 100%;
+    margin: 1rem 0; /* Add spacing between stacked cards */
+  }
+}
 
 

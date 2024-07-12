@@ -301,3 +301,11 @@ export const FakeUI = styled.div`
     background: #999;
   }
 `;
+
+
+
+export const HeaderContainer = styled.div`
+min-height: auto;
+padding: 2rem 0 5rem 0;
+width: 100%;
+`;
