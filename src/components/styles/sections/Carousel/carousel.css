@@ -34,10 +34,14 @@
 
 .slider-container h2 {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
 }
-.slider-container h1 {
+.minute{
   font-size: 40px;
+}
+
+.slider-container h1 {
+  font-size: 20px;
   text-align: center;
   margin-bottom: 15rem;
 }
@@ -58,9 +62,19 @@
   }
   .slider-container h1 {
     /* font-size: 30px; */
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 5rem;
+    text-wrap: nowrap;
+  }
+  .animated-heading {
+    /* background: black; */
+    letter-spacing: 1px;
+    width: 70%;
+    margin:auto;
+  }
+  .minute{
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -86,7 +100,7 @@
     /* animation: slideInFromLeft 1s ease-out; */
   }
   .slider-container h1 {
-    font-size: 15px;
+    font-size: 12px;
     /* background: white; */
     text-align: center;
     margin-bottom: 5rem;
@@ -102,10 +116,29 @@
     left: 45%;
     transform: translate(-50%);
   }
+  .animated-heading {
+    background: black;
+    letter-spacing: 1px;
+    width: 70%;
+    margin:auto;
+    text-wrap: nowrap;
+  }
+  .minute{
+    font-size: 13px;
+  }
+  .moveTop{
+    margin-top:-30rem;  
+  }
 }
 
-/* .animated-heading {
-  background: white;
-  width: 50%;
+.animated-heading {
+  /* background: black; */
+  letter-spacing: 1px;
+  width: 70%;
   margin:auto;
-} */
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+

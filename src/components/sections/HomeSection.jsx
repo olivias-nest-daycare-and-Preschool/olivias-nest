@@ -3,33 +3,28 @@ import './../styles/sections/Carousel/carousel.css'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-// import One from "../../Images/homeImages/1.png";
-// import Two from "../../Images/homeImages/2.png";
-// import Three from "../../Images/homeImages/3.png";
-// import Four from "../../Images/homeImages/4.png";
-// import Five from "../../Images/homeImages/5.png";
-// import Six from "../../Images/homeImages/6.png";
-// import Seven from "../../Images/homeImages/7.png";
-// import Eight from "../../Images/homeImages/8.png";
-// import Nine from "../../Images/homeImages/9.png";
-// import Ten from "../../Images/homeImages/10.png";
-// import Eleven from "../../Images/homeImages/11.png";
-// import Twelve from "../../Images/homeImages/12.png";
-// import Thirteen from "../../Images/homeImages/13.png";
-// import Fifteen from "../../Images/homeImages/15.png";
-// import Seventeen from "../../Images/homeImages/17.png";
-// import Eighteen from "../../Images/homeImages/18.png";
+import "../styles/sections/Home/accordion.css";
+
+import sleepingArea from "../../prod_images/HOME PAGE/Carousal/Sleeping area.png";
+import classes from "../../prod_images/HOME PAGE/Carousal/modern classes.png";
+import sittingArea from "../../prod_images/HOME PAGE/Carousal/sitting area.png";
+import skatingCourt from "../../prod_images/HOME PAGE/Carousal/skating court.png";
+import slider from "../../prod_images/HOME PAGE/Carousal/slider.png";
+import swimmingArea from "../../prod_images/HOME PAGE/Carousal/swimming pool.png";
+
+
+//Facilities and what we offer
+import Art from "../../prod_images/FACILITIES & WHAT WE OFFER/Art & Craft/art.png";
+import Castle from "../../prod_images/FACILITIES & WHAT WE OFFER/Breaktime/castle.png";
+import Breaktime from "../../prod_images/FACILITIES & WHAT WE OFFER/Breaktime/breaktime.png";
+import Skating from "../../prod_images/FACILITIES & WHAT WE OFFER/Skating/skating3.png";
+// import Swing from "../../prod_images/FACILITIES & WHAT WE OFFER/Swing Area/swing.png";
+
+
 import {
-  Bait2Section,
-  BlockQuote,
-  Cite,
+
   FacilityDescription,
   FacilityImageContainer,
-  FeatureContent,
-  FeatureDescription,
-  FeatureImage,
-  FeatureItem,
-  FeatureTitle,
   InfoButton,
   SingleFacility,
   SlantCard,
@@ -43,7 +38,7 @@ import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import {
   StyledHomeBackground
 } from "../styles/HomeBackground.styled";
-import { BsSunglasses } from "react-icons/bs";
+import { BsSliders2, BsSunglasses } from "react-icons/bs";
 import "../styles/sections/Home/CustomCards.css";
 import { Container } from '../styles/common/Container.styled';
 
@@ -87,100 +82,28 @@ export const HomeSection = () => {
   };
 
   const carouselImages = [
-    { id: 1, url: "./images/landingPage/one.png", title: 'art' },
-    { id: 2, url: "./images/landingPage/twi.png", title: 'beddings' },
-    { id: 3, url: "./images/landingPage/three.png", title: 'birthday' },
-    { id: 4, url: "./images/landingPage/four.png", title: 'gate1' },
-    { id: 1, url: "./images/landingPage/five.png", title: 'stretching' },
-    { id: 2, url: "./images/landingPage/six.png", title: 'stud2_2' },
-    { id: 3, url: "./images/landingPage/seven.png", title: 'study_rooms' },
-    { id: 4, url: "./images/landingPage/eight.png", title: 'van' },
-    { id: 5, url: "./images/landingPage/nine.png", title: 'teachers' },
-    { id: 6, url: "./images/landingPage/ten.png", title: 'our premises' },
-    { id: 7, url: "./images/landingPage/eleven.png", title: 'Toys' },
-    { id: 7, url: "./images/landingPage/one.png", title: 'Toys' },
+    { id: 1, url: sleepingArea, title: 'sitting area' },
+    { id: 2, url: classes, title: 'sleeping area' },
+    { id: 3, url: sittingArea, title: 'modern classes' },
+    { id: 4, url: slider, title: 'slider' },
+    { id: 1, url: swimmingArea, title: 'swimming pool' },
+    { id: 2, url: skatingCourt , title: 'skating court' },
+  
   ];
+
 
   return <>
     <StyledHomeBackground>
       <div className="carousel">
-
         <div className="slider-container">
-          <h2 className="animated-heading">
-            <span style={{ color: '#FF5733' }}>O</span>
-            <span style={{ color: '#C70039' }}>l</span>
-            <span style={{ color: '#FF5733' }}>i</span>
-            <span style={{ color: '#2C7873' }}>v</span>
-            <span style={{ color: '#9BC53D' }}>i</span>
-            <span style={{ color: '#3F88C5' }}>a</span>'s&nbsp;
-            <span style={{ color: '#2C7873' }}>N</span>
-            <span style={{ color: '#6FB98F' }}>e</span>
-            <span style={{ color: '#9BC53D' }}>s</span>
-            <span style={{ color: '#FF5733' }}>t</span>.
+          <h2 className="animated-heading text-uppercase moveTop" style={{color:'white'}}>
+            Olivia's Nest 
           </h2>
-          <h2 className="animated-heading">
-            <span style={{ color: '#FFC300' }}>I</span>
-            <span style={{ color: '#FF5733' }}>n</span>
-            <span style={{ color: '#C70039' }}>t</span>
-            <span style={{ color: '#FF5733' }}>e</span>
-            <span style={{ color: '#FF5733' }}>r</span>
-            <span style={{ color: '#FF5733' }}>n</span>
-            <span style={{ color: '#3F88C5' }}>a</span>
-            <span style={{ color: '#2C7873' }}>t</span>
-            <span style={{ color: '#6FB98F' }}>i</span>
-            <span style={{ color: '#9BC53D' }}>o</span>
-            <span style={{ color: '#FF5733' }}>n</span>
-            <span style={{ color: '#FFC300' }}>a</span>
-            <span style={{ color: '#FF5733' }}>l</span>&nbsp;
-            <span style={{ color: '#C70039' }}>D</span>
-            <span style={{ color: '#900C3F' }}>a</span>
-            <span style={{ color: '#FF5733' }}>y</span>
-            <span style={{ color: '#FF5733' }}>c</span>
-            <span style={{ color: '#3F88C5' }}>a</span>
-            <span style={{ color: '#2C7873' }}>r</span>
-            <span style={{ color: '#6FB98F' }}>e</span>&nbsp;
-            <span style={{ color: '#9BC53D' }}>&</span>&nbsp;
-            <span style={{ color: '#FF5733' }}>P</span>
-            <span style={{ color: '#FFC300' }}>r</span>
-            <span style={{ color: '#FF5733' }}>e</span>
-            <span style={{ color: '#C70039' }}>s</span>
-            <span style={{ color: '#900C3F' }}>c</span>
-            <span style={{ color: '#FF5733' }}>h</span>
-            <span style={{ color: '#FF5733' }}>o</span>
-            <span style={{ color: '#3F88C5' }}>o</span>
-            <span style={{ color: '#2C7873' }}>l</span>
+          <h2 className="animated-heading text-uppercase" style={{color:'white',fontSize:'40px'}}>
+            International Daycare & PreSchool
           </h2>
-          <h1 className="animated-heading">
-            <span style={{ color: '#FF5733' }}>a</span>&nbsp;
-            <span style={{ color: '#FFC300' }}>p</span>
-            <span style={{ color: '#FF5733' }}>l</span>
-            <span style={{ color: '#C70039' }}>a</span>
-            <span style={{ color: '#FF5733' }}>c</span>
-            <span style={{ color: '#FF5733' }}>e</span>&nbsp;
-            <span style={{ color: '#FF5733' }}>w</span>
-            <span style={{ color: '#3F88C5' }}>h</span>
-            <span style={{ color: '#2C7873' }}>e</span>
-            <span style={{ color: '#6FB98F' }}>r</span>
-            <span style={{ color: '#9BC53D' }}>e</span>&nbsp;
-            <span style={{ color: '#FF5733' }}>l</span>
-            <span style={{ color: '#FFC300' }}>o</span>
-            <span style={{ color: '#FF5733' }}>v</span>
-            <span style={{ color: '#C70039' }}>e</span>&nbsp;
-            <span style={{ color: '#FF5733' }}>i</span>
-            <span style={{ color: '#FF5733' }}>s</span>&nbsp;
-            <span style={{ color: '#FF5733' }}>s</span>
-            <span style={{ color: '#3F88C5' }}>h</span>
-            <span style={{ color: '#2C7873' }}>o</span>
-            <span style={{ color: '#6FB98F' }}>w</span>
-            <span style={{ color: '#9BC53D' }}>n</span>&nbsp;
-            <span style={{ color: '#FF5733' }}>d</span>
-            <span style={{ color: '#FFC300' }}>a</span>
-            <span style={{ color: '#FF5733' }}>i</span>
-            <span style={{ color: '#C70039' }}>l</span>
-            <span style={{ color: '#FF5733' }}>y</span>
-            <span style={{ color: '#FF5733' }}>.</span>
-            <span style={{ color: '#FFC300' }}>.</span>
-            <span style={{ color: '#2C7873' }}>.</span>
+          <h1 className="animated-heading h1_size" style={{color:'white'}}>
+            unlocking children's exploration of science and birth of art.
           </h1>
           <Slider {...settings}>
             {
@@ -194,50 +117,11 @@ export const HomeSection = () => {
         </div>
       </div>
     </StyledHomeBackground>
-    <HomeContainer>
-      <Bait2Section>
-        <FeatureItem>
-          <FeatureImage src="./images/paperplane.png" alt="learning is fun" />
-          <FeatureContent>
-            <FeatureTitle>Learning is Fun</FeatureTitle>
-            <FeatureDescription>At Olivia's Nest, we believe that learning should be interactive and fun.
-              We have taken our time to ensure we integrate learning with co-curricular activities.
-            </FeatureDescription>
-          </FeatureContent>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureImage src="./images/babyfood.png" alt="learning is fun" />
-          <FeatureContent>
-            <FeatureTitle>Healthy meals</FeatureTitle>
-            <FeatureDescription>A healthy meal powers our children and sustains them throughout the day.
-              <br />
-              <br />
-              <BlockQuote>
-                "Health is a relationship between you and your body."
-                <Cite>- Terri Guillemets</Cite>
-              </BlockQuote>
-            </FeatureDescription>
-          </FeatureContent>
-        </FeatureItem>
-
-        <FeatureItem>
-          <FeatureImage src="./images/mortarboards.png" alt="learning is fun" />
-          <FeatureContent>
-            <FeatureTitle>Expert Teachers</FeatureTitle>
-            <FeatureDescription>
-              We have qualified and certified teachers to ensure that our children at Olivia's Nest
-              get access to first-class knowledge. The teachers are friendly and fun. The teachers are equipped
-              as per the newer curriculum.
-            </FeatureDescription>
-          </FeatureContent>
-        </FeatureItem>
-      </Bait2Section>
-    </HomeContainer>    
     <Container>
-    <StyledFacilitiesSection style={{marginTop:'-8rem'}}>
+    <StyledFacilitiesSection style={{marginTop:'10rem'}}>
     <SingleFacility>
                         <FacilityImageContainer>
-                            <img src="./images/landingPage/nine.png" alt={'olivias nest'}/>
+                            <img src={Castle} alt={'olivias nest'}/>
                             <SlantCard />
                         </FacilityImageContainer>
                         <FacilityDescription>
@@ -254,86 +138,52 @@ export const HomeSection = () => {
                         </FacilityDescription>
                     </SingleFacility>
     </StyledFacilitiesSection>
-
     </Container>
-    <HomeContainer>
-      <div className="wrapper">
-  <SectionHeading style={{paddingTop:'2rem'}}>
-    <h1>Our Principles</h1>
-  </SectionHeading>
-  <div className="cols">
-    <div className="col" ontouchstart="this.classList.toggle('hover');">
-      <div className="container">
-        {/* <div className="front" style={{ backgroundImage: `url(${Six})` }}> */}
-        <div className="front" style={{ backgroundImage:"url('./images/landingPage/one.png')" }}>
-          <div className="inner">
-            <p>Our philosophy</p>
-            <span>Philosophy</span>
-          </div>
-        </div>
-        <div className="back">
-          <div className="inner">
-            <p>We believe in fostering creativity, curiosity, and compassion in a nurturing environment, empowering each child to explore and grow.</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div className="col" ontouchstart="this.classList.toggle('hover');">
-      <div className="container">
-        <div className="front" style={{ backgroundImage: "url('./images/landingPage/two.png')" }}>
-          <div className="inner">
-            <p>Core Values</p>
-            <span>values</span>
-          </div>
-        </div>
-        <div className="back">
-          <div className="inner">
-            <p>We uphold core values of kindness, curiosity, and growth, 
-              fostering an environment where every child feels valued and inspired to explore their potential.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className="col" ontouchstart="this.classList.toggle('hover');">
-      <div className="container">
-        <div className="front" style={{ backgroundImage: "url('./images/landingPage/three.png')" }}>
-          <div className="inner">
-            <p>View on education</p>
-            <span>education</span>
-          </div>
-        </div>
-        <div className="back">
-          <div className="inner">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className="col" ontouchstart="this.classList.toggle('hover');">
-      <div className="container">
-        <div className="front" style={{ backgroundImage: "url('./images/landingPage/four.png')"}}>
-          <div className="inner">
-            <p>Mission</p>
-            <span>Pursuit</span>
-          </div>
-        </div>
-        <div className="back">
-          <div className="inner">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-          </div>
+<Container>
+    <StyledFacilitiesSection>
+    <div class="container_accord">
+      <SectionHeading>
+        <h1>Our Principles</h1>
+      </SectionHeading>
+    <div class="faq-drawer_accord">
+      <input class="faq-drawer__trigger_accord" id="faq-drawer_accord" type="checkbox" />
+      <label class="faq-drawer__title_accord" for="faq-drawer_accord">MISSION</label>
+      <div class="faq-drawer__content-wrapper_accord">
+        <div class="faq-drawer__content_accord">
+          <p>
+          Unlocking children's exploration of science and birth of art.
+          </p>
         </div>
       </div>
     </div>
     
+    <div class="faq-drawer_accord">
+      <input class="faq-drawer__trigger_accord" id="faq-drawer-2_accord" type="checkbox" />
+      <label class="faq-drawer__title_accord" for="faq-drawer-2_accord">CORE VALUES</label>
+      <div class="faq-drawer__content-wrapper_accord">
+        <div class="faq-drawer__content_accord">
+          <p>We uphold core values of kindness, curiosity, and growth, 
+          fostering an environment where every child feels valued and inspired to explore their potential.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="faq-drawer_accord">
+      <input class="faq-drawer__trigger_accord" id="faq-drawer-3_accord" type="checkbox" />
+      <label class="faq-drawer__title_accord" for="faq-drawer-3_accord">OUR PHILOSOPHY</label>
+      <div class="faq-drawer__content-wrapper_accord">
+        <div class="faq-drawer__content_accord">
+          <p>We believe in fostering creativity, curiosity, and compassion in a nurturing environment, empowering each child to explore and grow.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-    </HomeContainer>
+    </StyledFacilitiesSection>
+    </Container>
 
     <HomeContainer style={{marginBottom:'-5rem'}}>
-      <SectionHeading style={{marginTop:'4rem'}}>
+      <SectionHeading>
         <h1>Facilities & What we offer</h1>
         <h3> <BsSunglasses /> sneaky link <BsSunglasses /> </h3>
       </SectionHeading>
@@ -341,31 +191,32 @@ export const HomeSection = () => {
       <section className="hero-section">
   <div className="card-grid">
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: "url('./images/landingPage/five.png')"}}></div>
+      <div className="card__background" style={{ backgroundImage: `url(${Castle})` }}></div>
       <div className="card__content">
-        <p className="card__category">Indoor games</p>
-        <h3 className="card__heading">Indoor games & Stretching area</h3>
+        <p className="card__category">Breaking</p>
+        <h3 className="card__heading">Bouncy castle</h3>
       </div>
     </a>
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: "url('./images/landingPage/six.png')" }}></div>
+      <div className="card__background" style={{ backgroundImage: `url(${Skating})`}}></div>
       <div className="card__content">
-        <p className="card__category">Outdoor festivities</p>
-        <h3 className="card__heading">Swing area</h3>
+        <p className="card__category">Co-curricular</p>
+        <h3 className="card__heading">Skating</h3>
       </div>
     </a>
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: "url('./images/landingPage/seven.png')"}}></div>
+      <div className="card__background" style={{ backgroundImage: `url(${Breaktime})`}}></div>
       <div className="card__content">
-        <p className="card__category">Cartoons & Animations</p>
-        <h3 className="card__heading">School environs</h3>
+        <p className="card__category">Coaching</p>
+        <h3 className="card__heading">Cycling</h3>
       </div>
     </a>
+
     <a className="card" href="/ContactUs">
-      <div className="card__background" style={{ backgroundImage: "url('./images/landingPage/eight.png')" }}></div>
+      <div className="card__background" style={{ backgroundImage: `url(${Art})`}}></div>
       <div className="card__content">
-        <p className="card__category">Court area</p>
-        <h3 className="card__heading">Skating, basket ball and Lawn Tennis.</h3>
+        <p className="card__category">Art & Modelling</p>
+        <h3 className="card__heading">modelling classes</h3>
       </div>
     </a>
   </div>

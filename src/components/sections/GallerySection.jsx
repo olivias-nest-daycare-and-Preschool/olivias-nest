@@ -2,73 +2,58 @@ import { Container } from "../styles/common/Container.styled";
 import { HomeContainer } from "../styles/common/HomeConatiner";
 import { SectionHeading } from "../styles/common/SectionHeading.styled";
 import "../styles/sections/Gallery/Gallery.css";
-// import "../styles/sections/Home/Beauty.css";
-import {
-    FacilityDescription, 
-    FacilityImageContainer,
-    SingleFacility,
-     SlantCard, 
-     StyledFacilitiesSection, 
-     Tags }
-      from "../styles/sections/HomeSection.styled";
 
 
-import { HeaderContainer } from "../styles/sections/GallerySection.styled";
+import { GalleryImage, GalleryItems, HeaderContainer, SingleGallery } from "../styles/sections/GallerySection.styled";
+import { AboutUsSection } from "../styles/sections/AboutSection.styled";
 
-// import One from "../../Images/homeImages/1.png";
-// import Two from "../../Images/homeImages/2.png";
-// import Three from "../../Images/homeImages/3.png";
-// import Four from "../../Images/homeImages/4.png";
-// import Five from "../../Images/homeImages/5.png";
-// import Six from "../../Images/homeImages/6.png";
-// import Seven from "../../Images/homeImages/7.png";
-// import Eight from "../../Images/homeImages/8.png";
-// import Nine from "../../Images/homeImages/9.png";
-// import Ten from "../../Images/homeImages/10.png";
-// import Eleven from "../../Images/homeImages/11.png";
-// import Twelve from "../../Images/homeImages/12.png";
-// import Thirteen from "../../Images/homeImages/13.png";
-// import Fifteen from "../../Images/homeImages/15.png";
-// import Seventeen from "../../Images/homeImages/17.png";
-// import Eighteen from "../../Images/homeImages/18.png";
 
+import culture1 from "../../prod_images/FACILITIES/Trip To Bomas of Kenya/culture1.png";
+import culture2 from "../../prod_images/FACILITIES/Trip To Bomas of Kenya/culture2.png";
+import culture3 from "../../prod_images/FACILITIES/Trip To Bomas of Kenya/culture3.png";
 
 export const GallerySection = () =>{
     return (
 
 <>
-<HomeContainer style={{marginTop:'15rem'}}>
-<SectionHeading>
-                <h1>Take a look at our gallery</h1>
-    </SectionHeading>
-</HomeContainer>
 <Container>
-    <StyledFacilitiesSection>
-    <SingleFacility>
-                        <FacilityImageContainer>
-                            <img src="./images/teachers.jpg" alt={'olivias nest'}/>
-                            <SlantCard />
-                        </FacilityImageContainer>
-                        <FacilityDescription>
-                        <h1 style={{fontWeight:'700'}}>Olivia's Nest International <hr /> </h1>
-                            <Tags>
-                              <span style={{color:'white'}}>olivias nest</span>
-                              <span style={{color:'white'}}>olivias nest</span>
-                              <span style={{color:'white'}}>olivias nest</span>
-                            </Tags>
-                            <p> Welcome to Olivia's Nest where we offer small class sizes, balanced teacher-learner ratios, 
-                              a fun environment and learning through play. 
-                              luxury preschool and daycare in kileleshwa/lavington. 25 Othaya Road, Nairobi, Kenya ... 
-                              At Olivia's Nest our emphasis is to boost our little children's ability ...
-                              </p>
-                        </FacilityDescription>
-                    </SingleFacility>
-    </StyledFacilitiesSection>
-
-    </Container>
-
-
-
+        <AboutUsSection id="Gallery" style={{marginTop:'8rem'}}>
+    <SectionHeading>
+      <h1>Trip to The Bomas of Kenya</h1>
+      <h3>It was a successful and our children enjoyed each and every bit of it. Travels are important as they are educative.</h3>
+      <h1>Bomas Of Kenya</h1>
+    </SectionHeading>
+    <GalleryItems>
+      <SingleGallery>
+        <GalleryImage>
+            <img src={culture1} alt="kids modelling" />
+        </GalleryImage>
+        <p style={{ marginTop: '1rem'}}>
+          We keep our children pre-occupied with sports at Olivia's Nest.
+          Taekwondo session in progress.
+        </p>
+      </SingleGallery>
+      <SingleGallery>
+        <GalleryImage>
+            <img src={culture2} alt="stretching" />
+        </GalleryImage>
+        <p style={{ marginTop: '1rem' }}>Kids stretching as part of the co-curricular activities.</p>
+      </SingleGallery>
+      <SingleGallery>
+        <GalleryImage>
+            <img src={culture3} alt="kids modelling" />
+        </GalleryImage>
+        <p style={{ marginTop: '1rem'}}>
+          We keep our children pre-occupied with sports at Olivia's Nest.
+          Our previous soccer tournament.
+        </p>
+      </SingleGallery>
+    </GalleryItems>
+  </AboutUsSection>
+        </Container>
+<HomeContainer>
+  
+</HomeContainer>
 <HeaderContainer>
     <SectionHeading>
         <h1>Our media</h1>
@@ -78,7 +63,7 @@ export const GallerySection = () =>{
 
 <div className="wrapper_gallery">
   <div className="card_gallery">
-    <img src="./images/teachers.jpg" alt="1" />
+    <img src="./images/landingPage/two.png" alt="1" />
     <div className="info_gallery">
       <h2>Godzilla</h2>
       <p> Alpha Predator that is believed to restore balance</p>
@@ -87,7 +72,7 @@ export const GallerySection = () =>{
   </div>
   
    <div className="card_gallery">
-    <img src="./images/teachers.jpg" alt="1" />
+    <img src="./images/landingPage/three.png" alt="1" />
     <div className="info_gallery">
       <h2>Godzilla</h2>
       <p> Alpha Predator that is believed to restore balance</p>
@@ -96,7 +81,7 @@ export const GallerySection = () =>{
   </div>
 
   <div className="card_gallery">
-    <img src="./images/teachers.jpg" alt="1" />
+    <img src="./images/landingPage/four.png" alt="1" />
     <div className="info_gallery">
       <h2>Godzilla</h2>
       <p> Alpha Predator that is believed to restore balance</p>
@@ -105,7 +90,7 @@ export const GallerySection = () =>{
   </div>
   
   <div className="card_gallery">
-    <img src="./images/teachers.jpg"  alt="2"/>
+    <img src="./images/landingPage/five.png"  alt="2"/>
     <div className="info_gallery">
       <h2>Ghidorah</h2>
       <p> The False King or the Devil that has three heads</p>
@@ -114,7 +99,7 @@ export const GallerySection = () =>{
   </div>
   
   <div className="card_gallery">
-    <img src="./images/teachers.jpg" alt="3"/>
+    <img src="./images/landingPage/six.png" alt="3"/>
     <div className="info_gallery">
       <h2>Kong</h2>
       <p>The Primate of Ferocity that bows to no one</p>
@@ -128,7 +113,7 @@ export const GallerySection = () =>{
 
 <div className="wrapper_gallery">
   <div className="card_gallery">
-    <img src= "./images/teachers.jpg" alt="1" />
+    <img src= "./images/landingPage/seven.png" alt="1" />
     <div className="info_gallery">
       <h2>Godzilla</h2>
       <p> Alpha Predator that is believed to restore balance</p>
@@ -137,7 +122,7 @@ export const GallerySection = () =>{
   </div>
   
    <div className="card_gallery">
-    <img src="./images/teachers.jpg" alt="1" />
+    <img src="./images/landingPage/eight.png" alt="1" />
     <div className="info_gallery">
       <h2>Godzilla</h2>
       <p> Alpha Predator that is believed to restore balance</p>
@@ -146,7 +131,7 @@ export const GallerySection = () =>{
   </div>
 
   <div className="card_gallery">
-    <img src="./images/teachers.jpg" alt="1" />
+    <img src="./images/landingPage/eight.png" alt="1" />
     <div className="info_gallery">
       <h2>Godzilla</h2>
       <p> Alpha Predator that is believed to restore balance</p>
@@ -155,7 +140,7 @@ export const GallerySection = () =>{
   </div>
   
   <div className="card_gallery">
-    <img src="./images/teachers.jpg"  alt="2"/>
+    <img src="./images/landingPage/nine.png" alt="2"/>
     <div className="info_gallery">
       <h2>Ghidorah</h2>
       <p> The False King or the Devil that has three head</p>
@@ -164,7 +149,7 @@ export const GallerySection = () =>{
   </div>
   
   <div className="card_gallery">
-    <img src="./images/teachers.jpg"  alt="3"/>
+    <img src="./images/landingPage/one.png"  alt="3"/>
     <div className="info_gallery">
       <h2>Kong</h2>
       <p>The Primate of Ferocity that bows to no one</p>

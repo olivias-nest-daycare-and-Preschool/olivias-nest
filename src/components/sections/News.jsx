@@ -10,6 +10,8 @@ import { SectionHeading } from '../styles/common/SectionHeading.styled';
 // import Six from "../../Images/homeImages/6.png";
 // import Eight from "../../Images/homeImages/8.png";
 // import Nine from "../../Images/homeImages/9.png";
+import culture from "../../Images/team/cultural day.jpg";
+import studies from "../../Images/team/studies.jpg";
 import { Container } from '../styles/common/Container.styled';
 import { 
   FacilityDescription, 
@@ -36,7 +38,7 @@ const News = () => {
     <StyledFacilitiesSection>
     <SingleFacility>
                         <FacilityImageContainer>
-                            <img src="./images/teachers.jpg" alt={'olivias nest'}/>
+                            <img src={studies} alt={'olivias nest'}/>
                             <SlantCard />
                         </FacilityImageContainer>
                         <FacilityDescription>
@@ -59,7 +61,7 @@ const News = () => {
     <StyledFacilitiesSection>
     <SingleFacility>
                         <FacilityImageContainer>
-                            <img src="./images/teachers.jpg" alt={'olivias nest'}/>
+                            <img src={culture} alt={'olivias nest'}/>
                             <SlantCard />
                         </FacilityImageContainer>
                         <FacilityDescription>
@@ -87,7 +89,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")' }}>
+        <div className="front" style={{ backgroundImage: 'url("./images/landingPage/four.png")' }}>
           <div className="inner">
             <p>Class rooms with comfy furniture</p>
             <span>Furniture</span>
@@ -106,7 +108,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")' }}>
+        <div className="front" style={{ backgroundImage: 'url("./images/landingPage/seven.png")' }}>
           <div className="inner">
             <p>Location and security</p>
             <span>Security</span>
@@ -123,7 +125,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")'}}>
+        <div className="front" style={{ backgroundImage: 'url("./images/landingPage/nine.png")'}}>
           <div className="inner">
             <p>Strizzes</p>
             <span>Lorem ipsum</span>
@@ -139,7 +141,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")'}}>
+        <div className="front" style={{ backgroundImage: 'url("./images/landingPage/four.png")'}}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -155,7 +157,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")' }}>
+        <div className="front" style={{ backgroundImage: 'url("./images/landingPage/ten.png")' }}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -171,7 +173,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")' }}>
+        <div className="front" style={{ backgroundImage: 'url("./images/landingPage/eleven.png")' }}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -187,7 +189,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")' }}>
+        <div className="front" style={{ backgroundImage: 'url("./images/landingPage/five.png")' }}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>
@@ -203,7 +205,7 @@ const News = () => {
 
     <div className="col" ontouchstart="this.classList.toggle('hover');">
       <div className="container">
-        <div className="front" style={{ backgroundImage: 'url("./images/teachers.jpg")'}}>
+        <div className="front" style={{ backgroundImage: 'url("./images/landingPage/nine.png")'}}>
           <div className="inner">
             <p>Clossyo</p>
             <span>Lorem ipsum</span>

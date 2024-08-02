@@ -62,7 +62,9 @@ img{
  @media(max-width: ${({theme})=> theme.mobile}){
     margin-top: 3rem;
     justify-content: flex-start;
-
+    width: 100%;
+    height: 80%;
+    margin-right: 2rem;
     img{
         transform: rotateY(0deg);
         width: 80%;
@@ -87,6 +89,9 @@ z-index: 2;
 
 @media(max-width: ${({theme})=> theme.mobile}){
     transform: skew(3deg,-3deg) rotateY(0deg);
+    width: 100%;
+    height: 80%;
+    margin-right: 2rem;
     width: 80%;
     border-radius: 9px;
  }

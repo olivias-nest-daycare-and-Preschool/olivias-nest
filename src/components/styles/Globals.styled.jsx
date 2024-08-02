@@ -17,7 +17,7 @@ body,html{
 }
 
 html{
-    font-family: "Roboto Slab", monospace;
+    font-family: "Roboto", monospace;
     scroll-behavior: smooth;
     color: ${({ theme })=> theme.colors.black};
     background: ${({ theme })=> theme.colors.lightNavyBlue};

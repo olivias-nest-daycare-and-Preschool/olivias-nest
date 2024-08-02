@@ -48,7 +48,7 @@ export const Footer = () => {
                             </div>
                             <div className="info">
                                 <p>
-                                    We have admissions with inclusion of:   <hr />
+                                    We have admissions with inclusion of:  
                                     <ul>
                                         <li>- Daycare (1-2 years).</li>
                                         <li>- Internation Preschool (3-6 years).</li>

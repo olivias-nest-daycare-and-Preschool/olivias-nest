@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import cover from "../../prod_images/HOME PAGE/Cover Photo/cover_photo.png";
 
 
 export const StyledHomeBackground = styled.footer`
@@ -6,8 +7,13 @@ export const StyledHomeBackground = styled.footer`
   height: 100%;
   // position: relative;
   /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./images/wall2.jpg'); */
+  background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.8)
+    ), url(${cover});
   /* background-color: rgba(11, 11, 11, 0.6); */
-  background-color: rgb(61,19,0,0.8);
+  /* background-color: rgb(61,19,0,0.8); */
   /* background: rgba(0, 0, 0, .25); */
   background-size: cover;
   background-position: center;

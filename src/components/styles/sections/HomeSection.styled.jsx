@@ -755,7 +755,7 @@ font-family: "Roboto Slab",monospace;
 font-weight: 700;
 border-radius: 20px;
 cursor: pointer;
-display: inline-block;
+display:inline-flex;
 margin-right: 40px;
 
 &:hover{
@@ -768,6 +768,7 @@ margin-right: 40px;
  @media (max-width: ${({theme})=>theme.mobile}){
   margin: 10px 10px; //adjust cta buttons
   font-size: 1.1rem;
+  white-space: nowrap;
   }
 
 `;
@@ -826,7 +827,8 @@ margin-right: 10rem;
 img{
     /* width: 65%; */
     width: 100%;
-    /* height: 120%; */
+    height: 100%;
+    object-fit: cover;
     /* width: 85%; */
     border-radius: 20px;
     /* transform: rotateY(20deg);
@@ -842,12 +844,13 @@ img{
     }
  }
  @media(max-width: ${({theme})=> theme.mobile}){
-    margin-top: 3rem;
+    margin-top: -10rem;
     justify-content: flex-start;
-
+    width: 100%;
+    height: 80%;
+    margin-right: 2rem;
     img{
         transform: rotateY(0deg);
-        width: 80%;
         border-radius: 9px;
     }
  }
@@ -858,6 +861,7 @@ position: absolute;
 /* width: 65%; */
 width: 100%;
 height: 100%;
+object-fit: cover;
 background: linear-gradient(
     to right,
     ${({theme})=>theme.colors.orange} 0%,
@@ -870,7 +874,8 @@ z-index: 2;
 
 @media(max-width: ${({theme})=> theme.mobile}){
     transform: skew(3deg,-3deg) rotateY(0deg);
-    width: 80%;
+    /* margin-right: 2rem; */
+    width: 100%;
     border-radius: 9px;
  }
 `; 
@@ -913,7 +918,7 @@ div{
 export const Tags = styled.div`
 display: flex;
 align-items: center; 
-flex-wrap: wrap;
+flex-wrap: nowrap;
 margin-bottom:0.5rem;
 
 span{
@@ -927,15 +932,21 @@ span{
 }
 @media (max-width: 1200px) { /* Large desktops and laptops */
     justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
   }
 
   @media (max-width: 992px) { /* Medium-sized devices (desktops, tablets) */
     justify-content: center;
+    flex-direction: row;
   }
 
   @media (max-width: 768px) { /* Small devices (tablets, large phones) */
     justify-content: center;
-
+    flex-direction: row;
+    
     span {
       margin-right: 0.5rem;
       display: none;
@@ -943,7 +954,7 @@ span{
   }
 
   @media (max-width: 576px) { /* Extra small devices (phones) */
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
 
     span {
